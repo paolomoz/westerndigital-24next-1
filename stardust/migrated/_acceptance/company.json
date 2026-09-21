@@ -1,0 +1,75 @@
+{
+  "slug": "company",
+  "at": "2026-09-21T10:45:44.603Z",
+  "source": "stardust/current/pages/company.html",
+  "target": "stardust/migrated/company/index.html",
+  "meta": "stardust/migrated/company/_meta.json",
+  "scope": {
+    "main": "main,[role=main]",
+    "exclude": []
+  },
+  "tolerances": {},
+  "reportOnly": false,
+  "verdict": "pass",
+  "class": {
+    "headings": {
+      "source": 16,
+      "emitted": 16,
+      "dropped": [],
+      "extra": []
+    },
+    "links": {
+      "source": 8,
+      "emitted": 8,
+      "dropped": [],
+      "extra": []
+    },
+    "images": {
+      "source": 11,
+      "emitted": 11,
+      "dropped": [],
+      "extra": []
+    },
+    "listItems": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "tableRows": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "listDepth": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "nestedLists": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "tables": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    }
+  },
+  "words": {
+    "source": 315,
+    "emitted": 315,
+    "ratio": 1
+  },
+  "sourceScoped": true,
+  "sourceExcludedSubtrees": 0,
+  "red": [],
+  "yellow": [],
+  "covered": [],
+  "skipped": []
+}

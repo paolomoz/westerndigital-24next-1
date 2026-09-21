@@ -388,7 +388,7 @@
       "bounded: 4 page(s); palette/type/motifs only — voice, voiceTable, crossPromo and register omitted"
     ],
     "canon": {
-      "source": "stardust/prototypes/canon.css (:root) — lifted computed styles",
+      "source": "replica: stardust/prototypes/canon.css",
       "colors": {
         "black": "rgb(0, 0, 0)",
         "white": "rgb(255, 255, 255)",
@@ -506,6 +506,14 @@
       ],
       "fonts": {
         "decision": "self-host Roboto 400/500/700 (open-license woff2 harvested from the site); no licensed face rendered on captured elements"
+      },
+      "sourceNote": "stardust/prototypes/canon.css (:root) — lifted computed styles",
+      "files": {
+        "header": "stardust/canon/header.html",
+        "footer": "stardust/canon/footer.html",
+        "css": "stardust/canon/canon.css",
+        "copiedFrom": "stardust/prototypes/{index-proposed.html header/footer, canon.css}",
+        "copiedAt": "2026-09-21T10:58:14Z"
       }
     }
   }

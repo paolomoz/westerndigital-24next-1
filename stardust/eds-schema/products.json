@@ -1,0 +1,1296 @@
+{
+ "source": "file:///Users/paolo/stardust/2026-09-24-next/westerndigital-1/stardust/.work/deploy/schema-view/products.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "All Products‎"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Hard drives, data center platforms, NAS systems, and accessories from Western Digital for high-performance, high-capacity storage."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Discover our Full Portfolio",
+     "href": "https://www.westerndigital.com/products/product-portfolio"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Make space for new games and slash system load times for your favorite titles."
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Learn More about Gaming Storage",
+     "href": "/solutions/gaming"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Storage that matches your specific needs for system performance, data redundancy, or both."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Learn More About RAID",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Hard drives and enclosures that connect via Ethernet to help you access your data wherever you have an internet connection."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Learn About Network Attached Storage (NAS)",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "HDD storage for recording, saving, and analyzing CCTV data from enterprise-grade surveillance systems."
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Learn About CCTV Smart Video Storage",
+     "href": "/solutions/surveillance"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "HDDs for backing up creative work, mission-critical files, and your favorite games whether you’re at your workstation or on the go."
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Learn About Home Backup Solutions",
+     "href": "/solutions/home-backup-solutions"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 7,
+   "repeats": [
+    {
+     "unitSelector": "DIV.plp-hero__variant",
+     "count": 6,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 1
+   },
+   "hasH1": true,
+   "defaultContent": false,
+   "block": "hero",
+   "variants": [
+    "banner"
+   ],
+   "decodeTier": "template-slotted",
+   "shape": "simple",
+   "note": "rows: picture (bg) / h1 / p / text link; only the visible default variant is authored (5 hidden use-case variants dropped — PLP filter state, dynamics row 17)"
+  },
+  {
+   "section": "breadcrumbs",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Home",
+     "href": "/en-us"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "All Products"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.crumbs__item",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 1
+   },
+   "defaultContent": false,
+   "block": "breadcrumbs",
+   "variants": [],
+   "decodeTier": "template-slotted",
+   "shape": "simple",
+   "note": "one row: ul of links, last item plain text (current page); D1 BREADCRUMB advisory accepted for replica fidelity — follow-up: buildAutoBlocks builder"
+  },
+  {
+   "section": "listing",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Filter by"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Clear All"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Shop"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Shop by Category",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Hard Drives (HDD)",
+     "href": "/products/hdd"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Data Center Storage",
+     "href": "/products/data-center-storage"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Accessories",
+     "href": "/products/accessories"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Shop by Deals",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Sale",
+     "href": "/products/weekly-sale"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Final Production",
+     "href": "/products/final-production"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Recertified",
+     "href": "/products/recertified"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Filter"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Filter by"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "Brand"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Western Digital (39)",
+     "href": "/products?filterByBrandName=Western+Digital"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "WD (24)",
+     "href": "/products?filterByBrandName=WD"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "WD_BLACK (12)",
+     "href": "/products?filterByBrandName=WD_BLACK"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "G-DRIVE (11)",
+     "href": "/products?filterByBrandName=G-DRIVE"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "G-Technology (3)",
+     "href": "/products?filterByBrandName=G-Technology"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "+ More"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "- Less"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Capacity Range"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "0 GB - 960 GB (5)",
+     "href": "/products?filterByVvc-capacity=0+GB+-+960+GB"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "01 TB - 04 TB (30)",
+     "href": "/products?filterByVvc-capacity=01+TB+-+04+TB"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "05 TB - 10 TB (30)",
+     "href": "/products?filterByVvc-capacity=05+TB+-+10+TB"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "11 TB - 20 TB (21)",
+     "href": "/products?filterByVvc-capacity=11+TB+-+20+TB"
+    },
+    {
+     "role": "cta",
+     "order": 26,
+     "text": "21 TB - 50 TB (23)",
+     "href": "/products?filterByVvc-capacity=21+TB+-+50+TB"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "51 TB - 100 TB (4)",
+     "href": "/products?filterByVvc-capacity=51+TB+-+100+TB"
+    },
+    {
+     "role": "cta",
+     "order": 28,
+     "text": "> 100 TB (3)",
+     "href": "/products?filterByVvc-capacity=>+100+TB"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "+ More"
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "- Less"
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "Form Factor"
+    },
+    {
+     "role": "cta",
+     "order": 32,
+     "text": "3.5 in (1)",
+     "href": "/products?filterByVvc-form_factor=3.5+in"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "+ More"
+    },
+    {
+     "role": "body",
+     "order": 34,
+     "text": "- Less"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Use Case"
+    },
+    {
+     "role": "cta",
+     "order": 36,
+     "text": "Data Center (18)",
+     "href": "/products?filterByUseCaseName=Data+Center"
+    },
+    {
+     "role": "cta",
+     "order": 37,
+     "text": "Backups (12)",
+     "href": "/products?filterByUseCaseName=Backups"
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Gaming (10)",
+     "href": "/products?filterByUseCaseName=Gaming"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Filming (9)",
+     "href": "/products?filterByUseCaseName=Filming"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "RAID (7)",
+     "href": "/products?filterByUseCaseName=RAID"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Audio (5)",
+     "href": "/products?filterByUseCaseName=Audio"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "Network Attached Storage (NAS) (5)",
+     "href": "/products?filterByUseCaseName=Network+Attached+Storage+(NAS)"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Photography (5)",
+     "href": "/products?filterByUseCaseName=Photography"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Smart Video Surveillance (4)",
+     "href": "/products?filterByUseCaseName=Smart+Video+Surveillance"
+    },
+    {
+     "role": "cta",
+     "order": 45,
+     "text": "Video Editing (4)",
+     "href": "/products?filterByUseCaseName=Video+Editing"
+    },
+    {
+     "role": "cta",
+     "order": 46,
+     "text": "Personal Cloud (1)",
+     "href": "/products?filterByUseCaseName=Personal+Cloud"
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "+ More"
+    },
+    {
+     "role": "body",
+     "order": 48,
+     "text": "- Less"
+    },
+    {
+     "role": "body",
+     "order": 49,
+     "text": "Color"
+    },
+    {
+     "role": "cta",
+     "order": 50,
+     "text": "Black (32)",
+     "href": "/products?filterByColor_List=Black|000000"
+    },
+    {
+     "role": "cta",
+     "order": 51,
+     "text": "Blue (7)",
+     "href": "/products?filterByColor_List=Blue|0000FF"
+    },
+    {
+     "role": "cta",
+     "order": 52,
+     "text": "Gray, Silver (4)",
+     "href": "/products?filterByColor_List=Gray,+Silver|C3C3C3"
+    },
+    {
+     "role": "cta",
+     "order": 53,
+     "text": "Purple (4)",
+     "href": "/products?filterByColor_List=Purple|800080"
+    },
+    {
+     "role": "cta",
+     "order": 54,
+     "text": "Red (4)",
+     "href": "/products?filterByColor_List=Red|FF0000"
+    },
+    {
+     "role": "cta",
+     "order": 55,
+     "text": "White (4)",
+     "href": "/products?filterByColor_List=White|FFFFFF"
+    },
+    {
+     "role": "cta",
+     "order": 56,
+     "text": "Gold (1)",
+     "href": "/products?filterByColor_List=Gold|D5B9A6"
+    },
+    {
+     "role": "cta",
+     "order": 57,
+     "text": "Green (1)",
+     "href": "/products?filterByColor_List=Green|00B200"
+    },
+    {
+     "role": "body",
+     "order": 58,
+     "text": "+ More"
+    },
+    {
+     "role": "body",
+     "order": 59,
+     "text": "- Less"
+    },
+    {
+     "role": "body",
+     "order": 60,
+     "text": "Connector Type"
+    },
+    {
+     "role": "cta",
+     "order": 61,
+     "text": "SATA (30)",
+     "href": "/products?filterByConnector_List=SATA"
+    },
+    {
+     "role": "cta",
+     "order": 62,
+     "text": "Micro-B (16)",
+     "href": "/products?filterByConnector_List=Micro-B"
+    },
+    {
+     "role": "cta",
+     "order": 63,
+     "text": "USB-C (13)",
+     "href": "/products?filterByConnector_List=USB-C"
+    },
+    {
+     "role": "cta",
+     "order": 64,
+     "text": "Power Supply (12)",
+     "href": "/products?filterByConnector_List=Power+Supply"
+    },
+    {
+     "role": "cta",
+     "order": 65,
+     "text": "USB-A (7)",
+     "href": "/products?filterByConnector_List=USB-A"
+    },
+    {
+     "role": "cta",
+     "order": 66,
+     "text": "Ethernet RJ45 (4)",
+     "href": "/products?filterByConnector_List=Ethernet+RJ45"
+    },
+    {
+     "role": "cta",
+     "order": 67,
+     "text": "Thunderbolt 3 (4)",
+     "href": "/products?filterByConnector_List=Thunderbolt+3"
+    },
+    {
+     "role": "cta",
+     "order": 68,
+     "text": "USB-A (for accessory charging) (2)",
+     "href": "/products?filterByConnector_List=USB-A+(for+accessory+charging)"
+    },
+    {
+     "role": "body",
+     "order": 69,
+     "text": "+ More"
+    },
+    {
+     "role": "body",
+     "order": 70,
+     "text": "- Less"
+    },
+    {
+     "role": "body",
+     "order": 71,
+     "text": "Services"
+    },
+    {
+     "role": "cta",
+     "order": 72,
+     "text": "Data Recovery (18)",
+     "href": "/products?filterByService=Data+Recovery"
+    },
+    {
+     "role": "body",
+     "order": 73,
+     "text": "+ More"
+    },
+    {
+     "role": "body",
+     "order": 74,
+     "text": "- Less"
+    },
+    {
+     "role": "body",
+     "order": 75,
+     "text": "Price"
+    },
+    {
+     "role": "cta",
+     "order": 76,
+     "text": "$0-$49.99 (18)",
+     "href": "/products?filterByPriceRange=$0-$49.99"
+    },
+    {
+     "role": "cta",
+     "order": 77,
+     "text": "$50-$199.99 (16)",
+     "href": "/products?filterByPriceRange=$50-$199.99"
+    },
+    {
+     "role": "cta",
+     "order": 78,
+     "text": "$200-$499.99 (21)",
+     "href": "/products?filterByPriceRange=$200-$499.99"
+    },
+    {
+     "role": "cta",
+     "order": 79,
+     "text": "$500-$999.99 (10)",
+     "href": "/products?filterByPriceRange=$500-$999.99"
+    },
+    {
+     "role": "cta",
+     "order": 80,
+     "text": "$1,000-$100,000 (9)",
+     "href": "/products?filterByPriceRange=$1,000-$100,000"
+    },
+    {
+     "role": "body",
+     "order": 81,
+     "text": "+ More"
+    },
+    {
+     "role": "body",
+     "order": 82,
+     "text": "- Less"
+    },
+    {
+     "role": "body",
+     "order": 83,
+     "text": "Clear All"
+    },
+    {
+     "role": "body",
+     "order": 84,
+     "text": "89"
+    },
+    {
+     "role": "body",
+     "order": 85,
+     "text": "Items"
+    },
+    {
+     "role": "body",
+     "order": 86,
+     "text": "Items"
+    },
+    {
+     "role": "body",
+     "order": 87,
+     "text": "Shop"
+    },
+    {
+     "role": "body",
+     "order": 88,
+     "text": "Filter"
+    },
+    {
+     "role": "body",
+     "order": 89,
+     "text": "(0)"
+    },
+    {
+     "role": "body",
+     "order": 90,
+     "text": "Sort by :"
+    },
+    {
+     "role": "body",
+     "order": 91,
+     "text": "Sort"
+    },
+    {
+     "role": "body",
+     "order": 92,
+     "text": "Most Popular"
+    },
+    {
+     "role": "body",
+     "order": 93,
+     "text": "Latest Products"
+    },
+    {
+     "role": "body",
+     "order": 94,
+     "text": "Title A-Z"
+    },
+    {
+     "role": "body",
+     "order": 95,
+     "text": "Title Z-A"
+    },
+    {
+     "role": "body",
+     "order": 96,
+     "text": "Price Low-High"
+    },
+    {
+     "role": "body",
+     "order": 97,
+     "text": "Price High-Low"
+    },
+    {
+     "role": "body",
+     "order": 98,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 99,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 100,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 101,
+     "text": "Product includes an extra year of limited warranty, exclusively from WesternDigital.com."
+    },
+    {
+     "role": "cta",
+     "order": 102,
+     "text": "Learn More",
+     "href": ""
+    },
+    {
+     "role": "body",
+     "order": 103,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 104,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 105,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 106,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 107,
+     "text": "Product includes an extra year of limited warranty, exclusively from WesternDigital.com."
+    },
+    {
+     "role": "cta",
+     "order": 108,
+     "text": "Learn More",
+     "href": ""
+    },
+    {
+     "role": "body",
+     "order": 109,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 110,
+     "text": "Product includes an extra year of limited warranty, exclusively from WesternDigital.com."
+    },
+    {
+     "role": "cta",
+     "order": 111,
+     "text": "Learn More",
+     "href": ""
+    },
+    {
+     "role": "body",
+     "order": 112,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 113,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 114,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 115,
+     "text": "Product includes an extra year of limited warranty, exclusively from WesternDigital.com."
+    },
+    {
+     "role": "cta",
+     "order": 116,
+     "text": "Learn More",
+     "href": ""
+    },
+    {
+     "role": "body",
+     "order": 117,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 118,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 119,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 120,
+     "text": "Product includes an extra year of limited warranty, exclusively from WesternDigital.com."
+    },
+    {
+     "role": "cta",
+     "order": 121,
+     "text": "Learn More",
+     "href": ""
+    },
+    {
+     "role": "body",
+     "order": 122,
+     "text": "Compare"
+    },
+    {
+     "role": "body",
+     "order": 123,
+     "text": "✕"
+    },
+    {
+     "role": "body",
+     "order": 124,
+     "text": "Exclusively on the Western Digital Store"
+    },
+    {
+     "role": "body",
+     "order": 125,
+     "text": "Purchase a qualifying product and we will automatically upgrade the limited warranty period to include one (1) extra year of coverage . If the product includes a 2-year limited warranty, we will extend to a 3-year limited warranty. If the product includes a 3-year limited warranty, we will extend to a 4-year limited warranty."
+    },
+    {
+     "role": "body",
+     "order": 126,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 127,
+     "text": "Have Questions?"
+    },
+    {
+     "role": "cta",
+     "order": 128,
+     "text": "Learn More",
+     "href": "/company/programs/extended-warranty"
+    },
+    {
+     "role": "body",
+     "order": 129,
+     "text": "1. Limitations apply. Click ‘Learn More’ above for details."
+    },
+    {
+     "role": "body",
+     "order": 130,
+     "text": "✕"
+    },
+    {
+     "role": "body",
+     "order": 131,
+     "text": "Exclusively on the Western Digital Store"
+    },
+    {
+     "role": "body",
+     "order": 132,
+     "text": "Purchase a qualifying product and we will automatically upgrade the limited warranty period to include one (1) extra year of coverage . If the product includes a 2-year limited warranty, we will extend to a 3-year limited warranty. If the product includes a 3-year limited warranty, we will extend to a 4-year limited warranty."
+    },
+    {
+     "role": "body",
+     "order": 133,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 134,
+     "text": "Have Questions?"
+    },
+    {
+     "role": "cta",
+     "order": 135,
+     "text": "Learn More",
+     "href": "/company/programs/extended-warranty"
+    },
+    {
+     "role": "body",
+     "order": 136,
+     "text": "1. Limitations apply. Click ‘Learn More’ above for details."
+    },
+    {
+     "role": "body",
+     "order": 137,
+     "text": "✕"
+    },
+    {
+     "role": "body",
+     "order": 138,
+     "text": "Exclusively on the Western Digital Store"
+    },
+    {
+     "role": "body",
+     "order": 139,
+     "text": "Purchase a qualifying product and we will automatically upgrade the limited warranty period to include one (1) extra year of coverage . If the product includes a 2-year limited warranty, we will extend to a 3-year limited warranty. If the product includes a 3-year limited warranty, we will extend to a 4-year limited warranty."
+    },
+    {
+     "role": "body",
+     "order": 140,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 141,
+     "text": "Have Questions?"
+    },
+    {
+     "role": "cta",
+     "order": 142,
+     "text": "Learn More",
+     "href": "/company/programs/extended-warranty"
+    },
+    {
+     "role": "body",
+     "order": 143,
+     "text": "1. Limitations apply. Click ‘Learn More’ above for details."
+    },
+    {
+     "role": "body",
+     "order": 144,
+     "text": "✕"
+    },
+    {
+     "role": "body",
+     "order": 145,
+     "text": "Exclusively on the Western Digital Store"
+    },
+    {
+     "role": "body",
+     "order": 146,
+     "text": "Purchase a qualifying product and we will automatically upgrade the limited warranty period to include one (1) extra year of coverage . If the product includes a 2-year limited warranty, we will extend to a 3-year limited warranty. If the product includes a 3-year limited warranty, we will extend to a 4-year limited warranty."
+    },
+    {
+     "role": "body",
+     "order": 147,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 148,
+     "text": "Have Questions?"
+    },
+    {
+     "role": "cta",
+     "order": 149,
+     "text": "Learn More",
+     "href": "/company/programs/extended-warranty"
+    },
+    {
+     "role": "body",
+     "order": 150,
+     "text": "1. Limitations apply. Click ‘Learn More’ above for details."
+    },
+    {
+     "role": "body",
+     "order": 151,
+     "text": "✕"
+    },
+    {
+     "role": "body",
+     "order": 152,
+     "text": "Exclusively on the Western Digital Store"
+    },
+    {
+     "role": "body",
+     "order": 153,
+     "text": "Purchase a qualifying product and we will automatically upgrade the limited warranty period to include one (1) extra year of coverage . If the product includes a 2-year limited warranty, we will extend to a 3-year limited warranty. If the product includes a 3-year limited warranty, we will extend to a 4-year limited warranty."
+    },
+    {
+     "role": "body",
+     "order": 154,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 155,
+     "text": "Have Questions?"
+    },
+    {
+     "role": "cta",
+     "order": 156,
+     "text": "Learn More",
+     "href": "/company/programs/extended-warranty"
+    },
+    {
+     "role": "body",
+     "order": 157,
+     "text": "1. Limitations apply. Click ‘Learn More’ above for details."
+    },
+    {
+     "role": "cta",
+     "order": 158,
+     "text": "PREV",
+     "href": "/products?page=1"
+    },
+    {
+     "role": "cta",
+     "order": 159,
+     "text": "1",
+     "href": "/products?page=1"
+    },
+    {
+     "role": "body",
+     "order": 160,
+     "text": "..."
+    },
+    {
+     "role": "cta",
+     "order": 161,
+     "text": "1",
+     "href": "/products?page=1"
+    },
+    {
+     "role": "cta",
+     "order": 162,
+     "text": "2",
+     "href": "/products?page=2"
+    },
+    {
+     "role": "cta",
+     "order": 163,
+     "text": "3",
+     "href": "/products?page=3"
+    },
+    {
+     "role": "cta",
+     "order": 164,
+     "text": "4",
+     "href": "/products?page=4"
+    },
+    {
+     "role": "body",
+     "order": 165,
+     "text": "..."
+    },
+    {
+     "role": "cta",
+     "order": 166,
+     "text": "6",
+     "href": "/products?page=6"
+    },
+    {
+     "role": "cta",
+     "order": 167,
+     "text": "NEXT",
+     "href": "/products?page=2"
+    }
+   ],
+   "imgCount": 20,
+   "editableTexts": 50,
+   "repeats": [
+    {
+     "unitSelector": "DIV.clp-nav__item",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 4,
+      "imgs": 0,
+      "textRuns": 4
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.clp-facet",
+     "count": 8,
+     "unit": {
+      "headings": 1,
+      "ctas": 5,
+      "imgs": 0,
+      "textRuns": 8
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 0
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "A.plp-pag__num",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "LI.plp-pag__dots",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [
+     "button",
+     "input",
+     "select",
+     "[aria-controls]"
+    ],
+    "columns": 5
+   },
+   "defaultContent": false,
+   "block": [
+    "filters",
+    "product-listing"
+   ],
+   "variants": [],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "note": "section style split-aside; filters = one row per facet group [title | option list]; product-listing = count row, one row per product [picture | h3 title + capacity strong + price], pagination row (ul); dynamics row 17 (inert filters/sort, links bounce to source host)"
+  },
+  {
+   "section": "buy-direct",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Buy Direct from WD"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Authentic Products"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Manufacturer Guaranteed"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Shop Now",
+     "href": "/products"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Simple Returns"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "With our 30-day money back guarantee"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Data Recovery"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Added layer of protection*"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Learn More",
+     "href": "/company/programs/data-recovery"
+    },
+    {
+     "role": "heading",
+     "order": 9,
+     "text": "Easy Recycle"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Safe, eco-friendly, free*"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Learn More",
+     "href": "/company/programs/easy-recycle"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "*Limitations apply. See terms and conditions for details"
+    }
+   ],
+   "imgCount": 4,
+   "editableTexts": 10,
+   "repeats": [
+    {
+     "unitSelector": "DIV.buy-tile",
+     "count": 4,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 3
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.buy-tile__text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.buy-tile__text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.buy-tile__text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.buy-tile__text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 4
+   },
+   "defaultContent": false,
+   "block": "tiles",
+   "variants": [
+    "buy"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content; foot p as default content AFTER the block",
+   "note": "one row per tile [picture | h3 + p + text link]; tile 2 has no link (fingerprint kids:3) — block tolerates a missing CTA"
+  }
+ ],
+ "plan": {
+  "source": "stardust/eds-conversion-log.md § Step 2",
+  "schemaView": "stardust/.work/deploy/schema-view/products.html",
+  "servedPrototype": "http://127.0.0.1:8814/products-proposed.html"
+ }
+}

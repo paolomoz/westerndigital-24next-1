@@ -721,7 +721,19 @@
           "ethisphere 500px rendition not harvested (parity signature delta, justified)"
         ]
       },
-      "prototype": "stardust/prototypes/index-proposed.html"
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "postGateFixes": [
+        {
+          "at": "2026-09-21T10:57:55.898Z",
+          "file": "stardust/prototypes/index-proposed.html",
+          "what": "src added on 10 inactive tab-panel <img> (Solutions / Industries tabs) from a coordinator re-harvest of the source URLs (direct fetch, browser UA, 200)",
+          "why": "migrate asset-missing: lazy images never loaded at capture (capture-state)",
+          "neutrality": {
+            "360": "stardust/.work/replica/neutrality/index-360/compare.json (0.00 %, Δh 0)",
+            "1440": "stardust/.work/replica/neutrality/index-1440/compare.json (0.00 %, Δh 0)"
+          }
+        }
+      ]
     },
     {
       "pageType": "listing",
@@ -1292,7 +1304,20 @@
         "label": "iter3",
         "regime": "canon-followup",
         "at": "2026-09-21T10:03:30.541Z"
-      }
+      },
+      "postGateFixes": [
+        {
+          "at": "2026-09-21T10:57:55.898Z",
+          "file": "stardust/prototypes/products.css",
+          "what": "`.green-promo { box-sizing: border-box }` + `@media (min-width:768px) and (max-width:991px) { .green-promo > div { min-width:0; overflow-wrap:break-word } }`",
+          "why": "migrate validation: 2 px horizontal overflow at 768×1024 (a width not covered by the 1440/360 gate)",
+          "neutrality": {
+            "360": "stardust/.work/replica/neutrality/products-360/compare2.json (0.00 %, Δh 0 vs gates/products-360/build.png)",
+            "1440": "stardust/.work/replica/neutrality/products-1440/compare2.json (0.00 %, Δh 0 vs gates/products-1440/build.png)"
+          },
+          "probe768": "stardust/.work/replica/probes/overflow-url.mjs → scrollWidth 768/768"
+        }
+      ]
     },
     {
       "pageType": "program",

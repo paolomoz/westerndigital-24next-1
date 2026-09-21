@@ -1,0 +1,1406 @@
+{
+ "source": "file:///Users/paolo/stardust/2026-09-24-next/westerndigital-1/stardust/.work/deploy/schema-view/solutions.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Data Storage Solutions for Every Need"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "WD builds storage solutions for seven core use cases: personal backup, NAS, RAID, surveillance, gaming, content creation, and enterprise data centers."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 1
+   },
+   "hasH1": true,
+   "defaultContent": false,
+   "block": "hero",
+   "variants": [
+    "photo"
+   ],
+   "decodeTier": "template-slotted",
+   "shape": "simple",
+   "note": "rows: picture (bg) / h1 / p"
+  },
+  {
+   "section": "page-nav",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Home",
+     "href": "/en-us"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Solutions"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Choose Your Solution",
+     "href": "#choose-your-solution"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Explore Storage Solutions",
+     "href": "#explore-storage-solutions"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Compare & Learn",
+     "href": "#compare-and-learn"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "FAQs",
+     "href": "#faq"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.sol-crumbs__item",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.sol-chips__col",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 4
+   },
+   "defaultContent": false,
+   "block": [
+    "breadcrumbs",
+    "anchor-nav"
+   ],
+   "variants": [],
+   "decodeTier": "template-slotted",
+   "shape": "simple",
+   "note": "breadcrumbs (ul) + anchor-nav (one row: ul of 4 in-page links rendered as chips)"
+  },
+  {
+   "section": "choose",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "How to Choose the Right Storage Solution"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Choosing storage comes down to three questions: how much data you need to store, who needs to access it, and how critical that data is to recover if lost. Personal users typically need simple backup. Teams and businesses need shared or redundant storage. Enterprises need scalable, high-availability systems. The use cases below map each scenario to a Western Digital solution."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Sharing and accessing files across devices or users"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "NAS Storage Solutions",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Expanding and optimizing your gaming setup"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Gaming Storage",
+     "href": "/solutions/gaming"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Performance and data protection in business environments"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "RAID Storage Solutions",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Capturing and storing video footage"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Video Surveillance Storage",
+     "href": "/solutions/surveillance"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Backing up personal files and photos"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Backup & Recovery Solutions",
+     "href": "/solutions/home-backup-solutions"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Enterprise infrastructure and large-scale workloads"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Enterprise & Data Storage",
+     "href": "/solutions/data-center"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Video editing, photography, and media projects"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Content Creation Storage",
+     "href": "/solutions/creative-professionals"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 9,
+   "repeats": [
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.sol-usecases__col",
+     "count": 7,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 2
+   },
+   "defaultContent": false,
+   "block": "tiles",
+   "variants": [
+    "usecase"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 + intro p as default content",
+   "note": "one row per tile [icon (:name: or svg picture) | strong p + link]"
+  },
+  {
+   "section": "explore",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Explore Storage Solutions"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "NAS Storage Solutions"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "NAS (network attached storage) is a device that connects to your network so multiple users can share, back up, and access files from any connected device. Ideal for small teams, families, and creative workflows that need centralized shared storage."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Learn More",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Gaming Storage"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Gaming storage is purpose-built for fast load times, large game libraries, and save state reliability across PC, console, and handheld setups. Western Digital offers HDDs and SSDs configured for desktop, laptop, PS5, and Xbox gaming."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Learn More",
+     "href": "/solutions/gaming"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "RAID Storage Solutions"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "RAID (Redundant Array of Independent Disks) combines multiple drives into one logical system to improve speed, add redundancy, or both. Common configurations include RAID 0 (speed), RAID 1 (redundancy), RAID 5 (balanced), and RAID 10 (speed plus redundancy)."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Learn More",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "heading",
+     "order": 10,
+     "text": "Video Surveillance Storage"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Surveillance storage is designed for 24/7 continuous recording with high write endurance and stable performance under constant load. WD Purple drives are engineered specifically for DVR and NVR security systems."
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Learn More",
+     "href": "/solutions/surveillance"
+    },
+    {
+     "role": "heading",
+     "order": 13,
+     "text": "Backup & Recovery Solutions"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Backup and recovery storage protects your files from data loss with automatic scheduled backups, encryption, and simple restore. Available as external and internal drives with built-in backup software for personal and small business use."
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Learn More",
+     "href": "/solutions/home-backup-solutions"
+    },
+    {
+     "role": "heading",
+     "order": 16,
+     "text": "Enterprise & Data Center Storage"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Enterprise storage delivers high-capacity, high-reliability hard drives built for data center workloads — including AI training, cloud infrastructure, and high-performance computing. WD Ultrastar drives are engineered for density, endurance, and low total cost of ownership."
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Learn More",
+     "href": "/solutions/data-center"
+    },
+    {
+     "role": "heading",
+     "order": 19,
+     "text": "Content Creation Storage"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "Content creation storage handles large media files — 4K and 8K video, RAW photography, multi-track audio — with the speed and capacity needed for professional workflows. Built for editors, photographers, producers, and filmmakers."
+    },
+    {
+     "role": "cta",
+     "order": 21,
+     "text": "Learn More",
+     "href": "/solutions/creative-professionals"
+    },
+    {
+     "role": "heading",
+     "order": 22,
+     "text": "Platform Storage Solutions for Data Centers"
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "Platform storage combines HDDs, SSDs, and disaggregated architecture into rack-scale systems optimized for AI training, HPC, and hyperscale cloud. Engineered for low TCO and NVMe-over-Fabrics performance."
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Learn More",
+     "href": "/solutions/data-center-storage-platform"
+    }
+   ],
+   "imgCount": 8,
+   "editableTexts": 17,
+   "repeats": [
+    {
+     "unitSelector": "DIV.sol-explore__col",
+     "count": 8,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 3
+   },
+   "defaultContent": false,
+   "block": "tiles",
+   "variants": [
+    "explore"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "one row per card [picture | h3 + p + link]"
+  },
+  {
+   "section": "industry",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Storage Solutions by Industry"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Medical Data Storage & Healthcare"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Secure, scalable storage designed for healthcare data, compliance, and reliability."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Learn More",
+     "href": "/explore/medical-data-storage"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Education Storage & Data Solutions"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Flexible storage solutions for schools and research environments managing growing data needs."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Learn More",
+     "href": "/explore/education-storage"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Hybrid Cloud Storage Solutions"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Learn how to balance on-premises control with cloud scalability using our enterprise-grade HDDs."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Learn More",
+     "href": "/explore/hybrid-cloud-storage-solutions"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 7,
+   "repeats": [
+    {
+     "unitSelector": "DIV.sol-tiles__col",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 3
+   },
+   "defaultContent": false,
+   "block": "tiles",
+   "variants": [
+    "tile"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "one row per tile [icon | h3 + p + link]"
+  },
+  {
+   "section": "compare-learn",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Compare & Learn About Storage"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "AI Storage Infrastructure"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Explore how AI data centers use tiered storage architectures to balance performance, capacity, and cost across the AI data lifecycle."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Learn More",
+     "href": "/solutions/ai-storage-infrastructure"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "HDD vs SSD"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Compare storage technologies based on performance, capacity, and cost to find the right fit."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Learn More",
+     "href": "/solutions/hdd-vs-ssd"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Compare Hard Drives"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Understand the differences between internal, external, and portable drives for various use cases."
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Learn More",
+     "href": "/solutions/hard-drives"
+    },
+    {
+     "role": "heading",
+     "order": 10,
+     "text": "Data Security & Encryption"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Learn how encryption and security features help protect data across storage environments."
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Learn More",
+     "href": "/solutions/data-security"
+    },
+    {
+     "role": "heading",
+     "order": 13,
+     "text": "Thunderbolt vs USB-C"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Compare interfaces to understand speed, compatibility, and performance differences."
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Learn More",
+     "href": "/solutions/thunderbolt-vs-usb-c"
+    },
+    {
+     "role": "heading",
+     "order": 16,
+     "text": "WD Color Drives"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Explore WD’s color-coded drives and how each is designed for specific workloads and applications."
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Learn More",
+     "href": "/solutions/color-drives"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 13,
+   "repeats": [
+    {
+     "unitSelector": "DIV.sol-tiles__col",
+     "count": 6,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 3
+   },
+   "defaultContent": false,
+   "block": "tiles",
+   "variants": [
+    "tile"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "same unit as industry, 6 tiles"
+  },
+  {
+   "section": "compare-table",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Compare Storage Solutions"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "SOLUTION"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "BEST FOR"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "KEY BENEFITS"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "TYPICAL USERS"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Backup"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Personal data protection"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Simple, reliable backup"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Individuals, families"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "NAS"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Shared storage"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Centralized access"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Teams, small businesses"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "RAID"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Performance + redundancy"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Data protection + speed"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Businesses, IT users"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Surveillance"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Video recording"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "24/7 optimized storage"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "Security systems"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Data Center"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "Large-scale workloads"
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "High capability & scalability"
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "Enterprises, cloud providers"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "TR.",
+     "count": 5,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 4
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "TD.",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "TD.",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "TD.",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "TD.",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "TD.",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 4
+   },
+   "defaultContent": false,
+   "block": "table",
+   "variants": [
+    "compare"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "header row + 5 rows × 4 cells (D11 table; striped rows)"
+  },
+  {
+   "section": "faq",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Frequently Asked Questions"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "What is the difference between an HDD and SSD?"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "HDDs (hard disk drives) store data on spinning magnetic platters and deliver the highest capacities available — often at a fraction of the cost per terabyte of flash storage. They're the standard for , backup, surveillance, content archives, and enterprise data centers, where capacity, reliability, and cost-per-terabyte matter most. SSDs use flash memory and offer faster read/write speeds, suited to operating systems and active applications. Most storage setups use HDDs for bulk capacity and flash only where speed is critical."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "NAS",
+     "href": "/solutions/network-attached-storage/nas-hard-drives"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "How much storage do I need?"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Personal users typically need 1–4 TB. Creative professionals working with 4K video usually need 8–20 TB. Small businesses generally start at 10–40 TB in configurations, and workloads scale into petabytes. WD HDDs are available in capacities up to 32 TB per drive to support growth without adding drive count. Plan for 30–50% annual growth and always keep a separate backup copy."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "NAS",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "enterprise",
+     "href": "/solutions/data-center-storage-platform"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "What kind of hard drive do I need for a NAS?"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "should be rated for 24/7 operation and optimized for multi-drive vibration tolerance. drives are purpose-built for NAS, with firmware tuned for multi-bay systems and workloads up to 180 TB/year for . Plan for at least two drives for redundancy and match total capacity to your needs, accounting for the configuration you choose."
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "NAS drives",
+     "href": "/solutions/network-attached-storage/nas-hard-drives"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "WD Red Pro",
+     "href": "/products/internal-drives/wd-red-pro-sata-hdd"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Red Pro",
+     "href": "/products/internal-drives/wd-red-pro-sata-hdd"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "RAID",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "What storage do AI and machine learning workloads need?"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "AI workloads generate enormous volumes of training data, model checkpoints, and outputs — typically far more than flash storage can economically hold. High-capacity enterprise HDDs form the foundation of AI storage, serving as the data lake for training datasets, model versions, and long-term archives. WD's are engineered for this capacity tier, supporting AI factories, HPC clusters, and hyperscale cloud."
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Ultrastar HDDs and platform storage systems",
+     "href": "/solutions/data-center"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "How should I back up my data?"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "A complete backup strategy follows the 3-2-1 rule: three copies of your data, on two different types of media, with one copy stored offsite. Most users achieve this with a WD for local backup, paired with a cloud or copy for offsite protection. Built-in backup software handles scheduling and recovery automatically."
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "external or internal HDD",
+     "href": "https://www.westerndigital.com/products/hdd"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "NAS",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "How long does a hard drive last?"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "and -rated hard drives are engineered for high-duty-cycle operation and typically last 5–7 years under continuous workloads, with many lasting longer. , , , and drives are rated for high mean time between failures (MTBF) and carry multi-year limited warranties. Consumer HDDs in lighter-use scenarios typically last 3–5 years. Regular backups and replacement planning matter more than drive age alone."
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Enterprise",
+     "href": "/solutions/data-center"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "NAS",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "WD Red Pro",
+     "href": "/products/internal-drives/wd-red-pro-sata-hdd"
+    },
+    {
+     "role": "cta",
+     "order": 26,
+     "text": "Purple Pro",
+     "href": "/products/internal-drives/wd-purple-pro-sata-hdd"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Gold",
+     "href": "/products/internal-drives/wd-gold-sata-hdd"
+    },
+    {
+     "role": "cta",
+     "order": 28,
+     "text": "Ultrastar",
+     "href": "/products/data-center-storage/data-center-drives"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "What is the best storage solution for my needs?"
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "The best storage depends on your use case: for , for shared team access, for performance and redundancy, for 24/7 video recording, and for large-scale data center workloads. WD builds purpose-engineered hard drives for each of these scenarios."
+    },
+    {
+     "role": "cta",
+     "order": 31,
+     "text": "external HDDs",
+     "href": "/products/hdd/external-hdd"
+    },
+    {
+     "role": "cta",
+     "order": 32,
+     "text": "personal backup",
+     "href": "/solutions/home-backup-solutions"
+    },
+    {
+     "role": "cta",
+     "order": 33,
+     "text": "NAS",
+     "href": "/solutions/network-attached-storage/nas-hard-drives"
+    },
+    {
+     "role": "cta",
+     "order": 34,
+     "text": "RAID",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "cta",
+     "order": 35,
+     "text": "surveillance-rated drives",
+     "href": "/solutions/surveillance"
+    },
+    {
+     "role": "cta",
+     "order": 36,
+     "text": "enterprise HDDs",
+     "href": "/solutions/data-center/high-capacity-hdd"
+    },
+    {
+     "role": "body",
+     "order": 37,
+     "text": "What is the best storage for businesses?"
+    },
+    {
+     "role": "body",
+     "order": 38,
+     "text": "Most businesses combine three solutions: for shared file access and collaboration, for performance-critical systems, and for offsite backup. Larger businesses add for data center workloads, AI training, and cloud infrastructure. WD offers dedicated HDD lines for each tier — , for enterprise."
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "NAS",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "RAID",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "external HDDs",
+     "href": "/products/hdd/external-hdd"
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "enterprise storage",
+     "href": "/solutions/data-center"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "WD Red Plus and Pro for NAS",
+     "href": "/solutions/network-attached-storage/nas-hard-drives"
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "WD Gold and Ultrastar",
+     "href": "/products/data-center-storage/data-center-drives"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "What is the difference between NAS and RAID?"
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "is a networked device that lets multiple users share storage across a network. is a method of combining multiple hard drives within one system for performance, redundancy, or both. Most NAS devices use RAID internally — they're complementary, not competing technologies. Both rely on NAS-rated HDDs like for long-term reliability."
+    },
+    {
+     "role": "cta",
+     "order": 47,
+     "text": "NAS",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "cta",
+     "order": 48,
+     "text": "RAID",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "cta",
+     "order": 49,
+     "text": "WD Red Pro",
+     "href": "/products/internal-drives/wd-red-pro-sata-hdd"
+    },
+    {
+     "role": "body",
+     "order": 50,
+     "text": "Do I need RAID if I have a backup?"
+    },
+    {
+     "role": "body",
+     "order": 51,
+     "text": "and serve different purposes. RAID protects against drive failure during use — if one drive fails, the system keeps running with no interruption. Backup protects against data loss events like accidental deletion, ransomware, fire, or theft. Most businesses need both, typically using in a RAID array combined with external or offsite backup drives."
+    },
+    {
+     "role": "cta",
+     "order": 52,
+     "text": "RAID",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "cta",
+     "order": 53,
+     "text": "backup",
+     "href": "/solutions/home-backup-solutions"
+    },
+    {
+     "role": "cta",
+     "order": 54,
+     "text": "NAS-rated HDDs",
+     "href": "/products/hdd?filterByUseCaseName=Network+Attached+Storage+(NAS)"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 11,
+   "repeats": [
+    {
+     "unitSelector": "DIV.accordion-text",
+     "count": 10,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [
+     "button",
+     "[aria-expanded]",
+     "[aria-controls]"
+    ],
+    "columns": 4
+   },
+   "defaultContent": false,
+   "block": "accordion",
+   "variants": [
+    "faq"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "one row per Q/A [question | answer]; first item open at rest (aria-expanded=true) — variant token open-first? no: block opens row 1 by default (recorded)"
+  },
+  {
+   "section": "innovation",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Innovating the Future of HDD Storage"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "WD continues to advance hard drive technology to deliver higher capacities, improved efficiency, and reliable performance. From personal storage to enterprise-scale data centers, our innovations power the growing demands of modern data."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Explore HDD Innovation",
+     "href": "/company/innovation/hdd-innovation"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 1
+   },
+   "defaultContent": false,
+   "block": "hero",
+   "variants": [
+    "band"
+   ],
+   "decodeTier": "template-slotted",
+   "shape": "simple",
+   "note": "rows: picture (bg) / strong title p / p / CTA (btn on dark)"
+  },
+  {
+   "section": "cta",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Still not sure where to start?"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Contact a Sales Representatives",
+     "href": "#contact-form"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Explore All Products",
+     "href": "/products/product-portfolio"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.sol-cta__col",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.button",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 2
+   },
+   "defaultContent": false,
+   "block": "columns",
+   "variants": [
+    "cta"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "simple",
+   "note": "one row, two cells [title p | strong CTA + em CTA]; the \"Contact a Sales Representatives\" CTA bounces to https://www.westerndigital.com/company/contact-us (contact-form modal not converted — needs a form backend; links decision row)"
+  }
+ ],
+ "plan": {
+  "source": "stardust/eds-conversion-log.md § Step 2",
+  "schemaView": "stardust/.work/deploy/schema-view/solutions.html",
+  "servedPrototype": "http://127.0.0.1:8814/solutions-proposed.html"
+ }
+}

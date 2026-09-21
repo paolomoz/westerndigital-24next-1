@@ -1,0 +1,267 @@
+{
+  "slug": "index",
+  "at": "2026-09-21T10:52:42.646Z",
+  "source": "stardust/current/pages/index.html",
+  "target": "stardust/migrated/index.html",
+  "meta": "stardust/migrated/_meta.json",
+  "scope": {
+    "main": "main,[role=main]",
+    "exclude": []
+  },
+  "tolerances": {},
+  "reportOnly": false,
+  "verdict": "pass",
+  "class": {
+    "headings": {
+      "source": 25,
+      "emitted": 25,
+      "dropped": [
+        {
+          "key": "h4:wd gold enterprise class hard drive from western digital",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "h4:wd red pro nas hard drive from western digital",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "h4:wd purple pro video analytics hard drive from western digital",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "h4:wd_black 3.5-inch gaming hard drive from wd_black",
+          "source": 1,
+          "emitted": 0
+        }
+      ],
+      "extra": [
+        {
+          "key": "h4:wd gold enterprise class hard drivefrom western digital",
+          "emitted": 1
+        },
+        {
+          "key": "h4:wd red pro nas hard drivefrom western digital",
+          "emitted": 1
+        },
+        {
+          "key": "h4:wd purple pro video analytics hard drivefrom western digital",
+          "emitted": 1
+        },
+        {
+          "key": "h4:wd_black 3.5-inch gaming hard drivefrom wd_black",
+          "emitted": 1
+        }
+      ]
+    },
+    "links": {
+      "source": 59,
+      "emitted": 59,
+      "dropped": [
+        {
+          "key": "see all products|/products",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "see all solutions|/solutions",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "wd gold enterprise class hard drive capacity: 4tb-26tb starting at $299.99 /|/products/internal-drives/wd-gold-sata-hdd",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "wd red pro nas hard drive capacity: 4tb-26tb starting at $299.99 /|/products/internal-drives/wd-red-pro-sata-hdd",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "wd purple pro video analytics hard drive capacity: 8tb-26tb starting at $464.99 /|/products/internal-drives/wd-purple-pro-sata-hdd",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "wd_black 3.5-inch gaming hard drive capacity: 500gb-10tb starting at $299.99 /|/products/internal-drives/wd-black-desktop-sata-hdd",
+          "source": 1,
+          "emitted": 0
+        },
+        {
+          "key": "about|/company",
+          "source": 1,
+          "emitted": 0
+        }
+      ],
+      "extra": [
+        {
+          "key": "see all products|/products/index",
+          "emitted": 1
+        },
+        {
+          "key": "see all solutions|/solutions/index",
+          "emitted": 1
+        },
+        {
+          "key": "wd gold enterprise class hard drivecapacity: 4tb-26tbstarting at $299.99/|/products/internal-drives/wd-gold-sata-hdd",
+          "emitted": 1
+        },
+        {
+          "key": "wd red pro nas hard drivecapacity: 4tb-26tbstarting at $299.99/|/products/internal-drives/wd-red-pro-sata-hdd",
+          "emitted": 1
+        },
+        {
+          "key": "wd purple pro video analytics hard drivecapacity: 8tb-26tbstarting at $464.99/|/products/internal-drives/wd-purple-pro-sata-hdd",
+          "emitted": 1
+        },
+        {
+          "key": "wd_black 3.5-inch gaming hard drivecapacity: 500gb-10tbstarting at $299.99/|/products/internal-drives/wd-black-desktop-sata-hdd",
+          "emitted": 1
+        },
+        {
+          "key": "about|/company/index",
+          "emitted": 1
+        }
+      ]
+    },
+    "images": {
+      "source": 36,
+      "emitted": 36,
+      "dropped": [],
+      "extra": []
+    },
+    "listItems": {
+      "source": 27,
+      "emitted": 27,
+      "dropped": [],
+      "extra": []
+    },
+    "tableRows": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "listDepth": {
+      "source": 1,
+      "emitted": 1,
+      "dropped": [],
+      "extra": []
+    },
+    "nestedLists": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "tables": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    }
+  },
+  "words": {
+    "source": 899,
+    "emitted": 899,
+    "ratio": 1
+  },
+  "sourceScoped": true,
+  "sourceExcludedSubtrees": 0,
+  "red": [],
+  "yellow": [],
+  "covered": [
+    {
+      "class": "headings",
+      "key": "h4:wd gold enterprise class hard drive from western digital",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "whitespace-tokenization",
+      "reason": "heading text identical modulo whitespace; adjacent block-level children inside the heading carry no inter-tag whitespace in the archetype, so the gate tokenizer keys it differently (verified: same level, same text with whitespace removed, same count)"
+    },
+    {
+      "class": "headings",
+      "key": "h4:wd red pro nas hard drive from western digital",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "whitespace-tokenization",
+      "reason": "heading text identical modulo whitespace; adjacent block-level children inside the heading carry no inter-tag whitespace in the archetype, so the gate tokenizer keys it differently (verified: same level, same text with whitespace removed, same count)"
+    },
+    {
+      "class": "headings",
+      "key": "h4:wd purple pro video analytics hard drive from western digital",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "whitespace-tokenization",
+      "reason": "heading text identical modulo whitespace; adjacent block-level children inside the heading carry no inter-tag whitespace in the archetype, so the gate tokenizer keys it differently (verified: same level, same text with whitespace removed, same count)"
+    },
+    {
+      "class": "headings",
+      "key": "h4:wd_black 3.5-inch gaming hard drive from wd_black",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "whitespace-tokenization",
+      "reason": "heading text identical modulo whitespace; adjacent block-level children inside the heading carry no inter-tag whitespace in the archetype, so the gate tokenizer keys it differently (verified: same level, same text with whitespace removed, same count)"
+    },
+    {
+      "class": "links",
+      "key": "see all products|/products",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "internal-link-rewritten",
+      "reason": "page-map rewrite to the migrated-tree path (migration-procedure.md § Reference shape); destination preserved"
+    },
+    {
+      "class": "links",
+      "key": "see all solutions|/solutions",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "internal-link-rewritten",
+      "reason": "page-map rewrite to the migrated-tree path (migration-procedure.md § Reference shape); destination preserved"
+    },
+    {
+      "class": "links",
+      "key": "wd gold enterprise class hard drive capacity: 4tb-26tb starting at $299.99 /|/products/internal-drives/wd-gold-sata-hdd",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "internal-link-rewritten",
+      "reason": "page-map rewrite to the migrated-tree path (migration-procedure.md § Reference shape); destination preserved"
+    },
+    {
+      "class": "links",
+      "key": "wd red pro nas hard drive capacity: 4tb-26tb starting at $299.99 /|/products/internal-drives/wd-red-pro-sata-hdd",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "internal-link-rewritten",
+      "reason": "page-map rewrite to the migrated-tree path (migration-procedure.md § Reference shape); destination preserved"
+    },
+    {
+      "class": "links",
+      "key": "wd purple pro video analytics hard drive capacity: 8tb-26tb starting at $464.99 /|/products/internal-drives/wd-purple-pro-sata-hdd",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "internal-link-rewritten",
+      "reason": "page-map rewrite to the migrated-tree path (migration-procedure.md § Reference shape); destination preserved"
+    },
+    {
+      "class": "links",
+      "key": "wd_black 3.5-inch gaming hard drive capacity: 500gb-10tb starting at $299.99 /|/products/internal-drives/wd-black-desktop-sata-hdd",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "internal-link-rewritten",
+      "reason": "page-map rewrite to the migrated-tree path (migration-procedure.md § Reference shape); destination preserved"
+    },
+    {
+      "class": "links",
+      "key": "about|/company",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "internal-link-rewritten",
+      "reason": "page-map rewrite to the migrated-tree path (migration-procedure.md § Reference shape); destination preserved"
+    }
+  ],
+  "skipped": []
+}

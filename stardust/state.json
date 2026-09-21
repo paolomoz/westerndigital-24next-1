@@ -65,7 +65,7 @@
       "url": "https://www.westerndigital.com/company",
       "title": "Who We Are: Leadership, Values, and Innovation | WD",
       "type": "static",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -80,22 +80,36 @@
           "at": "2026-09-21T10:23:14.093Z",
           "approvedBy": "hands-off",
           "evidence": "stardust/replica/progress.json#archetypes[company]"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-21T10:46:14Z",
+          "by": "stardust:migrate",
+          "renderBranch": "A",
+          "evidence": "stardust/migrated/company/_meta.json"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/company.json",
       "prototypePath": "stardust/prototypes/company-proposed.html",
-      "migratedPath": null,
+      "migratedPath": "stardust/migrated/company/index.html",
       "chromeVariant": "variant-4dea",
-      "layoutCluster": "tail"
+      "layoutCluster": "tail",
+      "fidelityTier": "archetype",
+      "archetypeSource": "company",
+      "gatesPassed": [
+        "archetype-gate",
+        "content-count",
+        "file-validation"
+      ]
     },
     {
       "slug": "index",
       "url": "https://www.westerndigital.com/",
       "title": "High-Capacity HDDs for PCs, NAS, Gaming, Data Centers, and AI Data Cycles | WD",
       "type": "landing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -110,22 +124,36 @@
           "at": "2026-09-21T09:55:09.618Z",
           "approvedBy": "hands-off",
           "evidence": "stardust/replica/progress.json#archetypes[index]"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-21T10:46:14Z",
+          "by": "stardust:migrate",
+          "renderBranch": "A",
+          "evidence": "stardust/migrated/_meta.json"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/index.json",
       "prototypePath": "stardust/prototypes/index-proposed.html",
-      "migratedPath": null,
+      "migratedPath": "stardust/migrated/index.html",
       "chromeVariant": "default",
-      "layoutCluster": "tail"
+      "layoutCluster": "tail",
+      "fidelityTier": "archetype",
+      "archetypeSource": "index",
+      "gatesPassed": [
+        "archetype-gate",
+        "content-count",
+        "file-validation"
+      ]
     },
     {
       "slug": "products",
       "url": "https://www.westerndigital.com/products",
       "title": "Shop Hard Drives for PCs, NAS, Gaming, Data Centers, and More | WD",
       "type": "listing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -140,22 +168,36 @@
           "at": "2026-09-21T10:03:30.541Z",
           "approvedBy": "hands-off",
           "evidence": "stardust/replica/progress.json#archetypes[products] (iter3 canon-followup re-gate)"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-21T10:58:18Z",
+          "by": "stardust:migrate",
+          "renderBranch": "A",
+          "evidence": "stardust/migrated/products/_meta.json"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/products.json",
       "prototypePath": "stardust/prototypes/products-proposed.html",
-      "migratedPath": null,
+      "migratedPath": "stardust/migrated/products/index.html",
       "chromeVariant": "default",
-      "layoutCluster": "tail"
+      "layoutCluster": "tail",
+      "fidelityTier": "archetype",
+      "archetypeSource": "products",
+      "gatesPassed": [
+        "archetype-gate",
+        "content-count",
+        "file-validation"
+      ]
     },
     {
       "slug": "solutions",
       "url": "https://www.westerndigital.com/solutions",
       "title": "Discover How Hard Drives Can Transform Your Data Storage | WD",
       "type": "program",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -170,15 +212,251 @@
           "at": "2026-09-21T10:00:13.077Z",
           "approvedBy": "hands-off",
           "evidence": "stardust/replica/progress.json#archetypes[solutions]"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-21T10:46:14Z",
+          "by": "stardust:migrate",
+          "renderBranch": "A",
+          "evidence": "stardust/migrated/solutions/_meta.json"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/solutions.json",
       "prototypePath": "stardust/prototypes/solutions-proposed.html",
-      "migratedPath": null,
+      "migratedPath": "stardust/migrated/solutions/index.html",
       "chromeVariant": "variant-4dea",
-      "layoutCluster": "tail"
+      "layoutCluster": "tail",
+      "fidelityTier": "archetype",
+      "archetypeSource": "solutions",
+      "gatesPassed": [
+        "archetype-gate",
+        "content-count",
+        "file-validation"
+      ]
     }
-  ]
+  ],
+  "migrate": {
+    "at": "2026-09-21T10:58:18Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index"
+      },
+      {
+        "sourceUrl": "/company",
+        "outputPath": "company/index.html",
+        "slug": "company"
+      },
+      {
+        "sourceUrl": "/products",
+        "outputPath": "products/index.html",
+        "slug": "products"
+      },
+      {
+        "sourceUrl": "/solutions",
+        "outputPath": "solutions/index.html",
+        "slug": "solutions"
+      }
+    ],
+    "totalAssetsBundled": 116,
+    "bundledAssets": [
+      "canon.css",
+      "company.css",
+      "favicon.ico",
+      "fonts/roboto-v18-latin-500-ea04e4ff.woff2",
+      "fonts/roboto-v18-latin-700-61938919.woff2",
+      "fonts/roboto-v18-latin-regular-06db651c.woff2",
+      "index.css",
+      "index.js",
+      "logo.svg",
+      "media/CampaignThumbnail.png.wdthumb.319.319-a2515686.webp",
+      "media/MyPassport-1TB-2TB-Black-Hero.png.wdthumb.319.319-6699ac1a.webp",
+      "media/MyPassport-for-Mac-1-2TB-Midnight-Blue-Hero.png.wdthumb.319.319-540246b0.webp",
+      "media/WD-Black-P10-Game-Drive-2TB-Hero.png.wdthumb.319.319-fb3dcc7f.webp",
+      "media/WD-GOLD-main-nocap.png.wdthumb.1280.1280-478c5852.webp",
+      "media/WD-GOLD-main-nocap.png.wdthumb.319.319-b2e1dd84.webp",
+      "media/all-products-mobile.jpg.wdthumb.840.840-1534adba.webp",
+      "media/all-products.jpg.wdthumb.3000.3000-07f4ecb3.webp",
+      "media/authentic-products-03697d3f.svg",
+      "media/careers-benefits.jpeg.wdthumb.1280.1280-f3125f00.webp",
+      "media/careers-professional-tablet-modern-office.jpg.wdthumb.1280.1280-954969b2.webp",
+      "media/company-connection-icon.png.wdthumb.1280.1280-ea77e627.webp",
+      "media/company-connection-icon.png.wdthumb.500.500-65fdee89.webp",
+      "media/company-customer-icon.png.wdthumb.1280.1280-5d4ef291.webp",
+      "media/company-customer-icon.png.wdthumb.500.500-159b1765.webp",
+      "media/company-excellence-icon.png.wdthumb.1280.1280-1ceded38.webp",
+      "media/company-excellence-icon.png.wdthumb.500.500-1f5a8135.webp",
+      "media/company-innovation-icon.png.wdthumb.1280.1280-4ba3ee22.webp",
+      "media/company-innovation-icon.png.wdthumb.500.500-be9e2028.webp",
+      "media/company-leadership-profiles.png.wdthumb.3000.3000-7df0c578.webp",
+      "media/company-leadership-profiles.png.wdthumb.840.840-73192b36.webp",
+      "media/company-overview-capital.png.wdthumb.1280.1280-28ec6972.webp",
+      "media/company-overview-capital.png.wdthumb.500.500-50919eb2.webp",
+      "media/company-overview-careers.png.wdthumb.1280.1280-74c78dc2.webp",
+      "media/company-overview-careers.png.wdthumb.500.500-7cc73d53.webp",
+      "media/company-overview-corporate-reponsibility.png.wdthumb.3000.3000-2ca83692.png",
+      "media/company-overview-corporate-reponsibility.png.wdthumb.840.840-50ecec95.webp",
+      "media/company-overview-innovation.png.wdthumb.1280.1280-b6aad825.png",
+      "media/company-overview-innovation.png.wdthumb.500.500-70111e16.webp",
+      "media/company-overview-investor-relations.png.wdthumb.1280.1280-b932f4d3.webp",
+      "media/company-overview-investor-relations.png.wdthumb.500.500-29a8da49.webp",
+      "media/company-overview-news-and-events.png.wdthumb.1280.1280-c5d1a7a6.webp",
+      "media/company-overview-news-and-events.png.wdthumb.500.500-545e4a53.webp",
+      "media/company-overview-partners.png.wdthumb.1280.1280-65fa917f.webp",
+      "media/company-overview-partners.png.wdthumb.500.500-654dbe42.webp",
+      "media/company-results-icon.png.wdthumb.1280.1280-40ea6cba.webp",
+      "media/company-results-icon.png.wdthumb.500.500-face6562.webp",
+      "media/company-values-bg-blue.jpg.wdthumb.3000.3000-5b3c579b.webp",
+      "media/company-values-bg-blue.jpg.wdthumb.840.840-c511339f.webp",
+      "media/data-center-hpc-infrastructure-server-aisle.jpg.wdthumb.1280.1280-b0d7c3fd.webp",
+      "media/data-center-shelves-white-room.jpg.thumb.1280.1280.png-4943a9ee.png",
+      "media/data-recovery-26a7ea8d.svg",
+      "media/dont-confuse-flashy-with-foundational-hero_1920x750-2x-optimized.jpg.wdthumb.300-3caed57f.webp",
+      "media/easy-recycle-627c2f91.svg",
+      "media/ethisphere-award.png.wdthumb.1280.1280-26c71bbc.webp",
+      "media/g-drive-rebrand-2026.jpg.wdthumb.3000.3000-cf0a2164.webp",
+      "media/global-network-data-connections-earth-visualization.jpg.wdthumb.1280.1280-c862e80a.webp",
+      "media/hassle-free-returns-af97d62d.svg",
+      "media/hp-drive-behind-ai-hdd-discs.png.wdthumb.3000.3000-b73148e7.webp",
+      "media/hp-wd-brand-hero-cascade-bg-2.jpg.wdthumb.3000.3000-295bf49f.webp",
+      "media/icon-document-black-blue-7ada6ef9.svg",
+      "media/icon-tool-black-blue-cad8afe3.svg",
+      "media/industry-creatives.jpg.thumb.1280.1280.png-607ae74b.png",
+      "media/industry-education.jpg.thumb.1280.1280.png-73bd5749.png",
+      "media/industry-healthcare.jpg.thumb.1280.1280.png-43e60dbf.png",
+      "media/innovation-abstract-light-trails-data-flow.jpg.wdthumb.1280.1280-de5197e1.webp",
+      "media/investor-relations-financial-data-charts-visualization.jpg.wdthumb.1280.1280-2b4d4588.webp",
+      "media/kv-cache-content-card.png.wdthumb.3000.3000-5c9225c4.webp",
+      "media/my-passport-phdd-usb-c-2tb-left.png.wdthumb.319.319-fb2a6a8f.webp",
+      "media/my-passport-ultra-1tb-WDBC3C0010BSL-WESN-front-12mm-silver.png.wdthumb.319.319-32fd7644.webp",
+      "media/reinventing-storage-content.png.wdthumb.3000.3000-e64e8110.webp",
+      "media/shop-data-center.png.wdthumb.1280.1280-468bff04.webp",
+      "media/shop-external-drives.jpg.wdthumb.1280.1280-d3c3bf78.webp",
+      "media/shop-nas.png.wdthumb.1280.1280-05d097e4.webp",
+      "media/shop-platforms.png.wdthumb.1280.1280-47487d52.webp",
+      "media/shop-surveillance.png.wdthumb.1280.1280-61af4910.webp",
+      "media/solutions-gaming.jpg.thumb.1280.1280.png-8a9424fe.png",
+      "media/solutions-hdd-ssd.jpg.thumb.1280.1280.png-f2dfb43c.png",
+      "media/solutions-home-backups.jpg.thumb.1280.1280.png-1c92d340.png",
+      "media/solutions-nas.jpg.thumb.1280.1280.png-5803f1a6.png",
+      "media/solutions-raid.png.thumb.1280.1280.png-9f87b878.png",
+      "media/solutions-surveillance.jpg.thumb.1280.1280.png-9d146638.png",
+      "media/the-next-AI-economics-challenge.png.wdthumb.3000.3000-bd3b0da3.webp",
+      "media/time-statista-sustainability-award-2026.png.wdthumb.3000.3000-cf9efae2.webp",
+      "media/warranty.png.wdthumb.1280.1280-893a0795.webp",
+      "media/wd-abstract-cascading-glass-plates-dark-blue.jpg.wdthumb.840.840-9ed3476b.webp",
+      "media/wd-black-desktop-500gb.png.wdthumb.1280.1280-0cb28905.webp",
+      "media/wd-black-desktop-500gb.png.wdthumb.319.319-bd5ac481.webp",
+      "media/wd-black-mobile-sata-hdd-left-500gb.png.wdthumb.319.319-888e0bb9.webp",
+      "media/wd-black-portable-gaming-drive-console.png.wdthumb.1280.1280-eea6c089.webp",
+      "media/wd-blue-mobile-main-nocap.png.wdthumb.319.319-bd8c108c.webp",
+      "media/wd-business-storage-solutions-portfolio-hero-mobile.png.wdthumb.840.840-cb30b859.webp",
+      "media/wd-business-storage-solutions-portfolio-hero.png.wdthumb.3000.3000-20ce4c89.webp",
+      "media/wd-content-creation-storage-video-editing-workflow.png.wdthumb.1280.1280-e970e0ee.webp",
+      "media/wd-data-center-platform-storage-rack-controller.png.wdthumb.1280.1280-ab7c87e5.webp",
+      "media/wd-data-center-racks.jpg.wdthumb.3000.3000-47e26392.webp",
+      "media/wd-external-drive-backup-recovery-workspace.png.wdthumb.1280.1280-2d7da5d8.webp",
+      "media/wd-header-main-logo-4c2559e2.svg",
+      "media/wd-innovating-the-future-of-hdd-storage.jpg.wdthumb.3000.3000-92fafe30.webp",
+      "media/wd-innovating-the-future-of-hdd-storage.jpg.wdthumb.840.840-1a829e8f.webp",
+      "media/wd-purple-pro-sata-hdd-main-nocap.png.wdthumb.1280.1280-0e496e3c.webp",
+      "media/wd-purple-pro-sata-hdd-main-nocap.png.wdthumb.319.319-1b38a0b7.webp",
+      "media/wd-purple-pro-surveillance-hdd-front-angle.png.wdthumb.1280.1280-2156a440.webp",
+      "media/wd-purple-surveillance-hard-drive-main-nocap.png.wdthumb.319.319-978e15e5.webp",
+      "media/wd-raid-storage-enclosure-outdoor-workspace-solution.png.wdthumb.1280.1280-d5a0c277.webp",
+      "media/wd-red-plus-sata-3-5-hdd-main-nocap.png.wdthumb.319.319-a524ed72.webp",
+      "media/wd-red-pro-main-nocap.png.wdthumb.1280.1280-297428aa.webp",
+      "media/wd-red-pro-main-nocap.png.wdthumb.319.319-facbaef7.webp",
+      "media/wd-red-pro-plus-nas-enclosure-solution.png.wdthumb.1280.1280-1e153996.webp",
+      "media/wd-red-pro-plus-nas-enclosure-solution.png.wdthumb.500.500-e5a61646.webp",
+      "media/wd-ultrastar-dc-hc690-32tb-data-center-rack.png.wdthumb.1280.1280-6cf900ca.webp",
+      "media/western-digital-corporate-building-sign-logo-a.jpg.wdthumb.1280.1280-17159c7b.webp",
+      "media/why-hdd-is-essential-content-card.png.wdthumb.3000.3000-e1a93a7b.webp",
+      "products.css",
+      "products.js",
+      "solutions.css",
+      "solutions.js"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 43
+      },
+      {
+        "slug": "company",
+        "file": "stardust/migrated/company/index.html",
+        "assetsBundled": 36
+      },
+      {
+        "slug": "products",
+        "file": "stardust/migrated/products/index.html",
+        "assetsBundled": 26
+      },
+      {
+        "slug": "solutions",
+        "file": "stardust/migrated/solutions/index.html",
+        "assetsBundled": 20
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "canon": {
+      "source": "replica: stardust/prototypes/canon.css",
+      "shas": {
+        "header": "a558f88",
+        "footer": "89db8b0",
+        "css": "927d78e"
+      }
+    },
+    "renderBranches": {
+      "A": 4,
+      "A'": 0,
+      "B": 0
+    },
+    "brokenInternalLinks": 652,
+    "portability": {
+      "greps": "clean",
+      "pagemapAudit": "ok",
+      "fileProtocolAudit": "ok",
+      "fileProtocolLine": "file-protocol-audit: OK (4 pages, every internal href resolves under file://)"
+    }
+  },
+  "lastRun": {
+    "skill": "stardust:migrate",
+    "at": "2026-09-21T10:58:18Z",
+    "mode": "hands-off",
+    "flow": "replica",
+    "scope": [
+      "products"
+    ],
+    "failures": [],
+    "notes": [
+      "4 Path A archetypes, no siblings: importer-skeleton / vocabulary.json / variance-probe preconditions not applicable",
+      "token disagreements DESIGN.json vs canon.css: 0",
+      "partial-inventory carve-out applied (scoped 4-page pilot)"
+    ],
+    "migrated": [
+      "index",
+      "company",
+      "products",
+      "solutions"
+    ],
+    "portability": {
+      "greps": "clean",
+      "pagemapAudit": "ok",
+      "fileProtocolAudit": "ok",
+      "fileProtocolLine": "file-protocol-audit: OK (4 pages, every internal href resolves under file://)"
+    },
+    "validationProbe": "stardust/.work/migrate/probes/validate-<slug>.json",
+    "screenshots": "stardust/validation/migrated-<slug>/<w>x<h>.png",
+    "rerunOf": [
+      "products"
+    ]
+  }
 }

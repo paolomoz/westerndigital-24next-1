@@ -1,0 +1,416 @@
+{
+ "source": "file:///Users/paolo/stardust/2026-09-24-next/westerndigital-1/stardust/.work/deploy/schema-view/company.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Powering Data, Driving Potential"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Enabling innovation without compromise."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [],
+   "structure": {
+    "interactive": [],
+    "columns": 1
+   },
+   "hasH1": true,
+   "defaultContent": false,
+   "block": "hero",
+   "variants": [
+    "split"
+   ],
+   "decodeTier": "template-slotted",
+   "shape": "simple",
+   "note": "rows: picture (bg) / h1 / p / picture (media col)"
+  },
+  {
+   "section": "vision",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Our Vision and Mission"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "At WD is to unleash the power and value of data. For decades, we have been at the forefront of storage innovation, which fuels to be the market leader in data storage, delivering solutions for now and the future."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "our vision"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "our mission"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "We are committed to providing scalable, sustainable technology for the world’s hyperscalers, enterprises, and cloud providers, and building cutting-edge innovation designed to drive the next generation of AI-driven data workloads. All that we do is powered by our people, who are united in a common purpose of creating meaningful solutions that move the world forward."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 3,
+   "repeats": [
+    {
+     "unitSelector": "P.co-sub",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 1
+   },
+   "defaultContent": true,
+   "decodeTier": "default-content",
+   "shape": "prose",
+   "note": "h2 + 2 p, centered prose band — section style `intro`"
+  },
+  {
+   "section": "values",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Our Values"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Customers"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Enabling all customers to succeed"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Results"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Making progress and achieving goals"
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Connection"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Collaborating as one supportive team"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Excellence"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Doing our best and doing what’s right"
+    },
+    {
+     "role": "heading",
+     "order": 9,
+     "text": "Innovation"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Inventing in big and small ways"
+    }
+   ],
+   "imgCount": 5,
+   "editableTexts": 11,
+   "repeats": [
+    {
+     "unitSelector": "DIV.co-value",
+     "count": 5,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 3
+   },
+   "defaultContent": false,
+   "block": "company-cards",
+   "variants": [
+    "values"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "own row: picture (band background, editorial) then one row per value [picture icon | h3 + p]"
+  },
+  {
+   "section": "leadership",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Leadership"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "As our leaders chart a course for the future of data, the coinciding best interests of our shareholders, our customers, our team members, and our environment serve as their north star, pointing the way toward boundless horizons."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Learn More",
+     "href": "/company/leadership"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [],
+   "structure": {
+    "interactive": [],
+    "columns": 1
+   },
+   "defaultContent": false,
+   "block": "columns",
+   "variants": [
+    "split"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "simple",
+   "note": "one row [h2 + p + strong CTA | picture]"
+  },
+  {
+   "section": "overview-cards",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Advancing Innovation"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Our innovation and technologies impact the lives of billions of people every day."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Learn More",
+     "href": "/company/innovation"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Partners"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "We partner with you so you can accelerate the flow of data through your business."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Learn More",
+     "href": "/company/partners"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Capital"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "We partner with startups that are driving new innovations in how data is captured, reserved, accessed, and transformed."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Learn More",
+     "href": "/company/western-digital-capital"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 6,
+   "repeats": [
+    {
+     "unitSelector": "DIV.co-card-col",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 3
+   },
+   "defaultContent": false,
+   "block": "company-cards",
+   "variants": [
+    "overview"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "note": "one row per card [picture | h3 (source h2 canonicalised) + p + text link]"
+  },
+  {
+   "section": "responsibility",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Corporate Responsibility"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Diversity and sustainability are intrinsic to the way we operate and a key to our success."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Learn More",
+     "href": "/company/corporate-responsibility"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [],
+   "structure": {
+    "interactive": [],
+    "columns": 1
+   },
+   "defaultContent": false,
+   "block": "columns",
+   "variants": [
+    "split"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "simple",
+   "note": "one row [picture | h2 + p + strong CTA] — media first"
+  },
+  {
+   "section": "more-cards",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Investor Relations"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Financial documents, stock information, securities law compliance, and investor events."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Learn More",
+     "href": "https://investor.wdc.com/"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "News and Events"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Stay current with company news, find media resources, and connect with our team."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Learn More",
+     "href": "/company/newsroom"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Careers at WD"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Join us in shaping the future and defining what's possible."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Join Our Team",
+     "href": "/careers"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 6,
+   "repeats": [
+    {
+     "unitSelector": "DIV.co-card-col",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 3
+   },
+   "defaultContent": false,
+   "block": "company-cards",
+   "variants": [
+    "overview"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "note": "as overview-cards"
+  }
+ ],
+ "plan": {
+  "source": "stardust/eds-conversion-log.md § Step 2",
+  "schemaView": "stardust/.work/deploy/schema-view/company.html",
+  "servedPrototype": "http://127.0.0.1:8814/company-proposed.html"
+ }
+}

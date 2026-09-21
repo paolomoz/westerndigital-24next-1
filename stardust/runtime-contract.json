@@ -1,8 +1,44 @@
 {
+  "_provenance": {
+    "writtenBy": "stardust:deploy",
+    "step": "0 runtime-detection probe",
+    "writtenAt": "2026-09-21T12:10:00Z",
+    "readFrom": ["scripts/aem.js", "scripts/scripts.js", "blocks/fragment/fragment.js", "styles/styles.css (boilerplate)"]
+  },
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "blockDom": "div.section.<name>-container > div.<name>-wrapper > div.<name>.block[data-block-name] (decorateBlock adds .block, data-block-name, data-block-status; wrapTextNodes folds non-P/PRE/UL/OL/PICTURE/TABLE/BLOCKQUOTE/H1-6-led cells into one <p>)",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "buttonizationNotes": "decorateButtons lives in scripts/scripts.js (not aem.js): requires <strong>/<em> around the <a>, a alone in its <p>, skips a[href] whose text equals its URL and anchors containing <img>; replaces the emphasis tag with the classed anchor; sets a.title from textContent",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "fragmentLoader": "blocks/fragment/fragment.js loadFragment(path) fetches <path>.plain.html into a detached <main> via innerHTML (scripts inert), rewrites ./media_ src/srcset, then runs decorateMain + loadSections on it; header/footer blocks call it for /nav and /footer (overridable via nav/footer metadata)",
+  "emptySectionCollapse": false,
+  "emptySectionNotes": "decorateSections never removes an empty section and the boilerplate styles.css carries no :empty rule; the pipeline drops sections that end up empty. Foundation adds main .section:empty { display: none } as the documented fallback anyway",
+  "sectionStatus": "decorateSections sets data-section-status=initialized + inline display:none; loadSections flips to loaded",
+  "bodyGate": "body { display: none } / body.appear — loadEager adds appear after decorateMain",
+  "chromeReservation": "header { height: var(--nav-height) } + header .header / footer .footer { visibility: hidden } until [data-block-status=loaded]",
+  "fonts": "loadFonts() loads styles/fonts.css eagerly when innerWidth >= 900 or sessionStorage fonts-loaded, always in loadLazy; lazy-styles.css also loaded in loadLazy",
+  "delayed": "scripts/delayed.js not present; loadDelayed imports ./consent-check.js",
+  "trustedTypes": "scripts.js installs a default Trusted Types policy (createHTML strips <script> for createContextualFragment/document.write sinks); head.html CSP require-trusted-types-for 'script' — innerHTML assignments in block JS are allowed as HTML strings",
+  "isDesktopBreakpoint": "blocks/header/header.js isDesktop = matchMedia('(min-width: 900px)'); lifted chrome breakpoint is 768 (canon.css) — header block overrides isDesktop to (min-width: 768px) so the hamburger switch matches the replica",
+  "stockHeaderQuirk": "stock header.js reads brandLink.closest('.button-container') — this clone emits p.button-wrapper; fixed in the project header block",
   "autoBlocks": [
     {
       "fn": "buildWidgetAutoBlocks",
-      "trigger": "a[href*=\"/widgets/\"], a"
+      "trigger": "a[href*=\"/widgets/\"]",
+      "note": "static scan also listed the bare 'a' selector from the same querySelectorAll; the builder replaces a sole-link <p> (or the link) with a widget block"
+    },
+    {
+      "fn": "buildAutoBlocks (inline)",
+      "trigger": "a[href*=\"/fragments/\"]",
+      "note": "dynamic import of blocks/fragment/fragment.js; replaces the link's parent with the fragment's children"
     }
-  ]
+  ],
+  "pipeline": {
+    "multiValueStyle": "comma",
+    "residual": null,
+    "probedAt": null,
+    "note": "not probed (no DA write permitted for this worker); D7 default comma"
+  }
 }

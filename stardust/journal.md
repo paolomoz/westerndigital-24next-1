@@ -65,3 +65,25 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** $stardust migrate
 
 ---
+## 2026-09-21T11:01:59Z — migrate: Path A for the four archetypes
+
+**Prompt:** *(continuation)* Emit the platform-agnostic bundle from the approved prototypes.
+
+**Decisions:**
+- Canon in the replica flow = `stardust/prototypes/canon.css` + the prototypes' own chrome markup, copied byte-identical to `stardust/canon/` (`canon.source: replica`), never auto-bootstrapped as a redesign would.
+- Canonical URL of record = the source URL; sitemap `loc` on the preview host; every same-origin link outside the 4-page scope kept absolute and flagged `data-broken-link` (partial-inventory carve-out: 652 links, 182 targets).
+- Two post-gate prototype fixes, both proven pixel-neutral build-side (0.00 %, Δh 0 vs the gated builds at 1440 and 360; `progress.json#archetypes[].postGateFixes`): products `.green-promo` 768–991 px overflow (2 px, a width the gate does not cover); index 10 inactive tab-panel images re-harvested from the source URLs (capture-state gap).
+
+**Artifacts touched:**
+- stardust/migrated/{index.html, products/, solutions/, company/, assets/ (116), robots.txt, sitemap.xml} + _meta.json sidecars — created
+- stardust/canon/{canon.css, header.html, footer.html} — created · stardust/validation/migrated-*/ — screenshots
+- stardust/state.json (4 × migrated, migrate block), stardust/status.jsonl, stardust/replica/progress.json (postGateFixes), stardust/prototypes/{products.css, index-proposed.html}, stardust/current/assets/_media-manifest.json — updated
+
+**Findings worth flagging:**
+- The migrate validation's 768×1024 pass is the only gate that looks at the tablet width; the replica gate covers 1440 and 360 only. A flex item whose min-content exceeds a narrow card is invisible at both gate widths.
+
+**Open questions:** none new.
+
+**Next:** $stardust deploy index
+
+---

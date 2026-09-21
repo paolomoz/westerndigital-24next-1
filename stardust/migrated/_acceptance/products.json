@@ -1,0 +1,95 @@
+{
+  "slug": "products",
+  "at": "2026-09-21T10:58:14.739Z",
+  "source": "stardust/current/pages/products.html",
+  "target": "stardust/migrated/products/index.html",
+  "meta": "stardust/migrated/products/_meta.json",
+  "scope": {
+    "main": "main,[role=main]",
+    "exclude": []
+  },
+  "tolerances": {},
+  "reportOnly": false,
+  "verdict": "pass",
+  "class": {
+    "headings": {
+      "source": 31,
+      "emitted": 31,
+      "dropped": [],
+      "extra": []
+    },
+    "links": {
+      "source": 91,
+      "emitted": 91,
+      "dropped": [
+        {
+          "key": "shop now|/products",
+          "source": 1,
+          "emitted": 0
+        }
+      ],
+      "extra": [
+        {
+          "key": "shop now|/products/index",
+          "emitted": 1
+        }
+      ]
+    },
+    "images": {
+      "source": 24,
+      "emitted": 24,
+      "dropped": [],
+      "extra": []
+    },
+    "listItems": {
+      "source": 68,
+      "emitted": 68,
+      "dropped": [],
+      "extra": []
+    },
+    "tableRows": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "listDepth": {
+      "source": 1,
+      "emitted": 1,
+      "dropped": [],
+      "extra": []
+    },
+    "nestedLists": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "tables": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    }
+  },
+  "words": {
+    "source": 1024,
+    "emitted": 1024,
+    "ratio": 1
+  },
+  "sourceScoped": true,
+  "sourceExcludedSubtrees": 0,
+  "red": [],
+  "yellow": [],
+  "covered": [
+    {
+      "class": "links",
+      "key": "shop now|/products",
+      "source": 1,
+      "emitted": 0,
+      "deviation": "internal-link-rewritten",
+      "reason": "page-map rewrite to the migrated-tree path (migration-procedure.md § Reference shape); destination preserved"
+    }
+  ],
+  "skipped": []
+}

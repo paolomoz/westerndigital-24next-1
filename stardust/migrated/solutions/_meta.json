@@ -1,0 +1,928 @@
+{
+  "slug": "solutions",
+  "type": "program",
+  "renderBranch": "A",
+  "fidelityTier": "archetype",
+  "archetypeSource": "solutions",
+  "template": null,
+  "sourceUrl": "/solutions",
+  "outputPath": "solutions/index.html",
+  "outputPathDefault": "trailing-slash",
+  "modules": [
+    "header-promo-strip",
+    "header-nav-rest",
+    "footer-columns",
+    "footer-legal",
+    "program-hero-photo",
+    "anchor-chips",
+    "icon-usecase-cards",
+    "image-card-grid",
+    "icon-tile-grid",
+    "striped-table",
+    "faq-accordion",
+    "photo-cta-band",
+    "cta-band-two-buttons",
+    "contact-form-modal"
+  ],
+  "slotsFilled": [],
+  "canonShas": {
+    "header": "a558f88",
+    "footer": "89db8b0",
+    "css": "927d78e"
+  },
+  "gatesPassed": [
+    "archetype-gate",
+    "content-count",
+    "file-validation"
+  ],
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "canon-from-replica-prototypes",
+      "what": "stardust/canon/{canon.css,header.html,footer.html} copied byte-identical from the prototypes (header sha 9dbf90a5, footer 1d4cc1b8 identical on all 4 prototypes)",
+      "reason": "flow: replica — the canon IS the prototypes’ chrome; canon auto-bootstrap not run"
+    },
+    {
+      "kind": "root-block-inlined-from-canon-css",
+      "what": "first <style> carries the canon.css :root block verbatim; canon.css also linked as ./assets/canon.css",
+      "reason": "strict contract \":root at top of first <style>\" without token drift; DESIGN.json vs canon.css disagreements: 0"
+    },
+    {
+      "kind": "head-recomposed",
+      "droppedMetas": [
+        "stardust-marker",
+        "stardust-project"
+      ],
+      "strippedScripts": [],
+      "note": "head rebuilt per metadata-and-jsonld.md § Categories; gate instrument markers stripped; no tag-manager/analytics/source-CDN preloads were present in the prototype"
+    },
+    {
+      "kind": "canonical-of-record",
+      "canonical": "https://www.westerndigital.com/solutions",
+      "reason": "brief: source URL kept as canonical-of-record although site.deployUrl is set; sitemap <loc> uses deployUrl"
+    },
+    {
+      "kind": "validation-attributes-added",
+      "what": "data-template=\"program\" on <body>; data-section on 31 <section> elements",
+      "reason": "strict validation contracts (T&M § Validation contracts); attribute-only, no content or style change"
+    },
+    {
+      "kind": "partial-inventory-carve-out",
+      "count": 174,
+      "uniqueTargets": 101,
+      "queryViewsOfKnownPages": 0,
+      "reason": "scoped 4-page pilot: same-origin links outside the page map keep the absolute origin URL flagged data-broken-link=\"true\"; query-carrying views of a known page (PLP filters/pagination, dynamic row 17 static-snapshot) are carved out the same way — the filtered view is not a migrated page"
+    },
+    {
+      "kind": "output-path-default",
+      "outputPathDefault": "trailing-slash",
+      "sourceUrl": "/solutions",
+      "outputPath": "solutions/index.html"
+    },
+    {
+      "kind": "landmark-restored",
+      "where": "section.mainContainWrap",
+      "what": "role=\"main\"",
+      "reason": "the captured source carries role=\"main\" on this section; the prototype dropped it — restored so the content-count gate scopes both sides to the same landmark"
+    }
+  ],
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "decided-out",
+      "row": "a-first-party-api-get-store-cart-getcart",
+      "rowNumber": 4,
+      "feature": "commerce cart GET /store/cart/getCart",
+      "endpoint": "GET /store/cart/getCart",
+      "note": "register"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "static-snapshot",
+      "row": "a-cms-app-settings-object-datalayer",
+      "rowNumber": 5,
+      "feature": "app settings object dataLayer",
+      "endpoint": null,
+      "note": "interim (keys recorded, object not shipped until tags ship)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "static-snapshot",
+      "row": "d-first-party-data-file-get-content-dam-store-en-us-assets-s",
+      "rowNumber": 8,
+      "feature": "region details JSON (region selector)",
+      "endpoint": null,
+      "note": "interim (region selector renders the captured DOM; links bounce to source)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "static-snapshot",
+      "row": "d-first-party-data-file-get-bin-wd-cache-commerce-productref",
+      "rowNumber": 9,
+      "feature": "product reference JSON (commerce)",
+      "endpoint": null,
+      "note": "interim (dead on target)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "static-snapshot",
+      "row": "d-first-party-data-file-get-content-dam-g-tech-en-us-portal-",
+      "rowNumber": 10,
+      "feature": "country list JSON",
+      "endpoint": null,
+      "note": "interim"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "static-snapshot",
+      "row": "d-first-party-data-file-get-chatbot-locales-en-us-translatio",
+      "rowNumber": 11,
+      "feature": "chatbot translations JSON",
+      "endpoint": null,
+      "note": "interim (chat not shipped, see #2)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "index-backed",
+      "row": "s-site-search-form-js-submitted",
+      "rowNumber": 16,
+      "feature": "header site search (JS-submitted, predictive)",
+      "endpoint": null,
+      "note": "interim (form submits to https://www.westerndigital.com/search?q= on the source host; predictive dropdown not shipped)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "decided-out",
+      "row": "x-sign-in-account-links",
+      "rowNumber": 27,
+      "feature": "sign-in / account links (header)",
+      "endpoint": null,
+      "note": "register (links kept, bounce to source host)"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "disposition": "decided-out",
+      "row": "x-commerce-signals-cart-true-prices-0",
+      "rowNumber": 28,
+      "feature": "commerce signals (cart icon, prices)",
+      "endpoint": null,
+      "note": "register (cart icon links to source store)"
+    }
+  ],
+  "dynamicRowsTouching": [
+    "1:a-unknown-third-party-host-consent-app-relyance-ai:embed-passthrough",
+    "2:a-unknown-third-party-host-api-cdn-usw2-pure-cloud:embed-passthrough",
+    "3:a-unknown-third-party-host-api-usw2-pure-cloud:embed-passthrough",
+    "4:a-first-party-api-get-store-cart-getcart:decided-out",
+    "5:a-cms-app-settings-object-datalayer:static-snapshot",
+    "8:d-first-party-data-file-get-content-dam-store-en-us-assets-s:static-snapshot",
+    "9:d-first-party-data-file-get-bin-wd-cache-commerce-productref:static-snapshot",
+    "10:d-first-party-data-file-get-content-dam-g-tech-en-us-portal-:static-snapshot",
+    "11:d-first-party-data-file-get-chatbot-locales-en-us-translatio:static-snapshot",
+    "16:s-site-search-form-js-submitted:index-backed",
+    "18:t-tag-manager-adobe-launch:embed-passthrough",
+    "19:t-rum-akamai-mpulse:embed-passthrough",
+    "21:t-chat-live-chat-widget:embed-passthrough",
+    "22:t-rum-new-relic:embed-passthrough",
+    "23:t-tag-manager-google-tag-manager:embed-passthrough",
+    "24:t-analytics-adobe-analytics-experience-cloud-id:embed-passthrough",
+    "26:v-video-youtube:embed-passthrough",
+    "27:x-sign-in-account-links:decided-out",
+    "28:x-commerce-signals-cart-true-prices-0:decided-out"
+  ],
+  "brokenInternalLinks": [
+    {
+      "path": "/company/newsroom/press-releases/2026/2026-05-14-wd-named-to-2026-sp-dow-jones-best-in-class-index-north-america",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/newsroom/press-releases/2026/2026-05-14-wd-named-to-2026-sp-dow-jones-best-in-class-index-north-america",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/business",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/business",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/product-portfolio",
+      "count": 3,
+      "keptAs": "https://www.westerndigital.com/products/product-portfolio",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd/internal-hdd",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd/internal-hdd",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd/external-hdd",
+      "count": 3,
+      "keptAs": "https://www.westerndigital.com/products/hdd/external-hdd",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/data-center-storage",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/data-center-storage",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/accessories",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/accessories",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/data-center-storage-platform",
+      "count": 3,
+      "keptAs": "https://www.westerndigital.com/solutions/data-center-storage-platform",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByUseCaseName=Gaming",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByUseCaseName=Gaming",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByUseCaseName=Smart+Video+Surveillance",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByUseCaseName=Smart+Video+Surveillance",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByUseCaseName=RAID",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByUseCaseName=RAID",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByUseCaseName=Backups",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByUseCaseName=Backups",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByUseCaseName=Network+Attached+Storage+(NAS)",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByUseCaseName=Network+Attached+Storage+(NAS)",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByVvc-capacity=51+TB+-+100+TB",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByVvc-capacity=51+TB+-+100+TB",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByVvc-capacity=21+TB+-+50+TB",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByVvc-capacity=21+TB+-+50+TB",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByVvc-capacity=11+TB+-+20+TB",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByVvc-capacity=11+TB+-+20+TB",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByVvc-capacity=05+TB+-+10+TB",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByVvc-capacity=05+TB+-+10+TB",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByVvc-capacity=01+TB+-+04+TB",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByVvc-capacity=01+TB+-+04+TB",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd?filterByVvc-capacity=0+GB+-+960+GB",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd?filterByVvc-capacity=0+GB+-+960+GB",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/explore/whats-new",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/explore/whats-new",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/promo/best-sellers",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/promo/best-sellers",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/promo",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/promo",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/weekly-sale",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/weekly-sale",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/recertified",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/recertified",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/final-production",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/final-production",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/business/account-benefits",
+      "count": 4,
+      "keptAs": "https://www.westerndigital.com/business/account-benefits",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/store/business/registration?lp=register",
+      "count": 3,
+      "keptAs": "https://www.westerndigital.com/store/business/registration?lp=register",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/business/account-benefits/tiered-pricing",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/business/account-benefits/tiered-pricing",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/network-attached-storage",
+      "count": 8,
+      "keptAs": "https://www.westerndigital.com/solutions/network-attached-storage",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/gaming",
+      "count": 3,
+      "keptAs": "https://www.westerndigital.com/solutions/gaming",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/raid",
+      "count": 8,
+      "keptAs": "https://www.westerndigital.com/solutions/raid",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/surveillance",
+      "count": 4,
+      "keptAs": "https://www.westerndigital.com/solutions/surveillance",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/home-backup-solutions",
+      "count": 5,
+      "keptAs": "https://www.westerndigital.com/solutions/home-backup-solutions",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/data-center",
+      "count": 6,
+      "keptAs": "https://www.westerndigital.com/solutions/data-center",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/creative-professionals",
+      "count": 3,
+      "keptAs": "https://www.westerndigital.com/solutions/creative-professionals",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/hdd-vs-ssd",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/solutions/hdd-vs-ssd",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/ai-storage-infrastructure",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/solutions/ai-storage-infrastructure",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/data-security",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/solutions/data-security",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/hard-drives",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/solutions/hard-drives",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/thunderbolt-vs-usb-c",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/solutions/thunderbolt-vs-usb-c",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/explore/medical-data-storage",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/explore/medical-data-storage",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/explore/education-storage",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/explore/education-storage",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/explore/hybrid-cloud-storage-solutions",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/explore/hybrid-cloud-storage-solutions",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/support",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/store/warranty-services",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/support/store/warranty-services",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/store/warranty-services/data-recovery",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/support/store/warranty-services/data-recovery",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/store/orderStatus",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/store/orderStatus",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/store/business/orderStatus",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/store/business/orderStatus",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/returns-replacements",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/support/returns-replacements",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/product-security",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/support/product-security",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/store/shopping-faq",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/support/store/shopping-faq",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/international-phone-numbers",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/support/international-phone-numbers",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/innovation",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/innovation",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/office-locations",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/company/office-locations",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/careers",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/careers",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/western-digital-capital",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/company/western-digital-capital",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/corporate-responsibility",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/company/corporate-responsibility",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/sustainability",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/sustainability",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/corporate-responsibility/people",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/corporate-responsibility/people",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/corporate-responsibility/supply-chain",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/corporate-responsibility/supply-chain",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/corporate-responsibility/ethics",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/corporate-responsibility/ethics",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/corporate-responsibility/philanthropy",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/company/corporate-responsibility/philanthropy",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/privacy-center",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/privacy-center",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/newsroom",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/company/newsroom",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/newsroom/press-releases",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/newsroom/press-releases",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/newsroom/events",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/newsroom/events",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/store/login",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/store/login",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/store/business/login",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/store/business/login",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/store/registration",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/store/registration",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/en-us",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/en-us",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/color-drives",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/solutions/color-drives",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/network-attached-storage/nas-hard-drives",
+      "count": 4,
+      "keptAs": "https://www.westerndigital.com/solutions/network-attached-storage/nas-hard-drives",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/internal-drives/wd-red-pro-sata-hdd",
+      "count": 4,
+      "keptAs": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/hdd",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/hdd",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/internal-drives/wd-purple-pro-sata-hdd",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/internal-drives/wd-purple-pro-sata-hdd",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/internal-drives/wd-gold-sata-hdd",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/products/internal-drives/wd-gold-sata-hdd",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/products/data-center-storage/data-center-drives",
+      "count": 2,
+      "keptAs": "https://www.westerndigital.com/products/data-center-storage/data-center-drives",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/solutions/data-center/high-capacity-hdd",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/solutions/data-center/high-capacity-hdd",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/innovation/hdd-innovation",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/innovation/hdd-innovation",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/legal/privacy-statement",
+      "count": 3,
+      "keptAs": "https://www.westerndigital.com/legal/privacy-statement",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/region-selector",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/region-selector",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/store/business/my-account",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/store/business/my-account",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/store/my-account",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/store/my-account",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/programs/communications-registration",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/programs/communications-registration",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/store/warranty-policy",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/support/store/warranty-policy",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/store/return-policy",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/support/store/return-policy",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/distributors",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/distributors",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/contact-us?selectedValue=looking-to-purchase",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/contact-us?selectedValue=looking-to-purchase",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/programs/data-recovery",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/programs/data-recovery",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/programs/easy-recycle",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/programs/easy-recycle",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/business/line-of-credit",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/business/line-of-credit",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/business/pro-rewards",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/business/pro-rewards",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/partners",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/partners",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/leadership",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/leadership",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/contact-us",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/contact-us",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/support/store/resource-library",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/support/store/resource-library",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/newsroom/press-releases/2026/2026-03-17-ethisphere-names-western-digital-as-one-of-the-2026-worlds-most-ethical-companies",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/newsroom/press-releases/2026/2026-03-17-ethisphere-names-western-digital-as-one-of-the-2026-worlds-most-ethical-companies",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/legal",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/legal",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/legal/trademarks",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/legal/trademarks",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/legal/terms-and-conditions-of-sale-consumer",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/legal/terms-and-conditions-of-sale-consumer",
+      "flagged": "data-broken-link"
+    },
+    {
+      "path": "/company/sustainability/product-compliance",
+      "count": 1,
+      "keptAs": "https://www.westerndigital.com/company/sustainability/product-compliance",
+      "flagged": "data-broken-link"
+    }
+  ],
+  "brokenInternalLinkCount": 174,
+  "queryViewCarveOuts": 0,
+  "internalLinksRewritten": 6,
+  "externalLinks": 19,
+  "uncoveredContentDrops": [],
+  "imageGaps": [],
+  "assetsBundled": 20,
+  "assets": [
+    "canon.css",
+    "favicon.ico",
+    "index.js",
+    "media/ethisphere-award.png.wdthumb.1280.1280-26c71bbc.webp",
+    "media/wd-black-portable-gaming-drive-console.png.wdthumb.1280.1280-eea6c089.webp",
+    "media/wd-business-storage-solutions-portfolio-hero-mobile.png.wdthumb.840.840-cb30b859.webp",
+    "media/wd-business-storage-solutions-portfolio-hero.png.wdthumb.3000.3000-20ce4c89.webp",
+    "media/wd-content-creation-storage-video-editing-workflow.png.wdthumb.1280.1280-e970e0ee.webp",
+    "media/wd-data-center-platform-storage-rack-controller.png.wdthumb.1280.1280-ab7c87e5.webp",
+    "media/wd-external-drive-backup-recovery-workspace.png.wdthumb.1280.1280-2d7da5d8.webp",
+    "media/wd-header-main-logo-4c2559e2.svg",
+    "media/wd-innovating-the-future-of-hdd-storage.jpg.wdthumb.3000.3000-92fafe30.webp",
+    "media/wd-innovating-the-future-of-hdd-storage.jpg.wdthumb.840.840-1a829e8f.webp",
+    "media/wd-purple-pro-surveillance-hdd-front-angle.png.wdthumb.1280.1280-2156a440.webp",
+    "media/wd-raid-storage-enclosure-outdoor-workspace-solution.png.wdthumb.1280.1280-d5a0c277.webp",
+    "media/wd-red-pro-plus-nas-enclosure-solution.png.wdthumb.1280.1280-1e153996.webp",
+    "media/wd-red-pro-plus-nas-enclosure-solution.png.wdthumb.500.500-e5a61646.webp",
+    "media/wd-ultrastar-dc-hc690-32tb-data-center-rack.png.wdthumb.1280.1280-6cf900ca.webp",
+    "solutions.css",
+    "solutions.js"
+  ],
+  "mediaReconciliation": {
+    "bundledSameOrigin": 15,
+    "externalImages": [],
+    "decision": "all page imagery bundled from the harvested copies (same-origin after deploy → optimize)"
+  },
+  "metadata": {
+    "title": "Discover How Hard Drives Can Transform Your Data Storage | WD",
+    "description": "HDDs that offer cost-effective data storage for massive amounts of data. Learn how hard drives can transform your gaming, home backups, RAID or data center storage.",
+    "canonical": "https://www.westerndigital.com/solutions",
+    "lang": "en-US",
+    "og": {
+      "title": "Discover How Hard Drives Can Transform Your Data Storage | WD",
+      "description": "HDDs that offer cost-effective data storage for massive amounts of data. Learn how hard drives can transform your gaming, home backups, RAID or data center storage.",
+      "image": "https://www.westerndigital.com/content/dam/store/en-us/assets/solutions/creative-professionals/healthcare-data-storage-solutions.jpg",
+      "type": "website",
+      "siteName": "Western Digital"
+    },
+    "robots": "index,follow",
+    "favicon": "../assets/favicon.ico"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.westerndigital.com/solutions#webpage",
+        "url": "https://www.westerndigital.com/solutions",
+        "name": "Discover How Hard Drives Can Transform Your Data Storage | WD",
+        "description": "HDDs that offer cost-effective data storage for massive amounts of data. Learn how hard drives can transform your gaming, home backups, RAID or data center storage.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://www.westerndigital.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/solutions/creative-professionals/healthcare-data-storage-solutions.jpg"
+        }
+      }
+    ]
+  },
+  "audit": {
+    "adapt": {
+      "status": "pass",
+      "viewportMeta": "width=device-width, initial-scale=1",
+      "mediaMaxWidthRules": "canon.css @media (max-width: 767px) ×5; page css mobile-first min-width 576/768/992",
+      "narrowestBreakpointPx": 576,
+      "overflowAt360": 0,
+      "navMinFontAt360": 14,
+      "navMinGapAt360": null,
+      "probe": "stardust/.work/migrate/probes/validate-solutions.json"
+    },
+    "validation": {
+      "status": "pass",
+      "viewports": [
+        "1440x900",
+        "768x1024",
+        "390x844"
+      ],
+      "consoleErrors": 0,
+      "requestsFailed": 0,
+      "horizontalOverflow": [],
+      "h1": {
+        "1440x900": 1,
+        "768x1024": 1,
+        "390x844": 1
+      },
+      "imgsBroken": 0,
+      "screenshots": [
+        "stardust/validation/migrated-solutions/1440x900.png",
+        "stardust/validation/migrated-solutions/768x1024.png",
+        "stardust/validation/migrated-solutions/390x844.png",
+        "stardust/validation/migrated-solutions/360x800.png"
+      ]
+    },
+    "contentCount": {
+      "status": "pass",
+      "covered": 0,
+      "words": {
+        "source": 1889,
+        "emitted": 1889,
+        "ratio": 1
+      },
+      "record": "stardust/migrated/_acceptance/solutions.json"
+    },
+    "portability": {
+      "greps": "clean",
+      "pagemapAudit": "ok",
+      "fileProtocolAudit": "ok",
+      "fileProtocolLine": "file-protocol-audit: OK (4 pages, every internal href resolves under file://)"
+    }
+  },
+  "migratedAt": "2026-09-21T10:45:44Z",
+  "designMdSha": "899e363",
+  "designJsonSha": "98f7c39",
+  "sourceCurrentSha": "c942852",
+  "sourceProposedSha": "219bd2c",
+  "h1Count": 1,
+  "status": "migrated"
+}

@@ -177,6 +177,8 @@
 .product-card__compare span { display: block; margin-left: 8px; font-size: 14px; line-height: 1.15; color: #6a6a6a; }
 .green-promo { display: flex; width: 100%; margin-top: 16px; padding: 24px; background-color: #d0ffcf; color: #00740c; font-size: 16px; font-weight: 700; line-height: 24px; text-align: left; border-radius: 0; }
 .green-promo > div { display: block; }
+@media (min-width: 768px) and (max-width: 991px) { .green-promo > div { min-width: 0; overflow-wrap: break-word; } } /* post-gate 768-only fix: flex item min-content ("WesternDigital.com.") exceeded the 104 px card content box; scoped so the gated 1440/360 renders stay byte-identical */
+.green-promo { box-sizing: border-box; } /* post-gate fix: width:100% + 24px padding overflowed the card by 2 px at 768 (migrate validation); pixel-neutral at 1440/360 */
 .green-promo a { display: inline-block; line-height: 16px; color: inherit; text-decoration: underline; cursor: pointer; }
 
 /* pagination */

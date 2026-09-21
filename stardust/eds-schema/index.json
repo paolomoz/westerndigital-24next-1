@@ -1,0 +1,1089 @@
+{
+ "source": "file:///Users/paolo/stardust/2026-09-24-next/westerndigital-1/stardust/.work/deploy/schema-view/index.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero-carousel",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Data Storage at Scale Is Tiered"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Tiered storage—spanning HDD, flash, and tape—is the operational standard for hyperscale data centers and scalable AI infrastructure."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Find Out Why",
+     "href": "https://blog.westerndigital.com/tiered-storage-architecture-hyperscale-ai/"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "The Drive Behind AI"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "When data scales fast, weak architecture breaks faster."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Take a Closer Look",
+     "href": "/solutions/ai-storage-infrastructure"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Built for Scale"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "The enduring role of HDDs in the AI era."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Explore the IDC Research",
+     "href": "/resources/white-paper/idc-hdds-ai-era"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Why Flash-Only AI Storage Fails at Scale"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "When it comes to AI storage architecture, don’t confuse flash-y with foundational. A smart strategy starts with a tiered storage design."
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Learn More",
+     "href": "https://blog.westerndigital.com/ai-storage-architecture-tiered-design-flash-hdd/"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Data Storage at Scale Is Tiered"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "Tiered storage—spanning HDD, flash, and tape—is the operational standard for hyperscale data centers and scalable AI infrastructure."
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Find Out Why",
+     "href": "https://blog.westerndigital.com/tiered-storage-architecture-hyperscale-ai/"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "The Drive Behind AI"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "When data scales fast, weak architecture breaks faster."
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "Take a Closer Look",
+     "href": "/solutions/ai-storage-infrastructure"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Built for Scale"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "The enduring role of HDDs in the AI era."
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Explore the IDC Research",
+     "href": "/resources/white-paper/idc-hdds-ai-era"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Why Flash-Only AI Storage Fails at Scale"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "When it comes to AI storage architecture, don’t confuse flash-y with foundational. A smart strategy starts with a tiered storage design."
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Learn More",
+     "href": "https://blog.westerndigital.com/ai-storage-architecture-tiered-design-flash-hdd/"
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "Play Slides"
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "Pause Slides"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "The economics of data"
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "Scaling infrastructure for the AI era."
+    },
+    {
+     "role": "body",
+     "order": 28,
+     "text": "Flash-y is not foundational"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "Why AI needs tiered storage architecture."
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "The case for storage tiering"
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "Different workloads, different storage."
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "AI is really a data system"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Compute isn’t AI’s biggest challenge."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "LI.hero__slide",
+     "count": 8,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.hero__item",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [
+     "button",
+     "[aria-controls]"
+    ],
+    "columns": 8
+   },
+   "defaultContent": false,
+   "block": "carousel",
+   "variants": [
+    "hero"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "note": "one row per slide [picture | copy (p title, p lede, CTA) | progress label (strong title + desc)]; autoplay + progress fill observed (index.js)"
+  },
+  {
+   "section": "category-tabs",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "WD Hard Drive Storage Solutions for Data Centers, NAS, Enterprise, Surveillance & AI"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Shop by Category"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Solutions"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Industries"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "See All Products",
+     "href": "/products"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "See All Solutions",
+     "href": "/solutions"
+    }
+   ],
+   "imgCount": 15,
+   "editableTexts": 16,
+   "repeats": [
+    {
+     "unitSelector": "DIV.tabs__panel",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 10,
+      "textRuns": 6
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.tabview-contain",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [
+     "button",
+     "[role=tab]",
+     "[role=tablist]",
+     "[role=tabpanel]",
+     "[aria-expanded]",
+     "[aria-controls]"
+    ],
+    "columns": 5
+   },
+   "hasH1": true,
+   "defaultContent": false,
+   "block": "tabs",
+   "variants": [
+    "category"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h1 as default content, reabsorbed",
+   "note": "one row per tab [label | ul of picture+link tiles + em CTA]; dynamics row 15"
+  },
+  {
+   "section": "content-rail",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "A Legacy in Technology and Innovation"
+    },
+    {
+     "role": "eyebrow",
+     "order": 1,
+     "text": "TECHNOLOGY"
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "You don't need an all-flash KV cache"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Learn Why",
+     "href": "/resources/technical-brief/kv-cache-offload-tiered-storage-benchmark"
+    },
+    {
+     "role": "eyebrow",
+     "order": 4,
+     "text": "TECHNOLOGY"
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Why HDD is essential to the AI economy"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Read the Blog",
+     "href": "https://blog.westerndigital.com/why-hdd-is-essential-to-ai-economy/"
+    },
+    {
+     "role": "eyebrow",
+     "order": 7,
+     "text": "Technology"
+    },
+    {
+     "role": "heading",
+     "order": 8,
+     "text": "Flash for the moment—HDDs for a lifetime"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Learn Why",
+     "href": "https://blog.westerndigital.com/ai-storage-architecture-flash-hdd/"
+    },
+    {
+     "role": "eyebrow",
+     "order": 10,
+     "text": "Technology"
+    },
+    {
+     "role": "heading",
+     "order": 11,
+     "text": "TIME names WD a Most Sustainable Company"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Learn More",
+     "href": "https://blog.westerndigital.com/wd-worlds-most-sustainable-companies-2026/"
+    },
+    {
+     "role": "eyebrow",
+     "order": 13,
+     "text": "Products"
+    },
+    {
+     "role": "heading",
+     "order": 14,
+     "text": "Store and scale with future-ready platforms"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Explore Solutions",
+     "href": "/solutions/data-center-storage-platform"
+    },
+    {
+     "role": "eyebrow",
+     "order": 16,
+     "text": "Technology"
+    },
+    {
+     "role": "heading",
+     "order": 17,
+     "text": "Reinvented for the AI-driven data economy"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Discover More",
+     "href": "/company/innovation/hdd-innovation"
+    },
+    {
+     "role": "eyebrow",
+     "order": 19,
+     "text": "People"
+    },
+    {
+     "role": "heading",
+     "order": 20,
+     "text": "Meeting the moment of AI-driven transformation"
+    },
+    {
+     "role": "cta",
+     "order": 21,
+     "text": "Learn More",
+     "href": "/company/campaign/we-make-it-possible"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "Play Slides"
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "Pause Slides"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.rail__slide",
+     "count": 7,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [
+     "button",
+     "[aria-controls]"
+    ],
+    "columns": 7
+   },
+   "defaultContent": false,
+   "block": "cards",
+   "variants": [
+    "content"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "one row per card [picture (bg) | eyebrow p + h3 + em CTA]; per-instance navy vs default ground = block reads a variant from the eyebrow-less/`strong` marker? NO — from the picture presence: navy cards carry no photo (fingerprint LI.rail__slide [0,5] img:false)"
+  },
+  {
+   "section": "promo-rail",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Popular Products"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "G-DRIVE Where Ideas Live"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Evolving with the creators shaping tomorrow."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Learn More",
+     "href": "/brand/g-drive"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Hard Drives (HDD)"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "WD Gold Enterprise Class Hard Drive"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "from Western Digital"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Available up to 26TB , WD Gold enterprise-class drives deliver the capacity, durability, and performance to power deskside AI workflows and . Run AI models locally, store massive datasets and 4K/8K video on-prem, and keep sensitive data under your control, with or without the cloud.​"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "1"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "professional creative work",
+     "href": "/solutions/creative-professionals"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Starting at"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "$299.99"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "/"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Shop Now",
+     "href": "/products/internal-drives/wd-gold-sata-hdd"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "30-Day Money-Back Guarantee"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "|"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "5-Year Limited Warranty"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Hard Drives (HDD)"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "WD Red Pro NAS Hard Drive"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "from Western Digital"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "Available in capacities from 2TB to 26TB , WD Red Pro drives are ideal for high-intensity, 24×7 workloads of multi-user enterprise and AI . Delivers the performance, scalability, and dependability for businesses to store, share, and collaborate on large volumes of data in"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "1"
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "NAS environments",
+     "href": "/solutions/network-attached-storage"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "RAID-optimized systems.",
+     "href": "/solutions/raid"
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "Starting at"
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "$299.99"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "/"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Shop Now",
+     "href": "/products/internal-drives/wd-red-pro-sata-hdd"
+    },
+    {
+     "role": "body",
+     "order": 28,
+     "text": "30-Day Money-Back Guarantee"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "|"
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "5-Year Limited Warranty"
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "Hard Drives (HDD)"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "WD Purple Pro Video Analytics Hard Drive"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "from Western Digital"
+    },
+    {
+     "role": "body",
+     "order": 34,
+     "text": "Available up to 26TB , WD Purple Pro drives deliver the ultimate reliability, capacity, and performance for the most demanding and — built to capture, retain, and process massive volumes of high-resolution surveillance video in always-on, multi-stream systems."
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "1"
+    },
+    {
+     "role": "cta",
+     "order": 36,
+     "text": "AI-enabled video recording",
+     "href": "/solutions/surveillance"
+    },
+    {
+     "role": "cta",
+     "order": 37,
+     "text": "analytics environments",
+     "href": "/solutions/surveillance/enterprise-ai-video"
+    },
+    {
+     "role": "body",
+     "order": 38,
+     "text": "Starting at"
+    },
+    {
+     "role": "body",
+     "order": 39,
+     "text": "$464.99"
+    },
+    {
+     "role": "body",
+     "order": 40,
+     "text": "/"
+    },
+    {
+     "role": "cta",
+     "order": 41,
+     "text": "Shop Now",
+     "href": "/products/internal-drives/wd-purple-pro-sata-hdd"
+    },
+    {
+     "role": "body",
+     "order": 42,
+     "text": "30-Day Money-Back Guarantee"
+    },
+    {
+     "role": "body",
+     "order": 43,
+     "text": "|"
+    },
+    {
+     "role": "body",
+     "order": 44,
+     "text": "5-Year Limited Warranty"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "Hard Drives (HDD)"
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "WD_BLACK 3.5-Inch Gaming Hard Drive"
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "from WD_BLACK"
+    },
+    {
+     "role": "body",
+     "order": 48,
+     "text": "Elevate your gaming experience with WD_BLACK boasting capacities of up to 10TB . Say goodbye to storage constraints and hello to seamless gaming sessions. With WD_BLACK, you can effortlessly download the latest AAA titles and maintain your extensive library of classics and favorites without compromise. Expand your gaming horizons, store more, and immerse yourself in endless adventures with WD_BLACK Gaming Hard Drives."
+    },
+    {
+     "role": "cta",
+     "order": 49,
+     "text": "Gaming Hard Drives",
+     "href": "/content/store/en-us/solutions/gaming/desktop-laptop-gaming-storage-drives"
+    },
+    {
+     "role": "body",
+     "order": 50,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 51,
+     "text": "Starting at"
+    },
+    {
+     "role": "body",
+     "order": 52,
+     "text": "$299.99"
+    },
+    {
+     "role": "body",
+     "order": 53,
+     "text": "/"
+    },
+    {
+     "role": "cta",
+     "order": 54,
+     "text": "Shop Now",
+     "href": "/products/internal-drives/wd-black-desktop-sata-hdd"
+    },
+    {
+     "role": "body",
+     "order": 55,
+     "text": "30-Day Money-Back Guarantee"
+    },
+    {
+     "role": "body",
+     "order": 56,
+     "text": "|"
+    },
+    {
+     "role": "body",
+     "order": 57,
+     "text": "5-Year Limited Warranty"
+    },
+    {
+     "role": "body",
+     "order": 58,
+     "text": "Play Slides"
+    },
+    {
+     "role": "body",
+     "order": 59,
+     "text": "Pause Slides"
+    }
+   ],
+   "imgCount": 8,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.rail__slide",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ],
+   "structure": {
+    "interactive": [
+     "button",
+     "[aria-controls]"
+    ],
+    "columns": 5
+   },
+   "defaultContent": false,
+   "block": "cards",
+   "variants": [
+    "promo"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "one row per card [picture (bg) | strong title p + p + text link]"
+  },
+  {
+   "section": "resource-rail",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Case Studies & Resources"
+    },
+    {
+     "role": "eyebrow",
+     "order": 1,
+     "text": "Case Study"
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "Media Streaming Superpower"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Read More",
+     "href": "/content/store/en-us/explore/documents/pdf?item=|content|dam|doc-library|en_us|assets|public|western-digital|collateral|case-study|case-study-media-streaming-superpower-leveraged-hdds.pdf"
+    },
+    {
+     "role": "eyebrow",
+     "order": 4,
+     "text": "Case Study"
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Wasabi Decreased Cost Per Terabyte by Over 25%"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Read More",
+     "href": "/content/store/en-us/explore/documents/pdf?item=|content|dam|doc-library|en_us|assets|public|western-digital|collateral|case-study|case-study-wasabi-hot-cloud-storage.pdf"
+    },
+    {
+     "role": "eyebrow",
+     "order": 7,
+     "text": "Case Study"
+    },
+    {
+     "role": "heading",
+     "order": 8,
+     "text": "How CERN Enabled Consistent Peak Performance"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Read More",
+     "href": "/content/store/en-us/explore/documents/pdf?item=|content|dam|doc-library|en_us|assets|public|western-digital|collateral|case-study|case-study-cern.pdf"
+    },
+    {
+     "role": "eyebrow",
+     "order": 10,
+     "text": "Case Study"
+    },
+    {
+     "role": "heading",
+     "order": 11,
+     "text": "How Dropbox Achieved Exabyte Scale with WD"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Read Now",
+     "href": "/content/store/en-us/explore/documents/pdf?item=|content|dam|doc-library|en_us|assets|public|western-digital|collateral|case-study|case-study-dropbox-magic-pocket-achieves-exabyte-scale-with-smr-hdds.pdf"
+    },
+    {
+     "role": "eyebrow",
+     "order": 13,
+     "text": "Tool"
+    },
+    {
+     "role": "heading",
+     "order": 14,
+     "text": "Surveillance Hard Drive Calculator"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Learn More",
+     "href": "/tools/surveillance-capacity-calculator"
+    },
+    {
+     "role": "eyebrow",
+     "order": 16,
+     "text": "Tool"
+    },
+    {
+     "role": "heading",
+     "order": 17,
+     "text": "RAID Capacity Calculator"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Learn More",
+     "href": "/tools/raid-capacity-calculator"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "Play Slides"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "Pause Slides"
+    }
+   ],
+   "imgCount": 6,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.rail__slide",
+     "count": 6,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [
+     "button",
+     "[aria-controls]"
+    ],
+    "columns": 6
+   },
+   "defaultContent": false,
+   "block": "cards",
+   "variants": [
+    "resource"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "one row per card [picture | eyebrow p + h3 + text link]"
+  },
+  {
+   "section": "business",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Designed to Support Businesses of Every Size"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "WD for Business is built to make enterprise storage simple, flexible, and cost-effective—whether you’re buying for an SMB or scaling a global infrastructure."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Here’s what your business can unlock:"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Small or Medium Business"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Improve team productivity and reduce IT complexity with scalable data storage for small business. Enjoy bulk hard drive pricing, flexible credit, and a seamless procurement experience."
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Enterprise & Resellers"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Whether you're managing infrastructure or serving clients, our program provides tailored pricing, product availability tools, and scalable solutions for high-performance environments. Resellers may also benefit from loyalty rewards and sales enablement resources."
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Learn More about our Benefits",
+     "href": "/business"
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 6,
+   "repeats": [
+    {
+     "unitSelector": "DIV.biz__col",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 2
+   },
+   "defaultContent": false,
+   "block": "columns",
+   "variants": [
+    "feature"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "simple",
+   "sectionHead": "h2 + lede as default content; the strong CTA as default content AFTER the block",
+   "note": "one row, two cells [picture + h3 + p | picture + h3 + p] (D11 columns)"
+  },
+  {
+   "section": "about",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "About WD"
+    }
+   ],
+   "imgCount": 5,
+   "editableTexts": 6,
+   "repeats": [
+    {
+     "unitSelector": "DIV.about__item",
+     "count": 5,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ],
+   "structure": {
+    "interactive": [],
+    "columns": 5
+   },
+   "defaultContent": false,
+   "block": "cards",
+   "variants": [
+    "about"
+   ],
+   "decodeTier": "reconstructive",
+   "shape": "container",
+   "sectionHead": "h2 as default content",
+   "note": "one row per tile [picture | link label] — whole-card link (EW6)"
+  }
+ ],
+ "plan": {
+  "source": "stardust/eds-conversion-log.md § Step 2",
+  "schemaView": "stardust/.work/deploy/schema-view/index.html",
+  "servedPrototype": "http://127.0.0.1:8814/index-proposed.html"
+ }
+}

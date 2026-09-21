@@ -1,0 +1,75 @@
+{
+  "slug": "solutions",
+  "at": "2026-09-21T10:45:44.562Z",
+  "source": "stardust/current/pages/solutions.html",
+  "target": "stardust/migrated/solutions/index.html",
+  "meta": "stardust/migrated/solutions/_meta.json",
+  "scope": {
+    "main": "main,[role=main]",
+    "exclude": []
+  },
+  "tolerances": {},
+  "reportOnly": false,
+  "verdict": "pass",
+  "class": {
+    "headings": {
+      "source": 26,
+      "emitted": 26,
+      "dropped": [],
+      "extra": []
+    },
+    "links": {
+      "source": 65,
+      "emitted": 65,
+      "dropped": [],
+      "extra": []
+    },
+    "images": {
+      "source": 8,
+      "emitted": 8,
+      "dropped": [],
+      "extra": []
+    },
+    "listItems": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "tableRows": {
+      "source": 6,
+      "emitted": 6,
+      "dropped": [],
+      "extra": []
+    },
+    "listDepth": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "nestedLists": {
+      "source": 0,
+      "emitted": 0,
+      "dropped": [],
+      "extra": []
+    },
+    "tables": {
+      "source": 1,
+      "emitted": 1,
+      "dropped": [],
+      "extra": []
+    }
+  },
+  "words": {
+    "source": 1889,
+    "emitted": 1889,
+    "ratio": 1
+  },
+  "sourceScoped": true,
+  "sourceExcludedSubtrees": 0,
+  "red": [],
+  "yellow": [],
+  "covered": [],
+  "skipped": []
+}

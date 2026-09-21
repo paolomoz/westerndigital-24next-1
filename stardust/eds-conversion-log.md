@@ -1,0 +1,117 @@
+<!-- stardust:provenance writtenBy=stardust:deploy (foundation worker) writtenAt=2026-09-21T10:37:01Z againstInput="deploy Steps 0–6 — westerndigital.com replica, 4 pages" readArtifacts=stardust/runtime-contract.json,stardust/prototypes/*-proposed.html,stardust/prototypes/canon.css,stardust/replica/progress.json,stardust/replica/gates/index-1440/chrome-states/chrome-states.json,stardust/dynamic-features.md,stardust/decisions.md,stardust/.work/deploy/fingerprint-*.json -->
+# EDS conversion log — westerndigital.com replica (paolomoz/westerndigital-24next-1)
+
+Hands-off run: every decision below was applied from the documented default; nothing was asked. Steps 0–6 (foundation worker) are appended in step order; block workers append Steps 7–9 per block.
+
+## Step 0 — Runtime contract (`stardust/runtime-contract.json`)
+Read from the target's own `scripts/aem.js` + `scripts/scripts.js`: `decorateButtons` lives in `scripts.js` and is **formatted-only** (`<strong>`/`<em>` around a paragraph-alone `<a>`; emits `a.button.primary|secondary|accent` inside `p.button-wrapper`); `decorateBlock` adds `.block` + `data-block-name`, wraps in `div.<name>-wrapper`, section gains `.<name>-container`; `wrapTextNodes` folds non-P/PRE/UL/OL/PICTURE/TABLE/BLOCKQUOTE/H-led cells into one `<p>`; fragments load through `innerHTML` (scripts inert); the runtime never removes empty sections (`emptySectionCollapse: false` — the foundation still ships `main .section:empty { display: none }` as the documented fallback); `buildAutoBlocks` = `/fragments/` loader + `buildWidgetAutoBlocks` (`a[href*="/widgets/"]`). Quirks recorded: stock `header.js` reads `.button-container` (this clone emits `.button-wrapper`), `isDesktop` is 900px (the lifted chrome breakpoint is 768). Pipeline `multiValueStyle` not probed (no DA write in this worker) — D7 default `comma`.
+
+## Step 1 — Audit: per-page section lists
+Prototypes are static HTML (no JSX). They carry **no `<main>` and no `data-section`** (content root is `section.mainContainWrap`; bands are `div.band`, `section.sol-section`, children of `section.co-lead`), so `section-schema.mjs` would see one section per page. Step 2b therefore runs on a **schema view** per page (`stardust/.work/deploy/schema-view/<page>.html`, built by `schema-view.mjs`: same DOM, `.mainContainWrap` → `<main>`, `section.co-lead` → `<div>`, `data-section` stamped per planned EDS section, page scripts dropped, `<base>` to the served origin; loaded via `file://`). Block workers should pass that file URL as `<protoURL>` to section-bound tools (`prototype-to-content`, `block-roundtrip`, `content-diff`); the served prototype (`http://127.0.0.1:8814/<page>-proposed.html`) stays the visual spec.
+
+- **index** (landing): hero-carousel, category-tabs (holds the page `<h1>`), content-rail, promo-rail, resource-rail, business, about. Hidden: `#ProductCompareTray` modals (h=0).
+- **products** (listing): hero (plp-hero, default variant), breadcrumbs, listing (filters aside + toolbar + 15 product cards + pagination), buy-direct. Hidden: 5 use-case hero variants, `.plp-empty`, compare tray modals.
+- **solutions** (program): hero, page-nav (breadcrumbs + 4 anchor chips), choose (h2 + intro + 7 use-case tiles), explore (8 image cards), industry (3 tiles), compare-learn (6 tiles), compare-table (h2 + table), faq (10 Q/A), innovation (photo CTA band), cta (title + 2 buttons). Hidden: `#contact-form` modal, compare tray.
+- **company** (static, schemaed LAST — replica worker handed back 10:19Z; prototype mtime recorded in `.work/deploy/company-proto-mtime.txt`): hero (split), vision (prose), values (5 icon cards on a photo ground), leadership (text | media), overview-cards (3), responsibility (media | text), more-cards (3). Hidden: compare tray.
+
+Fingerprint (#90, `stardust/.work/deploy/fingerprint-<page>.json`) — real per-instance variation the owning block must reproduce: content-rail cards navy (no photo) vs photo (`LI.rail__slide` clusters [0,5] vs [1–4]); products pagination has an active page (grey ground on [1,3]) and dots; buy-direct tile 2 has no CTA (kids 3 vs 4); compare table striped rows (`TR` [0,2,4] grey) and first column left-aligned; footer column 4 carries the support text, social icons and the badge (others are plain lists). Everything else flagged is legitimate structural variation (nav panel column counts, sign-in flyout button pair) or SVG internals.
+
+## Step 2 — Names + reuse (LOCKED)
+Triage rule applied per section: (1) D1 — repeating units or bespoke/interactive structure → block, else default content; (2) D11 — collection pattern → its name and content model. Section heads (h1/h2/lede) above repeating blocks are **default content in the same section**, reabsorbed by the block (EW8). Same pattern across pages → one block + variant class; different treatment → archetype-prefixed block. Reserved names avoided (#15).
+
+### Per-section triage
+| page | EDS section | D1 | D11 | block · variant | tier | authored shape |
+|---|---|---|---|---|---|---|
+| index | hero-carousel | block (repeat slides, autoplay, progress bar) | carousel | `carousel` · `hero` | reconstructive | one row per slide: [picture (bg) \| p title + p lede + CTA \| progress label: strong title + p desc] |
+| index | category-tabs | block (tablist, dyn #15) | tabs | `tabs` · `category` | reconstructive | h1 default content; one row per tab: [label \| ul of picture+link tiles + em CTA] |
+| index | content-rail | block (7 cards) | cards | `cards` · `content` | reconstructive | h2 default content; one row per card: [picture \| p eyebrow + h3 + em CTA]; navy ground when the picture cell is empty |
+| index | promo-rail | block (6 cards) | cards | `cards` · `promo` | reconstructive | h2 default content; [picture \| strong title p + p + link] |
+| index | resource-rail | block (6 cards) | cards | `cards` · `resource` | reconstructive | h2 default content; [picture \| p eyebrow + h3 + link] |
+| index | business | block (2 media columns) | columns | `columns` · `feature` | reconstructive | h2 + lede default content; one row [picture + h3 + p \| picture + h3 + p]; strong CTA as default content after the block |
+| index | about | block (5 link tiles) | cards | `cards` · `about` | reconstructive | h2 default content; [picture \| link label] whole-tile link (EW6) |
+| products | hero | block (bg photo + copy) | hero | `hero` · `banner` | template-slotted | rows: picture / h1 / p / link |
+| products | breadcrumbs | block (trail) | — | `breadcrumbs` | template-slotted | one ul; last li plain text |
+| products | listing | block ×2 (dyn #17 client-only listing) | — | `filters` + `product-listing` | reconstructive | section style `split-aside`; filters: one row per facet [title \| option list] (shop-by groups first); product-listing: count row, one row per product [picture \| h3 + strong capacity + p price], pagination ul row |
+| products | buy-direct | block (4 tiles) | cards-like | `tiles` · `buy` | reconstructive | h2 default content; [picture \| h3 + p + link]; foot p default content after |
+| solutions | hero | block | hero | `hero` · `photo` | template-slotted | picture / h1 / p |
+| solutions | page-nav | block ×2 | — | `breadcrumbs` + `anchor-nav` | template-slotted | breadcrumbs ul; anchor-nav one ul of in-page links (chips) |
+| solutions | choose | block (7 icon tiles) | cards-like | `tiles` · `usecase` | reconstructive | h2 + intro p default content; [icon \| strong p + link] |
+| solutions | explore | block (8 image cards) | cards-like | `tiles` · `explore` | reconstructive | h2 default content; [picture \| h3 + p + link] |
+| solutions | industry | block (3 tiles) | cards-like | `tiles` · `tile` | reconstructive | h2 default content; [icon \| h3 + p + link] |
+| solutions | compare-learn | block (6 tiles) | cards-like | `tiles` · `tile` | reconstructive | as industry |
+| solutions | compare-table | block (data table) | table | `table` · `compare` | reconstructive | h2 default content; header row + 5×4 |
+| solutions | faq | block (accordion) | accordion | `accordion` · `faq` | reconstructive | h2 default content; one row per Q/A [question \| answer]; row 1 open at rest |
+| solutions | innovation | block (photo CTA band) | hero | `hero` · `band` | template-slotted | picture / strong title p / p / CTA |
+| solutions | cta | block (2 columns: text \| buttons) | columns | `columns` · `cta` | reconstructive | one row [p title \| strong CTA + em CTA] |
+| company | hero | block | hero | `hero` · `split` | template-slotted | picture (bg) / h1 / p / picture (media col) |
+| company | vision | **default content** (h2 + 2 p, no structure) | — | section style `intro` | — | prose |
+| company | values | block (5 icon cards on photo ground) | cards-like | `company-cards` · `values` | reconstructive | h2 default content; own row: background picture; one row per value [picture icon \| h3 + p] |
+| company | leadership | block (text \| media) | columns | `columns` · `split` | reconstructive | one row [h2 + p + strong CTA \| picture] |
+| company | overview-cards | block (3 cards) | cards-like | `company-cards` · `overview` | reconstructive | [picture \| h3 + p + link] (source card h2 canonicalised to h3) |
+| company | responsibility | block (media \| text) | columns | `columns` · `split` | reconstructive | one row [picture \| h2 + p + strong CTA] |
+| company | more-cards | block (3 cards) | cards-like | `company-cards` · `overview` | reconstructive | as overview-cards |
+
+Reuse decisions: the three static heroes + the innovation band share "full-bleed background picture + heading/title + lede (+ CTA/media)" → ONE `hero` block, 4 skin variants, one template with optional slots. The home hero is a different pattern (repeat slides + progress bar + autoplay) → `carousel`. Home rails share the "media card in a rail" unit → `cards` (3 skins) + the about link-tiles. Solutions/products icon-or-image tiles in grids share one unit → `tiles` (4 skins). Company cards differ in skin and are owned by one worker → archetype-prefixed `company-cards`. Text-beside-media compositions → collection `columns` (3 skins across 3 pages; ONE owner writes all variant CSS from the three specs). Breadcrumbs appear on products + solutions → one `breadcrumbs` block (D1 BREADCRUMB advisory accepted: replica fidelity needs the trail on the page and `scripts.js` is outside this wave's remit; follow-up: move to a `buildAutoBlocks` builder with the `/nav` label map).
+
+### Block inventory (block workers claim names from this table)
+| block | variants | decode tier | shape | pages | D11 match | owner note |
+|---|---|---|---|---|---|---|
+| `carousel` | `hero` | reconstructive | container | index | carousel | index worker; autoplay 6 s + progress fill (index.js), arrows dead on live |
+| `tabs` | `category` | reconstructive | container | index | tabs | index worker; dyn #15 |
+| `cards` | `content`, `promo`, `resource`, `about` | reconstructive | container | index | cards | index worker; rail layout (railOffset 150/16), navy-when-no-picture |
+| `columns` | `feature`, `split`, `cta` | reconstructive | simple | index, company, solutions | columns | ONE owner (shared); specs from 3 pages |
+| `hero` | `banner`, `photo`, `split`, `band` | template-slotted | simple | products, solutions, company | hero | ONE owner (shared); eager LCP image + reserved media slot (#100) |
+| `breadcrumbs` | — | template-slotted | simple | products, solutions | — | shared; D1 BREADCRUMB 🟡 accepted (see above) |
+| `anchor-nav` | — | template-slotted | simple | solutions | — | solutions worker |
+| `tiles` | `usecase`, `explore`, `tile`, `buy` | reconstructive | container | solutions, products | cards | solutions worker owns; `buy` spec from products |
+| `table` | `compare` | reconstructive | container | solutions | table | solutions worker |
+| `accordion` | `faq` | reconstructive | container | solutions | accordion | solutions worker; EW7 (title moves out of the button) |
+| `filters` | — | reconstructive | container | products | — | products worker; dyn #17 inert, facet accordion behaviour from products.js |
+| `product-listing` | — | reconstructive | container | products | — | products worker; sort labels + mobile button labels are in-code defaults (site-wide constants, D14) |
+| `company-cards` | `values`, `overview` | reconstructive | container | company | cards | company worker |
+| `header` | — | template-slotted | chrome | all | — | foundation worker (Step 6) |
+| `footer` | — | template-slotted | chrome | all | — | foundation worker (Step 6) |
+
+Single-use blocks: 10 (carousel, tabs, anchor-nav, table, accordion, filters, product-listing, company-cards, tiles, breadcrumbs is 2-page) — within the D9-VOCAB budget (> 10 flags). Max variants on one block: 4.
+
+### Section style vocabulary (closed set — `styles/styles.css`)
+| style | what the section IS | used by |
+|---|---|---|
+| `intro` | centered prose band (48px vertical padding, max-width 992, text-align center) | company/vision |
+| `split-aside` | aside + main layout for two blocks in one section (`filters` left 270px, `product-listing` right) | products/listing |
+
+Block-owned sections are painted by block CSS; per-band grounds (grey rails, photo values band) ride the block variant via a content-anchored rule at `.section` specificity in the BLOCK's CSS (`main .section.cards-container:has(.cards.content)`), never a section style (anti-pattern 2). Section rhythm: no `capture/tokens.json` exists (replica recorded no `spacing.module`), so the majority rhythm is lifted from the prototype band CSS into the foundation scaffold — `main > .section { margin: 0; padding: 0 }`, blocks own their band padding (index `band--py16` 96/64, tabs 64, solutions `sol-section` 48/64, company bands 48, products `plp` pb 80, `buy-direct` 24/32). Block wrappers are full-bleed (`main > .section > div:not(.default-content-wrapper) { max-width: none; padding: 0 }`); blocks re-contain with the lifted container model (1140 / 0 16 / auto) — the ONE full-bleed escape (#foundation § template cap).
+
+### Dropped / not converted (recorded decisions)
+- `#ProductCompareTray` compare modals (index, products, solutions) and the product-card "Compare" buttons: commerce (dyn #28 decided-out) — not authored; product cards ship without the compare control.
+- Products hero: 5 hidden use-case variants (PLP filter state, dyn #17) — only the default variant is authored.
+- Products PLP: filters/sort/pagination inert (dyn #17 static-snapshot); pagination + facet links bounce to https://www.westerndigital.com (links decision row); the "89 Items" count is authored as the captured value.
+- Solutions `#contact-form` modal (form needs a backend, no dynamics row → registered here as decided-out interim): its CTA bounces to https://www.westerndigital.com/company/contact-us; the modal copy ("Let us help you find a solutions…", "Thank you!") is not authored.
+- Header: predictive search dropdown not shipped (dyn #16); cart modal + account state are dead on live (chrome matrix: cart dead) — the cart icon links to https://www.westerndigital.com/store/cart, sign-in flyout links bounce to the source store (dyn #27/#28); `teconsent` (cookie-consent link slot, dyn #1) not authored; region selector is a plain link to https://www.westerndigital.com/region-selector (dyn #8).
+- Footer: `show-for-b2b` hidden rows (My Account business, Sales Inquiry) not authored (rest state hides them).
+- Breadcrumb "Home" link target `/en-us` on the source → authored as `/`.
+- FK Grotesk Neue / SimplonMono: declared in source CSS, rendered nowhere on the 4 pages (replica ledger) — not shipped.
+
+## Step 2b — Section schemas (`stardust/eds-schema/<page>.json`)
+Generated with `section-schema.mjs` against the schema views (width 1280, profile eds), then annotated by `stardust/.work/deploy/annotate-schema.mjs` with `defaultContent`, `decodeTier`, `block`, `variants`, `shape`, `sectionHead`, `note` per section (the two kept fields survive a re-run; re-run `annotate-schema.mjs <page>` after any re-measure). Section counts: index 7, products 4, solutions 10, company 7. `⚠ generic-with-structure`: none — the only default-content section (company/vision) measures columns 1, interactive 0. `hasH1`: index/category-tabs, products/hero, solutions/hero, company/hero. Repeat units (`repeats[]`): hero-carousel 8 slides (2 clones each side of 4) + 4 progress items → author 4 rows; content-rail 7, promo-rail 6, resource-rail 6, about 5, tabs 3 panels, business 2, buy-direct 4, choose 7, explore 8, industry 3, compare-learn 6, table 5 rows, faq 10, values 5, overview/more cards 3+3.
+
+## Step 3 — Foundation (`styles/styles.css`)
+- `:root` = canon.css `:root` verbatim (17 colours, container 1140/16, radii 6/16/20, header-h 97 / promo-h 40 / nav-h 56, transition .2s; rgb notation modernised for stylelint). `--nav-height: var(--header-h)` → 97px desktop, 91px at ≤767 (lift index-360: 40 promo + 50 nav + 1 border). Bare `<header>` carries the white chrome ground.
+- Reset = canon.css § reset, plus #106 global `border-box` (canon already had it) and #36 `img { display: block; max-width: 100%; height: auto }` — deviation from canon's inline `img { vertical-align: middle }`: the pipeline's `<p><picture>` baseline descender (#111) is avoided at the root; blocks that need an inline image (header logo) set `display: inline` explicitly as canon does. Heading/p/list margins reset to 0 as in canon (blocks and section styles own every rhythm value); links inherit colour with no underline (canon `a`); no hover underline (live hovers measured dead).
+- Structural layer preserved verbatim: body gate, `header { height: var(--nav-height) }`, chrome visibility until `[data-block-status="loaded"]`, `.icon` rules.
+- Scaffold: `main > .section { margin: 0; padding: 0 }` (blocks own band padding — see § Step 2 rhythm), `main > .section > div` = the lifted container (1140 / 0 16 / auto; none at ≤767). The ONE full-bleed escape: `main > .section > div:not(.default-content-wrapper) { max-width: none; padding: 0 }` — every block wrapper spans the viewport and re-contains with the tokens. `main .section:empty { display: none }` fallback (contract).
+- Section styles (closed set, 2): `intro` (company/vision — company.css .co-vision 48/64 padding, centred, 800 max, h2 32/42/48 700, p 18/27, rhythm h2→p 24, p→p 20 written as h2 mb 4 + p mt 20 so no positional selector is needed, EW10) and `split-aside` (products/listing — products.css .plp pb 80, .plp-app flex, aside 25 % → 18.2367 % + mr 32, main flex 1 + ml 32, stepped container 768/992/1140). Products' stepped container (`.mainContainWrap .contain` 576/768/992/1140) is products-specific; products blocks re-contain with the steps.
+- Token-completeness gate: after this step the grep prints `--background-color --body-font-size-s --body-font-size-xs --heading-font-size-s --light-color` — ALL from the boilerplate demo `blocks/cards/cards.css` and `blocks/hero/hero.css` (both names are in the inventory and are rewritten by block workers; this worker may not touch them) and from the stock header/footer CSS (rewritten in Step 6). No lifted block token is undefined.
+- Favicon: captured `stardust/current/assets/favicon.ico` (103 KB, 6 sizes) copied to the repo root as `favicon.ico` — `.ico` is served at `/favicon.ico` automatically, so `head.html` is untouched.
+
+## Step 4 — Fonts (`styles/fonts.css`, `fonts/`)
+Roboto 400/500/700 (the only family rendered on the 4 pages) self-hosted from the harvested source files → `fonts/roboto-{400,500,700}.woff2` (15 KB each), `@font-face` in `styles/fonts.css` (root-relative `/fonts/`, `font-display: swap`, `local()` first as the source declared). Boilerplate demo faces (roboto-condensed, roboto-*.woff2) removed. Metric-matched `roboto-fallback` faces in `styles.css`, named second in `--ff-body` / `--body-font-family`; one face per weight because the width ratio to Arial differs by weight — rendered-width probe (`stardust/.work/deploy/probes/width.mjs`, served prototype, 87-char string at 100px): 400 → 98.931 %, 500 → 99.860 %, 700 → 94.612 % (the harvested latin subset's OS/2 xAvgCharWidth is unusable: 128 %); ascent/descent overrides from Roboto hhea 1900/500 ÷ size-adjust. FK Grotesk Neue / SimplonMono not shipped (rendered nowhere — replica ledger); `fonts/LICENSING.md` records the open licence and the remove path. No proprietary face → no licensing alert.
+
+## Step 5 — Buttons
+Boilerplate selectors kept, paint lifted from canon.css `.btn` (16/16 500, padding 12 32, border 1, radius 6, transition .2s; 14/14 at ≤767 per the canon ramp in DESIGN.json). Mapping: `<strong><a>` primary = `.btn--black` (white on black); `<em><a>` secondary = `.btn--outline-black`; `<em><strong><a>` accent = `.btn--white` (the on-media white CTA of the hero carousel). On-dark secondary = `.btn--outline-white`, scoped to the block classes that paint dark (`main .hero`, `main .carousel`, `main .cards.content`) per #41. Text links (`.btn--link`, `.btn-link`, `.co-btn`, `.sol-link`, whole-card links) stay plain `<a>` styled per block. Flyout blue buttons (`.btn--blue`, `.btn--outline-blue`) are chrome-only → header.css. EW3 repaint from marks + EW6 card-as-link rule shipped; on-dark repaint is the last rule in the file.
+
+## Step 6 — Chrome
+(pending)
+
+## Gates
+(pending)
