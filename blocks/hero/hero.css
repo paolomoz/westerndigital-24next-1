@@ -220,6 +220,26 @@
   }
 }
 
+/* reconcile(solutions) pub2 — photo: an authored picture 2 is the <992 mobile asset (live 360 `.aem-section-bgimage`
+   paints …-hero-mobile.png.wdthumb.840.840.webp, cover — lift solutions-360 elements/156; gate-pub1 band 0–500 18.5 %).
+   hero.js wraps it in .hero-bg-mobile; below 992 the desktop picture steps back only when a mobile one is
+   authored, at ≥992 the mobile wrapper hides. Descendant selectors on the wrapper only (EW2). */
+@media (width < 992px) {
+  .hero.photo .hero-bg:has(.hero-bg-mobile) picture {
+    display: none;
+  }
+
+  .hero.photo .hero-bg .hero-bg-mobile picture {
+    display: block;
+  }
+}
+
+@media (width >= 992px) {
+  .hero.photo .hero-bg .hero-bg-mobile {
+    display: none;
+  }
+}
+
 /* ───────────── split (company hero: .co-hero — black band, text col | media col; <768 the media stacks first) ───────────── */
 .hero.split {
   background-color: #000;

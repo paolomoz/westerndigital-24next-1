@@ -91,6 +91,11 @@ export default function decorate(block) {
   }
   wrap.append(row);
 
+  // reconcile(solutions) pub2: photo — an authored picture 2 is the <992 background asset
+  // (the source swaps the hero photo for a mobile crop below md); it joins .hero-bg after
+  // picture 1 inside a generated wrapper (EW2) and hero.css toggles the pair.
+  if (variant === 'photo' && mediaPic) bg.append(wrapNode(mediaPic, 'hero-bg-mobile'));
+
   // 4. Assemble. The band keeps its image inside the rounded box (sol-innov: bg is a flex child).
   if (variant === 'band') {
     row.prepend(bg);
