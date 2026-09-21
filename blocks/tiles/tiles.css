@@ -1,0 +1,392 @@
+/* stylelint-disable no-descending-specificity -- lifted cascade order kept per variant */
+
+/* tiles — one block, four skins. Every value is lifted verbatim from the gated prototypes:
+   usecase = solutions.css § 3 (.sol-intro / .sol-usecases* / .sol-usecase*), explore = § 4 (.sol-explore*),
+   tile = §§ 5/6 (.sol-tiles* / .sol-tile*), shared shell = .sol-section 48/64 + .sol-section__head 32/48 +
+   .sol-h2 / .sol-h3 / .sol-h3s + .sol-link (stardust/replica/capture/lift/solutions-{1440,360}.json);
+   buy = products.css § Buy Direct (.buy-direct* / .buy-tile*, products-{1440,360}.json).
+   Wrappers carry the layout; the authored h3 / p / picture / icon span are styled through them with
+   descendant selectors (EW2). Mobile overrides sit at each variant's own specificity (#109). */
+
+/* ───────────── shared: the .sol-section band + its head (default content styled in place) ───────────── */
+main .section.tiles-container {
+  padding: 48px 0;
+}
+
+.tiles-container .default-content-wrapper {
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.tiles-container .default-content-wrapper h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 35.2px;
+  font-weight: 700;
+}
+
+/* .sol-intro: the choose intro paragraph (max-w 992, centred) */
+.tiles-container .default-content-wrapper p {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+/* the lifted container model (.contain: 1140 / 0 16 / auto) */
+.tiles .tiles-wrap {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.tiles .grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tiles .tile-col {
+  width: 100%;
+}
+
+.tiles .tile {
+  height: 100%;
+}
+
+.tiles .tile-body p,
+.tiles .tile-body :is(h2, h3, h4),
+.tiles .tile-media p {
+  margin: 0;
+}
+
+/* icon tokens (:sol-*:) — 48×48 on the source (svg width/height 48) */
+.tiles .tile-media .icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  vertical-align: baseline;
+}
+
+/* .sol .button > div { line-height: 24px } */
+.tiles .actions p {
+  line-height: 24px;
+}
+
+/* .sol-link: underlined blue text link (inline-block, 16/16 400, no padding, r6) */
+.tiles .actions a:any-link {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--c-blue);
+  text-decoration: underline;
+  background: transparent;
+  border-radius: 6px;
+}
+
+/* ───────────── usecase (choose: row max-w-1140 -mb-6; col sm:cols-6 px-3 mb-6; card p-6 → sm:p-8, border, r16) ───────────── */
+.tiles.usecase .grid {
+  max-width: 1140px;
+  margin: 0 auto -24px;
+}
+
+.tiles.usecase .tile-col {
+  padding: 0 12px;
+  margin-bottom: 24px;
+}
+
+.tiles.usecase .tile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 24px;
+  border: 1px solid rgb(225 225 225);
+  border-radius: 16px;
+}
+
+/* .sol-usecase__inner: icon | body, vertically centred */
+.tiles.usecase .tile-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* .sol-usecase__icon { line-height: 0 } + .sol-usecase__svg { margin-right: 24px } */
+.tiles.usecase .tile-media {
+  flex: 0 0 auto;
+  margin-right: 24px;
+  line-height: 0;
+}
+
+.tiles.usecase .tile-body {
+  position: relative;
+}
+
+/* ───────────── explore (row -mx-3 -mb-6; col cols-12 → xs:cols-6 → md:cols-4; img 300 cover r16 mb-6) ───────────── */
+.tiles.explore .grid {
+  margin: 0 -12px -24px;
+}
+
+.tiles.explore .tile-col {
+  padding: 0 12px 24px;
+  margin-bottom: 24px;
+}
+
+/* .image { line-height: 24px } — the img stays inline (source quirk: baseline gap kept) */
+.tiles.explore .tile-media,
+.tiles.explore .tile-media p {
+  line-height: 24px;
+}
+
+.tiles.explore .tile-media picture {
+  display: inline;
+}
+
+.tiles.explore .tile-media img {
+  display: inline;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  margin-bottom: 24px;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 16px;
+}
+
+.tiles.explore .title {
+  padding: 0 8px;
+}
+
+/* .sol-h3 */
+.tiles.explore .title :is(h2, h3, h4) {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 26.4px;
+  font-weight: 700;
+}
+
+.tiles.explore .copy {
+  padding: 0 8px 16px;
+}
+
+/* .sol-link--px */
+.tiles.explore .actions a:any-link {
+  padding: 0 8px;
+}
+
+/* ───────────── tile (industry / compare-learn: row -mx-3 -mb-6; col sm:cols-4; card p-6 → sm:p-8, CTA mt-auto) ───────────── */
+.tiles.tile .grid {
+  margin: 0 -12px -24px;
+}
+
+.tiles.tile .tile-col {
+  padding: 0 12px;
+  margin-bottom: 24px;
+}
+
+.tiles.tile .tile {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px;
+  border: 1px solid rgb(225 225 225);
+  border-radius: 16px;
+}
+
+/* .sol-tile__inner: column, full height */
+.tiles.tile .tile-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.tiles.tile .tile-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+/* .sol-tile__icon { margin-bottom: 24px; line-height: 24px } */
+.tiles.tile .tile-media {
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+/* .sol-h3s */
+.tiles.tile .title :is(h2, h3, h4) {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.tiles.tile .copy {
+  margin-bottom: 24px;
+}
+
+.tiles.tile .actions {
+  margin-top: auto;
+}
+
+/* ───────────── buy (products: grey strip, centred tiles, space-evenly) ───────────── */
+main .section.tiles-container:has(.tiles.buy) {
+  padding: 24px 0;
+  text-align: center;
+  background-color: #f2f3f3;
+}
+
+/* .buy-direct__head (the trailing foot paragraph stays a plain wrapper) */
+main .section.tiles-container:has(.tiles.buy) .default-content-wrapper:has(h2) {
+  padding: 0 24px 16px;
+}
+
+main .section.tiles-container:has(.tiles.buy) .default-content-wrapper h2 {
+  margin-bottom: 16px;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.tiles.buy .grid {
+  justify-content: space-evenly;
+}
+
+.tiles.buy .tile-col {
+  max-width: 175px;
+  margin-bottom: 32px;
+  padding: 0 8px;
+}
+
+.tiles.buy .tile-col:first-child {
+  padding: 0;
+}
+
+.tiles.buy .tile-media img {
+  display: inline;
+  max-width: 100%;
+  max-height: 96px;
+  margin-bottom: 8px;
+  vertical-align: middle;
+}
+
+/* .buy-tile__text--title > div { padding-bottom: 8px } */
+.tiles.buy .title {
+  padding-bottom: 8px;
+}
+
+/* .heading6 */
+.tiles.buy .title :is(h2, h3, h4) {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+/* .btn-link.btn-link--medium: underlined black text link, 500, mt 8 */
+.tiles.buy .actions a:any-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* products' stepped container (.mainContainWrap .contain: 576 / 768 / 992 / 1140) */
+@media (width >= 576px) {
+  .tiles.buy .tiles-wrap {
+    max-width: 576px;
+  }
+
+  .tiles.buy .tile-col:first-child {
+    padding: 0 8px;
+  }
+
+  .tiles.explore .tile-col {
+    width: 50%;
+  }
+}
+
+@media (width >= 768px) {
+  .tiles.usecase .tile-col {
+    width: 50%;
+  }
+
+  .tiles.usecase .tile {
+    padding: 32px;
+  }
+
+  .tiles.tile .tile-col {
+    width: 33.3333%;
+  }
+
+  .tiles.tile .tile {
+    padding: 32px;
+  }
+
+  main .section.tiles-container:has(.tiles.buy) {
+    padding: 32px 0;
+  }
+
+  main .section.tiles-container:has(.tiles.buy) .default-content-wrapper h2 {
+    font-size: 34px;
+  }
+
+  .tiles.buy .tiles-wrap {
+    max-width: 768px;
+  }
+
+  .tiles.buy .tile-col {
+    max-width: 250px;
+  }
+
+  .tiles.buy .title :is(h2, h3, h4) {
+    font-size: 20px;
+  }
+}
+
+@media (width >= 992px) {
+  main .section.tiles-container {
+    padding: 64px 0;
+  }
+
+  .tiles-container .default-content-wrapper {
+    padding-bottom: 48px;
+  }
+
+  .tiles-container .default-content-wrapper h2 {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .tiles.explore .tile-col {
+    width: 33.3333%;
+  }
+
+  .tiles.explore .title :is(h2, h3, h4) {
+    font-size: 28px;
+    line-height: 30.8px;
+  }
+
+  .tiles.explore .copy {
+    padding-bottom: 24px;
+  }
+
+  .tiles.tile .title :is(h2, h3, h4) {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+
+  main .section.tiles-container:has(.tiles.buy) .default-content-wrapper:has(h2) {
+    padding-bottom: 24px;
+  }
+
+  .tiles.buy .tiles-wrap {
+    max-width: 992px;
+  }
+}
+
+@media (width >= 1140px) {
+  .tiles.buy .tiles-wrap {
+    max-width: 1140px;
+  }
+}

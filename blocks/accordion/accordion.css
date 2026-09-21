@@ -1,0 +1,196 @@
+/* accordion — lifted verbatim from solutions.css § 8 (.sol-faq*, lift
+   stardust/replica/capture/lift/solutions-{1440,360}.json) and the shared section shell (.sol-section 48/64,
+   .sol-h2). Wrappers carry the layout; the authored h2 / question <p> / answer <p> are styled through them
+   with descendant selectors (EW2). The title is reabsorbed into .head (EW8). */
+
+/* .sol-section band */
+main .section.accordion-container {
+  padding: 48px 0;
+}
+
+/* the lifted container model (.contain: 1140 / 0 16 / auto) */
+.accordion .accordion-wrap {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* .sol-faq: grey panel, r16, overflow hidden, py-4 → md:p-10 */
+.accordion .panel {
+  position: relative;
+  padding: 16px 0;
+  background-color: rgb(249 249 249);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.accordion .panel-row {
+  position: relative;
+}
+
+/* .sol-faq__head / __title / .sol-h2 (left-aligned inside the panel) */
+.accordion .head {
+  margin-bottom: 16px;
+}
+
+.accordion .title {
+  margin-top: 24px;
+  padding-bottom: 32px;
+}
+
+.accordion .title h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 35.2px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* the item list is a column flex container (no rendering change — items carry no margins; the QA gate counts
+   repeat units on the densest grid/flex container) */
+.accordion .list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .sol-faq__item: border-top 1px #e1e1e1, first none */
+.accordion .item + .item {
+  border-top: 1px solid rgb(225 225 225);
+}
+
+/* .sol-faq__q: flex, relative, w-full, py-4, heading5 20/22 500, text-left; the whole row is the click target (EW7) */
+.accordion .q-row {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 16px 0;
+  text-align: left;
+  color: #000;
+  cursor: pointer;
+}
+
+/* .sol-faq__label: inline-block, mr 48 (room for the absolute glyph) */
+.accordion .q-title {
+  display: inline-block;
+  margin-right: 48px;
+}
+
+.accordion .q-title p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+/* glyph-only toggle — the two svgs sit absolute right 0 / top = the row padding, as on the source */
+.accordion .toggle {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  background: none;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.accordion .toggle svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+
+.accordion .toggle[aria-expanded="true"] .plus,
+.accordion .toggle[aria-expanded="false"] .minus {
+  display: none;
+}
+
+/* .sol-faq__a / .accordion-content: display block, max-height 6000 / opacity 1, .hidden → 0 / 0 (animated) */
+.accordion .a {
+  display: block;
+  max-height: 6000px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.accordion .a.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.accordion .a-inner {
+  margin-bottom: 24px;
+}
+
+.accordion .a p {
+  margin: 0;
+}
+
+/* source: #faq a — underlined blue text links */
+.accordion .a p a:any-link {
+  line-height: 16px;
+  color: var(--c-blue);
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+@media (width >= 768px) {
+  .accordion .q-row {
+    display: inline-flex;
+    padding: 24px 0;
+  }
+
+  .accordion .q-title p {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+
+  .accordion .toggle {
+    top: 24px;
+  }
+}
+
+@media (width >= 992px) {
+  main .section.accordion-container {
+    padding: 64px 0;
+  }
+
+  .accordion .panel {
+    padding: 40px;
+  }
+
+  .accordion .panel-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .accordion .head {
+    width: 41.6667%;
+    padding-right: 48px;
+  }
+
+  .accordion .list {
+    width: 58.3333%;
+  }
+
+  .accordion .title {
+    padding-bottom: 48px;
+  }
+
+  .accordion .title h2 {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion .a,
+  .accordion .a p a:any-link {
+    transition: none;
+  }
+}

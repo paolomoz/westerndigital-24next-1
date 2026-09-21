@@ -1,0 +1,146 @@
+/* table — lifted verbatim from solutions.css § 7 (#solutions-table / .sol-table*, .sol-tag; lift
+   stardust/replica/capture/lift/solutions-{1440,360}.json) and the shared section shell (.sol-section 48/64,
+   .sol-section__head pb 32/48, .sol-h2). Wrappers and generated th/td carry the layout; the authored cell
+   <p>/<strong> are styled through them with descendant selectors (EW2). */
+
+/* .sol-section band */
+main .section.table-container {
+  padding: 48px 0;
+}
+
+/* section head in place: .sol-section__head > h2.sol-h2 */
+.table-container .default-content-wrapper {
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.table-container .default-content-wrapper h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 35.2px;
+  font-weight: 700;
+}
+
+/* the lifted container model (.contain: 1140 / 0 16 / auto) */
+.table .table-wrap {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* #solutions-table max-w 1200 */
+.table .table-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.table .table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table table {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.table tbody {
+  vertical-align: middle;
+}
+
+/* striped rows (fingerprint: TR [0,2,4] grey) */
+.table tbody tr:nth-child(odd) {
+  background: rgb(249 249 249);
+}
+
+.table tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+.table th {
+  padding: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: bottom;
+  border-top: 0;
+  border-bottom: 2px solid rgb(222 226 230);
+}
+
+/* lift 360: p 8, min-w 148 → md: p 16, min-w 200 */
+.table td {
+  padding: 8px;
+  min-width: 148px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 0;
+}
+
+.table th:first-child,
+.table td:first-child {
+  padding-left: 32px;
+  text-align: left;
+}
+
+.table :is(th, td) p {
+  margin: 0;
+}
+
+.table td strong {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+/* compare: the "Key benefits" pill (.sol-tag: inline, p 8 12, 14/21, #0E2966 on #EFF6FF, r16) */
+.table.compare .tag {
+  display: inline;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: rgb(14 41 102);
+  background: rgb(239 246 255);
+  border-radius: 16px;
+}
+
+/* everything inside the pill stays inline — the authored <p> AND the editor's two wrapper divs (EW2: the pill must
+   not break its line while the cell is being edited; measured Δh 210 px before this rule) */
+.table.compare .tag :is(div, p) {
+  display: inline;
+}
+
+@media (width >= 992px) {
+  main .section.table-container {
+    padding: 64px 0;
+  }
+
+  .table-container .default-content-wrapper {
+    padding-bottom: 48px;
+  }
+
+  .table-container .default-content-wrapper h2 {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .table td {
+    padding: 16px;
+    min-width: 200px;
+  }
+
+  .table td:first-child {
+    padding-left: 32px;
+  }
+}

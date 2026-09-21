@@ -1,0 +1,349 @@
+/* company-cards — two skins, one block. Every value lifted verbatim from stardust/prototypes/company.css
+   (§ values band / § overview cards / shared type ramp + .co-btn; lift company-{1440,360}.json).
+   Wrappers carry the layout; the authored h2 / h3 / p / picture are styled through them with descendant
+   selectors (EW2); the divider ::before rides the GENERATED .item (positional pseudo-classes only on wrappers). */
+
+/* stylelint-disable no-descending-specificity -- lifted cascade order kept per variant */
+
+.company-cards {
+  position: relative;
+}
+
+/* the lifted container model (.contain: 1140 / 0 16 / auto) */
+.company-cards .wrap {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.company-cards .media picture {
+  display: block;
+}
+
+.company-cards .actions p {
+  margin: 0;
+}
+
+/* ================= values (.co-values: photo band, white text, 5 icon columns with white dividers) ================= */
+.company-cards.values {
+  padding: 48px 0;
+  color: #fff;
+  text-align: center;
+  background-color: var(--c-navy); /* no-image fallback ground (the source photo is a deep blue) */
+}
+
+.company-cards.values .bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.company-cards.values .bg picture,
+.company-cards.values .bg img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* .co-text > h2.co-h2.co-h2--bold.co-mb-6 */
+.company-cards.values .head h2 {
+  margin: 0 0 24px;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: inherit;
+}
+
+/* .co-values__row */
+.company-cards.values .list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 -16px;
+}
+
+/* .co-value */
+.company-cards.values .item {
+  width: 50%;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+/* img.co-value__icon (max-h-100px py-3 block mx-auto) */
+.company-cards.values .media img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+/* h3.co-h5.co-heading-mb-2 */
+.company-cards.values .title h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: inherit;
+}
+
+/* p.co-sub */
+.company-cards.values .body p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+/* source inline rule .divider-5-3-2 > div::before — 4 × 125 white bar, per-breakpoint positions */
+.company-cards.values .list > .item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 125px;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+.company-cards.values .list > .item:nth-child(1)::before {
+  left: 50%;
+  top: 17%;
+}
+
+.company-cards.values .list > .item:nth-child(2)::before,
+.company-cards.values .list > .item:nth-child(4)::before,
+.company-cards.values .list > .item:nth-child(5)::before {
+  display: none;
+}
+
+.company-cards.values .list > .item:nth-child(3)::before {
+  left: 50%;
+  top: 50%;
+}
+
+@media (width >= 768px) and (width <= 991px) {
+  .company-cards.values .item {
+    width: 33.3333%;
+  }
+
+  .company-cards.values .list > .item:nth-child(1)::before {
+    left: 33.25%;
+    top: 25%;
+  }
+
+  .company-cards.values .list > .item:nth-child(2)::before {
+    display: block;
+    left: 66.5%;
+    top: 25%;
+  }
+
+  .company-cards.values .list > .item:nth-child(3)::before {
+    display: none;
+  }
+
+  .company-cards.values .list > .item:nth-child(4)::before {
+    display: block;
+    left: 50%;
+    top: 75%;
+  }
+}
+
+@media (width >= 768px) {
+  .company-cards.values .head h2 {
+    font-size: 42px;
+  }
+}
+
+@media (width >= 992px) {
+  .company-cards.values {
+    padding: 64px 0;
+  }
+
+  .company-cards.values .head h2 {
+    font-size: 48px;
+  }
+
+  .company-cards.values .item {
+    width: 16.6667%;
+  }
+
+  .company-cards.values .title h3 {
+    font-size: 24px;
+  }
+
+  .company-cards.values .list > .item:nth-child(1)::before {
+    left: 20%;
+    top: 50%;
+  }
+
+  .company-cards.values .list > .item:nth-child(2)::before {
+    display: block;
+    left: 40%;
+    top: 50%;
+  }
+
+  .company-cards.values .list > .item:nth-child(3)::before {
+    left: 60%;
+    top: 50%;
+  }
+
+  .company-cards.values .list > .item:nth-child(4)::before {
+    display: block;
+    left: 80%;
+    top: 50%;
+  }
+}
+
+/* ================= overview (.co-cards: grey #F2F3F3 rounded cards, image + 24px body, 3-up ≥992) ================= */
+
+/* .co-cards__row */
+.company-cards.overview .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+/* .co-card-col (+ --last) */
+.company-cards.overview .item {
+  width: 100%;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.company-cards.overview .item:last-child {
+  margin-bottom: 0;
+}
+
+/* .co-card */
+.company-cards.overview .card {
+  position: relative;
+  height: 100%;
+  background-color: var(--c-grey-1);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+/* .co-card__media / .co-card__img */
+.company-cards.overview .media {
+  display: block;
+  line-height: 0;
+}
+
+.company-cards.overview .media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* .co-card__body */
+.company-cards.overview .content {
+  position: relative;
+  padding: 24px;
+}
+
+/* h3 ← source h2.co-h4.co-heading-mb-2 */
+.company-cards.overview .title h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.company-cards.overview .body p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* .co-cta > a.co-btn — outline black, 8 16 → 12 40, mt 16 → 24, mb 36 → 0, mr 24 ≥768 (variant-owned paint, #25) */
+.company-cards.overview .actions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-cards.overview .actions a:any-link {
+  display: inline-flex;
+  align-items: center;
+  margin: 16px 0 36px;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: var(--c-black);
+  background: none;
+  border: 1px solid var(--c-black);
+  border-radius: var(--radius-btn);
+  text-decoration: none;
+}
+
+@media (width >= 768px) {
+  .company-cards.overview .title h3 {
+    font-size: 26px;
+  }
+
+  .company-cards.overview .actions a:any-link {
+    margin-right: 24px;
+  }
+}
+
+@media (width >= 992px) {
+  .company-cards.overview .item {
+    width: 33.3333%;
+    margin-bottom: 0;
+  }
+
+  .company-cards.overview .title h3 {
+    font-size: 28px;
+  }
+
+  .company-cards.overview .actions a:any-link {
+    margin-top: 24px;
+    margin-bottom: 0;
+    padding: 12px 40px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+/* ================= band rhythm the source carried on its ONE .co-lead section (content-anchored rules at
+   .section specificity — spacer ladder step 2, conversion-log-company.md § residuals):
+   .co-lead padding-top 48/64 → the section after the values band; .co-cards__row--padded pb 48/64 → an
+   overview grid followed by another section; .co-lead pb 48/64 + mb 32 → the page's last section. ================= */
+main .section.company-cards-container:has(.company-cards.values) + .section {
+  padding-top: 48px;
+}
+
+main .section.company-cards-container:has(.company-cards.overview):not(:last-child) .company-cards .list {
+  padding-bottom: 48px;
+}
+
+main .section.company-cards-container:has(.company-cards.overview):last-child {
+  padding-bottom: 80px;
+}
+
+@media (width >= 992px) {
+  main .section.company-cards-container:has(.company-cards.values) + .section {
+    padding-top: 64px;
+  }
+
+  main .section.company-cards-container:has(.company-cards.overview):not(:last-child) .company-cards .list {
+    padding-bottom: 64px;
+  }
+
+  main .section.company-cards-container:has(.company-cards.overview):last-child {
+    padding-bottom: 96px;
+  }
+}
+
+/* stylelint-enable no-descending-specificity */

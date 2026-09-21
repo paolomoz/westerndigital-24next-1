@@ -374,3 +374,16 @@ main .section.columns-container:has(.columns.feature) .columns-wrapper + .defaul
 }
 
 /* stylelint-enable no-descending-specificity */
+
+/* cta — ADDITIVE (solutions worker, 2026-09-21; the variant's proof was delegated to the solutions page): on the
+   source the two .button wrappers flex-SHRINK inside the column and the labels wrap (58px buttons, one row) —
+   the global a.button nowrap + flex-wrap stacked the pair into two rows (104px vs 58px, the page's only band
+   delta vs the served prototype at 1440 and 360). Appended last under a `main` prefix (distinct selector text, out-specifies the variant rule). */
+main .columns.cta .actions {
+  flex-wrap: nowrap;
+}
+
+/* stylelint-disable-next-line no-descending-specificity -- appended override, lifted cascade order kept */
+main .columns.cta .actions a:any-link {
+  white-space: normal;
+}

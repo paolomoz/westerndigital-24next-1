@@ -75,6 +75,8 @@ Reuse decisions: the three static heroes + the innovation band share "full-bleed
 
 Claims (agent `index`, 2026-09-21T11:26Z): `carousel` (hero), `tabs` (category), `cards` (content, promo, resource, about), `columns` (feature, split, cta — all three variants) — files under `blocks/{carousel,tabs,cards,columns}/`; rows in `stardust/eds-conversion-log-index.md`.
 Claimed by agent `products` (2026-09-21T11:44:30Z): `hero` (banner, photo, split, band), `breadcrumbs`, `filters`, `product-listing` — files under blocks/<name>/; rows in stardust/eds-conversion-log-products.md.
+Claimed by agent `solutions` (2026-09-21T12:14:51Z): `anchor-nav`, `tiles` (usecase, explore, tile, buy — all four variants), `table` (compare), `accordion` (faq) — files under blocks/<name>/; 16 additive pure-vector icon files `icons/sol-*.svg` (the per-tile editorial icons are inline SVGs on the source, authored as `:sol-*:` tokens); rows in stardust/eds-conversion-log-solutions.md.
+Claimed by agent `company` (2026-09-21T12:10:07Z): `company-cards` (values, overview) — files under blocks/company-cards/; content/company.html; rows in stardust/eds-conversion-log-company.md. Shared blocks used additively: hero (split), columns (split) — no variant added.
 
 Single-use blocks: 10 (carousel, tabs, anchor-nav, table, accordion, filters, product-listing, company-cards, tiles, breadcrumbs is 2-page) — within the D9-VOCAB budget (> 10 flags). Max variants on one block: 4.
 

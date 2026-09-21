@@ -1,0 +1,66 @@
+/* anchor-nav — lifted verbatim from solutions.css § 2 (.sol-nav / .sol-chips / .sol-chips__col / .sol-chip,
+   stardust/replica/capture/lift/solutions-{1440,360}.json). The authored <ul> is the chip row; the items
+   are styled by descendant selectors so the editor's re-rendered list matches too (EW2). */
+
+/* .sol-nav — the page-nav band (breadcrumbs + chips share this section) */
+main .section.anchor-nav-container {
+  padding: 16px 0;
+}
+
+/* the lifted container model (.contain: 1140 / 0 16 / auto) */
+.anchor-nav .anchor-nav-wrap {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* .sol-chips: row.-mx-2.-mb-4.items-center.flex-wrap */
+.anchor-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -8px -16px;
+  padding: 0;
+  list-style: none;
+}
+
+/* .sol-chips__col: cols-6 (50%) → md:cols-3 (25%), px-2, mb-4 */
+.anchor-nav li {
+  width: 50%;
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+
+/* .sol-chip: inline-flex w-full justify-center items-center py-6 px-4 bg-grey-1 rounded-16px, 16/16 400 */
+.anchor-nav li a:any-link {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  background-color: var(--c-grey-1);
+  border: 0;
+  border-radius: 16px;
+}
+
+/* the 15×17 chevron that led every chip label on the source (label margin-left 8px) */
+.anchor-nav li a::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 15px;
+  height: 17px;
+  margin-right: 8px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='17' viewBox='0 0 15 17' fill='none'%3E%3Cpath d='M6.65618 16.7071C7.0467 17.0976 7.67986 17.0976 8.07039 16.7071L14.4343 10.3431C14.8249 9.95262 14.8249 9.31946 14.4343 8.92893C14.0438 8.53841 13.4107 8.53841 13.0201 8.92893L7.36328 14.5858L1.70643 8.92893C1.3159 8.53841 0.682738 8.53841 0.292214 8.92893C-0.0983105 9.31946 -0.0983105 9.95262 0.292214 10.3431L6.65618 16.7071ZM7.36328 0L6.36328 4.37114e-08L6.36328 16L7.36328 16L8.36328 16L8.36328 -4.37114e-08L7.36328 0Z' fill='black'/%3E%3C/svg%3E") center / 15px 17px no-repeat;
+}
+
+@media (width >= 992px) {
+  .anchor-nav li {
+    width: 25%;
+  }
+}

@@ -31,3 +31,21 @@ Per `skills/stardust/reference/learnings.md`. Appended by the run; maintainers h
 - evidence: `dynamics-detect.mjs --from-state … --offline` ran concurrently with `lift.mjs`; the host answered ERR_CONNECTION_TIMED_OUT for ~2 min on both instruments (`/solutions` failed, re-probed later).
 - proposed change: `skills/dynamics/scripts/dynamics-detect.mjs` — document what `--offline` covers, and take the per-host live lock (`stardust/.work/live-<host>.lock`) like the replica instruments.
 - status: pending
+
+### code-sync-verify reports head.html as STALE on every run
+- failure class: instrument-gap
+- evidence: `code-sync-verify.mjs --org paolomoz --repo westerndigital-24next-1 --ref main` exits 124 with `STALE head.html … sha=differ` although head.html is unchanged since the boilerplate's initial commit; the served `/head.html` is pipeline-transformed (the CSP `<meta move-to-http-header>` is lifted to a header and the `nonce="aem"` is rewritten per response), so its bytes can never equal the tree's.
+- proposed change: `skills/deploy/scripts/code-sync-verify.mjs` — compare `head.html` after applying the known transforms (drop the move-to-http-header meta, normalise `nonce="…"`), or exclude it from the byte comparison and report it as `transformed`.
+- status: pending
+
+### qa-gate pairs schema sections with block instances by order
+- failure class: instrument-gap
+- evidence: `qa-gate.mjs <harness> --schema stardust/eds-schema/{solutions,company}.json` reported 5 and 2 `units:` fails whose real counts the harness probes prove (`stardust/.work/deploy/_solutions-harness-probe.mjs`, `_company-harness-probe.json`): the gate pairs schema section *i* with rendered block instance *i*, so a `defaultContent: true` section (company/vision) or a section holding two blocks (solutions page-nav = breadcrumbs + anchor-nav) shifts every later pairing by one; `<tr>` units of the `table` block are also not a rendered-unit proxy.
+- proposed change: `skills/deploy/scripts/qa-gate.mjs` — build the position map from sections that carry a block (skip `defaultContent`), pair by `schema.block` name + ordinal when present, and count `table` units by rows of the decorated block.
+- status: pending
+
+### prototype-to-content cannot emit two blocks in one section or a variant token via --map
+- failure class: generator-gap
+- evidence: products (filters + product-listing in one `split-aside` section) and solutions (breadcrumbs + anchor-nav) needed patch files to land the second block; `--map <section>=block:tiles` cannot carry the `buy` variant (attribute patch); Title is taken from the `<h1>` instead of the captured `<title>`.
+- proposed change: `skills/deploy/scripts/prototype-to-content.mjs` — accept `block:<name>.<variant>` and a repeatable `--map` per section for multi-block sections; read Title/Description from `stardust/current/pages/<slug>.json` when `--slug` is given.
+- status: pending
