@@ -308,11 +308,12 @@ main .section.cards-container:has(.cards.about) .default-content-wrapper {
 }
 
 .cards.about .unit {
-  /* reconcile(wide) — source: five content-sized flex items (div.section, flex 0 1 auto) in a md:flex-no-wrap
-     row; each is 266 wide (img max-w-250 + px-2) and shrinks equally to 1108 / 5 = 221.6 at 1440 — the frozen
-     222 px resolved to the same 221.6 through flex-shrink. At 1920 the row is 1432 wide, so the tiles keep 266
-     and the image renders 250 × 250 (live about band +44 vs the frozen build; landmarks-1920-index.txt footer −44). */
-  width: auto;
+  /* reconcile(wide) round 2 — the fluid source model (five content-sized flex items, 266 = img max-w-250 + px-2,
+     shrinking equally inside a md:flex-no-wrap row) was tried as width: auto and reverted: the build .list wraps,
+     so at 1440 the five 266 px tiles broke to a second row (+101 px, wide/r2/index-1440-compare.json) while at 1920
+     it matched live exactly (about band 621, doc 6396). Frozen 1440 value kept; residual logged in
+     stardust/.work/deploy/reconcile-wide.md § 6 with the candidate (.list nowrap ≥768 + unit width auto). */
+  width: 222px;
   margin-bottom: 24px;
   padding: 0 8px;
   text-align: center;
