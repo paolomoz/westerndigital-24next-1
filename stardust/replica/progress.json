@@ -735,12 +735,43 @@
         }
       ],
       "published": {
+        "360": {
+          "result": {
+            "regime": "published-origin",
+            "pixelPct": 1.1,
+            "pixelPctUnmasked": 1.1,
+            "heightDelta": -1,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/",
+              "width": 360,
+              "capturedAt": "2026-09-21T09:07:05.026Z",
+              "sidecar": "stardust/replica/gates/index-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T13:46:47.970Z",
+            "noiseFloor": {
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          },
+          "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/",
+          "artifacts": [
+            "stardust/replica/gates/index-360/gate-pub3.json"
+          ]
+        },
         "1440": {
           "result": {
             "regime": "published-origin",
-            "pixelPct": 1.87,
-            "pixelPctUnmasked": 1.87,
-            "heightDelta": -31,
+            "pixelPct": 1.61,
+            "pixelPctUnmasked": 1.61,
+            "heightDelta": 0,
             "pass": true,
             "masks": [],
             "ref": {
@@ -755,7 +786,7 @@
                 "via": "[aria-label*=\"Accept\" i]"
               }
             },
-            "at": "2026-09-21T12:52:29.160Z",
+            "at": "2026-09-21T13:38:04.424Z",
             "noiseFloor": {
               "pixelPct": 0,
               "heightDelta": 0
@@ -763,7 +794,7 @@
           },
           "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/",
           "artifacts": [
-            "stardust/replica/gates/index-1440/gate-pub1.json"
+            "stardust/replica/gates/index-1440/gate-pub2.json"
           ]
         }
       }
@@ -1355,10 +1386,10 @@
         "360": {
           "result": {
             "regime": "published-origin",
-            "pixelPct": 13.17,
-            "pixelPctUnmasked": 13.17,
-            "heightDelta": 174,
-            "pass": false,
+            "pixelPct": 1.35,
+            "pixelPctUnmasked": 1.35,
+            "heightDelta": 0,
+            "pass": true,
             "masks": [],
             "ref": {
               "url": "https://www.westerndigital.com/products",
@@ -1372,7 +1403,7 @@
                 "via": "[aria-label*=\"Accept\" i]"
               }
             },
-            "at": "2026-09-21T12:45:32.673Z",
+            "at": "2026-09-21T13:10:37.008Z",
             "noiseFloor": {
               "pixelPct": 0,
               "heightDelta": 0
@@ -1380,15 +1411,15 @@
           },
           "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/products",
           "artifacts": [
-            "stardust/replica/gates/products-360/gate-pub1.json"
+            "stardust/replica/gates/products-360/gate-pub2.json"
           ]
         },
         "1440": {
           "result": {
             "regime": "published-origin",
-            "pixelPct": 6.04,
-            "pixelPctUnmasked": 6.04,
-            "heightDelta": 17,
+            "pixelPct": 0.4,
+            "pixelPctUnmasked": 0.4,
+            "heightDelta": 0,
             "pass": true,
             "masks": [],
             "ref": {
@@ -1403,7 +1434,7 @@
                 "via": "[aria-label*=\"Accept\" i]"
               }
             },
-            "at": "2026-09-21T12:44:17.974Z",
+            "at": "2026-09-21T13:09:41.832Z",
             "noiseFloor": {
               "pixelPct": 0,
               "heightDelta": 0
@@ -1411,7 +1442,7 @@
           },
           "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/products",
           "artifacts": [
-            "stardust/replica/gates/products-1440/gate-pub1.json"
+            "stardust/replica/gates/products-1440/gate-pub2.json"
           ]
         }
       }
@@ -1975,9 +2006,9 @@
         "360": {
           "result": {
             "regime": "published-origin",
-            "pixelPct": 2.41,
-            "pixelPctUnmasked": 2.41,
-            "heightDelta": 13,
+            "pixelPct": 1.76,
+            "pixelPctUnmasked": 1.76,
+            "heightDelta": -1,
             "pass": true,
             "masks": [],
             "ref": {
@@ -1992,7 +2023,7 @@
                 "via": "[aria-label*=\"Accept\" i]"
               }
             },
-            "at": "2026-09-21T12:48:25.572Z",
+            "at": "2026-09-21T13:35:06.859Z",
             "noiseFloor": {
               "pixelPct": 0,
               "heightDelta": 0
@@ -2000,15 +2031,15 @@
           },
           "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/solutions",
           "artifacts": [
-            "stardust/replica/gates/solutions-360/gate-pub1.json"
+            "stardust/replica/gates/solutions-360/gate-pub2.json"
           ]
         },
         "1440": {
           "result": {
             "regime": "published-origin",
-            "pixelPct": 0.19,
-            "pixelPctUnmasked": 0.19,
-            "heightDelta": -32,
+            "pixelPct": 0.16,
+            "pixelPctUnmasked": 0.16,
+            "heightDelta": -1,
             "pass": true,
             "masks": [],
             "ref": {
@@ -2023,7 +2054,7 @@
                 "via": "[aria-label*=\"Accept\" i]"
               }
             },
-            "at": "2026-09-21T12:46:52.472Z",
+            "at": "2026-09-21T13:34:08.122Z",
             "noiseFloor": {
               "pixelPct": 0,
               "heightDelta": 0
@@ -2031,7 +2062,7 @@
           },
           "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/solutions",
           "artifacts": [
-            "stardust/replica/gates/solutions-1440/gate-pub1.json"
+            "stardust/replica/gates/solutions-1440/gate-pub2.json"
           ]
         }
       }
@@ -2357,10 +2388,10 @@
         "360": {
           "result": {
             "regime": "published-origin",
-            "pixelPct": 10.58,
-            "pixelPctUnmasked": 10.58,
-            "heightDelta": 18,
-            "pass": false,
+            "pixelPct": 1.16,
+            "pixelPctUnmasked": 1.16,
+            "heightDelta": 0,
+            "pass": true,
             "masks": [],
             "ref": {
               "url": "https://www.westerndigital.com/company",
@@ -2374,7 +2405,7 @@
                 "via": "[aria-label*=\"Accept\" i]"
               }
             },
-            "at": "2026-09-21T12:50:50.230Z",
+            "at": "2026-09-21T13:17:07.876Z",
             "noiseFloor": {
               "pixelPct": 0,
               "heightDelta": 0
@@ -2382,15 +2413,15 @@
           },
           "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/company",
           "artifacts": [
-            "stardust/replica/gates/company-360/gate-pub1.json"
+            "stardust/replica/gates/company-360/gate-pub2.json"
           ]
         },
         "1440": {
           "result": {
             "regime": "published-origin",
-            "pixelPct": 7.51,
-            "pixelPctUnmasked": 7.51,
-            "heightDelta": -27,
+            "pixelPct": 0.17,
+            "pixelPctUnmasked": 0.17,
+            "heightDelta": 0,
             "pass": true,
             "masks": [],
             "ref": {
@@ -2405,7 +2436,7 @@
                 "via": "[aria-label*=\"Accept\" i]"
               }
             },
-            "at": "2026-09-21T12:49:33.773Z",
+            "at": "2026-09-21T13:16:11.248Z",
             "noiseFloor": {
               "pixelPct": 0,
               "heightDelta": 0
@@ -2413,7 +2444,7 @@
           },
           "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/company",
           "artifacts": [
-            "stardust/replica/gates/company-1440/gate-pub1.json"
+            "stardust/replica/gates/company-1440/gate-pub2.json"
           ]
         }
       }

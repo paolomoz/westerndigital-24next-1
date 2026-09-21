@@ -137,3 +137,12 @@ Boilerplate selectors kept, paint lifted from canon.css `.btn` (16/16 500, paddi
 | section schemas | 28 sections across 4 pages, 0 `⚠ generic-with-structure` |
 
 Harness server stopped with `port.mjs stop harness` at hand-back. Probes and captures: `stardust/.work/deploy/{probes,harness,schema-view}/`.
+
+## Final inventory (2026-09-21T13:22:04Z — coordinator close)
+
+Blocks shipped (blocks/): carousel(hero) · tabs(category) · cards(content, promo, resource, about) · columns(feature, split, cta) · hero(banner, photo, split, band) · breadcrumbs · anchor-nav · tiles(usecase, explore, tile, buy) · table(compare) · accordion(faq) · filters · product-listing · company-cards(values, overview) · header · footer — 15 blocks, 21 variants. Section styles: intro, split-aside.
+Content (content/): index.html, products.html, solutions.html, company.html, nav.html, footer.html — all previewed on https://main--westerndigital-24next-1--paolomoz.aem.page (preview only, D16).
+Vocabulary census: `stardust/.work/deploy/davids-final.json` (`davids-model-lint --json`).
+Published-origin reconcile rounds (pub2): products (product-listing card padding, tiles buy foot wrapper, footer list unflatten), company (intro h2 gap, columns.split packing, hero h1 br + 360 hero image via patch), index and solutions — see `stardust/.work/deploy/reconcile-<slug>.md` and `stardust/replica/progress.json#archetypes[].published`.
+Anti-patterns avoided: no manufactured button anchors (CTAs move as their <p>), no value-slotting (node-slotting in template-slotted blocks), no page-local chrome CSS (one chrome variant), no fixed-height + padding chrome rows, images authored as captured absolute URLs (ingester rehosts), no inline handlers (CSP).
+Site notes: source is AEM classic; content root section.mainContainWrap; commerce/auth decided-out (links bounce to www.westerndigital.com); tags host-gated; search posts to the source host until the query index is registered.

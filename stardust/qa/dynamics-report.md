@@ -1,10 +1,10 @@
-# Dynamics parity check — https://main--westerndigital-24next-1--paolomoz.aem.page — 2026-09-21T12:46:14.699Z
+# Dynamics parity check — https://main--westerndigital-24next-1--paolomoz.aem.page — 2026-09-21T13:52:52.136Z
 
 Replayed 10 checks over 13 features · pass 9 · fail 1. Flows, not presence.
 
 | feature | class | status | check | result | detail | third-party requests |
 |---|---|---|---|---|---|---|
-| home category tablist (Shop by Category / Solutions / Industries) | M | done | click-control | FAIL | control div#tabs-mvv7w1-tab-2.tab in block tabs: no observable changed (aria-selected) |  |
+| home category tablist (Shop by Category / Solutions / Industries) | M | done | click-control | FAIL | control div#tabs-6vsduw-tab-2.tab in block tabs: no observable changed (aria-selected) |  |
 | home category tablist (Shop by Category / Solutions / Industries) | M | done | dom-count | PASS | 3 × [role=tab] (min 3) |  |
 | chrome interactions: mobile drawer + nav drop (sign-in flyout / search expand observed on live) | M | done | click-control | PASS | SKIP control button.navbar-hamburger[aria-label="Close navigation"] (zero-box) |  |
 | chrome interactions: mobile drawer + nav drop (sign-in flyout / search expand observed on live) | M | done | dom-count | PASS | 4 × header li.navbar-item.nav-drop (min 4) |  |

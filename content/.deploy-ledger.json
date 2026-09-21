@@ -1,12 +1,12 @@
 {
   "/company": {
     "status": "previewed",
-    "attempts": 1,
-    "ts": "2026-09-21T12:40:04.052Z",
-    "put": 201,
+    "attempts": 3,
+    "ts": "2026-09-21T13:18:18.363Z",
+    "put": 200,
     "preview": 200,
     "verify": "ok",
-    "bodyHash": "fdf6234269cc7d758c9465075389127acfba3edb",
+    "bodyHash": "60b6a0917af422f46bfdb82b79b613ee5f5014d3",
     "branch": "main"
   },
   "/index": {
@@ -31,12 +31,12 @@
   },
   "/solutions": {
     "status": "previewed",
-    "attempts": 1,
-    "ts": "2026-09-21T12:40:04.052Z",
-    "put": 201,
+    "attempts": 2,
+    "ts": "2026-09-21T13:32:48.399Z",
+    "put": 200,
     "preview": 200,
     "verify": "ok",
-    "bodyHash": "91254b35601e74c863fa166e05747cafb3e86942",
+    "bodyHash": "69361139db17e244a7767c2a2c079ff15d371386",
     "branch": "main"
   },
   "/footer": {

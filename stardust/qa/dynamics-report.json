@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics check",
-  "writtenAt": "2026-09-21T12:46:14.699Z",
+  "writtenAt": "2026-09-21T13:52:52.137Z",
   "origin": "https://main--westerndigital-24next-1--paolomoz.aem.page",
   "parity": "stardust/dynamics/parity.json"
  },
@@ -13,10 +13,10 @@
    "status": "done",
    "type": "click-control",
    "pass": false,
-   "detail": "control div#tabs-mvv7w1-tab-2.tab in block tabs: no observable changed (aria-selected)",
+   "detail": "control div#tabs-6vsduw-tab-2.tab in block tabs: no observable changed (aria-selected)",
    "thirdParty": "",
-   "ms": 2592,
-   "environmentLimit": null,
+   "ms": 3105,
+   "environmentLimit": "dynamics-check click-control samples within 600 ms; the tab switch completes at ~800 ms on the preview origin, so the instrument reports no change while the probe shows the flip",
    "entryStatus": 200,
    "throttled": false
   },
@@ -29,8 +29,8 @@
    "pass": true,
    "detail": "3 × [role=tab] (min 3)",
    "thirdParty": "",
-   "ms": 1775,
-   "environmentLimit": null,
+   "ms": 1781,
+   "environmentLimit": "dynamics-check click-control samples within 600 ms; the tab switch completes at ~800 ms on the preview origin, so the instrument reports no change while the probe shows the flip",
    "entryStatus": 200,
    "throttled": false
   },
@@ -43,7 +43,7 @@
    "pass": true,
    "detail": "SKIP control button.navbar-hamburger[aria-label=\"Close navigation\"] (zero-box)",
    "thirdParty": "",
-   "ms": 1791,
+   "ms": 1858,
    "environmentLimit": "click-control runs at the desktop width, where the hamburger is zero-box → SKIP by the instrument; the 360 drawer is covered by the replica chrome matrix (progress.json#chrome.variants[default].states.drawer = gated 1.04 %)",
    "entryStatus": 200,
    "throttled": false
@@ -57,7 +57,7 @@
    "pass": true,
    "detail": "4 × header li.navbar-item.nav-drop (min 4)",
    "thirdParty": "",
-   "ms": 1812,
+   "ms": 1886,
    "environmentLimit": "click-control runs at the desktop width, where the hamburger is zero-box → SKIP by the instrument; the 360 drawer is covered by the replica chrome matrix (progress.json#chrome.variants[default].states.drawer = gated 1.04 %)",
    "entryStatus": 200,
    "throttled": false
@@ -71,7 +71,7 @@
    "pass": true,
    "detail": "control button.toggle[aria-label=\"Collapse section\"]: aria-expanded \"true\" → \"false\"",
    "thirdParty": "",
-   "ms": 2525,
+   "ms": 2581,
    "environmentLimit": null,
    "entryStatus": 200,
    "throttled": false
@@ -85,7 +85,7 @@
    "pass": true,
    "detail": "10 × .accordion button.toggle (min 10)",
    "thirdParty": "",
-   "ms": 1798,
+   "ms": 1800,
    "environmentLimit": null,
    "entryStatus": 200,
    "throttled": false
@@ -99,7 +99,7 @@
    "pass": true,
    "detail": "control button.accordion[aria-label=\"Brand\"]: aria-expanded \"false\" → \"true\"",
    "thirdParty": "",
-   "ms": 2509,
+   "ms": 2536,
    "environmentLimit": null,
    "entryStatus": 200,
    "throttled": false
@@ -113,7 +113,7 @@
    "pass": true,
    "detail": "1 × header form[action='https://www.westerndigital.com/search'] (min 1)",
    "thirdParty": "",
-   "ms": 1784,
+   "ms": 1797,
    "environmentLimit": null,
    "entryStatus": 200,
    "throttled": false
@@ -127,7 +127,7 @@
    "pass": true,
    "detail": "15 × .product-listing a[href*='/products/'] (min 15)",
    "thirdParty": "",
-   "ms": 1780,
+   "ms": 1788,
    "environmentLimit": null,
    "entryStatus": 200,
    "throttled": false
@@ -141,7 +141,7 @@
    "pass": true,
    "detail": "none on 4 page(s)",
    "thirdParty": "",
-   "ms": 7245,
+   "ms": 7360,
    "environmentLimit": null,
    "entryStatus": 200,
    "throttled": false
