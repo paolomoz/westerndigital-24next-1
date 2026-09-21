@@ -309,10 +309,10 @@ main .section.cards-container:has(.cards.about) .default-content-wrapper {
 
 .cards.about .unit {
   /* reconcile(wide) round 2 — the fluid source model (five content-sized flex items, 266 = img max-w-250 + px-2,
-     shrinking equally inside a md:flex-no-wrap row) was tried as width: auto and reverted: the build .list wraps,
-     so at 1440 the five 266 px tiles broke to a second row (+101 px, wide/r2/index-1440-compare.json) while at 1920
-     it matched live exactly (about band 621, doc 6396). Frozen 1440 value kept; residual logged in
-     stardust/.work/deploy/reconcile-wide.md § 6 with the candidate (.list nowrap ≥768 + unit width auto). */
+     shrinking equally inside a md:flex-no-wrap row) was tried as width: auto and reverted: at 1440 the about band
+     grew 101 px (wide/r2/index-1440-compare.json — .list is nowrap, so the growth is item min-content / label
+     reflow, not diagnosed within the round cap) while at 1920 it matched live exactly (about band 621, doc 6396).
+     Frozen 1440 value kept; residual + candidate logged in stardust/.work/deploy/reconcile-wide.md § 6. */
   width: 222px;
   margin-bottom: 24px;
   padding: 0 8px;
