@@ -241,7 +241,9 @@ main .section.intro .default-content-wrapper {
 }
 
 main .section.intro .default-content-wrapper h2 {
-  margin-bottom: 4px;
+  /* reconcile(company) pub2: source h2.mb-6 = 24px and p margin-top 0 → a 24px gap; 4px collapsed under the
+     paragraph's 20px margin-top to 20px and shifted every landmark from "Our Values" down by -4px */
+  margin-bottom: 24px;
   font-size: 32px;
   line-height: 1.1;
   font-weight: 700;

@@ -387,3 +387,11 @@ main .columns.cta .actions {
 main .columns.cta .actions a:any-link {
   white-space: normal;
 }
+
+/* split — ADDITIVE (reconcile(company) pub2, landmarks: h2 "leadership" -25px / cta "learn more" +17px at 1440):
+   the pipeline delivers the CTA as p.button-wrapper > a.button, a second flex line under .text; with the
+   default align-content the wrapping .text-col stretched the two lines apart (+21 / -21 around the centre).
+   The source column is one centred block — pack the lines. The media-first row already matched (-4 only). */
+.columns.split .row:not(.media-first) .text-col {
+  align-content: center;
+}

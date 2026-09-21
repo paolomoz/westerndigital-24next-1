@@ -2,7 +2,7 @@
  {
   "selector": "main > div:has(.metadata)",
   "op": "replace",
-  "value": "<div class=\"metadata\"><div><div>Title</div><div>Who We Are: Leadership, Values, and Innovation | WD</div></div><div><div>Description</div><div>Discover Western Digital’s mission, values, leadership, and legacy of innovation. Learn how we power data-driven transformation for businesses worldwide.</div></div></div><div class=\"hero split\"><div><div><picture><img src=\"https://www.westerndigital.com/content/dam/store/en-us/assets/home-page/banners/hp-wd-brand-hero-cascade-bg-2.jpg.wdthumb.3000.3000.webp\" alt=\"\"></picture></div></div><div><div><h1>Powering Data, Driving Potential</h1><p>Enabling innovation without compromise.</p></div></div></div>"
+  "value": "<div class=\"metadata\"><div><div>Title</div><div>Who We Are: Leadership, Values, and Innovation | WD</div></div><div><div>Description</div><div>Discover Western Digital’s mission, values, leadership, and legacy of innovation. Learn how we power data-driven transformation for businesses worldwide.</div></div></div><div class=\"hero split\"><div><div><picture><img src=\"https://www.westerndigital.com/content/dam/store/en-us/assets/home-page/banners/hp-wd-brand-hero-cascade-bg-2.jpg.wdthumb.3000.3000.webp\" alt=\"\"></picture></div></div><div><div><h1>Powering Data,<br>Driving Potential</h1><p>Enabling innovation without compromise.</p></div></div><div><div><picture><img src=\"https://www.westerndigital.com/content/dam/store/en-us/assets/company/campaign/we-make-it-possible/wd-abstract-cascading-glass-plates-dark-blue.jpg.wdthumb.840.840.webp\" alt=\"\"></picture></div></div></div>"
  },
  {
   "selector": "main > div:has(.metadata) + div",
