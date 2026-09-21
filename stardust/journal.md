@@ -39,3 +39,29 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** $stardust replica https://www.westerndigital.com (Phase 3 recreate: index, products, solutions, company)
 
 ---
+## 2026-09-21T10:24:07Z — Replica Phases 3–4: four archetypes recreated and gated
+
+**Prompt:** *(continuation of the hands-off run)* Recreate one archetype per page type and pass the source-fidelity gate at 1440 and 360.
+
+**Decisions:**
+- Fan-out: four fresh-context workers (index + chrome first, then products, solutions, company; ≤ 2 concurrent for the 2 browser slots). Workers wrote `progress-<slug>.json`; the coordinator recorded rounds with `progress-record.mjs` and merged with `stardust/.work/replica/merge-progress.mjs`.
+- Canon = `stardust/prototypes/canon.css` + the chrome markup of `index-proposed.html`, imported verbatim by the other three. Canon follow-ups CF-2 (360 cart flyout), CF-4 (footer +1 px), CF-5 (TrustArc "Cookie Preferences" link, tag-injected, absent on live at rest) fixed in canon; CF-1 skip-link occlusion and CF-3 Ethisphere 500 px rendition justified. Products rebuilt on the final chrome and re-gated (iter3, canon-followup, PASS).
+- Chrome variant `variant-4dea` carries the `default` row as evidence (identical chrome; resting crops re-gated on solutions and company).
+- Approval: all four pages `approved` with `approvedBy: hands-off` after every bar passed; the one over-bar chrome cell (search 2.02 % vs 2 %) is a permanent-class residual, not a pass.
+
+**Artifacts touched:**
+- stardust/prototypes/{canon.css,index*,products*,solutions*,company*,assets/} — created
+- stardust/replica/{progress.json, progress-<slug>.json, gates/<slug>-<bp>/, motion/, capture/} — created/updated
+- PRODUCT.md, DESIGN.md, DESIGN.json — created (bounded-single)
+- stardust/state.json (4 × approved), stardust/status.jsonl, stardust/learnings.md — updated/created
+
+**Findings worth flagging:**
+- Gate numbers: 1440 0.05–0.09 % on every page; 360 0.23–2.69 %; the 360 hot band on index is live's `wdthumb.840` rendition vs the harvested 3000 px master (photo-reencoding) — later workers harvested the mobile renditions by response intercept and avoided it.
+- `chrome-variants.mjs --progress` cannot express a residual cell (STATE_WORDS) — logged as a plugin gap in `stardust/learnings.md`; no sibling fan-out exists in this 4-page scope, so nothing is blocked by it.
+- motion-assert's `entrances` heuristic fails on every page because live mutates inline styles on chrome elements (Splide/commerce init, search skeleton); chrome, stateMachines and pageErrors pass. Advisory in this release.
+
+**Open questions:** none new (owner batch unchanged).
+
+**Next:** $stardust migrate
+
+---

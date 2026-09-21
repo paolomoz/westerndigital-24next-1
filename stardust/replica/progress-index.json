@@ -1,0 +1,1266 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica worker index",
+    "writtenAt": "2026-09-21T08:19:28.511Z",
+    "againstInput": "brief stardust/.work/replica/briefs/index.md"
+  },
+  "pageType": "landing",
+  "archetype": "index",
+  "chromeVariant": "default",
+  "breakpoints": {
+    "360": {
+      "iterations": 3,
+      "result": {
+        "regime": "prototype",
+        "structuralRed": 0,
+        "visualFlags": "4 justified (mirrored Splide loop clones at negative offsets)",
+        "pixelPct": 2.69,
+        "pixelPctUnmasked": 2.69,
+        "heightDelta": -1,
+        "pass": true,
+        "masks": [],
+        "ref": {
+          "url": "https://www.westerndigital.com/",
+          "width": 360,
+          "capturedAt": "2026-09-21T09:07:05.026Z",
+          "sidecar": "stardust/replica/gates/index-360/live.png.json",
+          "instrument": "stitch-shot",
+          "technique": "headless",
+          "consent": {
+            "mode": "accept",
+            "via": "[aria-label*=\"Accept\" i]"
+          }
+        },
+        "at": "2026-09-21T09:45:47.400Z",
+        "build": "prototype (uncommitted)",
+        "record": "gates/index-360/gate-iter3.json",
+        "verdictLine": "PASS 2.69 % Δh -1px  iteration 3/3",
+        "note": "iter1 = static pass; iter2 = after interaction layer + canon follow-ups; iter3 = final build after chrome-cell work (live reference cached from iter1, build recaptured each round)"
+      },
+      "justified": [
+        {
+          "probe": "content",
+          "flag": "🟡 MISSING BODY ×~42 (source inline <style> text inside section.mainContainWrap)",
+          "why": "stylesheet text nodes, not content; same rules carried in CSS",
+          "permanent": true
+        },
+        {
+          "probe": "content",
+          "flag": "🟠 FONT FORK ×4 body \"/\"",
+          "why": "zero-width display:none price separator mirrored from live",
+          "permanent": true
+        },
+        {
+          "probe": "visual",
+          "flag": "FLUSH-LEFT TEXT ×4 at left -704/-344px",
+          "why": "mirrors live Splide loop clones at negative track offsets (translateX(-200%) = 2 slides)"
+        },
+        {
+          "probe": "chrome-parity",
+          "flag": "footer ICON #6 signature img 500×342 → 1280×876 (ethisphere-award)",
+          "why": "live serves a wdthumb.500.500 rendition at 360 that the harvest did not capture (only the 1280 copy exists); same 100px rendered box; harvested copy used at both widths — never a CDN URL",
+          "permanent": true
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 2000–2500",
+          "pct": 26.6,
+          "cause": "photo-reencoding: live serves wdthumb.840.840 renditions at 360, the harvest holds the wdthumb.3000.3000 copies (same geometry, anchors Δy 0, offset 0px conf 0.86)",
+          "what": "content-card rail photos (splide02) + hero photo band (y 0–500 6.3%) re-encoded at another rendition size",
+          "flaggedFor": "delivery",
+          "artifacts": [
+            "gates/index-360/review-iter1.png",
+            "gates/index-360/diff-iter1.png",
+            "gates/index-360/gate-iter1.json"
+          ],
+          "acceptedBy": "hands-off-policy:photo-reencoding"
+        }
+      ],
+      "captureState": [
+        {
+          "what": "live 360 lift (08:11) rendered no cart/search icons and a 100x32 unloaded award image; the fresh gate capture (09:1x) renders both icons and the 68px image — build mirrors the gate-time state",
+          "where": "header tools / footer award"
+        }
+      ],
+      "motion": {
+        "assert": {
+          "verdict": "fail",
+          "at": "2026-09-21T09:46:00.166Z",
+          "target": "http://127.0.0.1:8814/index-proposed.html",
+          "regime": "prototype",
+          "observe": "stardust/replica/motion/index-360.json",
+          "schema": 2,
+          "width": 360,
+          "checks": {
+            "chrome": {
+              "status": "pass",
+              "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+              "target": [
+                {
+                  "y": 0,
+                  "cls": "site-header header relative w-full",
+                  "position": "sticky",
+                  "height": "91px",
+                  "transform": "none",
+                  "dir": "down"
+                },
+                {
+                  "y": 6000,
+                  "cls": "site-header header relative w-full",
+                  "position": "sticky",
+                  "height": "91px",
+                  "transform": "none",
+                  "dir": "down"
+                },
+                {
+                  "y": 800,
+                  "cls": "site-header header relative w-full",
+                  "position": "sticky",
+                  "height": "91px",
+                  "transform": "none",
+                  "dir": "up"
+                },
+                {
+                  "y": 0,
+                  "cls": "site-header header relative w-full",
+                  "position": "sticky",
+                  "height": "91px",
+                  "transform": "none",
+                  "dir": "up"
+                }
+              ]
+            },
+            "entrances": {
+              "status": "fail",
+              "detail": "live 11 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+              "live": 11,
+              "target": 0
+            },
+            "widgets": {
+              "status": "n/a",
+              "detail": ".hamburger-menu: n/a (dead live (implement nothing)); #splide02 .splide__arrow--next: n/a (dead live (implement nothing))",
+              "rows": [
+                {
+                  "sel": ".hamburger-menu",
+                  "status": "n/a",
+                  "detail": "dead live (implement nothing)"
+                },
+                {
+                  "sel": "#splide02 .splide__arrow--next",
+                  "status": "n/a",
+                  "detail": "dead live (implement nothing)"
+                }
+              ]
+            },
+            "stateMachines": {
+              "status": "n/a",
+              "detail": "no click-paired machines in the observe run",
+              "rows": []
+            },
+            "pageErrors": {
+              "status": "pass",
+              "detail": "0 pageerror(s)",
+              "count": 0
+            }
+          },
+          "skips": {}
+        },
+        "note": "assert verdict fail is 🟡 advisory: chrome/stateMachines/pageErrors pass; entrances fail — live counts 14 (1440) / 11 (360) inline-style-mutated elements from Splide/commerce init bookkeeping + autoplay, the prototype reproduces the visible behaviours (autoplay, underline, tabs, flyout, search, drawer) with its own timer/class mechanics; no --skip used"
+      },
+      "chromeCrops": {
+        "header": {
+          "y": 0,
+          "height": 91,
+          "pct": 0.07,
+          "pass": true,
+          "artifacts": [
+            "gates/index-360/crop-header-iter1.json",
+            "gates/index-360/chrome-header-iter1.png"
+          ]
+        },
+        "footer": {
+          "y": 6006,
+          "yB": 6007,
+          "height": 2176,
+          "pct": 1.09,
+          "pass": true,
+          "artifacts": [
+            "gates/index-360/crop-footer-iter1.json",
+            "gates/index-360/chrome-footer-iter1.png"
+          ]
+        },
+        "parity": "gates/index-360/chrome-parity-iter1d.txt (header quiet 4/4 texts 4/4 icons; footer 43/43 texts 7/7 icons, 1 justified rendition-signature delta)"
+      },
+      "priorRounds": [
+        {
+          "label": "iter1",
+          "record": "gates/index-360/gate-iter1.json",
+          "pixelPct": 2.69
+        },
+        {
+          "label": "iter2",
+          "record": "gates/index-360/gate-iter2.json",
+          "pixelPct": 2.69
+        }
+      ],
+      "finalProbes": {
+        "contentDiff": "gates/index-360/content-diff-final.txt (0 structural 🔴)",
+        "visualDiff": "gates/index-360/visual-diff-final.txt (4 justified FLUSH-LEFT clone flags)"
+      }
+    },
+    "1440": {
+      "iterations": 3,
+      "result": {
+        "regime": "prototype",
+        "structuralRed": 0,
+        "visualFlags": "4 justified (mirrored Splide loop clones at negative offsets)",
+        "pixelPct": 0.05,
+        "pixelPctUnmasked": 0.05,
+        "heightDelta": 0,
+        "pass": true,
+        "masks": [],
+        "ref": {
+          "url": "https://www.westerndigital.com/",
+          "width": 1440,
+          "capturedAt": "2026-09-21T08:53:28.613Z",
+          "sidecar": "stardust/replica/gates/index-1440/live.png.json",
+          "instrument": "stitch-shot",
+          "technique": "headless",
+          "consent": {
+            "mode": "accept",
+            "via": "[aria-label*=\"Accept\" i]"
+          }
+        },
+        "at": "2026-09-21T09:45:31.738Z",
+        "build": "prototype (uncommitted)",
+        "record": "gates/index-1440/gate-iter3.json",
+        "verdictLine": "PASS 0.05 % Δh 0px  iteration 3/3",
+        "note": "iter1 = static pass; iter2 = after interaction layer + canon follow-ups; iter3 = final build after chrome-cell work (live reference cached from iter1, build recaptured each round)"
+      },
+      "justified": [
+        {
+          "probe": "content",
+          "flag": "🟡 MISSING BODY ×~45 (source body \".section-…{ background-size… }\", \".promo-carousel …\", \"img[alt=…] { height: 3rem; }\")",
+          "why": "AEM inline <style> text nodes inside section.mainContainWrap are stylesheet text, not content; the recreation carries the same rules in CSS",
+          "permanent": true
+        },
+        {
+          "probe": "content",
+          "flag": "🟠 FONT FORK ×4 body \"/\" (11% width)",
+          "why": "zero-width display:none price-separator span mirrored from live; hidden, same Roboto face",
+          "permanent": true
+        },
+        {
+          "probe": "visual",
+          "flag": "FLUSH-LEFT TEXT ×4 at left -2714/-1274px",
+          "why": "mirrors live Splide loop clones at negative track offsets (list translateX(-200%))"
+        },
+        {
+          "probe": "chrome-parity",
+          "flag": "OCCLUDED \"Skip to main content\"",
+          "why": "instrument WARN: live skip link is covered the same way (a live quirk); build mirrors top:-43px placement"
+        }
+      ],
+      "residuals": [
+        {
+          "region": "chrome cell search (expanded bar 334,63 940×50)",
+          "pct": 2.02,
+          "cause": "subpixel-layoutunit: placeholder and Clear glyph runs shifted ≤1px vs live (magnifier, placeholder, Clear, × extents all match within 1px; crop texture thick 48%; bar 2%)",
+          "what": "chrome-states cell search over the 2% bar by 0.02 after 11 build-only replays",
+          "flaggedFor": "user",
+          "artifacts": [
+            "gates/index-1440/chrome-states/diff-1440-search.png",
+            "gates/index-1440/chrome-states/live-1440-search.png",
+            "gates/index-1440/chrome-states/build-1440-search.png",
+            "gates/index-1440/chrome-states/chrome-states.json"
+          ],
+          "acceptedBy": "hands-off-policy:subpixel-layoutunit"
+        }
+      ],
+      "captureState": [
+        {
+          "what": "hero slides 3/4 (+clones) carry no lazyloaded background image in the capture; only slide01, slide02 and clone02 have bgi",
+          "where": "splide01"
+        },
+        {
+          "what": "chat iframe #wd-chat-frame (65x65 fixed) not recreated — third-party widget; not visible in the 1440 stitched diff (0.06%)",
+          "where": "body"
+        }
+      ],
+      "motion": {
+        "assert": {
+          "verdict": "fail",
+          "at": "2026-09-21T09:45:55.641Z",
+          "target": "http://127.0.0.1:8814/index-proposed.html",
+          "regime": "prototype",
+          "observe": "stardust/replica/motion/index.json",
+          "schema": 2,
+          "width": 1440,
+          "checks": {
+            "chrome": {
+              "status": "pass",
+              "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+              "target": [
+                {
+                  "y": 0,
+                  "cls": "site-header header relative w-full",
+                  "position": "sticky",
+                  "height": "97px",
+                  "transform": "none",
+                  "dir": "down"
+                },
+                {
+                  "y": 4800,
+                  "cls": "site-header header relative w-full",
+                  "position": "sticky",
+                  "height": "97px",
+                  "transform": "none",
+                  "dir": "down"
+                },
+                {
+                  "y": 800,
+                  "cls": "site-header header relative w-full",
+                  "position": "sticky",
+                  "height": "97px",
+                  "transform": "none",
+                  "dir": "up"
+                },
+                {
+                  "y": 0,
+                  "cls": "site-header header relative w-full",
+                  "position": "sticky",
+                  "height": "97px",
+                  "transform": "none",
+                  "dir": "up"
+                }
+              ]
+            },
+            "entrances": {
+              "status": "fail",
+              "detail": "live 14 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+              "live": 14,
+              "target": 0
+            },
+            "widgets": {
+              "status": "n/a",
+              "detail": "#splide02 .splide__arrow--next: n/a (dead live (implement nothing)); #splide03 .splide__arrow--next: n/a (dead live (implement nothing)); #splide04 .splide__arrow--next: n/a (dead live (implement nothing)); #solutions: n/a (dead live (implement nothing)); #industries: n/a (dead live (implement nothing)); .wd-progress-item:nth-child(2): n/a (dead live (implement nothing))",
+              "rows": [
+                {
+                  "sel": "#splide02 .splide__arrow--next",
+                  "status": "n/a",
+                  "detail": "dead live (implement nothing)"
+                },
+                {
+                  "sel": "#splide03 .splide__arrow--next",
+                  "status": "n/a",
+                  "detail": "dead live (implement nothing)"
+                },
+                {
+                  "sel": "#splide04 .splide__arrow--next",
+                  "status": "n/a",
+                  "detail": "dead live (implement nothing)"
+                },
+                {
+                  "sel": "#solutions",
+                  "status": "n/a",
+                  "detail": "dead live (implement nothing)"
+                },
+                {
+                  "sel": "#industries",
+                  "status": "n/a",
+                  "detail": "dead live (implement nothing)"
+                },
+                {
+                  "sel": ".wd-progress-item:nth-child(2)",
+                  "status": "n/a",
+                  "detail": "dead live (implement nothing)"
+                }
+              ]
+            },
+            "stateMachines": {
+              "status": "pass",
+              "detail": "Solutions: ariaExpanded changed (live: aria-expanded); Industries: ariaExpanded changed (live: aria-expanded); Solutions: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"; Shop by Category: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; Solutions: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"",
+              "rows": [
+                {
+                  "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center.active > button.w-auto.btn.pointer",
+                  "attr": "aria-expanded",
+                  "status": "pass",
+                  "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                },
+                {
+                  "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.w-auto.btn.pointer",
+                  "attr": "aria-expanded",
+                  "status": "pass",
+                  "detail": "Industries: ariaExpanded changed (live: aria-expanded)"
+                },
+                {
+                  "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.border-b-3.w-auto.btn",
+                  "attr": "aria-expanded",
+                  "status": "pass",
+                  "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                },
+                {
+                  "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.splide__slide--clone",
+                  "status": "not-asserted",
+                  "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                },
+                {
+                  "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center.active > button.border-b-3.w-auto.btn",
+                  "attr": "aria-expanded",
+                  "status": "pass",
+                  "detail": "Shop by Category: ariaExpanded changed (live: aria-expanded)"
+                },
+                {
+                  "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.lastSlide.splide__slide--clone",
+                  "status": "not-asserted",
+                  "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                },
+                {
+                  "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.firstSlide.splide__slide--clone",
+                  "status": "not-asserted",
+                  "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                },
+                {
+                  "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.is-next",
+                  "status": "not-asserted",
+                  "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                },
+                {
+                  "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.lastSlide",
+                  "status": "not-asserted",
+                  "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                },
+                {
+                  "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide",
+                  "status": "not-asserted",
+                  "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                },
+                {
+                  "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.text-grey-5.w-auto.btn",
+                  "attr": "aria-expanded",
+                  "status": "pass",
+                  "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                },
+                {
+                  "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.firstSlide.is-active",
+                  "status": "not-asserted",
+                  "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                }
+              ]
+            },
+            "pageErrors": {
+              "status": "pass",
+              "detail": "0 pageerror(s)",
+              "count": 0
+            }
+          },
+          "skips": {}
+        },
+        "note": "assert verdict fail is 🟡 advisory: chrome/stateMachines/pageErrors pass; entrances fail — live counts 14 (1440) / 11 (360) inline-style-mutated elements from Splide/commerce init bookkeeping + autoplay, the prototype reproduces the visible behaviours (autoplay, underline, tabs, flyout, search, drawer) with its own timer/class mechanics; no --skip used"
+      },
+      "chromeCrops": {
+        "header": {
+          "y": 0,
+          "height": 97,
+          "pct": 0,
+          "pass": true,
+          "artifacts": [
+            "gates/index-1440/crop-header-iter1.json",
+            "gates/index-1440/chrome-header-iter1.png"
+          ]
+        },
+        "footer": {
+          "y": 5584,
+          "yB": 5584,
+          "height": 763,
+          "pct": 0.13,
+          "pass": true,
+          "artifacts": [
+            "gates/index-1440/crop-footer-iter1.json",
+            "gates/index-1440/chrome-footer-iter1.png"
+          ]
+        },
+        "parity": "gates/index-1440/chrome-parity-iter1b.txt (quiet: 10/10 + 43/43 texts, 4/4 + 7/7 icons; 1 OCCLUDED skip-link = symmetric live quirk per instrument WARN)"
+      },
+      "priorRounds": [
+        {
+          "label": "iter1",
+          "record": "gates/index-1440/gate-iter1.json",
+          "pixelPct": 0.06
+        },
+        {
+          "label": "iter2",
+          "record": "gates/index-1440/gate-iter2.json",
+          "pixelPct": 0.04
+        }
+      ],
+      "finalProbes": {
+        "contentDiff": "gates/index-1440/content-diff-final.txt (0 structural 🔴)",
+        "visualDiff": "gates/index-1440/visual-diff-final.txt (4 justified FLUSH-LEFT clone flags)"
+      }
+    }
+  },
+  "chrome": {
+    "variants": [
+      {
+        "name": "default",
+        "archetype": "index",
+        "states": {
+          "rest": "gated",
+          "scrolled": "gated (identity: sticky 97px@1440 / 91px@360 unchanged at every y; live identity sel fell back to body — pinnedScrolled true both sides)",
+          "menu:Products": "gated (0.00%)",
+          "menu:Solutions": "gated (0.00%)",
+          "menu:Support": "gated (0.00%)",
+          "menu:Company": "gated (0.00%)",
+          "menu:Sign in": "gated (0.84%)",
+          "cart": "dead (live: click opens no panel — plain trigger)",
+          "search": "residual 2.02% (subpixel-layoutunit; breakpoints.1440.residuals[0])",
+          "language": "dead (region switcher is a plain link to /region-selector)",
+          "drawer": "gated (1.04%)",
+          "drawer-drilled": "gated (1.55%)",
+          "footer-accordion": "dead (no accordions at 360; footer columns stack)"
+        },
+        "gates": {
+          "360": "gates/index-1440/chrome-states/chrome-states.json",
+          "1440": "gates/index-1440/chrome-states/chrome-states.json"
+        },
+        "restCrops": {
+          "360": {
+            "header": "gates/index-360/crop-header-iter1.json (0.07%)",
+            "footer": "gates/index-360/crop-footer-iter1.json (1.09%)"
+          },
+          "1440": {
+            "header": "gates/index-1440/crop-header-iter1.json (0.00%)",
+            "footer": "gates/index-1440/crop-footer-iter1.json (0.13%)"
+          }
+        },
+        "notes": [
+          "live mega-menu dropdown never became visible under hover or click in headless (region atoms 1; motion trigger 6 aria-expanded false→false): menu cells gate the trigger li region with the underline hidden (source z-index -1); the dropdown DOM is authored hidden from the nav model for the platform nav document",
+          "ids: build li#…NavSections carries aria-controls to itself like live (duplicate-id resolution mirrored), panel ul is #…NavPanel"
+        ],
+        "liveCache": "gates/index-1440/chrome-live-states.json"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "kind": "header-promo-strip",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "header-nav-rest",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "hero-loop-carousel-progressbar",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "category-tablist",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "content-card-rail",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "product-card-rail",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "resource-card-rail",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "two-up-media-cards",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "icon-link-row",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "footer-columns",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "footer-legal",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    }
+  ],
+  "motion": {
+    "observed": [
+      "hero autoplay loop (ul.splide__list translateX stepping; span.wd-progress-fill width mutations, 4 items)",
+      "hero progress-item hover (color rgb(211,211,211), opacity .75, track bg rgb(221,221,221))",
+      "nav sliding underline on hover (li.slidingDiv visibility, .2s)",
+      "category tabs aria-expanded toggle (role=tab) + panel swap",
+      "sign-in flyout opens on click (chrome-states menu:Sign in)",
+      "search bar expands on click (.search-expanded 940px, Clear + collapse)",
+      "360 drawer opens on hamburger click (nav.mMenutoggleWidth, aria-expanded, bar.animate) and drills on Products (dropDownContainer.fullWidth, +192px)"
+    ],
+    "implemented": [
+      "hero autoplay + progress fill (interval approximated 6000ms — not directly measurable from the observe run; logged)",
+      "progress-item hover CSS",
+      "nav hover underline (inline left/width/visibility like live)",
+      "tabs state machine",
+      "sign-in flyout toggle",
+      "search expand/collapse/clear (dropdown rows toggled by inline display like live; #predictiveSearchContainer never pinned)",
+      "drawer open/close + drill",
+      "Splide-like init inline writes on the rail/promo lists (live inline transform translateX(0px))"
+    ],
+    "dead": [
+      "header scroll-morph (sticky 97px/91px at every y, no class change)",
+      "rail arrows splide02/03/04 (visibility hidden at rest; click moved no track)",
+      "product-card hover (#splide03 a.pc-url-wrap: no computed change)",
+      "cart trigger (no panel opened on live)",
+      "desktop mega-menu dropdown (live ul#…NavSections never became visible under hover or click in headless: chrome-states region atoms 1, motion trigger 6 aria-expanded false→false) — panel DOM authored hidden from the nav model, not wired",
+      "footer accordions at 360 (none on live: columns stack)",
+      "language/region switcher (plain link to /region-selector)"
+    ],
+    "interval_note": "hero INTERVAL 6000ms approximated"
+  },
+  "fonts": {
+    "decision": "self-host Roboto 400/500/700 (open-license, harvested woff2 = same public source; local() first like live); FK Grotesk Neue / SimplonMono / Glyphicons / icomoon are declared in the source CSS but no captured text element renders them (lift: 174/174 text elements Roboto) — not shipped, no substitute needed",
+    "artifacts": [
+      "stardust/current/assets/_fonts-manifest.json",
+      "stardust/replica/capture/lift/index-1440.json#fontFaces"
+    ]
+  },
+  "portations": [],
+  "log": [
+    {
+      "at": "2026-09-21T09:01:03.679Z",
+      "step": "1440 gate iter1",
+      "note": "PASS 0.06% dh0; chrome crops header 0.00% footer 0.13%; parity quiet"
+    },
+    {
+      "at": "2026-09-21T09:07:29.863Z",
+      "step": "360 pre-verdict",
+      "note": "content-diff 0 structural red; chrome-parity header quiet (4/4 texts, 4/4 icons), footer 1 rendition-signature delta justified; live.png captured 360x8182"
+    },
+    {
+      "at": "2026-09-21T09:09:04.484Z",
+      "step": "360 gate iter1",
+      "note": "PASS 2.69% dh-1; hot band 2000-2500 = photo-reencoding residual; crops header 0.07% footer 1.09%"
+    },
+    {
+      "at": "2026-09-21T09:21:22.612Z",
+      "step": "canon-followup",
+      "note": "5 coordinator items triaged: 3 fixed in canon (CF-2, CF-4, CF-5), 2 justified (CF-1 live quirk, CF-3 harvest gap)"
+    },
+    {
+      "at": "2026-09-21T09:25:17.828Z",
+      "step": "iter2 + motion",
+      "note": "gate iter2 PASS 0.04%/2.69% after interaction layer; motion-assert 🟡 fail advisory (entrances count, ambiguous Solutions text) — fixes applied, re-running"
+    },
+    {
+      "at": "2026-09-21T09:47:00.603Z",
+      "step": "final",
+      "note": "iter3 PASS 0.05%/2.69%; chrome matrix 6 gated + drawer/drilled gated, 3 dead, search residual; asserts recorded; final content-diff 0 red both widths"
+    }
+  ],
+  "canonFollowup": [
+    {
+      "id": "CF-1",
+      "from": "products worker chrome-parity",
+      "item": "skip-link occluded by the promo bar",
+      "disposition": "no change — symmetric live quirk: chrome-parity prints WARN \"live Skip to main content is covered by section.relative.section at its centre — a live quirk, not a build defect\"; build mirrors top:-43px placement",
+      "artifacts": [
+        "gates/index-1440/chrome-parity-iter1b.txt"
+      ]
+    },
+    {
+      "id": "CF-2",
+      "from": "products worker chrome-parity @360",
+      "item": "live mobile cart flyout texts/icons missing on build",
+      "disposition": "fixed in canon (index-proposed.html + canon.css: #openCartModal mirrored fixed at 100vh with rest-state hidden controls) — 360 header parity quiet 4/4 texts, 4/4 icons",
+      "artifacts": [
+        "gates/index-360/chrome-parity-iter1d.txt"
+      ]
+    },
+    {
+      "id": "CF-3",
+      "from": "products worker chrome-parity",
+      "item": "footer Ethisphere badge rendition 500 vs 1280",
+      "disposition": "not fixable without a CDN URL: the wdthumb.500.500 mobile rendition was never harvested (manifest has only the 1280 copy); same 100px rendered box; justified parity delta (permanent) — flag for delivery: harvest the 500 rendition",
+      "artifacts": [
+        "stardust/current/assets/_media-manifest.json"
+      ]
+    },
+    {
+      "id": "CF-4",
+      "from": "products worker chrome-parity @360",
+      "item": "footer +1px at 360",
+      "disposition": "fixed in canon (.footer-top padding-bottom 29→28 px; footer top block 130 px = lift)",
+      "artifacts": [
+        "gates/index-360/gate-iter1.json"
+      ]
+    },
+    {
+      "id": "CF-5",
+      "from": "products worker chrome-parity + index landmark tables",
+      "item": "build-only \"Cookie Preferences\" footer link",
+      "disposition": "fixed in canon: the link is TrustArc tag-injected (nondeterministic-live: present in the 08:11 lift and 08:49 parity cache, absent in both stitched live references 08:53/09:07 and on /products); build now carries the empty #teconsent container like live at rest — CMP re-added at deploy per content-preservation",
+      "artifacts": [
+        "gates/index-1440/gate-iter1.log#unpaired",
+        "gates/index-360/gate-iter1.log#unpaired"
+      ]
+    }
+  ],
+  "archetypes": [
+    {
+      "pageType": "landing",
+      "archetype": "index",
+      "chromeVariant": "default",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "regime": "prototype",
+            "structuralRed": 0,
+            "visualFlags": "4 justified (mirrored Splide loop clones at negative offsets)",
+            "pixelPct": 2.69,
+            "pixelPctUnmasked": 2.69,
+            "heightDelta": -1,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/",
+              "width": 360,
+              "capturedAt": "2026-09-21T09:07:05.026Z",
+              "sidecar": "stardust/replica/gates/index-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T09:45:47.400Z",
+            "build": "prototype (uncommitted)",
+            "record": "gates/index-360/gate-iter3.json",
+            "verdictLine": "PASS 2.69 % Δh -1px  iteration 3/3",
+            "note": "iter1 = static pass; iter2 = after interaction layer + canon follow-ups; iter3 = final build after chrome-cell work (live reference cached from iter1, build recaptured each round)"
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×~42 (source inline <style> text inside section.mainContainWrap)",
+              "why": "stylesheet text nodes, not content; same rules carried in CSS",
+              "permanent": true
+            },
+            {
+              "probe": "content",
+              "flag": "🟠 FONT FORK ×4 body \"/\"",
+              "why": "zero-width display:none price separator mirrored from live",
+              "permanent": true
+            },
+            {
+              "probe": "visual",
+              "flag": "FLUSH-LEFT TEXT ×4 at left -704/-344px",
+              "why": "mirrors live Splide loop clones at negative track offsets (translateX(-200%) = 2 slides)"
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "footer ICON #6 signature img 500×342 → 1280×876 (ethisphere-award)",
+              "why": "live serves a wdthumb.500.500 rendition at 360 that the harvest did not capture (only the 1280 copy exists); same 100px rendered box; harvested copy used at both widths — never a CDN URL",
+              "permanent": true
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 2000–2500",
+              "pct": 26.6,
+              "cause": "photo-reencoding: live serves wdthumb.840.840 renditions at 360, the harvest holds the wdthumb.3000.3000 copies (same geometry, anchors Δy 0, offset 0px conf 0.86)",
+              "what": "content-card rail photos (splide02) + hero photo band (y 0–500 6.3%) re-encoded at another rendition size",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/index-360/review-iter1.png",
+                "gates/index-360/diff-iter1.png",
+                "gates/index-360/gate-iter1.json"
+              ],
+              "acceptedBy": "hands-off-policy:photo-reencoding"
+            }
+          ],
+          "captureState": [
+            {
+              "what": "live 360 lift (08:11) rendered no cart/search icons and a 100x32 unloaded award image; the fresh gate capture (09:1x) renders both icons and the 68px image — build mirrors the gate-time state",
+              "where": "header tools / footer award"
+            }
+          ],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:46:00.166Z",
+              "target": "http://127.0.0.1:8814/index-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/index-360.json",
+              "schema": 2,
+              "width": 360,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 6000,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 11 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 11,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": ".hamburger-menu: n/a (dead live (implement nothing)); #splide02 .splide__arrow--next: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": ".hamburger-menu",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#splide02 .splide__arrow--next",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "n/a",
+                  "detail": "no click-paired machines in the observe run",
+                  "rows": []
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            },
+            "note": "assert verdict fail is 🟡 advisory: chrome/stateMachines/pageErrors pass; entrances fail — live counts 14 (1440) / 11 (360) inline-style-mutated elements from Splide/commerce init bookkeeping + autoplay, the prototype reproduces the visible behaviours (autoplay, underline, tabs, flyout, search, drawer) with its own timer/class mechanics; no --skip used"
+          },
+          "chromeCrops": {
+            "header": {
+              "y": 0,
+              "height": 91,
+              "pct": 0.07,
+              "pass": true,
+              "artifacts": [
+                "gates/index-360/crop-header-iter1.json",
+                "gates/index-360/chrome-header-iter1.png"
+              ]
+            },
+            "footer": {
+              "y": 6006,
+              "yB": 6007,
+              "height": 2176,
+              "pct": 1.09,
+              "pass": true,
+              "artifacts": [
+                "gates/index-360/crop-footer-iter1.json",
+                "gates/index-360/chrome-footer-iter1.png"
+              ]
+            },
+            "parity": "gates/index-360/chrome-parity-iter1d.txt (header quiet 4/4 texts 4/4 icons; footer 43/43 texts 7/7 icons, 1 justified rendition-signature delta)"
+          },
+          "priorRounds": [
+            {
+              "label": "iter1",
+              "record": "gates/index-360/gate-iter1.json",
+              "pixelPct": 2.69
+            },
+            {
+              "label": "iter2",
+              "record": "gates/index-360/gate-iter2.json",
+              "pixelPct": 2.69
+            }
+          ],
+          "finalProbes": {
+            "contentDiff": "gates/index-360/content-diff-final.txt (0 structural 🔴)",
+            "visualDiff": "gates/index-360/visual-diff-final.txt (4 justified FLUSH-LEFT clone flags)"
+          }
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "regime": "prototype",
+            "structuralRed": 0,
+            "visualFlags": "4 justified (mirrored Splide loop clones at negative offsets)",
+            "pixelPct": 0.05,
+            "pixelPctUnmasked": 0.05,
+            "heightDelta": 0,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/",
+              "width": 1440,
+              "capturedAt": "2026-09-21T08:53:28.613Z",
+              "sidecar": "stardust/replica/gates/index-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T09:45:31.738Z",
+            "build": "prototype (uncommitted)",
+            "record": "gates/index-1440/gate-iter3.json",
+            "verdictLine": "PASS 0.05 % Δh 0px  iteration 3/3",
+            "note": "iter1 = static pass; iter2 = after interaction layer + canon follow-ups; iter3 = final build after chrome-cell work (live reference cached from iter1, build recaptured each round)"
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×~45 (source body \".section-…{ background-size… }\", \".promo-carousel …\", \"img[alt=…] { height: 3rem; }\")",
+              "why": "AEM inline <style> text nodes inside section.mainContainWrap are stylesheet text, not content; the recreation carries the same rules in CSS",
+              "permanent": true
+            },
+            {
+              "probe": "content",
+              "flag": "🟠 FONT FORK ×4 body \"/\" (11% width)",
+              "why": "zero-width display:none price-separator span mirrored from live; hidden, same Roboto face",
+              "permanent": true
+            },
+            {
+              "probe": "visual",
+              "flag": "FLUSH-LEFT TEXT ×4 at left -2714/-1274px",
+              "why": "mirrors live Splide loop clones at negative track offsets (list translateX(-200%))"
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "OCCLUDED \"Skip to main content\"",
+              "why": "instrument WARN: live skip link is covered the same way (a live quirk); build mirrors top:-43px placement"
+            }
+          ],
+          "residuals": [
+            {
+              "region": "chrome cell search (expanded bar 334,63 940×50)",
+              "pct": 2.02,
+              "cause": "subpixel-layoutunit: placeholder and Clear glyph runs shifted ≤1px vs live (magnifier, placeholder, Clear, × extents all match within 1px; crop texture thick 48%; bar 2%)",
+              "what": "chrome-states cell search over the 2% bar by 0.02 after 11 build-only replays",
+              "flaggedFor": "user",
+              "artifacts": [
+                "gates/index-1440/chrome-states/diff-1440-search.png",
+                "gates/index-1440/chrome-states/live-1440-search.png",
+                "gates/index-1440/chrome-states/build-1440-search.png",
+                "gates/index-1440/chrome-states/chrome-states.json"
+              ],
+              "acceptedBy": "hands-off-policy:subpixel-layoutunit"
+            }
+          ],
+          "captureState": [
+            {
+              "what": "hero slides 3/4 (+clones) carry no lazyloaded background image in the capture; only slide01, slide02 and clone02 have bgi",
+              "where": "splide01"
+            },
+            {
+              "what": "chat iframe #wd-chat-frame (65x65 fixed) not recreated — third-party widget; not visible in the 1440 stitched diff (0.06%)",
+              "where": "body"
+            }
+          ],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:45:55.641Z",
+              "target": "http://127.0.0.1:8814/index-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/index.json",
+              "schema": 2,
+              "width": 1440,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 4800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 14 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 14,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": "#splide02 .splide__arrow--next: n/a (dead live (implement nothing)); #splide03 .splide__arrow--next: n/a (dead live (implement nothing)); #splide04 .splide__arrow--next: n/a (dead live (implement nothing)); #solutions: n/a (dead live (implement nothing)); #industries: n/a (dead live (implement nothing)); .wd-progress-item:nth-child(2): n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": "#splide02 .splide__arrow--next",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#splide03 .splide__arrow--next",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#splide04 .splide__arrow--next",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#solutions",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#industries",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": ".wd-progress-item:nth-child(2)",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "pass",
+                  "detail": "Solutions: ariaExpanded changed (live: aria-expanded); Industries: ariaExpanded changed (live: aria-expanded); Solutions: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"; Shop by Category: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; Solutions: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"",
+                  "rows": [
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center.active > button.w-auto.btn.pointer",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.w-auto.btn.pointer",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Industries: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.border-b-3.w-auto.btn",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.splide__slide--clone",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center.active > button.border-b-3.w-auto.btn",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Shop by Category: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.lastSlide.splide__slide--clone",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.firstSlide.splide__slide--clone",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.is-next",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.lastSlide",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.text-grey-5.w-auto.btn",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.firstSlide.is-active",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    }
+                  ]
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            },
+            "note": "assert verdict fail is 🟡 advisory: chrome/stateMachines/pageErrors pass; entrances fail — live counts 14 (1440) / 11 (360) inline-style-mutated elements from Splide/commerce init bookkeeping + autoplay, the prototype reproduces the visible behaviours (autoplay, underline, tabs, flyout, search, drawer) with its own timer/class mechanics; no --skip used"
+          },
+          "chromeCrops": {
+            "header": {
+              "y": 0,
+              "height": 97,
+              "pct": 0,
+              "pass": true,
+              "artifacts": [
+                "gates/index-1440/crop-header-iter1.json",
+                "gates/index-1440/chrome-header-iter1.png"
+              ]
+            },
+            "footer": {
+              "y": 5584,
+              "yB": 5584,
+              "height": 763,
+              "pct": 0.13,
+              "pass": true,
+              "artifacts": [
+                "gates/index-1440/crop-footer-iter1.json",
+                "gates/index-1440/chrome-footer-iter1.png"
+              ]
+            },
+            "parity": "gates/index-1440/chrome-parity-iter1b.txt (quiet: 10/10 + 43/43 texts, 4/4 + 7/7 icons; 1 OCCLUDED skip-link = symmetric live quirk per instrument WARN)"
+          },
+          "priorRounds": [
+            {
+              "label": "iter1",
+              "record": "gates/index-1440/gate-iter1.json",
+              "pixelPct": 0.06
+            },
+            {
+              "label": "iter2",
+              "record": "gates/index-1440/gate-iter2.json",
+              "pixelPct": 0.04
+            }
+          ],
+          "finalProbes": {
+            "contentDiff": "gates/index-1440/content-diff-final.txt (0 structural 🔴)",
+            "visualDiff": "gates/index-1440/visual-diff-final.txt (4 justified FLUSH-LEFT clone flags)"
+          }
+        }
+      }
+    }
+  ],
+  "status": {
+    "360": "PASS 2.69% Δh-1 (hot band photo-reencoding residual) · chrome rest header 0.07% footer 1.09% · drawer 1.04% drilled 1.55% gated · motion.assert recorded (advisory fail: entrances)",
+    "1440": "PASS 0.05% Δh0 · chrome rest header 0.00% footer 0.13% · cells 6 gated / 3 dead / 1 residual (search 2.02%) · motion.assert recorded (advisory fail: entrances)",
+    "notGreen": [
+      "search cell 2.02% vs 2% (subpixel-layoutunit residual)",
+      "motion.assert entrances check (advisory 🟡) at both widths",
+      "360 hot band y2000–2500 26.6% photo-reencoding (hands-off-policy)",
+      "ethisphere 500px rendition not harvested (parity signature delta, justified)"
+    ]
+  }
+}

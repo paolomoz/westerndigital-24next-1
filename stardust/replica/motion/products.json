@@ -1,0 +1,3611 @@
+{
+  "schema": 2,
+  "url": "https://www.westerndigital.com/products",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 0,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 1200,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2400,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2146,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 646,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2400,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 1200,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 800,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 500,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 300,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 200,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 150,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 120,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 90,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 60,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 30,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 0,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".filterHeader",
+      "frames": [
+        {
+          "t": 14857.799999713898,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15060.599999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15262.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15465.199999809265,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".clp-nav-item:nth-child(2) a.accordion",
+      "frames": [
+        {
+          "t": 16476.699999809265,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 16687.099999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 16889.799999713898,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 17092,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".productListItem",
+      "hovered": true,
+      "changed": [],
+      "hoverRules": 1,
+      "warn": "1 :hover rule(s) exist for this element but no computed change was measured — transition not settled, rule dead at runtime, or the styled descendant is outside the read set",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "a.flex.flex-col",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "0.2s",
+            "transitionProperty": "all",
+            "transitionDuration": "0.2s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "img.max-h-100px.sm:max-h-150px",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "h2.font-bold.text-sm",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "a.flex.flex-col",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "0.2s",
+            "transitionProperty": "all",
+            "transitionDuration": "0.2s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "img.max-h-100px.sm:max-h-150px",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "h2.font-bold.text-sm",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".compare-link-clp",
+      "hovered": true,
+      "changed": [
+        "span.text-xs.ml-2.textDecorationLine"
+      ],
+      "hoverRules": 1,
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "underline",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".numb",
+      "hovered": true,
+      "changed": [
+        "span.flex.justify-center.background"
+      ],
+      "hoverRules": 1,
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(242, 243, 243)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.flex.justify-center",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(242, 243, 243)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.flex.justify-center",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgb(242, 243, 243)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".btn.underline",
+      "hovered": true,
+      "changed": [],
+      "hoverRules": 0,
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      }
+    },
+    {
+      "sel": ".filterHeader",
+      "hovered": true,
+      "changed": [],
+      "hoverRules": 0,
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "h3.text-sm.font-bold",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 0
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "h3.text-sm.font-bold",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 0
+      }
+    },
+    {
+      "sel": ".clp-nav-item ul a",
+      "hovered": false,
+      "reason": "no-box",
+      "changed": [],
+      "warn": "element has no bounding box (hidden twin? first match off-screen) — not hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".green-promo a",
+      "hovered": true,
+      "changed": [],
+      "hoverRules": 0,
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 116, 12)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 116, 12)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      }
+    },
+    {
+      "sel": ".btn.mt-2.underline",
+      "hovered": true,
+      "changed": [],
+      "hoverRules": 0,
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "i": 0,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--prev",
+      "txt": "",
+      "controls": "splide01-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 40,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.5420000000013ms exceeded."
+    },
+    {
+      "i": 1,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--next",
+      "txt": "",
+      "controls": "splide01-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 40,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.2710000000006ms exceeded."
+    },
+    {
+      "i": 2,
+      "sel": "div.py-6.wd-modal > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.1649999999972ms exceeded."
+    },
+    {
+      "i": 3,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--prev",
+      "txt": "",
+      "controls": "splide02-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 0,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.050000000003ms exceeded."
+    },
+    {
+      "i": 4,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--next",
+      "txt": "",
+      "controls": "splide02-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 0,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.8129999999983ms exceeded."
+    },
+    {
+      "i": 5,
+      "sel": "div.nav-container.aem-GridColumn > div.container > div.h-50px.flex > button.hamburger-menu.hamburger-menu-bar",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.3899999999994ms exceeded."
+    },
+    {
+      "i": 6,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Products\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t",
+      "controls": "productNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 22
+      },
+      "after": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 26
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": "false",
+        "controlsDisplay": "list-item"
+      }
+    },
+    {
+      "i": 7,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Products",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 26
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 30
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 8,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Solutions\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t",
+      "controls": "solutionNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 30
+      },
+      "after": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 34
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": "false",
+        "controlsDisplay": "list-item"
+      }
+    },
+    {
+      "i": 9,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Solutions",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 34
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 38
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 10,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Support\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t",
+      "controls": "supportNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 38
+      },
+      "after": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 42
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": "false",
+        "controlsDisplay": "list-item"
+      }
+    },
+    {
+      "i": 11,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Support",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 42
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 46
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 12,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Company\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t",
+      "controls": "companyNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 46
+      },
+      "after": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 50
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": "false",
+        "controlsDisplay": "list-item"
+      }
+    },
+    {
+      "i": 13,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Company",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 50
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 54
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 14,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > div.fixed.py-5 > button.cursor-pointer.sc-track",
+      "txt": "✕",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 54
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.688000000002ms exceeded."
+    },
+    {
+      "i": 15,
+      "sel": "div.textcolumn > div.sm:items-center > div.login-btn-trigger.absolute > button.text-xs.lg:text-sm",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 54
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 56
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 2
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 16,
+      "sel": "div.textcolumn > div.hidden.login-flyout > div.border.border-grey-light > button.loginFlyoutClose.px-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 56
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 2
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 17,
+      "sel": "div.wd-modal.py-6 > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.6719999999987ms exceeded."
+    },
+    {
+      "i": 18,
+      "sel": "div.py-6.wd-modal > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.7019999999975ms exceeded."
+    },
+    {
+      "i": 19,
+      "sel": "div.wd-modal-dialog.m-auto > div.wd-modal-content > div.modal-body.w-full > button.signInBTN.btn",
+      "txt": "Sign In",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.8880000000063ms exceeded."
+    },
+    {
+      "i": 20,
+      "sel": "div.product-cart > div.flex.item-center > div.carticon.mr-6 > button.mini-cart-trigger.relative",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 21,
+      "sel": "div.wd-modal.cartwrapper > div.w-full.sm:w-500px > div.cartTitleHeight.flex > button.wd-modal-close.cursor-pointer",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1993.7749999999942ms exceeded."
+    },
+    {
+      "i": 22,
+      "sel": "div.cartSignInBar > div.flex.md:px-8 > span.text-white.flex-1 > button.underline.text-white",
+      "txt": "Sign In",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.8359999999957ms exceeded."
+    },
+    {
+      "i": 23,
+      "sel": "div.cartDetailsContainer > div.cartSignInBar > div.flex.md:px-8 > button.flex.items-center",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.7929999999978ms exceeded."
+    },
+    {
+      "i": 24,
+      "sel": "div > div.corpSearch > div.predictiveSearch.search-main > div.hero-input",
+      "txt": "Popular Searches     Clear",
+      "controls": "searchResultInnerWarp",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 58
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 64
+      },
+      "settled": "transitionend",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 6
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 25,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.underline.text-sm",
+      "txt": "Clear",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 64
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 68
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 4
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 26,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.search-collapse.btn",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 68
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 73
+      },
+      "settled": "timeout",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 5
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 27,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.btn-search.btn-search-SummaryView",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 76
+      },
+      "after": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 81
+      },
+      "settled": "transitionend",
+      "mutations": {
+        "attr": 0,
+        "childList": 0,
+        "class": 5
+      },
+      "restored": {
+        "ariaExpanded": null,
+        "controlsDisplay": null
+      }
+    },
+    {
+      "i": 28,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.brandName",
+      "txt": "Western Digital (39)   WD (24)   WD_BLAC",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 81
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 29,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.vvc-capacity",
+      "txt": "0 GB - 960 GB (5)   01 TB - 04 TB (30)  ",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 83
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 30,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.vvc-form_factor",
+      "txt": "3.5 in (1)    + More - Less",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 83
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 31,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.useCaseName",
+      "txt": "Data Center (18)   Backups (12)   Gaming",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 83
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 32,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.color_List",
+      "txt": "Black (32)   Blue (7)   Gray, Silver (4)",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 83
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 33,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.connector_List",
+      "txt": "SATA (30)   Micro-B (16)   USB-C (13)   ",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 83
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 34,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.service",
+      "txt": "Data Recovery (18)    + More - Less",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 83
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 35,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.priceRange",
+      "txt": "$0-$49.99 (18)   $50-$199.99 (16)   $200",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 83
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 36,
+      "sel": "div.productListcontainer > div.flex.sm:flex-row > div.flex-wrap.flex > div.sortByFilter.relative",
+      "txt": "Sort by :       Sort   Most Popular Late",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 0,
+        "classMutations": 83
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    }
+  ],
+  "entrances": [
+    {
+      "family": "div.row.grid-12",
+      "elements": 2,
+      "mutations": 2,
+      "firstY": 359,
+      "durationMs": 0,
+      "from": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "to": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "sample": "div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > div.searchHistoryView.contain.mx-auto > div.row.grid-12.xs:grid-12"
+    },
+    {
+      "family": "span.cols-12.mb-6",
+      "elements": 1,
+      "mutations": 1,
+      "firstY": 359,
+      "durationMs": 0,
+      "from": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "to": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "sample": "div.absolute.pin-l.bg-white > div.searchHistoryView.contain.mx-auto > div.row.grid-12.xs:grid-12 > div.md:cols-3.md:px-4.row > span.cols-12.mb-6.text-base"
+    },
+    {
+      "family": "section.bg-color.relative",
+      "elements": 1,
+      "mutations": 1,
+      "firstY": 359,
+      "durationMs": 0,
+      "from": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "to": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "sample": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > section.bg-color.relative.section"
+    },
+    {
+      "family": "header.header.relative",
+      "elements": 1,
+      "mutations": 12,
+      "firstY": 400,
+      "durationMs": 77896,
+      "from": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "to": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "sample": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full"
+    },
+    {
+      "family": "li.slidingDiv",
+      "elements": 1,
+      "mutations": 12,
+      "firstY": 2869,
+      "durationMs": 5681,
+      "from": {
+        "opacity": null,
+        "transform": null,
+        "visibility": "visible"
+      },
+      "to": {
+        "opacity": null,
+        "transform": null,
+        "visibility": "hidden"
+      },
+      "sample": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv"
+    }
+  ],
+  "stateMachines": [],
+  "events": {
+    "animations": [
+      {
+        "name": "loading",
+        "el": "div.absolute.pin-l.bg-white > div.skeleton-group > div.row.grid-12.xs:grid-12 > div.md:cols-3.md:px-4.row > span.mb-6.loadingSkeleton.bg-grey-1",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.absolute.pin-l.bg-white > div.skeleton-group > div.row.grid-12.xs:grid-12 > div.md:cols-3.md:px-4.row > span.mb-6.loadingSkeleton.bg-grey-1",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-3.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.absolute.pin-l.bg-white > div.skeleton-group > div.row.grid-12.xs:grid-12 > div.md:cols-4.md:px-4.row > span.mb-6.loadingSkeleton.bg-grey-1",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.loadingSkeleton.bg-grey-1.w-200px",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.mb-1.loadingSkeleton.bg-grey-1",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.loadingSkeleton.bg-grey-1.h-4",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.loadingSkeleton.bg-grey-1.w-200px",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.mb-1.loadingSkeleton.bg-grey-1",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.loadingSkeleton.bg-grey-1.h-4",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.loadingSkeleton.bg-grey-1.w-200px",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.mb-1.loadingSkeleton.bg-grey-1",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.loadingSkeleton.bg-grey-1.h-4",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.md:cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.loadingSkeleton.bg-grey-1.w-200px",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.md:cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.mb-1.loadingSkeleton.bg-grey-1",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.row.grid-12.xs:grid-12 > ul.md:cols-6.list-reset.lg:pr-2 > li > div.mb-8.md:mb-12.inline-block > div.loadingSkeleton.bg-grey-1.h-4",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.absolute.pin-l.bg-white > div.skeleton-group > div.row.grid-12.xs:grid-12 > div.md:cols-4.md:px-4.row > span.mb-6.loadingSkeleton.bg-grey-1",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li.mb-6 > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li.mb-6 > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li.mb-6 > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      },
+      {
+        "name": "loading",
+        "el": "div.md:cols-4.md:px-4.row > div.row.grid-12.xs:grid-12 > ul.md:cols-12.list-reset.lg:pr-2 > li > div.btn.mb-6.inline-block",
+        "txt": "",
+        "y": 375,
+        "dir": "rest"
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 400,
+        "dir": "down",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 30,
+        "dir": "up",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "up",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "max-height",
+        "el": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.5s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "section.bg-color.relative.section > div.relative > div.button > div > a.btn.py-2.select",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "section.bg-color.relative.section > div.relative > div.button > div > a.btn.py-2.select",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "section.bg-color.relative.section > div.relative > div.button > div > a.btn.py-2.select",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "max-height",
+        "el": "div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > div.section > section.bg-color.relative.section",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.5s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "max-height",
+        "el": "div.clp-nav-wrap > div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.5s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 270,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 28,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 525,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "width",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "width",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "left",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "width",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "left",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "width",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "left",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.slidingDiv",
+        "y": 2869,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "right",
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn",
+        "y": 359,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > input.searchSummaryViewInput.search-expanded",
+        "y": 359,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "right",
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn",
+        "y": 359,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > input.searchSummaryViewInput",
+        "y": 359,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "right",
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn",
+        "y": 359,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > input.searchSummaryViewInput.search-expanded",
+        "y": 359,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 429,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 429,
+        "dir": "rest",
+        "dur": "0.3s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 400,
+        "dir": "down",
+        "t": 9611,
+        "trigger": null
+      },
+      {
+        "added": [
+          "lazyloading"
+        ],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2800,
+        "dir": "down",
+        "t": 10776,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2800,
+        "dir": "down",
+        "t": 10776,
+        "trigger": null
+      },
+      {
+        "added": [
+          "lazyloaded"
+        ],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2800,
+        "dir": "down",
+        "t": 10810,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2800,
+        "dir": "down",
+        "t": 10810,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 30,
+        "dir": "up",
+        "t": 13680,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 304,
+        "dir": "rest",
+        "t": 14061,
+        "trigger": null
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+        "y": 304,
+        "dir": "rest",
+        "t": 14855,
+        "trigger": {
+          "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+          "txt": "Brand",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset",
+        "y": 304,
+        "dir": "rest",
+        "t": 14855,
+        "trigger": {
+          "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+          "txt": "Brand",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+        "y": 304,
+        "dir": "rest",
+        "t": 14855,
+        "trigger": {
+          "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+          "txt": "Brand",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset",
+        "y": 304,
+        "dir": "rest",
+        "t": 14855,
+        "trigger": {
+          "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+          "txt": "Brand",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+        "y": 191,
+        "dir": "rest",
+        "t": 16472,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+        "y": 191,
+        "dir": "rest",
+        "t": 16472,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.clp-nav-wrap > div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium",
+        "y": 191,
+        "dir": "rest",
+        "t": 16472,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > div.section > section.bg-color.relative.section",
+        "y": 191,
+        "dir": "rest",
+        "t": 16472,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+        "y": 191,
+        "dir": "rest",
+        "t": 16472,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > div.section > section.bg-color.relative.section",
+        "y": 191,
+        "dir": "rest",
+        "t": 16472,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "aamIframeLoaded"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > iframe.aamIframeLoaded",
+        "y": 191,
+        "dir": "rest",
+        "t": 16720,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 249
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 19976,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 270,
+        "dir": "rest",
+        "t": 20860,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 28,
+        "dir": "rest",
+        "t": 21743,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 525,
+        "dir": "rest",
+        "t": 22177,
+        "trigger": null
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 36113,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Products",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "dd-no-action"
+        ],
+        "removed": [],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+        "y": 2869,
+        "dir": "rest",
+        "t": 36113,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Products",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "megaMenuOpen"
+        ],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 36315,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Products",
+          "dtMs": 204
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 36315,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Products",
+          "dtMs": 204
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [
+          "megaMenuOpen"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 36946,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Products",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 36946,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Products",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 36946,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Products",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 36946,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Products",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 37780,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Solutions",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "dd-no-action"
+        ],
+        "removed": [],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+        "y": 2869,
+        "dir": "rest",
+        "t": 37781,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Solutions",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "megaMenuOpen"
+        ],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 37984,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Solutions",
+          "dtMs": 205
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 37984,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Solutions",
+          "dtMs": 205
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [
+          "megaMenuOpen"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 38612,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Solutions",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 38612,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Solutions",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 38612,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Solutions",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 38612,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Solutions",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 39463,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Support",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "dd-no-action"
+        ],
+        "removed": [],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+        "y": 2869,
+        "dir": "rest",
+        "t": 39463,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Support",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "megaMenuOpen"
+        ],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 39666,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Support",
+          "dtMs": 205
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 39666,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Support",
+          "dtMs": 205
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [
+          "megaMenuOpen"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 40311,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Support",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 40311,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Support",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 40311,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Support",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 40311,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Support",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 41164,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Company",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "dd-no-action"
+        ],
+        "removed": [],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+        "y": 2869,
+        "dir": "rest",
+        "t": 41165,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Company",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [
+          "megaMenuOpen"
+        ],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 41367,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Company",
+          "dtMs": 205
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 41367,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Company",
+          "dtMs": 205
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [
+          "megaMenuOpen"
+        ],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 41996,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Company",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > ul.dropDownContainer.productNavWrapper.pin-l",
+        "y": 2869,
+        "dir": "rest",
+        "t": 41996,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Company",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 41996,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Company",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.container > div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6",
+        "y": 2869,
+        "dir": "rest",
+        "t": 41996,
+        "trigger": {
+          "el": "div.slide.mobile-nav-div.-mx-4 > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list.middleMenu > li.mainMenuItem.md:mx-4.xl:mx-6 > button.dropDownItem.text-xs.lg:text-sm",
+          "txt": "Company",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.flex.items-center > div > div.text > div.textcolumn > div.login-flyout.m-auto.w-full",
+        "y": 2869,
+        "dir": "rest",
+        "t": 44847,
+        "trigger": {
+          "el": "div.textcolumn > div.sm:items-center > div.login-btn-trigger.absolute.pin-r-25 > button.text-xs.lg:text-sm.whitespace-no-wrap > span.hidden.md:block",
+          "txt": "",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "mob-visibleLoginFlyout"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 2869,
+        "dir": "rest",
+        "t": 44847,
+        "trigger": {
+          "el": "div.textcolumn > div.sm:items-center > div.login-btn-trigger.absolute.pin-r-25 > button.text-xs.lg:text-sm.whitespace-no-wrap > span.hidden.md:block",
+          "txt": "",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "mob-visibleLoginFlyout"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 2869,
+        "dir": "rest",
+        "t": 45697,
+        "trigger": {
+          "el": "div.textcolumn > div.login-flyout.m-auto.w-full > div.border.border-grey-light.bg-white > button.loginFlyoutClose.px-4.py-4 > svg",
+          "txt": "",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.flex.items-center > div > div.text > div.textcolumn > div.login-flyout.m-auto.w-full",
+        "y": 2869,
+        "dir": "rest",
+        "t": 45697,
+        "trigger": {
+          "el": "div.textcolumn > div.login-flyout.m-auto.w-full > div.border.border-grey-light.bg-white > button.loginFlyoutClose.px-4.py-4 > svg",
+          "txt": "",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "search-expanded"
+        ],
+        "removed": [],
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > input.searchSummaryViewInput.search-expanded",
+        "y": 359,
+        "dir": "rest",
+        "t": 61239,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 9
+        }
+      },
+      {
+        "added": [
+          "search-open"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 359,
+        "dir": "rest",
+        "t": 61239,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 9
+        }
+      },
+      {
+        "added": [
+          "focused"
+        ],
+        "removed": [],
+        "el": "div > div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group",
+        "y": 359,
+        "dir": "rest",
+        "t": 61239,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 9
+        }
+      },
+      {
+        "added": [
+          "z-20"
+        ],
+        "removed": [
+          "z-4"
+        ],
+        "el": "div.row.grid-12.xs:grid-12 > div.cols-12.md:cols-3.lg:cols-1 > div > div.corpSearch > div.predictiveSearch.search-main.absolute",
+        "y": 359,
+        "dir": "rest",
+        "t": 61239,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 9
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "z-4"
+        ],
+        "el": "div.row.grid-12.xs:grid-12 > div.cols-12.md:cols-3.lg:cols-1 > div > div.corpSearch > div.predictiveSearch.search-main.absolute",
+        "y": 359,
+        "dir": "rest",
+        "t": 61239,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 9
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > div.searchHistoryView.contain.mx-auto",
+        "y": 359,
+        "dir": "rest",
+        "t": 61279,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 49
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "focused"
+        ],
+        "el": "div > div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group",
+        "y": 359,
+        "dir": "rest",
+        "t": 61910,
+        "trigger": {
+          "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.underline.text-sm.absolute",
+          "txt": "Clear",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > div.searchHistoryView.contain.mx-auto",
+        "y": 359,
+        "dir": "rest",
+        "t": 61912,
+        "trigger": {
+          "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.underline.text-sm.absolute",
+          "txt": "Clear",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "remove-auto-suggest"
+        ],
+        "removed": [],
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.underline.text-sm.absolute",
+        "y": 359,
+        "dir": "rest",
+        "t": 61913,
+        "trigger": {
+          "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.underline.text-sm.absolute",
+          "txt": "Clear",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [
+          "focused"
+        ],
+        "removed": [],
+        "el": "div > div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group",
+        "y": 359,
+        "dir": "rest",
+        "t": 61913,
+        "trigger": {
+          "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.underline.text-sm.absolute",
+          "txt": "Clear",
+          "dtMs": 2
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "focused"
+        ],
+        "el": "div > div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group",
+        "y": 359,
+        "dir": "rest",
+        "t": 62760,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.search-collapse.btn.flex > svg",
+          "txt": "",
+          "dtMs": 0
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "search-expanded"
+        ],
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > input.searchSummaryViewInput",
+        "y": 359,
+        "dir": "rest",
+        "t": 62763,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.search-collapse.btn.flex > svg",
+          "txt": "",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "search-open"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 359,
+        "dir": "rest",
+        "t": 62763,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.search-collapse.btn.flex > svg",
+          "txt": "",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [
+          "z-4"
+        ],
+        "removed": [
+          "z-20"
+        ],
+        "el": "div.row.grid-12.xs:grid-12 > div.cols-12.md:cols-3.lg:cols-1 > div > div.corpSearch > div.predictiveSearch.search-main.absolute",
+        "y": 359,
+        "dir": "rest",
+        "t": 62763,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.search-collapse.btn.flex > svg",
+          "txt": "",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [
+          "z-4"
+        ],
+        "removed": [],
+        "el": "div.row.grid-12.xs:grid-12 > div.cols-12.md:cols-3.lg:cols-1 > div > div.corpSearch > div.predictiveSearch.search-main.absolute",
+        "y": 359,
+        "dir": "rest",
+        "t": 62763,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.search-collapse.btn.flex > svg",
+          "txt": "",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > div.skeleton-group",
+        "y": 359,
+        "dir": "rest",
+        "t": 63236,
+        "trigger": null
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > div.skeleton-group.hidden",
+        "y": 359,
+        "dir": "rest",
+        "t": 63274,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > div.searchHistoryView.contain.mx-auto",
+        "y": 359,
+        "dir": "rest",
+        "t": 63274,
+        "trigger": null
+      },
+      {
+        "added": [
+          "search-expanded"
+        ],
+        "removed": [],
+        "el": "div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > input.searchSummaryViewInput.search-expanded",
+        "y": 359,
+        "dir": "rest",
+        "t": 63599,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 5
+        }
+      },
+      {
+        "added": [
+          "search-open"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 359,
+        "dir": "rest",
+        "t": 63599,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 5
+        }
+      },
+      {
+        "added": [
+          "focused"
+        ],
+        "removed": [],
+        "el": "div > div.corpSearch > div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group",
+        "y": 359,
+        "dir": "rest",
+        "t": 63599,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 5
+        }
+      },
+      {
+        "added": [
+          "z-20"
+        ],
+        "removed": [
+          "z-4"
+        ],
+        "el": "div.row.grid-12.xs:grid-12 > div.cols-12.md:cols-3.lg:cols-1 > div > div.corpSearch > div.predictiveSearch.search-main.absolute",
+        "y": 359,
+        "dir": "rest",
+        "t": 63599,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 5
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "z-4"
+        ],
+        "el": "div.row.grid-12.xs:grid-12 > div.cols-12.md:cols-3.lg:cols-1 > div > div.corpSearch > div.predictiveSearch.search-main.absolute",
+        "y": 359,
+        "dir": "rest",
+        "t": 63599,
+        "trigger": {
+          "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > button.btn-search.btn-search-SummaryView.btn > svg.hidden",
+          "txt": "",
+          "dtMs": 5
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > div.skeleton-group",
+        "y": 375,
+        "dir": "rest",
+        "t": 65598,
+        "trigger": null
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.predictiveSearch.search-main.absolute > div.hero-input > form.global-predictive-search.ui-front.input-group > div.absolute.pin-l.bg-white > div.skeleton-group.hidden",
+        "y": 375,
+        "dir": "rest",
+        "t": 65621,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 85442,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 429,
+        "dir": "rest",
+        "t": 85824,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 86474,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 429,
+        "dir": "rest",
+        "t": 87507,
+        "trigger": null
+      }
+    ],
+    "attrMutations": [],
+    "childList": [],
+    "styleMutatedElements": 6
+  }
+}

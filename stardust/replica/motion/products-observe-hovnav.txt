@@ -1,0 +1,2 @@
+consent dismissed via text:accept
+motion-observe stardust/replica/motion/products-hover-nav.json: 0 animations, 7 transitions, 7 class mutations, 1 style-mutated elements → 1 entrance families, 0 state machines (0 attr + 0 childList records), 0 widget pokes, 2 hover probes, 0 auto triggers

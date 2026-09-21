@@ -1,0 +1,4 @@
+consent dismissed via text:accept
+motion-observe WARN: --hover .productListItem: 1 :hover rule(s) exist for this element but no computed change was measured — transition not settled, rule dead at runtime, or the styled descendant is outside the read set
+motion-observe WARN: --hover .clp-nav-item ul a: element has no bounding box (hidden twin? first match off-screen) — not hovered
+motion-observe stardust/replica/motion/products.json: 34 animations, 53 transitions, 87 class mutations, 6 style-mutated elements → 5 entrance families, 0 state machines (0 attr + 0 childList records), 2 widget pokes, 8 hover probes (1 not hovered — see hovered:false reasons), 37 auto triggers

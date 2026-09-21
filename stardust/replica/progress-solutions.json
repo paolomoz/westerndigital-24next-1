@@ -1,0 +1,676 @@
+{
+  "pageType": "program",
+  "archetype": "solutions",
+  "chromeVariant": "default",
+  "chrome": {
+    "variant": "default",
+    "states": {
+      "note": "default variant row owned by the index worker (chrome-states.mjs not run here per brief); only the resting header/footer crops were re-gated on this page"
+    },
+    "gates": {
+      "360": "gates/solutions-360/crop-header-iter1.json",
+      "1440": "gates/solutions-1440/crop-header-iter1.json"
+    },
+    "restCrop": {
+      "360": {
+        "header": {
+          "y": 0,
+          "height": 91,
+          "diffPct": 0.07,
+          "pass": true,
+          "artifact": "gates/solutions-360/crop-header-iter1.json"
+        },
+        "footer": {
+          "y": 13217,
+          "yB": 13218,
+          "height": 2139,
+          "diffPct": 0.73,
+          "pass": true,
+          "texture": "mixed",
+          "artifact": "gates/solutions-360/crop-footer-iter1.json"
+        }
+      },
+      "1440": {
+        "header": {
+          "y": 0,
+          "height": 97,
+          "diffPct": 0,
+          "pass": true,
+          "artifact": "gates/solutions-1440/crop-header-iter1.json"
+        },
+        "footer": {
+          "y": 7750,
+          "yB": 7750,
+          "height": 726,
+          "diffPct": 0.63,
+          "pass": true,
+          "texture": "thick (blocks/bands — misalignment or missing paint)",
+          "artifact": "gates/solutions-1440/crop-footer-iter1.json"
+        }
+      }
+    },
+    "owner": "index"
+  },
+  "modules": [
+    {
+      "kind": "program-hero-photo",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "hero: black section, photo bg (3000 rendition @md absolute; 840 mobile rendition stacked 225px @<md), h1 48/52.8 + lede 20/30 in a 50% column"
+    },
+    {
+      "kind": "anchor-chips",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "4 in-page anchor chips (grey-1 pills, arrow svg + label), hrefs verbatim (#choose-your-solution ...)"
+    },
+    {
+      "kind": "icon-usecase-cards",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "7 bordered cards (svg 48 + bold line + underline blue link), 2 per row @sm"
+    },
+    {
+      "kind": "image-card-grid",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "8 image cards (300px cover r16, heading4, copy, Learn More), 3 per row @md / 2 @xs / 1 @<xs"
+    },
+    {
+      "kind": "icon-tile-grid",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "3 + 6 bordered icon tiles (svg, heading5, copy, cta pinned bottom via margin-top auto), 3 per row @sm"
+    },
+    {
+      "kind": "striped-table",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "5-row comparison table, thead white, odd rows #F9F9F9, blue tag pills; @<md td p8 min-w148 → 592px wide in an overflow-x scroller"
+    },
+    {
+      "kind": "faq-accordion",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "10 items, first aria-expanded=true as captured; plus/minus svgs mirrored; 5/7 columns @md on a #f9f9f9 r16 panel"
+    },
+    {
+      "kind": "photo-cta-band",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "rounded photo band with dark-40 scrim, heading + copy + outline button @md; @<md the bg is a 0-width flex item (as live) and the button is solid black"
+    },
+    {
+      "kind": "cta-band-two-buttons",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "border-top row: heading6 + two buttons that flex-shrink to the column (labels wrap to 2 lines as on live)"
+    },
+    {
+      "kind": "contact-form-modal",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "hidden #contact-form modal mirrored hidden: 33 fields incl. 3 selects with verbatim option lists (100-country list), consent, legal, recaptcha note, success block"
+    }
+  ],
+  "motion": {
+    "observed": [
+      {
+        "id": "faq-accordion",
+        "evidence": "1440+360 stateMachines: button aria-expanded false↔true per click (independent items, no exclusivity — one attrMutation per click); classMutations: .accordion-content ±hidden, plus/minus svg ±hidden; source CSS .accordion-content{transition:max-height .4s ease,opacity .4s ease} .hidden{opacity:0;max-height:0} (body.disabledOutine keeps display:block)",
+        "file": "motion/solutions.json"
+      },
+      {
+        "id": "contact-form-modal",
+        "evidence": "1440+360 classMutations: a.wd-modal-btn +wd-modal-active, div#contact-form.wd-modal -hidden, body +overflow-hidden; close: +hidden, -overflow-hidden, -wd-modal-active",
+        "file": "motion/solutions.json"
+      },
+      {
+        "id": "breadcrumb-link-hover",
+        "evidence": "1440 hover .bread-crumbs a: color rgb(106,106,106)→rgb(0,0,0), text-decoration none→underline, transition .2s",
+        "file": "motion/solutions.json"
+      },
+      {
+        "id": "header-scroll-class (chrome)",
+        "evidence": "body ±minHeader toggles while scrolling; header stays sticky 97px@1440 / 91px@360 at every y (headerTimeline) — canon/index owns; no page action",
+        "file": "motion/solutions.json",
+        "owner": "canon/index"
+      }
+    ],
+    "implemented": [
+      "faq-accordion",
+      "contact-form-modal",
+      "breadcrumb-link-hover"
+    ],
+    "dead": [
+      "hover a.btn.rounded-16px (anchor chips): no change",
+      "hover .svg-card a.btn: no change",
+      "hover #explore-storage-solutions a.btn: no change",
+      "hover a.btn.mt-auto (tiles): no change",
+      "hover a.btn.border-white (innovating): no change",
+      "hover a.wd-modal-btn (CTA black): no change",
+      "hover .accordion-title: no change",
+      "hover #solutions-table tbody tr: no change",
+      "hover .accordion-content p a: no change",
+      "entrance animations: none (all entrances[] have null opacity/transform; lazyload class swaps only)",
+      "carousel/track widgets: none on this page (widget pokes n/a)"
+    ],
+    "unprobed": [
+      "hover a.btn.bg-white.border-black (CTA white button): no-box — first match is an off-screen twin; not re-probed (its black sibling measured no change)"
+    ],
+    "assertNotes": "motion-assert verdict is advisory this release: \"entrances\" compares live inline-style-mutated element counts (header, search skeleton rows, li.slidingDiv, grecaptcha badge, FAQ inline styles during the trigger sweep — none with opacity/transform values) against the build (0); nothing implementable. Widgets n/a (no tracks). Chrome + pageErrors pass."
+  },
+  "fonts": {
+    "decision": "Roboto 400/500/700 self-hosted via canon.css @font-face (open licence, same public source); every lifted element in header/main/footer computes \"Roboto, sans-serif\" (1334/1334 @1440, 1325/1325 @360). FK Grotesk Neue / SimplonMono / Glyphicons / icomoon @font-face exist in the source CSS but render on no captured element → not shipped, no substitute needed."
+  },
+  "decisions": [
+    {
+      "id": "D1",
+      "what": "page-authored <style> snippets inside .css-container (7 tiny rule sets: .btn.rounded-16px, .svg-card .svg, .button:has(.mt-auto), #solutions-table…, #faq a, .dark-40::after) are NOT mirrored as <style>; their effects are re-authored in solutions.css; content-diff may list their text as 🟡 (non-content) — same disposition as the products archetype"
+    },
+    {
+      "id": "D2",
+      "what": "chrome (promo strip, header, footer, index.js) copied verbatim from index-proposed.html by build-solutions.mjs; canon.css untouched"
+    },
+    {
+      "id": "D3",
+      "what": "index.js (chrome JS) runs on this page: all page-specific blocks are null-guarded; 0 pageerrors measured offline at 1440 and 360"
+    },
+    {
+      "id": "D4",
+      "what": "harvest: 1 live hit (2 navigations 1440+360) to fetch the NAS card renditions (1280, 500) and the 840 mobile renditions of both background photos — stardust/.work/replica/probes/harvest-solutions.json"
+    }
+  ],
+  "canonFollowup": [
+    {
+      "id": "CF-S1",
+      "from": "solutions worker chrome-parity @1440",
+      "item": "footer height 726 (live /solutions) vs 763 (canon): live Ethisphere badge renders 32px (icon #6 Δh +36) and live carries the TrustArc \"Cookie Preferences\" link at rest (CF-5 removed it in canon); legal-bar texts Δy +38",
+      "disposition": "not patched here (canon-owned); footer crop 0.63% still passes; the badge/link presence is nondeterministic-live across pages/sessions",
+      "artifacts": [
+        "gates/solutions-1440/chrome-parity-iter1.txt",
+        "gates/solutions-1440/crop-footer-iter1.json"
+      ]
+    },
+    {
+      "id": "CF-S2",
+      "from": "solutions worker chrome-parity @1440",
+      "item": "skip link OCCLUDED by the promo bar on build",
+      "disposition": "= CF-1 (symmetric live quirk, WARN on live too); no change"
+    }
+  ],
+  "captureState": [
+    {
+      "what": "crawl screenshot + 1440 lift each show ONE explore-card <img> stuck on the lazyload placeholder (alt text) — a different card each session; a fresh live session (harvest probe, 2 navigations) loaded all 8",
+      "where": "explore-storage-solutions",
+      "decision": "author all 8 loaded (harvested renditions incl. NAS 1280/500); if the gate reference shows a stuck card it is capture-state, not a build defect"
+    }
+  ],
+  "artefacts": {
+    "build": "stardust/.work/replica/build-solutions.mjs",
+    "data": "stardust/.work/replica/probes/solutions-data.json",
+    "geometryProbe": "stardust/.work/replica/probes/solutions-geom.mjs"
+  },
+  "archetypes": [
+    {
+      "pageType": "program",
+      "archetype": "solutions",
+      "chromeVariant": "default",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 1.61,
+            "pixelPctUnmasked": 1.61,
+            "heightDelta": -1,
+            "pass": true,
+            "ref": {
+              "url": "https://www.westerndigital.com/solutions",
+              "width": 360,
+              "capturedAt": "2026-09-21T09:44:00.330Z",
+              "sidecar": "stardust/replica/gates/solutions-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T09:44:34.128Z",
+            "build": {
+              "url": "http://127.0.0.1:8814/solutions-proposed.html"
+            },
+            "masks": [],
+            "iteration": 1,
+            "structuralRed": 0,
+            "visualFlags": "8 justified"
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×11 (live <style> rule text inside .css-container)",
+              "why": "page-authored CSS snippets are not content; effects re-authored in solutions.css (D1)"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×8 (→ 328x300)",
+              "why": "mirrors live: object-fit:cover on both sides (source.images[].stretched=true)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 4300–15393",
+              "pct": 1,
+              "cause": "subpixel-layoutunit: every landmark from cta \"learn more\"#3 (y 4371) down is +1px on the build (18 rows Δy=+1, Δh=0), text-edge diff only; doc Δh -1",
+              "flaggedFor": "user",
+              "artifacts": [
+                "gates/solutions-360/landmarks-iter1.json",
+                "gates/solutions-360/review-iter1.png"
+              ],
+              "acceptedBy": "hands-off-policy:subpixel-layoutunit"
+            },
+            {
+              "band": "y 500–1000",
+              "pct": 0.5,
+              "cause": "third-party-in-flow: Genesys chat launcher iframe#wd-chat-frame on live only (pinnedHidden on chunks 2+)",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/solutions-360/live.png.json#pinnedHidden"
+              ],
+              "acceptedBy": "hands-off-policy:third-party-in-flow"
+            },
+            {
+              "region": "footer",
+              "pct": 0.73,
+              "cause": "canon-followup CF-S1: live footer 2139 vs canon 2176 (+37: Ethisphere badge 32→68, live \"Cookie Preferences\" link)",
+              "flaggedFor": "user",
+              "artifacts": [
+                "gates/solutions-360/chrome-parity-iter1.txt",
+                "gates/solutions-360/crop-footer-iter1.json"
+              ],
+              "acceptedBy": "n/a (crop within the 2% bar; canon owner)"
+            }
+          ],
+          "captureState": [],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:55:53.195Z",
+              "target": "http://127.0.0.1:8814/solutions-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/solutions-360.json",
+              "schema": 2,
+              "width": 360,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 12000,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 3 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 3,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": "#accordion_text_copy_1244081658_label: n/a (dead live (implement nothing)); a.wd-modal-btn: n/a (dead live (implement nothing)); #contact-form .wd-modal-close: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": "#accordion_text_copy_1244081658_label",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "a.wd-modal-btn",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#contact-form .wd-modal-close",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "pass",
+                  "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded)",
+                  "rows": [
+                    {
+                      "el": "div.accordion-text > section.section.component-accordian-text.faq-schema > div.accordion-text.border-t.border-border-gray-light > div.accordion-box > button.w-full.heading5.relative",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded)"
+                    }
+                  ]
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            }
+          },
+          "chromeRest": {
+            "header": {
+              "y": 0,
+              "height": 91,
+              "diffPct": 0.07,
+              "pass": true,
+              "artifact": "gates/solutions-360/crop-header-iter1.json"
+            },
+            "footer": {
+              "y": 13217,
+              "yB": 13218,
+              "height": 2139,
+              "diffPct": 0.73,
+              "pass": true,
+              "texture": "mixed",
+              "artifact": "gates/solutions-360/crop-footer-iter1.json"
+            }
+          },
+          "artifacts": [
+            "gates/solutions-360/gate-iter1.json",
+            "gates/solutions-360/gate-iter2.json",
+            "gates/solutions-360/review-iter1.png",
+            "gates/solutions-360/content-diff-iter1.txt",
+            "gates/solutions-360/visual-diff-iter1.txt",
+            "gates/solutions-360/chrome-parity-iter1.txt"
+          ],
+          "regate": {
+            "label": "iter2",
+            "why": "post-motion pixel re-run (CSS/JS only)",
+            "pixelPct": 1.61,
+            "heightDelta": -1,
+            "pass": true,
+            "noop": true,
+            "note": "differing-pixel count byte-identical to iter1 → motion layer is pixel-neutral at t=0"
+          }
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 0.09,
+            "pixelPctUnmasked": 0.09,
+            "heightDelta": -1,
+            "pass": true,
+            "ref": {
+              "url": "https://www.westerndigital.com/solutions",
+              "width": 1440,
+              "capturedAt": "2026-09-21T09:40:17.084Z",
+              "sidecar": "stardust/replica/gates/solutions-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T09:40:46.095Z",
+            "build": {
+              "url": "http://127.0.0.1:8814/solutions-proposed.html"
+            },
+            "masks": [],
+            "iteration": 1,
+            "structuralRed": 0,
+            "visualFlags": "8 justified"
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×11 (live <style> rule text inside .css-container)",
+              "why": "page-authored CSS snippets are not content; their effects are re-authored in solutions.css (decision D1)"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×8 (923x600 → 353x300)",
+              "why": "mirrors live: same 8 images render object-fit:cover into a 300px box on the source side (visual-diff source.images[].stretched=true)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 500–1000",
+              "pct": 0.7,
+              "cause": "third-party-in-flow: Genesys chat launcher iframe#wd-chat-frame (65x65 at x1355 y815) on live only",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/solutions-1440/review-iter1.png",
+                "gates/solutions-1440/live.png.json#pinnedHidden"
+              ],
+              "acceptedBy": "hands-off-policy:third-party-in-flow"
+            },
+            {
+              "region": "footer",
+              "pct": 0.63,
+              "cause": "canon-followup: live footer on /solutions is 726px (Ethisphere badge img renders 32px + \"Cookie Preferences\" link present at rest) vs canon 763px (badge 68px, no link) — legal bar Δy +37; crop still ≤2%",
+              "flaggedFor": "user",
+              "artifacts": [
+                "gates/solutions-1440/chrome-parity-iter1.txt",
+                "gates/solutions-1440/crop-footer-iter1.json"
+              ],
+              "acceptedBy": "n/a (passes the 2% bar; recorded for the canon owner)"
+            },
+            {
+              "band": "y 1500–2500",
+              "pct": 0.3,
+              "cause": "capture-state: live Gaming card <img> stuck on the lazyload placeholder in the gate reference (h3 \"Gaming Storage\" yA 1937 vs yB 2213); build renders the harvested image",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/solutions-1440/landmarks-iter1.json",
+                "gates/solutions-1440/gate-iter1.txt"
+              ],
+              "acceptedBy": "hands-off-policy:capture-state"
+            }
+          ],
+          "captureState": [],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:55:45.642Z",
+              "target": "http://127.0.0.1:8814/solutions-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/solutions.json",
+              "schema": 2,
+              "width": 1440,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 6000,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 17 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 17,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": "#accordion_text_copy_1244081658_label: n/a (dead live (implement nothing)); a.wd-modal-btn: n/a (dead live (implement nothing)); #contact-form .wd-modal-close: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": "#accordion_text_copy_1244081658_label",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "a.wd-modal-btn",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#contact-form .wd-modal-close",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "pass",
+                  "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded); What is the difference between an HDD an: ariaExpanded changed (live: aria-expanded)",
+                  "rows": [
+                    {
+                      "el": "div.accordion-text > section.section.component-accordian-text.faq-schema > div.accordion-text.border-t.border-border-gray-light > div.accordion-box > button.w-full.heading5.relative",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "div.accordion-text > section.section.component-accordian-text.border-t-0 > div.accordion-text.border-t.border-border-gray-light > div.accordion-box > button.w-full.heading5.relative",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "What is the difference between an HDD an: ariaExpanded changed (live: aria-expanded)"
+                    }
+                  ]
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            }
+          },
+          "chromeRest": {
+            "header": {
+              "y": 0,
+              "height": 97,
+              "diffPct": 0,
+              "pass": true,
+              "artifact": "gates/solutions-1440/crop-header-iter1.json"
+            },
+            "footer": {
+              "y": 7750,
+              "yB": 7750,
+              "height": 726,
+              "diffPct": 0.63,
+              "pass": true,
+              "texture": "thick (blocks/bands — misalignment or missing paint)",
+              "artifact": "gates/solutions-1440/crop-footer-iter1.json"
+            }
+          },
+          "artifacts": [
+            "gates/solutions-1440/gate-iter1.json",
+            "gates/solutions-1440/gate-iter2.json",
+            "gates/solutions-1440/review-iter1.png",
+            "gates/solutions-1440/content-diff-iter1.txt",
+            "gates/solutions-1440/visual-diff-iter1.txt",
+            "gates/solutions-1440/chrome-parity-iter1.txt"
+          ],
+          "regate": {
+            "label": "iter2",
+            "why": "post-motion pixel re-run (CSS/JS only)",
+            "pixelPct": 0.09,
+            "heightDelta": -1,
+            "pass": true,
+            "noop": true,
+            "note": "differing-pixel count byte-identical to iter1 → motion layer is pixel-neutral at t=0"
+          }
+        }
+      }
+    }
+  ]
+}

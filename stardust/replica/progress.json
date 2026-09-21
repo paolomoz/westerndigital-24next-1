@@ -1,18 +1,2467 @@
 {
-  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-09-21T08:14:06Z", "againstInput": "https://www.westerndigital.com — exact replica, 4 pages", "readArtifacts": ["stardust/state.json", "stardust/current/pages/*.json", "stardust/replica/capture/lift/*.json"] },
-  "breakpointsConfigured": [1440, 360],
-  "captureState": { "consent": "accept", "technique": "headless", "capturedAt": "2026-09-21T07:52:00Z", "markers": "no experiment cookies observed; promo strip 'WD Named to 2026 S&P Dow Jones…' is authored-volatile" },
-  "chrome": { "variants": [
-    { "key": "757d9fb4", "name": "default", "pages": 4, "archetype": "index",
-      "fingerprint": { "header": ["header","relative","w-full"], "footer": ["wd-footer"], "navRows": 1, "stylesheets": ["www.westerndigital.com/libs/wcm/foundation/components/page/responsive.lc-{hash}-lc.min.css"] },
-      "merged": [ { "key": "4dea8548", "name": "variant-4dea", "pages": ["solutions","company"], "why": "differs only by third-party tags.srv.stackadapt.com/sa.css; header/footer class sets and nav rows identical (decisions.md chrome-variant)" } ],
-      "states": {}, "gates": {} }
-  ] },
-  "archetypes": [
-    { "pageType": "landing", "archetype": "index",     "chromeVariant": "default", "breakpoints": {} },
-    { "pageType": "listing", "archetype": "products",  "chromeVariant": "default", "breakpoints": {} },
-    { "pageType": "program", "archetype": "solutions", "chromeVariant": "default", "breakpoints": {} },
-    { "pageType": "static",  "archetype": "company",   "chromeVariant": "default", "breakpoints": {} }
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-21T08:14:06Z",
+    "againstInput": "https://www.westerndigital.com — exact replica, 4 pages",
+    "readArtifacts": [
+      "stardust/state.json",
+      "stardust/current/pages/*.json",
+      "stardust/replica/capture/lift/*.json"
+    ],
+    "mergedAt": "2026-09-21T10:24:07.378Z"
+  },
+  "breakpointsConfigured": [
+    1440,
+    360
   ],
-  "modules": []
+  "captureState": {
+    "consent": "accept",
+    "technique": "headless",
+    "capturedAt": "2026-09-21T07:52:00Z",
+    "markers": "no experiment cookies observed; promo strip 'WD Named to 2026 S&P Dow Jones…' is authored-volatile"
+  },
+  "chrome": {
+    "variants": [
+      {
+        "key": "757d9fb4",
+        "name": "default",
+        "pages": 4,
+        "archetype": "index",
+        "fingerprint": {
+          "header": [
+            "header",
+            "relative",
+            "w-full"
+          ],
+          "footer": [
+            "wd-footer"
+          ],
+          "navRows": 1,
+          "stylesheets": [
+            "www.westerndigital.com/libs/wcm/foundation/components/page/responsive.lc-{hash}-lc.min.css"
+          ]
+        },
+        "merged": [
+          {
+            "key": "4dea8548",
+            "name": "variant-4dea",
+            "pages": [
+              "solutions",
+              "company"
+            ],
+            "why": "differs only by third-party tags.srv.stackadapt.com/sa.css; header/footer class sets and nav rows identical (decisions.md chrome-variant)"
+          }
+        ],
+        "states": {
+          "rest": "gated",
+          "scrolled": "gated",
+          "menu:Products": "gated",
+          "menu:Solutions": "gated",
+          "menu:Support": "gated",
+          "menu:Company": "gated",
+          "menu:Sign in": "gated",
+          "cart": "dead",
+          "search": "residual:subpixel-layoutunit",
+          "language": "dead",
+          "drawer": "gated",
+          "drawer-drilled": "gated",
+          "footer-accordion": "dead"
+        },
+        "gates": {
+          "360": "gates/index-1440/chrome-states/chrome-states.json",
+          "1440": "gates/index-1440/chrome-states/chrome-states.json"
+        },
+        "stateNotes": {
+          "scrolled": "gated (identity: sticky 97px@1440 / 91px@360 unchanged at every y; live identity sel fell back to body — pinnedScrolled true both sides)",
+          "menu:Products": "gated (0.00%)",
+          "menu:Solutions": "gated (0.00%)",
+          "menu:Support": "gated (0.00%)",
+          "menu:Company": "gated (0.00%)",
+          "menu:Sign in": "gated (0.84%)",
+          "cart": "dead (live: click opens no panel — plain trigger)",
+          "search": "residual 2.02% (subpixel-layoutunit; breakpoints.1440.residuals[0])",
+          "language": "dead (region switcher is a plain link to /region-selector)",
+          "drawer": "gated (1.04%)",
+          "drawer-drilled": "gated (1.55%)",
+          "footer-accordion": "dead (no accordions at 360; footer columns stack)"
+        }
+      },
+      {
+        "key": "4dea8548",
+        "name": "variant-4dea",
+        "pages": 2,
+        "mergedInto": "default",
+        "why": "differs only by third-party tags.srv.stackadapt.com/sa.css; header/footer class sets and nav rows identical (decisions.md chrome-variant)",
+        "archetype": "index",
+        "fingerprint": {
+          "header": [
+            "header",
+            "relative",
+            "w-full"
+          ],
+          "footer": [
+            "wd-footer"
+          ],
+          "navRows": 1,
+          "stylesheets": [
+            "tags.srv.stackadapt.com/sa.css",
+            "www.westerndigital.com/libs/wcm/foundation/components/page/responsive.lc-{hash}-lc.min.css"
+          ]
+        },
+        "states": {
+          "rest": "gated",
+          "scrolled": "gated",
+          "menu:Products": "gated",
+          "menu:Solutions": "gated",
+          "menu:Support": "gated",
+          "menu:Company": "gated",
+          "menu:Sign in": "gated",
+          "cart": "dead",
+          "search": "residual:subpixel-layoutunit",
+          "language": "dead",
+          "drawer": "gated",
+          "drawer-drilled": "gated",
+          "footer-accordion": "dead"
+        },
+        "gates": {
+          "360": "gates/index-1440/chrome-states/chrome-states.json",
+          "1440": "gates/index-1440/chrome-states/chrome-states.json"
+        },
+        "evidence": "chrome identical to default; resting header/footer crops re-gated on solutions, company (progress.json#archetypes[].chromeRestCrop)"
+      }
+    ]
+  },
+  "archetypes": [
+    {
+      "pageType": "landing",
+      "archetype": "index",
+      "chromeVariant": "default",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 2.69,
+            "pixelPctUnmasked": 2.69,
+            "heightDelta": -1,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/",
+              "width": 360,
+              "capturedAt": "2026-09-21T09:07:05.026Z",
+              "sidecar": "stardust/replica/gates/index-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T09:45:47.400Z",
+            "structuralRed": 0,
+            "visualFlags": "4 justified (mirrored Splide loop clones at negative offsets)"
+          },
+          "record": "stardust/replica/gates/index-360/gate-iter3.json",
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×~42 (source inline <style> text inside section.mainContainWrap)",
+              "why": "stylesheet text nodes, not content; same rules carried in CSS",
+              "permanent": true
+            },
+            {
+              "probe": "content",
+              "flag": "🟠 FONT FORK ×4 body \"/\"",
+              "why": "zero-width display:none price separator mirrored from live",
+              "permanent": true
+            },
+            {
+              "probe": "visual",
+              "flag": "FLUSH-LEFT TEXT ×4 at left -704/-344px",
+              "why": "mirrors live Splide loop clones at negative track offsets (translateX(-200%) = 2 slides)"
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "footer ICON #6 signature img 500×342 → 1280×876 (ethisphere-award)",
+              "why": "live serves a wdthumb.500.500 rendition at 360 that the harvest did not capture (only the 1280 copy exists); same 100px rendered box; harvested copy used at both widths — never a CDN URL",
+              "permanent": true
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 2000–2500",
+              "pct": 26.6,
+              "cause": "photo-reencoding: live serves wdthumb.840.840 renditions at 360, the harvest holds the wdthumb.3000.3000 copies (same geometry, anchors Δy 0, offset 0px conf 0.86)",
+              "what": "content-card rail photos (splide02) + hero photo band (y 0–500 6.3%) re-encoded at another rendition size",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/index-360/review-iter1.png",
+                "gates/index-360/diff-iter1.png",
+                "gates/index-360/gate-iter1.json"
+              ],
+              "acceptedBy": "hands-off-policy:photo-reencoding"
+            }
+          ],
+          "captureState": [
+            {
+              "what": "live 360 lift (08:11) rendered no cart/search icons and a 100x32 unloaded award image; the fresh gate capture (09:1x) renders both icons and the 68px image — build mirrors the gate-time state",
+              "where": "header tools / footer award"
+            }
+          ],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:46:00.166Z",
+              "target": "http://127.0.0.1:8814/index-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/index-360.json",
+              "schema": 2,
+              "width": 360,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 6000,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 11 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 11,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": ".hamburger-menu: n/a (dead live (implement nothing)); #splide02 .splide__arrow--next: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": ".hamburger-menu",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#splide02 .splide__arrow--next",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "n/a",
+                  "detail": "no click-paired machines in the observe run",
+                  "rows": []
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            },
+            "note": "assert verdict fail is 🟡 advisory: chrome/stateMachines/pageErrors pass; entrances fail — live counts 14 (1440) / 11 (360) inline-style-mutated elements from Splide/commerce init bookkeeping + autoplay, the prototype reproduces the visible behaviours (autoplay, underline, tabs, flyout, search, drawer) with its own timer/class mechanics; no --skip used"
+          },
+          "chromeCrops": {
+            "header": {
+              "y": 0,
+              "height": 91,
+              "pct": 0.07,
+              "pass": true,
+              "artifacts": [
+                "gates/index-360/crop-header-iter1.json",
+                "gates/index-360/chrome-header-iter1.png"
+              ]
+            },
+            "footer": {
+              "y": 6006,
+              "yB": 6007,
+              "height": 2176,
+              "pct": 1.09,
+              "pass": true,
+              "artifacts": [
+                "gates/index-360/crop-footer-iter1.json",
+                "gates/index-360/chrome-footer-iter1.png"
+              ]
+            },
+            "parity": "gates/index-360/chrome-parity-iter1d.txt (header quiet 4/4 texts 4/4 icons; footer 43/43 texts 7/7 icons, 1 justified rendition-signature delta)"
+          },
+          "priorRounds": [
+            {
+              "label": "iter1",
+              "record": "gates/index-360/gate-iter1.json",
+              "pixelPct": 2.69
+            },
+            {
+              "label": "iter2",
+              "record": "gates/index-360/gate-iter2.json",
+              "pixelPct": 2.69
+            }
+          ],
+          "finalProbes": {
+            "contentDiff": "gates/index-360/content-diff-final.txt (0 structural 🔴)",
+            "visualDiff": "gates/index-360/visual-diff-final.txt (4 justified FLUSH-LEFT clone flags)"
+          }
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 0.05,
+            "pixelPctUnmasked": 0.05,
+            "heightDelta": 0,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/",
+              "width": 1440,
+              "capturedAt": "2026-09-21T08:53:28.613Z",
+              "sidecar": "stardust/replica/gates/index-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T09:45:31.738Z",
+            "structuralRed": 0,
+            "visualFlags": "4 justified (mirrored Splide loop clones at negative offsets)"
+          },
+          "record": "stardust/replica/gates/index-1440/gate-iter3.json",
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×~45 (source body \".section-…{ background-size… }\", \".promo-carousel …\", \"img[alt=…] { height: 3rem; }\")",
+              "why": "AEM inline <style> text nodes inside section.mainContainWrap are stylesheet text, not content; the recreation carries the same rules in CSS",
+              "permanent": true
+            },
+            {
+              "probe": "content",
+              "flag": "🟠 FONT FORK ×4 body \"/\" (11% width)",
+              "why": "zero-width display:none price-separator span mirrored from live; hidden, same Roboto face",
+              "permanent": true
+            },
+            {
+              "probe": "visual",
+              "flag": "FLUSH-LEFT TEXT ×4 at left -2714/-1274px",
+              "why": "mirrors live Splide loop clones at negative track offsets (list translateX(-200%))"
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "OCCLUDED \"Skip to main content\"",
+              "why": "instrument WARN: live skip link is covered the same way (a live quirk); build mirrors top:-43px placement"
+            }
+          ],
+          "residuals": [
+            {
+              "region": "chrome cell search (expanded bar 334,63 940×50)",
+              "pct": 2.02,
+              "cause": "subpixel-layoutunit: placeholder and Clear glyph runs shifted ≤1px vs live (magnifier, placeholder, Clear, × extents all match within 1px; crop texture thick 48%; bar 2%)",
+              "what": "chrome-states cell search over the 2% bar by 0.02 after 11 build-only replays",
+              "flaggedFor": "user",
+              "artifacts": [
+                "gates/index-1440/chrome-states/diff-1440-search.png",
+                "gates/index-1440/chrome-states/live-1440-search.png",
+                "gates/index-1440/chrome-states/build-1440-search.png",
+                "gates/index-1440/chrome-states/chrome-states.json"
+              ],
+              "acceptedBy": "hands-off-policy:subpixel-layoutunit"
+            }
+          ],
+          "captureState": [
+            {
+              "what": "hero slides 3/4 (+clones) carry no lazyloaded background image in the capture; only slide01, slide02 and clone02 have bgi",
+              "where": "splide01"
+            },
+            {
+              "what": "chat iframe #wd-chat-frame (65x65 fixed) not recreated — third-party widget; not visible in the 1440 stitched diff (0.06%)",
+              "where": "body"
+            }
+          ],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:45:55.641Z",
+              "target": "http://127.0.0.1:8814/index-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/index.json",
+              "schema": 2,
+              "width": 1440,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 4800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 14 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 14,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": "#splide02 .splide__arrow--next: n/a (dead live (implement nothing)); #splide03 .splide__arrow--next: n/a (dead live (implement nothing)); #splide04 .splide__arrow--next: n/a (dead live (implement nothing)); #solutions: n/a (dead live (implement nothing)); #industries: n/a (dead live (implement nothing)); .wd-progress-item:nth-child(2): n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": "#splide02 .splide__arrow--next",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#splide03 .splide__arrow--next",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#splide04 .splide__arrow--next",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#solutions",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#industries",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": ".wd-progress-item:nth-child(2)",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "pass",
+                  "detail": "Solutions: ariaExpanded changed (live: aria-expanded); Industries: ariaExpanded changed (live: aria-expanded); Solutions: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"; Shop by Category: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; trigger has no text — map it with --control \"<live path>=<targetSel>\"; Solutions: ariaExpanded changed (live: aria-expanded); trigger has no text — map it with --control \"<live path>=<targetSel>\"",
+                  "rows": [
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center.active > button.w-auto.btn.pointer",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.w-auto.btn.pointer",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Industries: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.border-b-3.w-auto.btn",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.splide__slide--clone",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center.active > button.border-b-3.w-auto.btn",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Shop by Category: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.lastSlide.splide__slide--clone",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.firstSlide.splide__slide--clone",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.is-next",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.lastSlide",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    },
+                    {
+                      "el": "div > div.store-tabview > div.grid-12.xs:grid-12.sm:grid-12 > div.tabview-contain.text-center > button.text-grey-5.w-auto.btn",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "Solutions: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "section.ng-cloak.splide.heroBannerCarousel > div.splide__slider > div.splide__track.splide__track--loop.splide__track--ltr > ul.splide__list > li.splide__slide.firstSlide.is-active",
+                      "status": "not-asserted",
+                      "detail": "trigger has no text — map it with --control \"<live path>=<targetSel>\""
+                    }
+                  ]
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            },
+            "note": "assert verdict fail is 🟡 advisory: chrome/stateMachines/pageErrors pass; entrances fail — live counts 14 (1440) / 11 (360) inline-style-mutated elements from Splide/commerce init bookkeeping + autoplay, the prototype reproduces the visible behaviours (autoplay, underline, tabs, flyout, search, drawer) with its own timer/class mechanics; no --skip used"
+          },
+          "chromeCrops": {
+            "header": {
+              "y": 0,
+              "height": 97,
+              "pct": 0,
+              "pass": true,
+              "artifacts": [
+                "gates/index-1440/crop-header-iter1.json",
+                "gates/index-1440/chrome-header-iter1.png"
+              ]
+            },
+            "footer": {
+              "y": 5584,
+              "yB": 5584,
+              "height": 763,
+              "pct": 0.13,
+              "pass": true,
+              "artifacts": [
+                "gates/index-1440/crop-footer-iter1.json",
+                "gates/index-1440/chrome-footer-iter1.png"
+              ]
+            },
+            "parity": "gates/index-1440/chrome-parity-iter1b.txt (quiet: 10/10 + 43/43 texts, 4/4 + 7/7 icons; 1 OCCLUDED skip-link = symmetric live quirk per instrument WARN)"
+          },
+          "priorRounds": [
+            {
+              "label": "iter1",
+              "record": "gates/index-1440/gate-iter1.json",
+              "pixelPct": 0.06
+            },
+            {
+              "label": "iter2",
+              "record": "gates/index-1440/gate-iter2.json",
+              "pixelPct": 0.04
+            }
+          ],
+          "finalProbes": {
+            "contentDiff": "gates/index-1440/content-diff-final.txt (0 structural 🔴)",
+            "visualDiff": "gates/index-1440/visual-diff-final.txt (4 justified FLUSH-LEFT clone flags)"
+          }
+        }
+      },
+      "motion": {
+        "observed": [
+          "hero autoplay loop (ul.splide__list translateX stepping; span.wd-progress-fill width mutations, 4 items)",
+          "hero progress-item hover (color rgb(211,211,211), opacity .75, track bg rgb(221,221,221))",
+          "nav sliding underline on hover (li.slidingDiv visibility, .2s)",
+          "category tabs aria-expanded toggle (role=tab) + panel swap",
+          "sign-in flyout opens on click (chrome-states menu:Sign in)",
+          "search bar expands on click (.search-expanded 940px, Clear + collapse)",
+          "360 drawer opens on hamburger click (nav.mMenutoggleWidth, aria-expanded, bar.animate) and drills on Products (dropDownContainer.fullWidth, +192px)"
+        ],
+        "implemented": [
+          "hero autoplay + progress fill (interval approximated 6000ms — not directly measurable from the observe run; logged)",
+          "progress-item hover CSS",
+          "nav hover underline (inline left/width/visibility like live)",
+          "tabs state machine",
+          "sign-in flyout toggle",
+          "search expand/collapse/clear (dropdown rows toggled by inline display like live; #predictiveSearchContainer never pinned)",
+          "drawer open/close + drill",
+          "Splide-like init inline writes on the rail/promo lists (live inline transform translateX(0px))"
+        ],
+        "dead": [
+          "header scroll-morph (sticky 97px/91px at every y, no class change)",
+          "rail arrows splide02/03/04 (visibility hidden at rest; click moved no track)",
+          "product-card hover (#splide03 a.pc-url-wrap: no computed change)",
+          "cart trigger (no panel opened on live)",
+          "desktop mega-menu dropdown (live ul#…NavSections never became visible under hover or click in headless: chrome-states region atoms 1, motion trigger 6 aria-expanded false→false) — panel DOM authored hidden from the nav model, not wired",
+          "footer accordions at 360 (none on live: columns stack)",
+          "language/region switcher (plain link to /region-selector)"
+        ],
+        "interval_note": "hero INTERVAL 6000ms approximated"
+      },
+      "fonts": {
+        "decision": "self-host Roboto 400/500/700 (open-license, harvested woff2 = same public source; local() first like live); FK Grotesk Neue / SimplonMono / Glyphicons / icomoon are declared in the source CSS but no captured text element renders them (lift: 174/174 text elements Roboto) — not shipped, no substitute needed",
+        "artifacts": [
+          "stardust/current/assets/_fonts-manifest.json",
+          "stardust/replica/capture/lift/index-1440.json#fontFaces"
+        ]
+      },
+      "portations": [],
+      "canonFollowup": [
+        {
+          "id": "CF-1",
+          "from": "products worker chrome-parity",
+          "item": "skip-link occluded by the promo bar",
+          "disposition": "no change — symmetric live quirk: chrome-parity prints WARN \"live Skip to main content is covered by section.relative.section at its centre — a live quirk, not a build defect\"; build mirrors top:-43px placement",
+          "artifacts": [
+            "gates/index-1440/chrome-parity-iter1b.txt"
+          ]
+        },
+        {
+          "id": "CF-2",
+          "from": "products worker chrome-parity @360",
+          "item": "live mobile cart flyout texts/icons missing on build",
+          "disposition": "fixed in canon (index-proposed.html + canon.css: #openCartModal mirrored fixed at 100vh with rest-state hidden controls) — 360 header parity quiet 4/4 texts, 4/4 icons",
+          "artifacts": [
+            "gates/index-360/chrome-parity-iter1d.txt"
+          ]
+        },
+        {
+          "id": "CF-3",
+          "from": "products worker chrome-parity",
+          "item": "footer Ethisphere badge rendition 500 vs 1280",
+          "disposition": "not fixable without a CDN URL: the wdthumb.500.500 mobile rendition was never harvested (manifest has only the 1280 copy); same 100px rendered box; justified parity delta (permanent) — flag for delivery: harvest the 500 rendition",
+          "artifacts": [
+            "stardust/current/assets/_media-manifest.json"
+          ]
+        },
+        {
+          "id": "CF-4",
+          "from": "products worker chrome-parity @360",
+          "item": "footer +1px at 360",
+          "disposition": "fixed in canon (.footer-top padding-bottom 29→28 px; footer top block 130 px = lift)",
+          "artifacts": [
+            "gates/index-360/gate-iter1.json"
+          ]
+        },
+        {
+          "id": "CF-5",
+          "from": "products worker chrome-parity + index landmark tables",
+          "item": "build-only \"Cookie Preferences\" footer link",
+          "disposition": "fixed in canon: the link is TrustArc tag-injected (nondeterministic-live: present in the 08:11 lift and 08:49 parity cache, absent in both stitched live references 08:53/09:07 and on /products); build now carries the empty #teconsent container like live at rest — CMP re-added at deploy per content-preservation",
+          "artifacts": [
+            "gates/index-1440/gate-iter1.log#unpaired",
+            "gates/index-360/gate-iter1.log#unpaired"
+          ]
+        }
+      ],
+      "status": {
+        "360": "PASS 2.69% Δh-1 (hot band photo-reencoding residual) · chrome rest header 0.07% footer 1.09% · drawer 1.04% drilled 1.55% gated · motion.assert recorded (advisory fail: entrances)",
+        "1440": "PASS 0.05% Δh0 · chrome rest header 0.00% footer 0.13% · cells 6 gated / 3 dead / 1 residual (search 2.02%) · motion.assert recorded (advisory fail: entrances)",
+        "notGreen": [
+          "search cell 2.02% vs 2% (subpixel-layoutunit residual)",
+          "motion.assert entrances check (advisory 🟡) at both widths",
+          "360 hot band y2000–2500 26.6% photo-reencoding (hands-off-policy)",
+          "ethisphere 500px rendition not harvested (parity signature delta, justified)"
+        ]
+      },
+      "prototype": "stardust/prototypes/index-proposed.html"
+    },
+    {
+      "pageType": "listing",
+      "archetype": "products",
+      "chromeVariant": "default",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 0.43,
+            "pixelPctUnmasked": 0.43,
+            "heightDelta": -1,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/products",
+              "width": 360,
+              "capturedAt": "2026-09-21T08:59:57.800Z",
+              "sidecar": "stardust/replica/gates/products-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T10:00:40.113Z",
+            "structuralRed": 0,
+            "visualFlags": "none"
+          },
+          "record": "stardust/replica/gates/products-360/gate-iter3.json",
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×13",
+              "why": "live <style> element text inside section.mainContainWrap — non-content"
+            },
+            {
+              "probe": "landmarks",
+              "flag": "unpaired A-only cta filter (0)/prev/next; B-only sidebar h3s + skip/menu ctas",
+              "why": "pairing artefact of hidden mobile drawer / canon header text; pixel bands 1000-5500 all 0.0 %"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 800–900",
+              "pct": 8.04,
+              "cause": "third-party-in-flow: Genesys messenger chat launcher (fixed disc, injected by third-party JS, absent from the settled sidecar) present on live chunk 1 only",
+              "what": "chat launcher disc ~55px",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/products-360/crop-chat-launcher-iter2.json",
+                "gates/products-360/crop-chat-launcher-iter1.png"
+              ],
+              "acceptedBy": "hands-off-policy:third-party-in-flow"
+            }
+          ],
+          "captureState": [],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:12:11.085Z",
+              "target": "http://127.0.0.1:8814/products-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/products-360.json",
+              "schema": 2,
+              "width": 360,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 6000,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 1 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 1,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": ".mob-shopBy-btn: n/a (dead live (implement nothing)); .mob-filters-btn: n/a (dead live (implement nothing)); .compare-link-clp: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": ".mob-shopBy-btn",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": ".mob-filters-btn",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": ".compare-link-clp",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "n/a",
+                  "detail": "no click-paired machines in the observe run",
+                  "rows": []
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            },
+            "assertNote": "advisory 🟡 fail: only the entrances count fails — every live element with inline opacity/transform entrances is chrome (search history panel .searchHistoryView, header, nav li.slidingDiv), none inside section.mainContainWrap; chrome states pass (sticky 91px at top/scrolled-down/scrolled-up/back-to-top), 0 pageerrors, widgets n/a (accordion pokes have no track), stateMachines n/a (observe paired none to clicks)",
+            "artifacts": [
+              "motion/products-assert-360.json",
+              "motion/products-assert-run1.json"
+            ]
+          },
+          "chromeRest": {
+            "header": {
+              "y": 0,
+              "height": 91,
+              "diffPct": 0.07,
+              "pass": true,
+              "artifact": "gates/products-360/crop-header-iter2.json"
+            },
+            "footer": {
+              "y": 5362,
+              "height": 2176,
+              "diffPct": 1.09,
+              "pass": true,
+              "texture": "thick (blocks/bands — misalignment or missing paint)",
+              "artifact": "gates/products-360/crop-footer-iter2.json"
+            }
+          },
+          "artifacts": [
+            "gates/products-360/gate-iter1.json",
+            "gates/products-360/gate-iter1.txt",
+            "gates/products-360/content-diff-iter1.txt",
+            "gates/products-360/visual-diff-iter1.txt",
+            "gates/products-360/chrome-parity-iter1.txt",
+            "gates/products-360/review-iter1.png",
+            "gates/products-360/diff-iter1.png",
+            "gates/products-360/gate-iter2.json",
+            "gates/products-360/gate-iter2.txt",
+            "gates/products-360/review-iter2.png"
+          ],
+          "resolved": [
+            {
+              "band": "y 91–314 (hero)",
+              "was": 15.62,
+              "now": 0,
+              "fix": "iter2: mobile hero rendition intercept-harvested from the page response and applied <768 (products.css)",
+              "artifacts": [
+                "gates/products-360/crop-hero-iter1.json",
+                "gates/products-360/crop-hero-iter2.json"
+              ]
+            }
+          ],
+          "overCap": "canon-followup"
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 0.07,
+            "pixelPctUnmasked": 0.07,
+            "heightDelta": 0,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/products",
+              "width": 1440,
+              "capturedAt": "2026-09-21T08:56:24.839Z",
+              "sidecar": "stardust/replica/gates/products-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T10:00:25.588Z",
+            "structuralRed": 0,
+            "visualFlags": "none"
+          },
+          "record": "stardust/replica/gates/products-1440/gate-iter3.json",
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×13",
+              "why": "live <style> element text inside section.mainContainWrap (hero variant bg rules + PLP scoped style) — non-content, not authored as text"
+            },
+            {
+              "probe": "landmarks",
+              "flag": "unpaired A-only cta prev/next, B-only cta cookie preferences",
+              "why": "prev/next present on build (pixel 0.06 %, band 2500-3000 0.0 %); cookie preferences is a canon footer link (index chrome) — noted for index"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 800–900",
+              "pct": 1.81,
+              "cause": "third-party-in-flow: Genesys messenger chat launcher (fixed disc) on live chunk 1 only",
+              "what": "chat launcher disc ~55px",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/products-1440/crop-chat-launcher-iter1.json",
+                "gates/products-1440/crop-chat-launcher-iter1.png"
+              ],
+              "acceptedBy": "hands-off-policy:third-party-in-flow"
+            }
+          ],
+          "captureState": [],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:12:06.792Z",
+              "target": "http://127.0.0.1:8814/products-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/products.json",
+              "schema": 2,
+              "width": 1440,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 2400,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 6 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 6,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": ".filterHeader: n/a (dead live (implement nothing)); .clp-nav-item:nth-child(2) a.accordion: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": ".filterHeader",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": ".clp-nav-item:nth-child(2) a.accordion",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "n/a",
+                  "detail": "no click-paired machines in the observe run",
+                  "rows": []
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            },
+            "assertNote": "advisory 🟡 fail: only the entrances count fails — every live element with inline opacity/transform entrances is chrome (search history panel .searchHistoryView, header, nav li.slidingDiv), none inside section.mainContainWrap; chrome states pass (sticky 97px at top/scrolled-down/scrolled-up/back-to-top), 0 pageerrors, widgets n/a (accordion pokes have no track), stateMachines n/a (observe paired none to clicks)",
+            "artifacts": [
+              "motion/products-assert-1440.json",
+              "motion/products-assert-run1.json"
+            ]
+          },
+          "chromeRest": {
+            "header": {
+              "y": 0,
+              "height": 97,
+              "diffPct": 0,
+              "pass": true,
+              "artifact": "gates/products-1440/crop-header-iter2.json"
+            },
+            "footer": {
+              "y": 3419,
+              "height": 763,
+              "diffPct": 0.11,
+              "pass": true,
+              "texture": "thick (blocks/bands — misalignment or missing paint)",
+              "artifact": "gates/products-1440/crop-footer-iter2.json"
+            }
+          },
+          "artifacts": [
+            "gates/products-1440/gate-iter1.json",
+            "gates/products-1440/gate-iter1.txt",
+            "gates/products-1440/content-diff-iter1.txt",
+            "gates/products-1440/visual-diff-iter1.txt",
+            "gates/products-1440/chrome-parity-iter1.txt",
+            "gates/products-1440/review-iter1.png",
+            "gates/products-1440/diff-iter1.png",
+            "gates/products-1440/gate-iter2.json",
+            "gates/products-1440/gate-iter2.txt",
+            "gates/products-1440/review-iter2.png"
+          ],
+          "overCap": "canon-followup"
+        }
+      },
+      "motion": {
+        "observed": [
+          {
+            "id": "facet-accordion",
+            "evidence": "run1@1440 click .filterHeader: button +active; ul.accordion-body -hidden; transitions max-height .5s (ul), visibility .2s (li a)",
+            "file": "motion/products-run1-clicks.json"
+          },
+          {
+            "id": "shopby-nav-accordion",
+            "evidence": "run1@1440 click Shop by Deals a.accordion: +active on it, -active on Shop by Category, deals section -hidden, category ul +hidden (exclusive)",
+            "file": "motion/products-run1-clicks.json"
+          },
+          {
+            "id": "compare-tray-modal",
+            "evidence": "run1@1440 + 360 click .compare-link-clp: #compare-tray-modal -hidden, body +overflow-hidden, childList: picture + div.mb-4 added",
+            "file": "motion/products-run1-clicks.json"
+          },
+          {
+            "id": "warranty-modal",
+            "evidence": "run1@1440 click .wd-modal-btn: a +wd-modal-active, warrantyCtaModal -hidden",
+            "file": "motion/products-run1-clicks.json"
+          },
+          {
+            "id": "mobile-drawer",
+            "evidence": "360 click .mob-shopBy-btn / .mob-filters-btn: body +mob-shopBy-open / +mob-filters-open; .left-filter transitions transform .3s + opacity .3s",
+            "file": "motion/products-360.json"
+          },
+          {
+            "id": "header-scroll-morph (chrome)",
+            "evidence": "body +minHeader at y>=400 scrolling down, -minHeader at y<=30 up; header top transition .3s; header sticky 97px@1440 / 91px@360",
+            "file": "motion/products-run1-clicks.json",
+            "owner": "canon/index"
+          },
+          {
+            "id": "nav-link-hover",
+            "evidence": "hovnav@1440 hover .clp-nav-item ul li:nth-child(2) a: color → rgb(34,102,255)",
+            "file": "motion/products-hover-nav.json"
+          }
+        ],
+        "implemented": [
+          "facet-accordion",
+          "shopby-nav-accordion",
+          "compare-tray-modal",
+          "warranty-modal",
+          "mobile-drawer",
+          "nav-link-hover",
+          "compare-label-hover-underline",
+          "pagination-number-hover-bg"
+        ],
+        "dead": [
+          ".productListItem (1 :hover rule, no computed change)",
+          ".btn.underline (hero link)",
+          ".filterHeader",
+          ".green-promo a",
+          ".btn.mt-2.underline (tile links)"
+        ],
+        "notes": [
+          "hover families: run 1 hovers all intercepted (clicks run before hovers; Compare click opened the tray) — hovers-only re-run pending",
+          "no entrance animations on page content (entrances: header only)",
+          "carousels: none on this page"
+        ],
+        "hovers": {
+          "fired": [
+            {
+              "sel": ".compare-link-clp",
+              "change": "span.text-xs.ml-2 textDecorationLine none→underline",
+              "implemented": ".product-card__compare:hover span"
+            },
+            {
+              "sel": ".numb",
+              "change": "span.flex.justify-center background transparent→rgb(242,243,243)",
+              "implemented": ".plp-pag__num:hover span"
+            },
+            {
+              "sel": ".clp-nav-item ul a / .select.newanchor",
+              "change": "color rgb(0,0,0)→rgb(34,102,255)",
+              "implemented": ".clp-nav__list a:hover, .clp-nav__deal a:hover",
+              "file": "motion/products-hover-nav.json"
+            }
+          ],
+          "dead": [
+            ".productListItem (1 :hover rule, no computed change)",
+            ".btn.underline (hero link)",
+            ".filterHeader",
+            ".green-promo a",
+            ".btn.mt-2.underline (tile links)"
+          ],
+          "pending": [],
+          "entrances": "none in page content; 5 live entrance families are chrome",
+          "animations": "34 live keyframe runs = .loadingSkeleton `loading` inside hidden skeleton/search groups — not visible, not implemented"
+        }
+      },
+      "fonts": {
+        "decision": "self-host Roboto 400/500/700 (harvested public woff2, declared by canon.css @font-face; every element under section.mainContainWrap computes Roboto, sans-serif at 1440 and 360)",
+        "substitutes": [],
+        "unusedFaces": [
+          "FK Grotesk Neue",
+          "SimplonMono",
+          "glyphicons",
+          "icomoon"
+        ],
+        "note": "licensed faces present in source @font-face but not rendered on this page; not rehosted"
+      },
+      "canonFollowup": [
+        {
+          "at": "2026-09-21T08:58:44.943Z",
+          "width": 1440,
+          "what": "chrome-parity header: build \"Skip to main content\" OCCLUDED by section.promo.header-promo-bar (elementFromPoint); live covers it with section.relative.section (WARN, live quirk) — click-box only, pixel header crop 0.00 %",
+          "artifact": "gates/products-1440/chrome-parity-iter1.txt"
+        },
+        {
+          "at": "2026-09-21T08:58:44.943Z",
+          "width": 1440,
+          "what": "footer crop 0.11 % thick texture: build-only footer link \"Cookie Preferences\" (canon footer) absent on live products page",
+          "artifact": "gates/products-1440/crop-footer-iter1.json"
+        },
+        {
+          "at": "2026-09-21T09:00:16.039Z",
+          "width": 360,
+          "what": "chrome-parity header 6 deltas: live pins div#openCartModal.wd-modal.cartwrapper (STICKY, 900px) with texts \"Your Cart (0 Items)\" / \"and Save! Not a Member?\" MISSING on build; build-only EXTRA <a> \"Skip to main content\" (OCCLUDED by p.text-xs); ICONS 4 live vs 1 build — all canon header (index worker)",
+          "artifact": "gates/products-360/chrome-parity-iter1.txt"
+        },
+        {
+          "at": "2026-09-21T09:00:16.053Z",
+          "width": 360,
+          "what": "chrome-parity footer 1 delta: ethisphere-award icon rendition img 500x342 live vs 1280x876 build (canon footer uses the 1280 harvested copy)",
+          "artifact": "gates/products-360/chrome-parity-iter1.txt"
+        },
+        {
+          "at": "2026-09-21T09:16:38.758Z",
+          "width": 360,
+          "what": "footer band 7000–7500 3.8 % with +1 px offset: canon footer 1 px taller on build (doc 7539 vs 7538) — index worker",
+          "artifact": "gates/products-360/gate-iter2.txt"
+        }
+      ],
+      "captureState": [
+        {
+          "what": "PLP grid = captured first page (89 items, page 1 of 6) shipped static; filters/sort/compare inert",
+          "where": "plp",
+          "flaggedFor": "delivery",
+          "row": "dynamic-features #17/#9/#12/#28"
+        },
+        {
+          "what": "hero background: mobile rendition (all-products-mobile 840, 343x175) intercept-harvested in iter2 and applied <768; the 1280 rendition live uses at 768–991 was not harvested (desktop 3000 used there)",
+          "where": "plp-hero",
+          "flaggedFor": "delivery"
+        },
+        {
+          "what": "hidden DOM mirrored: 5 use-case hero variants, 5 warrantyCtaModal copies, compare-tray modals, facet option lists, mobile drawer",
+          "where": "main"
+        }
+      ],
+      "decisions": [
+        "sidebar width encoded as measured share of the container (18.2367% @>=1140, 25% @>=768) — the source grid math (lg:cols-2 + gutters) did not resolve to a clean fraction; flagged for a wide-viewport spot check",
+        "chrome (promo strip + header + footer + chrome JS) imported verbatim from index-proposed.html at build time by stardust/.work/replica/build-products.mjs (re-run to refresh)",
+        "no page JS yet: nothing implemented before motion-observe evidence"
+      ],
+      "prototype": "stardust/prototypes/products-proposed.html",
+      "chromeRestCrop": {
+        "360": {
+          "header": {
+            "y": 0,
+            "height": 91,
+            "diffPct": 0.07,
+            "pass": true,
+            "artifact": "gates/products-360/crop-header-iter2.json"
+          },
+          "footer": {
+            "y": 5362,
+            "height": 2176,
+            "diffPct": 1.09,
+            "pass": true,
+            "texture": "thick (blocks/bands — misalignment or missing paint)",
+            "artifact": "gates/products-360/crop-footer-iter2.json"
+          }
+        },
+        "1440": {
+          "header": {
+            "y": 0,
+            "height": 97,
+            "diffPct": 0,
+            "pass": true,
+            "artifact": "gates/products-1440/crop-header-iter2.json"
+          },
+          "footer": {
+            "y": 3419,
+            "height": 763,
+            "diffPct": 0.11,
+            "pass": true,
+            "texture": "thick (blocks/bands — misalignment or missing paint)",
+            "artifact": "gates/products-1440/crop-footer-iter2.json"
+          }
+        }
+      },
+      "canonFollowupRegate": {
+        "360": "gates/products-360/gate-iter3.json",
+        "1440": "gates/products-1440/gate-iter3.json",
+        "label": "iter3",
+        "regime": "canon-followup",
+        "at": "2026-09-21T10:03:30.541Z"
+      }
+    },
+    {
+      "pageType": "program",
+      "archetype": "solutions",
+      "chromeVariant": "default",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 1.61,
+            "pixelPctUnmasked": 1.61,
+            "heightDelta": -1,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/solutions",
+              "width": 360,
+              "capturedAt": "2026-09-21T09:44:00.330Z",
+              "sidecar": "stardust/replica/gates/solutions-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T09:52:46.367Z",
+            "structuralRed": 0,
+            "visualFlags": "8 justified"
+          },
+          "record": "stardust/replica/gates/solutions-360/gate-iter2.json",
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×11 (live <style> rule text inside .css-container)",
+              "why": "page-authored CSS snippets are not content; effects re-authored in solutions.css (D1)"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×8 (→ 328x300)",
+              "why": "mirrors live: object-fit:cover on both sides (source.images[].stretched=true)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 4300–15393",
+              "pct": 1,
+              "cause": "subpixel-layoutunit: every landmark from cta \"learn more\"#3 (y 4371) down is +1px on the build (18 rows Δy=+1, Δh=0), text-edge diff only; doc Δh -1",
+              "flaggedFor": "user",
+              "artifacts": [
+                "gates/solutions-360/landmarks-iter1.json",
+                "gates/solutions-360/review-iter1.png"
+              ],
+              "acceptedBy": "hands-off-policy:subpixel-layoutunit"
+            },
+            {
+              "band": "y 500–1000",
+              "pct": 0.5,
+              "cause": "third-party-in-flow: Genesys chat launcher iframe#wd-chat-frame on live only (pinnedHidden on chunks 2+)",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/solutions-360/live.png.json#pinnedHidden"
+              ],
+              "acceptedBy": "hands-off-policy:third-party-in-flow"
+            },
+            {
+              "region": "footer",
+              "pct": 0.73,
+              "cause": "canon-followup CF-S1: live footer 2139 vs canon 2176 (+37: Ethisphere badge 32→68, live \"Cookie Preferences\" link)",
+              "flaggedFor": "user",
+              "artifacts": [
+                "gates/solutions-360/chrome-parity-iter1.txt",
+                "gates/solutions-360/crop-footer-iter1.json"
+              ],
+              "acceptedBy": "n/a (crop within the 2% bar; canon owner)"
+            }
+          ],
+          "captureState": [],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:55:53.195Z",
+              "target": "http://127.0.0.1:8814/solutions-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/solutions-360.json",
+              "schema": 2,
+              "width": 360,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 12000,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 3 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 3,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": "#accordion_text_copy_1244081658_label: n/a (dead live (implement nothing)); a.wd-modal-btn: n/a (dead live (implement nothing)); #contact-form .wd-modal-close: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": "#accordion_text_copy_1244081658_label",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "a.wd-modal-btn",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#contact-form .wd-modal-close",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "pass",
+                  "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded)",
+                  "rows": [
+                    {
+                      "el": "div.accordion-text > section.section.component-accordian-text.faq-schema > div.accordion-text.border-t.border-border-gray-light > div.accordion-box > button.w-full.heading5.relative",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded)"
+                    }
+                  ]
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            }
+          },
+          "chromeRest": {
+            "header": {
+              "y": 0,
+              "height": 91,
+              "diffPct": 0.07,
+              "pass": true,
+              "artifact": "gates/solutions-360/crop-header-iter1.json"
+            },
+            "footer": {
+              "y": 13217,
+              "yB": 13218,
+              "height": 2139,
+              "diffPct": 0.73,
+              "pass": true,
+              "texture": "mixed",
+              "artifact": "gates/solutions-360/crop-footer-iter1.json"
+            }
+          },
+          "artifacts": [
+            "gates/solutions-360/gate-iter1.json",
+            "gates/solutions-360/gate-iter2.json",
+            "gates/solutions-360/review-iter1.png",
+            "gates/solutions-360/content-diff-iter1.txt",
+            "gates/solutions-360/visual-diff-iter1.txt",
+            "gates/solutions-360/chrome-parity-iter1.txt"
+          ],
+          "regate": {
+            "label": "iter2",
+            "why": "post-motion pixel re-run (CSS/JS only)",
+            "pixelPct": 1.61,
+            "heightDelta": -1,
+            "pass": true,
+            "noop": true,
+            "note": "differing-pixel count byte-identical to iter1 → motion layer is pixel-neutral at t=0"
+          }
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 0.09,
+            "pixelPctUnmasked": 0.09,
+            "heightDelta": -1,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/solutions",
+              "width": 1440,
+              "capturedAt": "2026-09-21T09:40:17.084Z",
+              "sidecar": "stardust/replica/gates/solutions-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T09:52:25.368Z",
+            "structuralRed": 0,
+            "visualFlags": "8 justified"
+          },
+          "record": "stardust/replica/gates/solutions-1440/gate-iter2.json",
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×11 (live <style> rule text inside .css-container)",
+              "why": "page-authored CSS snippets are not content; their effects are re-authored in solutions.css (decision D1)"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×8 (923x600 → 353x300)",
+              "why": "mirrors live: same 8 images render object-fit:cover into a 300px box on the source side (visual-diff source.images[].stretched=true)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 500–1000",
+              "pct": 0.7,
+              "cause": "third-party-in-flow: Genesys chat launcher iframe#wd-chat-frame (65x65 at x1355 y815) on live only",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/solutions-1440/review-iter1.png",
+                "gates/solutions-1440/live.png.json#pinnedHidden"
+              ],
+              "acceptedBy": "hands-off-policy:third-party-in-flow"
+            },
+            {
+              "region": "footer",
+              "pct": 0.63,
+              "cause": "canon-followup: live footer on /solutions is 726px (Ethisphere badge img renders 32px + \"Cookie Preferences\" link present at rest) vs canon 763px (badge 68px, no link) — legal bar Δy +37; crop still ≤2%",
+              "flaggedFor": "user",
+              "artifacts": [
+                "gates/solutions-1440/chrome-parity-iter1.txt",
+                "gates/solutions-1440/crop-footer-iter1.json"
+              ],
+              "acceptedBy": "n/a (passes the 2% bar; recorded for the canon owner)"
+            },
+            {
+              "band": "y 1500–2500",
+              "pct": 0.3,
+              "cause": "capture-state: live Gaming card <img> stuck on the lazyload placeholder in the gate reference (h3 \"Gaming Storage\" yA 1937 vs yB 2213); build renders the harvested image",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/solutions-1440/landmarks-iter1.json",
+                "gates/solutions-1440/gate-iter1.txt"
+              ],
+              "acceptedBy": "hands-off-policy:capture-state"
+            }
+          ],
+          "captureState": [],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:55:45.642Z",
+              "target": "http://127.0.0.1:8814/solutions-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/solutions.json",
+              "schema": 2,
+              "width": 1440,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 6000,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 17 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 17,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": "#accordion_text_copy_1244081658_label: n/a (dead live (implement nothing)); a.wd-modal-btn: n/a (dead live (implement nothing)); #contact-form .wd-modal-close: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": "#accordion_text_copy_1244081658_label",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "a.wd-modal-btn",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": "#contact-form .wd-modal-close",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "pass",
+                  "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded); What is the difference between an HDD an: ariaExpanded changed (live: aria-expanded)",
+                  "rows": [
+                    {
+                      "el": "div.accordion-text > section.section.component-accordian-text.faq-schema > div.accordion-text.border-t.border-border-gray-light > div.accordion-box > button.w-full.heading5.relative",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded)"
+                    },
+                    {
+                      "el": "div.accordion-text > section.section.component-accordian-text.border-t-0 > div.accordion-text.border-t.border-border-gray-light > div.accordion-box > button.w-full.heading5.relative",
+                      "attr": "aria-expanded",
+                      "status": "pass",
+                      "detail": "What is the difference between an HDD an: ariaExpanded changed (live: aria-expanded)"
+                    }
+                  ]
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            }
+          },
+          "chromeRest": {
+            "header": {
+              "y": 0,
+              "height": 97,
+              "diffPct": 0,
+              "pass": true,
+              "artifact": "gates/solutions-1440/crop-header-iter1.json"
+            },
+            "footer": {
+              "y": 7750,
+              "yB": 7750,
+              "height": 726,
+              "diffPct": 0.63,
+              "pass": true,
+              "texture": "thick (blocks/bands — misalignment or missing paint)",
+              "artifact": "gates/solutions-1440/crop-footer-iter1.json"
+            }
+          },
+          "artifacts": [
+            "gates/solutions-1440/gate-iter1.json",
+            "gates/solutions-1440/gate-iter2.json",
+            "gates/solutions-1440/review-iter1.png",
+            "gates/solutions-1440/content-diff-iter1.txt",
+            "gates/solutions-1440/visual-diff-iter1.txt",
+            "gates/solutions-1440/chrome-parity-iter1.txt"
+          ],
+          "regate": {
+            "label": "iter2",
+            "why": "post-motion pixel re-run (CSS/JS only)",
+            "pixelPct": 0.09,
+            "heightDelta": -1,
+            "pass": true,
+            "noop": true,
+            "note": "differing-pixel count byte-identical to iter1 → motion layer is pixel-neutral at t=0"
+          }
+        }
+      },
+      "prototype": "stardust/prototypes/solutions-proposed.html",
+      "motion": {
+        "observed": [
+          {
+            "id": "faq-accordion",
+            "evidence": "1440+360 stateMachines: button aria-expanded false↔true per click (independent items, no exclusivity — one attrMutation per click); classMutations: .accordion-content ±hidden, plus/minus svg ±hidden; source CSS .accordion-content{transition:max-height .4s ease,opacity .4s ease} .hidden{opacity:0;max-height:0} (body.disabledOutine keeps display:block)",
+            "file": "motion/solutions.json"
+          },
+          {
+            "id": "contact-form-modal",
+            "evidence": "1440+360 classMutations: a.wd-modal-btn +wd-modal-active, div#contact-form.wd-modal -hidden, body +overflow-hidden; close: +hidden, -overflow-hidden, -wd-modal-active",
+            "file": "motion/solutions.json"
+          },
+          {
+            "id": "breadcrumb-link-hover",
+            "evidence": "1440 hover .bread-crumbs a: color rgb(106,106,106)→rgb(0,0,0), text-decoration none→underline, transition .2s",
+            "file": "motion/solutions.json"
+          },
+          {
+            "id": "header-scroll-class (chrome)",
+            "evidence": "body ±minHeader toggles while scrolling; header stays sticky 97px@1440 / 91px@360 at every y (headerTimeline) — canon/index owns; no page action",
+            "file": "motion/solutions.json",
+            "owner": "canon/index"
+          }
+        ],
+        "implemented": [
+          "faq-accordion",
+          "contact-form-modal",
+          "breadcrumb-link-hover"
+        ],
+        "dead": [
+          "hover a.btn.rounded-16px (anchor chips): no change",
+          "hover .svg-card a.btn: no change",
+          "hover #explore-storage-solutions a.btn: no change",
+          "hover a.btn.mt-auto (tiles): no change",
+          "hover a.btn.border-white (innovating): no change",
+          "hover a.wd-modal-btn (CTA black): no change",
+          "hover .accordion-title: no change",
+          "hover #solutions-table tbody tr: no change",
+          "hover .accordion-content p a: no change",
+          "entrance animations: none (all entrances[] have null opacity/transform; lazyload class swaps only)",
+          "carousel/track widgets: none on this page (widget pokes n/a)"
+        ],
+        "unprobed": [
+          "hover a.btn.bg-white.border-black (CTA white button): no-box — first match is an off-screen twin; not re-probed (its black sibling measured no change)"
+        ],
+        "assertNotes": "motion-assert verdict is advisory this release: \"entrances\" compares live inline-style-mutated element counts (header, search skeleton rows, li.slidingDiv, grecaptcha badge, FAQ inline styles during the trigger sweep — none with opacity/transform values) against the build (0); nothing implementable. Widgets n/a (no tracks). Chrome + pageErrors pass."
+      },
+      "fonts": {
+        "decision": "Roboto 400/500/700 self-hosted via canon.css @font-face (open licence, same public source); every lifted element in header/main/footer computes \"Roboto, sans-serif\" (1334/1334 @1440, 1325/1325 @360). FK Grotesk Neue / SimplonMono / Glyphicons / icomoon @font-face exist in the source CSS but render on no captured element → not shipped, no substitute needed."
+      },
+      "canonFollowup": [
+        {
+          "id": "CF-S1",
+          "from": "solutions worker chrome-parity @1440",
+          "item": "footer height 726 (live /solutions) vs 763 (canon): live Ethisphere badge renders 32px (icon #6 Δh +36) and live carries the TrustArc \"Cookie Preferences\" link at rest (CF-5 removed it in canon); legal-bar texts Δy +38",
+          "disposition": "not patched here (canon-owned); footer crop 0.63% still passes; the badge/link presence is nondeterministic-live across pages/sessions",
+          "artifacts": [
+            "gates/solutions-1440/chrome-parity-iter1.txt",
+            "gates/solutions-1440/crop-footer-iter1.json"
+          ]
+        },
+        {
+          "id": "CF-S2",
+          "from": "solutions worker chrome-parity @1440",
+          "item": "skip link OCCLUDED by the promo bar on build",
+          "disposition": "= CF-1 (symmetric live quirk, WARN on live too); no change"
+        }
+      ],
+      "captureState": [
+        {
+          "what": "crawl screenshot + 1440 lift each show ONE explore-card <img> stuck on the lazyload placeholder (alt text) — a different card each session; a fresh live session (harvest probe, 2 navigations) loaded all 8",
+          "where": "explore-storage-solutions",
+          "decision": "author all 8 loaded (harvested renditions incl. NAS 1280/500); if the gate reference shows a stuck card it is capture-state, not a build defect"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "D1",
+          "what": "page-authored <style> snippets inside .css-container (7 tiny rule sets: .btn.rounded-16px, .svg-card .svg, .button:has(.mt-auto), #solutions-table…, #faq a, .dark-40::after) are NOT mirrored as <style>; their effects are re-authored in solutions.css; content-diff may list their text as 🟡 (non-content) — same disposition as the products archetype"
+        },
+        {
+          "id": "D2",
+          "what": "chrome (promo strip, header, footer, index.js) copied verbatim from index-proposed.html by build-solutions.mjs; canon.css untouched"
+        },
+        {
+          "id": "D3",
+          "what": "index.js (chrome JS) runs on this page: all page-specific blocks are null-guarded; 0 pageerrors measured offline at 1440 and 360"
+        },
+        {
+          "id": "D4",
+          "what": "harvest: 1 live hit (2 navigations 1440+360) to fetch the NAS card renditions (1280, 500) and the 840 mobile renditions of both background photos — stardust/.work/replica/probes/harvest-solutions.json"
+        }
+      ],
+      "chromeRestCrop": {
+        "360": {
+          "header": {
+            "y": 0,
+            "height": 91,
+            "diffPct": 0.07,
+            "pass": true,
+            "artifact": "gates/solutions-360/crop-header-iter1.json"
+          },
+          "footer": {
+            "y": 13217,
+            "yB": 13218,
+            "height": 2139,
+            "diffPct": 0.73,
+            "pass": true,
+            "texture": "mixed",
+            "artifact": "gates/solutions-360/crop-footer-iter1.json"
+          }
+        },
+        "1440": {
+          "header": {
+            "y": 0,
+            "height": 97,
+            "diffPct": 0,
+            "pass": true,
+            "artifact": "gates/solutions-1440/crop-header-iter1.json"
+          },
+          "footer": {
+            "y": 7750,
+            "yB": 7750,
+            "height": 726,
+            "diffPct": 0.63,
+            "pass": true,
+            "texture": "thick (blocks/bands — misalignment or missing paint)",
+            "artifact": "gates/solutions-1440/crop-footer-iter1.json"
+          }
+        }
+      }
+    },
+    {
+      "pageType": "static",
+      "archetype": "company",
+      "chromeVariant": "default",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 0.23,
+            "pixelPctUnmasked": 0.23,
+            "heightDelta": 0,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/company",
+              "width": 360,
+              "capturedAt": "2026-09-21T10:12:36.928Z",
+              "sidecar": "stardust/replica/gates/company-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T10:18:38.831Z",
+            "structuralRed": 0,
+            "visualFlags": "5 justified (STRETCHED values icons mirror live metrics)"
+          },
+          "record": "stardust/replica/gates/company-360/gate-iter2.json",
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×11",
+              "why": "live inline <style> nodes inside section.mainContainWrap (AEM section-bg rules with per-render random .section-<id> class names + the divider rule) are inventoried as body text; not content, not reproducible byte-for-byte across renders (ids change per live render); the same CSS is authored in company.css",
+              "artifacts": [
+                "gates/company-360/content-diff-iter1.txt"
+              ]
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×5 (values icons)",
+              "why": "mirrors live: source metrics report the same stretched:true (img.max-h-100px.py-3 — border-box max-height incl. 12px padding, same rendered box on both sides)",
+              "artifacts": [
+                "gates/company-360/visual-diff-iter1.txt"
+              ]
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "header OCCLUDED \"Skip to main content\"",
+              "why": "canon skip link sits under the promo strip at rest on the build; live shows the same quirk (covered by section.relative.section) — canon-owned, logged canon-followup CF-C1",
+              "artifacts": [
+                "gates/company-360/chrome-parity-iter1.txt"
+              ]
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "footer MISSING \"Cookie Preferences\"",
+              "why": "TrustArc runtime-injected link (#teconsent) present on live, absent in canon footer — canon-owned; already logged by the solutions worker as CF-S1; crop-footer stays ≤ 2 %",
+              "artifacts": [
+                "gates/company-360/chrome-parity-iter1.txt",
+                "gates/company-360/crop-footer-iter1.json"
+              ]
+            }
+          ],
+          "residuals": [],
+          "captureState": [
+            {
+              "what": "#overview .section-bg black-tile.jpg.wdthumb.840 404 on live -> solid #000 band behind the hero copy; mirrored",
+              "where": "co-hero__bg (<768)"
+            }
+          ],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T10:17:29.976Z",
+              "target": "http://127.0.0.1:8814/company-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/company-360.json",
+              "schema": 2,
+              "width": 360,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match"
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 1 element(s) with inline opacity/transform entrances, target 0 (± 10 %)"
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": "no widget pokes in the observe run"
+                },
+                "stateMachines": {
+                  "status": "n/a",
+                  "detail": "no click-paired machines in the observe run"
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)"
+                }
+              },
+              "record": "stardust/replica/motion/company-assert-360.json",
+              "advisory": "entrances: the live inline-style entrances are chrome elements (search panel / header / nav slidingDiv — index-owned canon); the page content has none (observe: 0 entrance families under section.mainContainWrap); chrome + pageErrors pass; widgets/stateMachines n/a — same finding as products/index; recorded 🟡 advisory, not self-approved"
+            }
+          },
+          "rounds": [
+            "gates/company-360/gate-iter1.json",
+            "gates/company-360/gate-iter2.json"
+          ]
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "regime": "prototype",
+            "pixelPct": 0.06,
+            "pixelPctUnmasked": 0.06,
+            "heightDelta": 0,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/company",
+              "width": 1440,
+              "capturedAt": "2026-09-21T10:10:12.870Z",
+              "sidecar": "stardust/replica/gates/company-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T10:18:23.692Z",
+            "structuralRed": 0,
+            "visualFlags": "5 justified (STRETCHED values icons mirror live metrics)"
+          },
+          "record": "stardust/replica/gates/company-1440/gate-iter2.json",
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×11",
+              "why": "live inline <style> nodes inside section.mainContainWrap (AEM section-bg rules with per-render random .section-<id> class names + the divider rule) are inventoried as body text; not content, not reproducible byte-for-byte across renders (ids change per live render); the same CSS is authored in company.css",
+              "artifacts": [
+                "gates/company-1440/content-diff-iter1.txt"
+              ]
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×5 (values icons)",
+              "why": "mirrors live: source metrics report the same stretched:true (img.max-h-100px.py-3 — border-box max-height incl. 12px padding, same rendered box on both sides)",
+              "artifacts": [
+                "gates/company-1440/visual-diff-iter1.txt"
+              ]
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "header OCCLUDED \"Skip to main content\"",
+              "why": "canon skip link sits under the promo strip at rest on the build; live shows the same quirk (covered by section.relative.section) — canon-owned, logged canon-followup CF-C1",
+              "artifacts": [
+                "gates/company-1440/chrome-parity-iter1.txt"
+              ]
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "footer MISSING \"Cookie Preferences\"",
+              "why": "TrustArc runtime-injected link (#teconsent) present on live, absent in canon footer — canon-owned; already logged by the solutions worker as CF-S1; crop-footer stays ≤ 2 %",
+              "artifacts": [
+                "gates/company-1440/chrome-parity-iter1.txt",
+                "gates/company-1440/crop-footer-iter1.json"
+              ]
+            }
+          ],
+          "residuals": [],
+          "captureState": [
+            {
+              "what": "none at 1440 — all bg layers lazyloaded in the lift; no placeholders",
+              "where": "-"
+            }
+          ],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T10:17:25.489Z",
+              "target": "http://127.0.0.1:8814/company-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/company.json",
+              "schema": 2,
+              "width": 1440,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match"
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 6 element(s) with inline opacity/transform entrances, target 0 (± 10 %)"
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": "no widget pokes in the observe run"
+                },
+                "stateMachines": {
+                  "status": "n/a",
+                  "detail": "no click-paired machines in the observe run"
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)"
+                }
+              },
+              "record": "stardust/replica/motion/company-assert-1440.json",
+              "advisory": "entrances: the live inline-style entrances are chrome elements (search panel / header / nav slidingDiv — index-owned canon); the page content has none (observe: 0 entrance families under section.mainContainWrap); chrome + pageErrors pass; widgets/stateMachines n/a — same finding as products/index; recorded 🟡 advisory, not self-approved"
+            }
+          },
+          "rounds": [
+            "gates/company-1440/gate-iter1.json",
+            "gates/company-1440/gate-iter2.json"
+          ]
+        }
+      },
+      "prototype": "stardust/prototypes/company-proposed.html",
+      "motion": {
+        "observed": [
+          "stardust/replica/motion/company.json (1440: 0 animations, 29 transitions, 5 entrance families — all chrome, 0 state machines, 5 hover probes, 28 auto triggers — all chrome)",
+          "stardust/replica/motion/company-360.json (360: 0 animations, 1 entrance family = header (chrome), 1 childList state machine = mobile nav list (drawer, chrome), 2 hover probes dead, 28 auto triggers all chrome)"
+        ],
+        "implemented": [],
+        "dead": [
+          {
+            "family": "a.btn (outline buttons, 8x)",
+            "evidence": "hoverSamples[0] hovered:true diff {} — no hover style fires"
+          },
+          {
+            "family": "overview cards (.expand-h-full section)",
+            "evidence": "hoverSamples[1] hovered:true diff {}"
+          },
+          {
+            "family": "values columns (.divider-5-3-2 > div)",
+            "evidence": "hoverSamples[2] hovered:true diff {}"
+          },
+          {
+            "family": "rounded photo blocks (.row.max-w-1200px .rounded-16px)",
+            "evidence": "hoverSamples[3] hovered:true diff {}"
+          },
+          {
+            "family": "hero copy (#overview .textcolumn)",
+            "evidence": "hoverSamples[4] hovered:true diff {}"
+          },
+          {
+            "family": "entrance reveals on page content",
+            "evidence": "entrances[] = 5 families, every one under header/nav/search chrome (index-owned); none under section.mainContainWrap"
+          },
+          {
+            "family": "compare-tray modals (#compare-tray-modal, #compare-tray-alert)",
+            "evidence": "triggers auto: wd-modal rows fired null, no attribute/childList change; no trigger element on this page"
+          }
+        ],
+        "chrome": "header sticky 97px, class/height unchanged at every y (headerTimeline) — same identity the index worker gated; chrome JS imported from index.js",
+        "note": "page has no widgets (no carousel/tabs/accordion); the only interactive DOM is the imported chrome"
+      },
+      "fonts": {
+        "decision": "import canon (index worker): self-hosted Roboto 400/500/700 (open licence, harvested woff2, same public source, local() first). company lift: every text element under section.mainContainWrap renders Roboto (h1/h2/h3/p/a); FK Grotesk Neue / SimplonMono / Glyphicons / icomoon are declared in the source CSS but no captured element on this page renders them -> not shipped, no substitute needed",
+        "artifacts": [
+          "stardust/replica/capture/lift/company-1440.json#fontFaces",
+          "stardust/prototypes/canon.css (@font-face)"
+        ]
+      },
+      "canonFollowup": [
+        {
+          "id": "CF-C1",
+          "what": "header skip link OCCLUDED by section.promo.header-promo-bar at rest (chrome-parity, both widths); live has the same quirk under a different element — cosmetic parity, no fix required on the page",
+          "artifacts": [
+            "gates/company-1440/chrome-parity-iter1.txt"
+          ]
+        },
+        {
+          "id": "CF-S1",
+          "what": "footer \"Cookie Preferences\" (TrustArc #teconsent) link missing in canon footer — same finding as solutions worker CF-S1",
+          "artifacts": [
+            "gates/company-1440/chrome-parity-iter1.txt"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "id": "D1",
+          "what": "black-tile.jpg.wdthumb.840 (hero bg <768) is a live 404 (intercept 404 x2, request.get 404, canvas decode error) -> live renders #overview solid #000 at 360; replica ships no image there (capture-state)",
+          "artifacts": [
+            "stardust/.work/replica/probes/harvest-company-tile.json",
+            "stardust/.work/replica/probes/harvest-company-tile.log"
+          ]
+        },
+        {
+          "id": "D2",
+          "what": "360 renditions harvested by intercepting the page's own responses (1 live hit @360): 11 wdthumb.500 imgs + 4 wdthumb.840 bgs; <picture> mirrors the live source selection (>=992 -> 1280, else 500); bgs 840 <768 / 3000 >=768 (the 1280 tier for 768-991 is not harvested and is not a gate width)",
+          "artifacts": [
+            "stardust/.work/replica/probes/harvest-company.json"
+          ]
+        },
+        {
+          "id": "D3",
+          "what": "hidden compare-tray modals (#ProductCompareTray, 2x .wd-modal.hidden) mirrored hidden for DOM/content parity; no trigger exists on this page (widgets.modals trigger null)",
+          "artifacts": [
+            "stardust/current/pages/company.json#widgets"
+          ]
+        },
+        {
+          "id": "D4",
+          "what": "page content root line-height: source body is unitless 1.5 (subtitle2 18px -> 27px); set on .mainContainWrap page-locally (canon body carries 24px) — canon-followup candidate only if a sibling needs it",
+          "artifacts": [
+            "stardust/replica/capture/lift/company-1440.json (p.subtitle2 lineHeight 27px)"
+          ]
+        }
+      ],
+      "status": "both breakpoints PASS (prototype regime); chrome rest crops PASS both widths; motion asserted (🟡 advisory entrances = chrome-owned); no residual rows needed"
+    }
+  ],
+  "modules": [
+    {
+      "kind": "header-promo-strip",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "header-nav-rest",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "hero-loop-carousel-progressbar",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "category-tablist",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "content-card-rail",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "product-card-rail",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "resource-card-rail",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "two-up-media-cards",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "icon-link-row",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "footer-columns",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "footer-legal",
+      "firstSeen": "index",
+      "lifted": {
+        "360": "gates/index-360/gate-iter1.json",
+        "1440": "gates/index-1440/gate-iter1.json"
+      }
+    },
+    {
+      "kind": "category-hero-banner",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "dynamic-reference hero: default + 5 hidden use-case variants mirrored hidden"
+    },
+    {
+      "kind": "breadcrumb",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      }
+    },
+    {
+      "kind": "plp-filter-sidebar",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "shop-by nav (2 groups) + 8 facets with captured option lists (inert, collapsed as captured); mobile drawer offscreen as captured"
+    },
+    {
+      "kind": "plp-toolbar",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "item count + mobile Shop/Filter buttons + inert Sort select (6 captured options)"
+    },
+    {
+      "kind": "product-card-grid",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "15 captured cards, prices/capacities verbatim, 6 green warranty promos, Compare buttons inert"
+    },
+    {
+      "kind": "pagination",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      }
+    },
+    {
+      "kind": "icon-tiles-strip",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "Buy Direct from WD: 4 icon tiles on grey band"
+    },
+    {
+      "kind": "program-hero-photo",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "hero: black section, photo bg (3000 rendition @md absolute; 840 mobile rendition stacked 225px @<md), h1 48/52.8 + lede 20/30 in a 50% column"
+    },
+    {
+      "kind": "anchor-chips",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "4 in-page anchor chips (grey-1 pills, arrow svg + label), hrefs verbatim (#choose-your-solution ...)"
+    },
+    {
+      "kind": "icon-usecase-cards",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "7 bordered cards (svg 48 + bold line + underline blue link), 2 per row @sm"
+    },
+    {
+      "kind": "image-card-grid",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "8 image cards (300px cover r16, heading4, copy, Learn More), 3 per row @md / 2 @xs / 1 @<xs"
+    },
+    {
+      "kind": "icon-tile-grid",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "3 + 6 bordered icon tiles (svg, heading5, copy, cta pinned bottom via margin-top auto), 3 per row @sm"
+    },
+    {
+      "kind": "striped-table",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "5-row comparison table, thead white, odd rows #F9F9F9, blue tag pills; @<md td p8 min-w148 → 592px wide in an overflow-x scroller"
+    },
+    {
+      "kind": "faq-accordion",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "10 items, first aria-expanded=true as captured; plus/minus svgs mirrored; 5/7 columns @md on a #f9f9f9 r16 panel"
+    },
+    {
+      "kind": "photo-cta-band",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "rounded photo band with dark-40 scrim, heading + copy + outline button @md; @<md the bg is a 0-width flex item (as live) and the button is solid black"
+    },
+    {
+      "kind": "cta-band-two-buttons",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "border-top row: heading6 + two buttons that flex-shrink to the column (labels wrap to 2 lines as on live)"
+    },
+    {
+      "kind": "contact-form-modal",
+      "firstSeen": "solutions",
+      "lifted": {
+        "360": "gates/solutions-360/gate-iter1.json",
+        "1440": "gates/solutions-1440/gate-iter1.json"
+      },
+      "note": "hidden #contact-form modal mirrored hidden: 33 fields incl. 3 selects with verbatim option lists (100-country list), consent, legal, recaptcha note, success block"
+    },
+    {
+      "kind": "dark-hero-split-text-image",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "#overview: black band, copy 5/12 + bg-right cascade imagery 7/12 (>=768); <768 stacked mobile image block (order) over black"
+    },
+    {
+      "kind": "prose-centered",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "h2-hero + subtitle2 paragraphs, max-w 800, text-center, py 48/64"
+    },
+    {
+      "kind": "icon-columns-photo-band",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "Our Values: photo bg, white text, 5 icon columns (2/12 each >=992, 6/12 <768), ::before 4x125 white dividers per source rule"
+    },
+    {
+      "kind": "split-text-photo-rounded",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "Leadership (copy 4/12 + rounded-16 photo 8/12) and Corporate Responsibility (photo 8/12 + copy 4/12, centred); order swap <768"
+    },
+    {
+      "kind": "overview-card-grid-3up",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "#F2F3F3 rounded-16 cards: image + px-6 py-6 body (heading4, p, outline btn); 3-up >=992, stacked with mb-4 below"
+    },
+    {
+      "kind": "outline-button-black",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "a.btn border 1 black, radius 6, 12/40 16/16 500 (>=992) / 8/16 14/14 (<992), mt 24/16, mb 0/36"
+    }
+  ]
 }

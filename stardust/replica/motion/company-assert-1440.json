@@ -1,0 +1,71 @@
+{
+  "verdict": "fail",
+  "at": "2026-09-21T10:17:25.489Z",
+  "target": "http://127.0.0.1:8814/company-proposed.html",
+  "regime": "prototype",
+  "observe": "stardust/replica/motion/company.json",
+  "schema": 2,
+  "width": 1440,
+  "checks": {
+    "chrome": {
+      "status": "pass",
+      "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+      "target": [
+        {
+          "y": 0,
+          "cls": "site-header header relative w-full",
+          "position": "sticky",
+          "height": "97px",
+          "transform": "none",
+          "dir": "down"
+        },
+        {
+          "y": 2400,
+          "cls": "site-header header relative w-full",
+          "position": "sticky",
+          "height": "97px",
+          "transform": "none",
+          "dir": "down"
+        },
+        {
+          "y": 800,
+          "cls": "site-header header relative w-full",
+          "position": "sticky",
+          "height": "97px",
+          "transform": "none",
+          "dir": "up"
+        },
+        {
+          "y": 0,
+          "cls": "site-header header relative w-full",
+          "position": "sticky",
+          "height": "97px",
+          "transform": "none",
+          "dir": "up"
+        }
+      ]
+    },
+    "entrances": {
+      "status": "fail",
+      "detail": "live 6 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+      "live": 6,
+      "target": 0
+    },
+    "widgets": {
+      "status": "n/a",
+      "detail": "no widget pokes in the observe run",
+      "rows": []
+    },
+    "stateMachines": {
+      "status": "n/a",
+      "detail": "no click-paired machines in the observe run",
+      "rows": []
+    },
+    "pageErrors": {
+      "status": "pass",
+      "detail": "0 pageerror(s)",
+      "count": 0
+    }
+  },
+  "skips": {}
+}

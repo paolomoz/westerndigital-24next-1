@@ -65,17 +65,27 @@
       "url": "https://www.westerndigital.com/company",
       "title": "Who We Are: Leadership, Values, and Innovation | WD",
       "type": "static",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-21T07:53:17.804Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-21T10:23:14.093Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-21T10:23:14.093Z",
+          "approvedBy": "hands-off",
+          "evidence": "stardust/replica/progress.json#archetypes[company]"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/company.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/company-proposed.html",
       "migratedPath": null,
       "chromeVariant": "variant-4dea",
       "layoutCluster": "tail"
@@ -85,17 +95,27 @@
       "url": "https://www.westerndigital.com/",
       "title": "High-Capacity HDDs for PCs, NAS, Gaming, Data Centers, and AI Data Cycles | WD",
       "type": "landing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-21T07:53:17.804Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-21T09:55:09.618Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-21T09:55:09.618Z",
+          "approvedBy": "hands-off",
+          "evidence": "stardust/replica/progress.json#archetypes[index]"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/index.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/index-proposed.html",
       "migratedPath": null,
       "chromeVariant": "default",
       "layoutCluster": "tail"
@@ -105,17 +125,27 @@
       "url": "https://www.westerndigital.com/products",
       "title": "Shop Hard Drives for PCs, NAS, Gaming, Data Centers, and More | WD",
       "type": "listing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-21T07:53:17.804Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-21T09:55:09.618Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-21T10:03:30.541Z",
+          "approvedBy": "hands-off",
+          "evidence": "stardust/replica/progress.json#archetypes[products] (iter3 canon-followup re-gate)"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/products.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/products-proposed.html",
       "migratedPath": null,
       "chromeVariant": "default",
       "layoutCluster": "tail"
@@ -125,17 +155,27 @@
       "url": "https://www.westerndigital.com/solutions",
       "title": "Discover How Hard Drives Can Transform Your Data Storage | WD",
       "type": "program",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-21T07:53:17.804Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-21T10:00:13.077Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-21T10:00:13.077Z",
+          "approvedBy": "hands-off",
+          "evidence": "stardust/replica/progress.json#archetypes[solutions]"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/solutions.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/solutions-proposed.html",
       "migratedPath": null,
       "chromeVariant": "variant-4dea",
       "layoutCluster": "tail"

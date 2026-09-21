@@ -1,0 +1,968 @@
+{
+  "pageType": "listing",
+  "archetype": "products",
+  "chromeVariant": "default",
+  "chrome": {
+    "variant": "default",
+    "owner": "index",
+    "states": {
+      "note": "default variant row owned by the index worker (chrome-states.mjs not run here per brief); only the resting header/footer crops were re-gated on this page"
+    },
+    "gates": {
+      "360": "gates/products-360/crop-header-iter2.json",
+      "1440": "gates/products-1440/crop-header-iter2.json"
+    },
+    "restCrop": {
+      "360": {
+        "header": {
+          "y": 0,
+          "height": 91,
+          "diffPct": 0.07,
+          "pass": true,
+          "artifact": "gates/products-360/crop-header-iter2.json"
+        },
+        "footer": {
+          "y": 5362,
+          "height": 2176,
+          "diffPct": 1.09,
+          "pass": true,
+          "texture": "thick (blocks/bands — misalignment or missing paint)",
+          "artifact": "gates/products-360/crop-footer-iter2.json"
+        }
+      },
+      "1440": {
+        "header": {
+          "y": 0,
+          "height": 97,
+          "diffPct": 0,
+          "pass": true,
+          "artifact": "gates/products-1440/crop-header-iter2.json"
+        },
+        "footer": {
+          "y": 3419,
+          "height": 763,
+          "diffPct": 0.11,
+          "pass": true,
+          "texture": "thick (blocks/bands — misalignment or missing paint)",
+          "artifact": "gates/products-1440/crop-footer-iter2.json"
+        }
+      }
+    }
+  },
+  "modules": [
+    {
+      "kind": "category-hero-banner",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "dynamic-reference hero: default + 5 hidden use-case variants mirrored hidden"
+    },
+    {
+      "kind": "breadcrumb",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      }
+    },
+    {
+      "kind": "plp-filter-sidebar",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "shop-by nav (2 groups) + 8 facets with captured option lists (inert, collapsed as captured); mobile drawer offscreen as captured"
+    },
+    {
+      "kind": "plp-toolbar",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "item count + mobile Shop/Filter buttons + inert Sort select (6 captured options)"
+    },
+    {
+      "kind": "product-card-grid",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "15 captured cards, prices/capacities verbatim, 6 green warranty promos, Compare buttons inert"
+    },
+    {
+      "kind": "pagination",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      }
+    },
+    {
+      "kind": "icon-tiles-strip",
+      "firstSeen": "products",
+      "lifted": {
+        "360": "gates/products-360/gate-iter2.json",
+        "1440": "gates/products-1440/gate-iter2.json"
+      },
+      "note": "Buy Direct from WD: 4 icon tiles on grey band"
+    }
+  ],
+  "motion": {
+    "observed": [
+      {
+        "id": "facet-accordion",
+        "evidence": "run1@1440 click .filterHeader: button +active; ul.accordion-body -hidden; transitions max-height .5s (ul), visibility .2s (li a)",
+        "file": "motion/products-run1-clicks.json"
+      },
+      {
+        "id": "shopby-nav-accordion",
+        "evidence": "run1@1440 click Shop by Deals a.accordion: +active on it, -active on Shop by Category, deals section -hidden, category ul +hidden (exclusive)",
+        "file": "motion/products-run1-clicks.json"
+      },
+      {
+        "id": "compare-tray-modal",
+        "evidence": "run1@1440 + 360 click .compare-link-clp: #compare-tray-modal -hidden, body +overflow-hidden, childList: picture + div.mb-4 added",
+        "file": "motion/products-run1-clicks.json"
+      },
+      {
+        "id": "warranty-modal",
+        "evidence": "run1@1440 click .wd-modal-btn: a +wd-modal-active, warrantyCtaModal -hidden",
+        "file": "motion/products-run1-clicks.json"
+      },
+      {
+        "id": "mobile-drawer",
+        "evidence": "360 click .mob-shopBy-btn / .mob-filters-btn: body +mob-shopBy-open / +mob-filters-open; .left-filter transitions transform .3s + opacity .3s",
+        "file": "motion/products-360.json"
+      },
+      {
+        "id": "header-scroll-morph (chrome)",
+        "evidence": "body +minHeader at y>=400 scrolling down, -minHeader at y<=30 up; header top transition .3s; header sticky 97px@1440 / 91px@360",
+        "file": "motion/products-run1-clicks.json",
+        "owner": "canon/index"
+      },
+      {
+        "id": "nav-link-hover",
+        "evidence": "hovnav@1440 hover .clp-nav-item ul li:nth-child(2) a: color → rgb(34,102,255)",
+        "file": "motion/products-hover-nav.json"
+      }
+    ],
+    "implemented": [
+      "facet-accordion",
+      "shopby-nav-accordion",
+      "compare-tray-modal",
+      "warranty-modal",
+      "mobile-drawer",
+      "nav-link-hover",
+      "compare-label-hover-underline",
+      "pagination-number-hover-bg"
+    ],
+    "dead": [
+      ".productListItem (1 :hover rule, no computed change)",
+      ".btn.underline (hero link)",
+      ".filterHeader",
+      ".green-promo a",
+      ".btn.mt-2.underline (tile links)"
+    ],
+    "notes": [
+      "hover families: run 1 hovers all intercepted (clicks run before hovers; Compare click opened the tray) — hovers-only re-run pending",
+      "no entrance animations on page content (entrances: header only)",
+      "carousels: none on this page"
+    ],
+    "hovers": {
+      "fired": [
+        {
+          "sel": ".compare-link-clp",
+          "change": "span.text-xs.ml-2 textDecorationLine none→underline",
+          "implemented": ".product-card__compare:hover span"
+        },
+        {
+          "sel": ".numb",
+          "change": "span.flex.justify-center background transparent→rgb(242,243,243)",
+          "implemented": ".plp-pag__num:hover span"
+        },
+        {
+          "sel": ".clp-nav-item ul a / .select.newanchor",
+          "change": "color rgb(0,0,0)→rgb(34,102,255)",
+          "implemented": ".clp-nav__list a:hover, .clp-nav__deal a:hover",
+          "file": "motion/products-hover-nav.json"
+        }
+      ],
+      "dead": [
+        ".productListItem (1 :hover rule, no computed change)",
+        ".btn.underline (hero link)",
+        ".filterHeader",
+        ".green-promo a",
+        ".btn.mt-2.underline (tile links)"
+      ],
+      "pending": [],
+      "entrances": "none in page content; 5 live entrance families are chrome",
+      "animations": "34 live keyframe runs = .loadingSkeleton `loading` inside hidden skeleton/search groups — not visible, not implemented"
+    }
+  },
+  "fonts": {
+    "decision": "self-host Roboto 400/500/700 (harvested public woff2, declared by canon.css @font-face; every element under section.mainContainWrap computes Roboto, sans-serif at 1440 and 360)",
+    "substitutes": [],
+    "unusedFaces": [
+      "FK Grotesk Neue",
+      "SimplonMono",
+      "glyphicons",
+      "icomoon"
+    ],
+    "note": "licensed faces present in source @font-face but not rendered on this page; not rehosted"
+  },
+  "canonFollowup": [
+    {
+      "at": "2026-09-21T08:58:44.943Z",
+      "width": 1440,
+      "what": "chrome-parity header: build \"Skip to main content\" OCCLUDED by section.promo.header-promo-bar (elementFromPoint); live covers it with section.relative.section (WARN, live quirk) — click-box only, pixel header crop 0.00 %",
+      "artifact": "gates/products-1440/chrome-parity-iter1.txt"
+    },
+    {
+      "at": "2026-09-21T08:58:44.943Z",
+      "width": 1440,
+      "what": "footer crop 0.11 % thick texture: build-only footer link \"Cookie Preferences\" (canon footer) absent on live products page",
+      "artifact": "gates/products-1440/crop-footer-iter1.json"
+    },
+    {
+      "at": "2026-09-21T09:00:16.039Z",
+      "width": 360,
+      "what": "chrome-parity header 6 deltas: live pins div#openCartModal.wd-modal.cartwrapper (STICKY, 900px) with texts \"Your Cart (0 Items)\" / \"and Save! Not a Member?\" MISSING on build; build-only EXTRA <a> \"Skip to main content\" (OCCLUDED by p.text-xs); ICONS 4 live vs 1 build — all canon header (index worker)",
+      "artifact": "gates/products-360/chrome-parity-iter1.txt"
+    },
+    {
+      "at": "2026-09-21T09:00:16.053Z",
+      "width": 360,
+      "what": "chrome-parity footer 1 delta: ethisphere-award icon rendition img 500x342 live vs 1280x876 build (canon footer uses the 1280 harvested copy)",
+      "artifact": "gates/products-360/chrome-parity-iter1.txt"
+    },
+    {
+      "at": "2026-09-21T09:16:38.758Z",
+      "width": 360,
+      "what": "footer band 7000–7500 3.8 % with +1 px offset: canon footer 1 px taller on build (doc 7539 vs 7538) — index worker",
+      "artifact": "gates/products-360/gate-iter2.txt"
+    }
+  ],
+  "log": [],
+  "captureState": [
+    {
+      "what": "PLP grid = captured first page (89 items, page 1 of 6) shipped static; filters/sort/compare inert",
+      "where": "plp",
+      "flaggedFor": "delivery",
+      "row": "dynamic-features #17/#9/#12/#28"
+    },
+    {
+      "what": "hero background: mobile rendition (all-products-mobile 840, 343x175) intercept-harvested in iter2 and applied <768; the 1280 rendition live uses at 768–991 was not harvested (desktop 3000 used there)",
+      "where": "plp-hero",
+      "flaggedFor": "delivery"
+    },
+    {
+      "what": "hidden DOM mirrored: 5 use-case hero variants, 5 warrantyCtaModal copies, compare-tray modals, facet option lists, mobile drawer",
+      "where": "main"
+    }
+  ],
+  "decisions": [
+    "sidebar width encoded as measured share of the container (18.2367% @>=1140, 25% @>=768) — the source grid math (lg:cols-2 + gutters) did not resolve to a clean fraction; flagged for a wide-viewport spot check",
+    "chrome (promo strip + header + footer + chrome JS) imported verbatim from index-proposed.html at build time by stardust/.work/replica/build-products.mjs (re-run to refresh)",
+    "no page JS yet: nothing implemented before motion-observe evidence"
+  ],
+  "archetypes": [
+    {
+      "pageType": "listing",
+      "archetype": "products",
+      "chromeVariant": "default",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "slug": "products",
+            "label": "iter2",
+            "width": 360,
+            "regime": "prototype",
+            "at": "2026-09-21T09:15:48.652Z",
+            "iteration": 2,
+            "ref": {
+              "url": "https://www.westerndigital.com/products",
+              "width": 360,
+              "capturedAt": "2026-09-21T08:59:57.800Z",
+              "sidecar": "stardust/replica/gates/products-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "build": {
+              "url": "http://127.0.0.1:8814/products-proposed.html"
+            },
+            "verdict": "PASS",
+            "exit": 0,
+            "a": "stardust/replica/gates/products-360/live.png",
+            "b": "stardust/replica/gates/products-360/build.png",
+            "compared": {
+              "width": 360,
+              "height": 7538
+            },
+            "heightDelta": -1,
+            "differingPixels": 11677,
+            "pct": 0.43,
+            "pixelPct": 0.43,
+            "pixelPctUnmasked": 0.43,
+            "threshold": 10,
+            "pass": true,
+            "diff": "stardust/replica/gates/products-360/diff-iter2.png",
+            "masks": [],
+            "maskedPixels": 0,
+            "maskedPct": 0,
+            "maskedRows": 0,
+            "offsets": {
+              "range": 240,
+              "firstSeam": null
+            },
+            "review": "stardust/replica/gates/products-360/review-iter2.png",
+            "sidecars": {
+              "a": {
+                "url": "https://www.westerndigital.com/products",
+                "width": 360,
+                "vh": 900,
+                "dpr": 1,
+                "capturedAt": "2026-09-21T08:59:57.800Z",
+                "instrument": {
+                  "name": "stitch-shot",
+                  "version": "3",
+                  "options": {
+                    "settle": true,
+                    "headed": false,
+                    "startTier": 1,
+                    "locale": null,
+                    "wait": 3000,
+                    "timeout": 60000,
+                    "consent": "[aria-label*=\"Accept\" i]",
+                    "dismiss": [],
+                    "keepPinned": false,
+                    "exclude": [],
+                    "excludeLiveOnly": false,
+                    "expectHeight": 4182,
+                    "allowOverlay": false,
+                    "allowConsent": false,
+                    "hideDefaults": true,
+                    "removeText": [],
+                    "block": [],
+                    "maskSel": [],
+                    "maskIframes": false,
+                    "maskImages": false
+                  }
+                },
+                "consent": {
+                  "mode": "accept",
+                  "via": "[aria-label*=\"Accept\" i]"
+                },
+                "dismissed": [
+                  {
+                    "kind": "consent",
+                    "sel": "[aria-label*=\"Accept\" i]"
+                  }
+                ],
+                "fontsFailed": [],
+                "docHeight": 7538,
+                "chunks": 9,
+                "source": "stitch-shot",
+                "technique": "headless",
+                "tier": 1,
+                "pinnedHidden": [
+                  "header.header.relative \"WD Named to 2026 S&P Dow\"",
+                  "iframe#wd-chat-frame"
+                ],
+                "pendingDecodes": 0,
+                "tail": {
+                  "px": 0,
+                  "elements": []
+                },
+                "hidden": [],
+                "seamRepeats": 0,
+                "blocked": [],
+                "visibilityState": "visible",
+                "imgCount": 21,
+                "brokenImages": 0,
+                "brokenSrcs": []
+              },
+              "b": {
+                "url": "http://127.0.0.1:8814/products-proposed.html",
+                "width": 360,
+                "vh": 900,
+                "dpr": 1,
+                "capturedAt": "2026-09-21T09:15:43.330Z",
+                "instrument": {
+                  "name": "stitch-shot",
+                  "version": "3",
+                  "options": {
+                    "settle": false,
+                    "headed": false,
+                    "startTier": 1,
+                    "locale": null,
+                    "wait": 1200,
+                    "timeout": 60000,
+                    "consent": "[aria-label*=\"Accept\" i]",
+                    "dismiss": [],
+                    "keepPinned": false,
+                    "exclude": [],
+                    "excludeLiveOnly": false,
+                    "expectHeight": null,
+                    "allowOverlay": false,
+                    "allowConsent": false,
+                    "hideDefaults": true,
+                    "removeText": [],
+                    "block": [],
+                    "maskSel": [],
+                    "maskIframes": false,
+                    "maskImages": false
+                  }
+                },
+                "consent": {
+                  "mode": "accept",
+                  "via": "none-detected"
+                },
+                "dismissed": [],
+                "fontsFailed": [],
+                "docHeight": 7539,
+                "chunks": 9,
+                "source": "stitch-shot",
+                "technique": "headless",
+                "tier": 1,
+                "pinnedHidden": [
+                  "header.site-header.header \"Skip to main content WD \"",
+                  "aside.plp-side \"Filter byClear All Shop \""
+                ],
+                "pendingDecodes": 0,
+                "tail": {
+                  "px": 0,
+                  "elements": []
+                },
+                "hidden": [],
+                "seamRepeats": 0,
+                "blocked": [],
+                "visibilityState": "visible",
+                "imgCount": 21,
+                "brokenImages": 0,
+                "brokenSrcs": []
+              }
+            },
+            "brokenImages": {
+              "live": 0,
+              "build": 0,
+              "imgCount": 21,
+              "threshold": 3,
+              "srcs": []
+            },
+            "structuralRed": 0,
+            "visualFlags": "none"
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×13",
+              "why": "live <style> element text inside section.mainContainWrap — non-content"
+            },
+            {
+              "probe": "landmarks",
+              "flag": "unpaired A-only cta filter (0)/prev/next; B-only sidebar h3s + skip/menu ctas",
+              "why": "pairing artefact of hidden mobile drawer / canon header text; pixel bands 1000-5500 all 0.0 %"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 800–900",
+              "pct": 8.04,
+              "cause": "third-party-in-flow: Genesys messenger chat launcher (fixed disc, injected by third-party JS, absent from the settled sidecar) present on live chunk 1 only",
+              "what": "chat launcher disc ~55px",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/products-360/crop-chat-launcher-iter2.json",
+                "gates/products-360/crop-chat-launcher-iter1.png"
+              ],
+              "acceptedBy": "hands-off-policy:third-party-in-flow"
+            }
+          ],
+          "captureState": [],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:12:11.085Z",
+              "target": "http://127.0.0.1:8814/products-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/products-360.json",
+              "schema": 2,
+              "width": 360,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 6000,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "91px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 1 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 1,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": ".mob-shopBy-btn: n/a (dead live (implement nothing)); .mob-filters-btn: n/a (dead live (implement nothing)); .compare-link-clp: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": ".mob-shopBy-btn",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": ".mob-filters-btn",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": ".compare-link-clp",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "n/a",
+                  "detail": "no click-paired machines in the observe run",
+                  "rows": []
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            },
+            "assertNote": "advisory 🟡 fail: only the entrances count fails — every live element with inline opacity/transform entrances is chrome (search history panel .searchHistoryView, header, nav li.slidingDiv), none inside section.mainContainWrap; chrome states pass (sticky 91px at top/scrolled-down/scrolled-up/back-to-top), 0 pageerrors, widgets n/a (accordion pokes have no track), stateMachines n/a (observe paired none to clicks)",
+            "artifacts": [
+              "motion/products-assert-360.json",
+              "motion/products-assert-run1.json"
+            ]
+          },
+          "chromeRest": {
+            "header": {
+              "y": 0,
+              "height": 91,
+              "diffPct": 0.07,
+              "pass": true,
+              "artifact": "gates/products-360/crop-header-iter2.json"
+            },
+            "footer": {
+              "y": 5362,
+              "height": 2176,
+              "diffPct": 1.09,
+              "pass": true,
+              "texture": "thick (blocks/bands — misalignment or missing paint)",
+              "artifact": "gates/products-360/crop-footer-iter2.json"
+            }
+          },
+          "artifacts": [
+            "gates/products-360/gate-iter1.json",
+            "gates/products-360/gate-iter1.txt",
+            "gates/products-360/content-diff-iter1.txt",
+            "gates/products-360/visual-diff-iter1.txt",
+            "gates/products-360/chrome-parity-iter1.txt",
+            "gates/products-360/review-iter1.png",
+            "gates/products-360/diff-iter1.png",
+            "gates/products-360/gate-iter2.json",
+            "gates/products-360/gate-iter2.txt",
+            "gates/products-360/review-iter2.png"
+          ],
+          "resolved": [
+            {
+              "band": "y 91–314 (hero)",
+              "was": 15.62,
+              "now": 0,
+              "fix": "iter2: mobile hero rendition intercept-harvested from the page response and applied <768 (products.css)",
+              "artifacts": [
+                "gates/products-360/crop-hero-iter1.json",
+                "gates/products-360/crop-hero-iter2.json"
+              ]
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "slug": "products",
+            "label": "iter2",
+            "width": 1440,
+            "regime": "prototype",
+            "at": "2026-09-21T09:15:34.015Z",
+            "iteration": 2,
+            "ref": {
+              "url": "https://www.westerndigital.com/products",
+              "width": 1440,
+              "capturedAt": "2026-09-21T08:56:24.839Z",
+              "sidecar": "stardust/replica/gates/products-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "build": {
+              "url": "http://127.0.0.1:8814/products-proposed.html"
+            },
+            "verdict": "PASS",
+            "exit": 0,
+            "a": "stardust/replica/gates/products-1440/live.png",
+            "b": "stardust/replica/gates/products-1440/build.png",
+            "compared": {
+              "width": 1440,
+              "height": 4182
+            },
+            "heightDelta": 0,
+            "differingPixels": 3909,
+            "pct": 0.06,
+            "pixelPct": 0.06,
+            "pixelPctUnmasked": 0.06,
+            "threshold": 10,
+            "pass": true,
+            "diff": "stardust/replica/gates/products-1440/diff-iter2.png",
+            "masks": [],
+            "maskedPixels": 0,
+            "maskedPct": 0,
+            "maskedRows": 0,
+            "offsets": {
+              "range": 240,
+              "firstSeam": null
+            },
+            "review": "stardust/replica/gates/products-1440/review-iter2.png",
+            "sidecars": {
+              "a": {
+                "url": "https://www.westerndigital.com/products",
+                "width": 1440,
+                "vh": 900,
+                "dpr": 1,
+                "capturedAt": "2026-09-21T08:56:24.839Z",
+                "instrument": {
+                  "name": "stitch-shot",
+                  "version": "3",
+                  "options": {
+                    "settle": true,
+                    "headed": false,
+                    "startTier": 1,
+                    "locale": null,
+                    "wait": 3000,
+                    "timeout": 60000,
+                    "consent": "[aria-label*=\"Accept\" i]",
+                    "dismiss": [],
+                    "keepPinned": false,
+                    "exclude": [],
+                    "excludeLiveOnly": false,
+                    "expectHeight": 4182,
+                    "allowOverlay": false,
+                    "allowConsent": false,
+                    "hideDefaults": true,
+                    "removeText": [],
+                    "block": [],
+                    "maskSel": [],
+                    "maskIframes": false,
+                    "maskImages": false
+                  }
+                },
+                "consent": {
+                  "mode": "accept",
+                  "via": "[aria-label*=\"Accept\" i]"
+                },
+                "dismissed": [
+                  {
+                    "kind": "consent",
+                    "sel": "[aria-label*=\"Accept\" i]"
+                  }
+                ],
+                "fontsFailed": [],
+                "docHeight": 4182,
+                "chunks": 5,
+                "source": "stitch-shot",
+                "technique": "headless",
+                "tier": 1,
+                "pinnedHidden": [
+                  "header.header.relative \"Skip to main content WD \"",
+                  "div.left-filter-container \"Filter by Clear All Shop\"",
+                  "iframe#wd-chat-frame"
+                ],
+                "pendingDecodes": 0,
+                "tail": {
+                  "px": 0,
+                  "elements": []
+                },
+                "hidden": [],
+                "seamRepeats": 0,
+                "blocked": [],
+                "visibilityState": "visible",
+                "imgCount": 21,
+                "brokenImages": 0,
+                "brokenSrcs": []
+              },
+              "b": {
+                "url": "http://127.0.0.1:8814/products-proposed.html",
+                "width": 1440,
+                "vh": 900,
+                "dpr": 1,
+                "capturedAt": "2026-09-21T09:15:28.943Z",
+                "instrument": {
+                  "name": "stitch-shot",
+                  "version": "3",
+                  "options": {
+                    "settle": false,
+                    "headed": false,
+                    "startTier": 1,
+                    "locale": null,
+                    "wait": 1200,
+                    "timeout": 60000,
+                    "consent": "[aria-label*=\"Accept\" i]",
+                    "dismiss": [],
+                    "keepPinned": false,
+                    "exclude": [],
+                    "excludeLiveOnly": false,
+                    "expectHeight": null,
+                    "allowOverlay": false,
+                    "allowConsent": false,
+                    "hideDefaults": true,
+                    "removeText": [],
+                    "block": [],
+                    "maskSel": [],
+                    "maskIframes": false,
+                    "maskImages": false
+                  }
+                },
+                "consent": {
+                  "mode": "accept",
+                  "via": "none-detected"
+                },
+                "dismissed": [],
+                "fontsFailed": [],
+                "docHeight": 4182,
+                "chunks": 5,
+                "source": "stitch-shot",
+                "technique": "headless",
+                "tier": 1,
+                "pinnedHidden": [
+                  "header.site-header.header \"Skip to main content WD \"",
+                  "div.plp-side__sticky \"Filter byClear All Shop \""
+                ],
+                "pendingDecodes": 0,
+                "tail": {
+                  "px": 0,
+                  "elements": []
+                },
+                "hidden": [],
+                "seamRepeats": 0,
+                "blocked": [],
+                "visibilityState": "visible",
+                "imgCount": 21,
+                "brokenImages": 0,
+                "brokenSrcs": []
+              }
+            },
+            "brokenImages": {
+              "live": 0,
+              "build": 0,
+              "imgCount": 21,
+              "threshold": 3,
+              "srcs": []
+            },
+            "noOp": {
+              "vs": "iter1",
+              "differingPixels": 3909
+            },
+            "structuralRed": 0,
+            "visualFlags": "none"
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY ×13",
+              "why": "live <style> element text inside section.mainContainWrap (hero variant bg rules + PLP scoped style) — non-content, not authored as text"
+            },
+            {
+              "probe": "landmarks",
+              "flag": "unpaired A-only cta prev/next, B-only cta cookie preferences",
+              "why": "prev/next present on build (pixel 0.06 %, band 2500-3000 0.0 %); cookie preferences is a canon footer link (index chrome) — noted for index"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 800–900",
+              "pct": 1.81,
+              "cause": "third-party-in-flow: Genesys messenger chat launcher (fixed disc) on live chunk 1 only",
+              "what": "chat launcher disc ~55px",
+              "flaggedFor": "delivery",
+              "artifacts": [
+                "gates/products-1440/crop-chat-launcher-iter1.json",
+                "gates/products-1440/crop-chat-launcher-iter1.png"
+              ],
+              "acceptedBy": "hands-off-policy:third-party-in-flow"
+            }
+          ],
+          "captureState": [],
+          "motion": {
+            "assert": {
+              "verdict": "fail",
+              "at": "2026-09-21T09:12:06.792Z",
+              "target": "http://127.0.0.1:8814/products-proposed.html",
+              "regime": "prototype",
+              "observe": "stardust/replica/motion/products.json",
+              "schema": 2,
+              "width": 1440,
+              "checks": {
+                "chrome": {
+                  "status": "pass",
+                  "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+                  "target": [
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 2400,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "down"
+                    },
+                    {
+                      "y": 800,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    },
+                    {
+                      "y": 0,
+                      "cls": "site-header header relative w-full",
+                      "position": "sticky",
+                      "height": "97px",
+                      "transform": "none",
+                      "dir": "up"
+                    }
+                  ]
+                },
+                "entrances": {
+                  "status": "fail",
+                  "detail": "live 6 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+                  "live": 6,
+                  "target": 0
+                },
+                "widgets": {
+                  "status": "n/a",
+                  "detail": ".filterHeader: n/a (dead live (implement nothing)); .clp-nav-item:nth-child(2) a.accordion: n/a (dead live (implement nothing))",
+                  "rows": [
+                    {
+                      "sel": ".filterHeader",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    },
+                    {
+                      "sel": ".clp-nav-item:nth-child(2) a.accordion",
+                      "status": "n/a",
+                      "detail": "dead live (implement nothing)"
+                    }
+                  ]
+                },
+                "stateMachines": {
+                  "status": "n/a",
+                  "detail": "no click-paired machines in the observe run",
+                  "rows": []
+                },
+                "pageErrors": {
+                  "status": "pass",
+                  "detail": "0 pageerror(s)",
+                  "count": 0
+                }
+              },
+              "skips": {}
+            },
+            "assertNote": "advisory 🟡 fail: only the entrances count fails — every live element with inline opacity/transform entrances is chrome (search history panel .searchHistoryView, header, nav li.slidingDiv), none inside section.mainContainWrap; chrome states pass (sticky 97px at top/scrolled-down/scrolled-up/back-to-top), 0 pageerrors, widgets n/a (accordion pokes have no track), stateMachines n/a (observe paired none to clicks)",
+            "artifacts": [
+              "motion/products-assert-1440.json",
+              "motion/products-assert-run1.json"
+            ]
+          },
+          "chromeRest": {
+            "header": {
+              "y": 0,
+              "height": 97,
+              "diffPct": 0,
+              "pass": true,
+              "artifact": "gates/products-1440/crop-header-iter2.json"
+            },
+            "footer": {
+              "y": 3419,
+              "height": 763,
+              "diffPct": 0.11,
+              "pass": true,
+              "texture": "thick (blocks/bands — misalignment or missing paint)",
+              "artifact": "gates/products-1440/crop-footer-iter2.json"
+            }
+          },
+          "artifacts": [
+            "gates/products-1440/gate-iter1.json",
+            "gates/products-1440/gate-iter1.txt",
+            "gates/products-1440/content-diff-iter1.txt",
+            "gates/products-1440/visual-diff-iter1.txt",
+            "gates/products-1440/chrome-parity-iter1.txt",
+            "gates/products-1440/review-iter1.png",
+            "gates/products-1440/diff-iter1.png",
+            "gates/products-1440/gate-iter2.json",
+            "gates/products-1440/gate-iter2.txt",
+            "gates/products-1440/review-iter2.png"
+          ]
+        }
+      }
+    }
+  ]
+}

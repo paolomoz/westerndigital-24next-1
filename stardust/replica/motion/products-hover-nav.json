@@ -1,0 +1,468 @@
+{
+  "schema": 2,
+  "url": "https://www.westerndigital.com/products",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 0,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 1200,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2400,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2146,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 646,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2400,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 1200,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 800,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 500,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 300,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 200,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 150,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 120,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 90,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 60,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 30,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 0,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    }
+  ],
+  "widgetSamples": [],
+  "hoverSamples": [
+    {
+      "sel": ".clp-nav-item ul li:nth-child(2) a",
+      "hovered": true,
+      "changed": [
+        "self.color"
+      ],
+      "hoverRules": 1,
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(34, 102, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".select.newanchor[href*=hdd]",
+      "hovered": true,
+      "changed": [
+        "self.color"
+      ],
+      "hoverRules": 1,
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(34, 102, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 1
+      }
+    }
+  ],
+  "triggers": [],
+  "entrances": [
+    {
+      "family": "header.header.relative",
+      "elements": 1,
+      "mutations": 4,
+      "firstY": 400,
+      "durationMs": 4480,
+      "from": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "to": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "sample": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full"
+    }
+  ],
+  "stateMachines": [],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 400,
+        "dir": "down",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 30,
+        "dir": "up",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "up",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 62,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "color",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 62,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 62,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 62,
+        "dir": "rest",
+        "dur": "0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 400,
+        "dir": "down",
+        "t": 9764,
+        "trigger": null
+      },
+      {
+        "added": [
+          "lazyloading"
+        ],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2800,
+        "dir": "down",
+        "t": 10943,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2800,
+        "dir": "down",
+        "t": 10943,
+        "trigger": null
+      },
+      {
+        "added": [
+          "lazyloaded"
+        ],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2800,
+        "dir": "down",
+        "t": 10994,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2800,
+        "dir": "down",
+        "t": 10994,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 30,
+        "dir": "up",
+        "t": 13866,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 62,
+        "dir": "rest",
+        "t": 14244,
+        "trigger": null
+      }
+    ],
+    "attrMutations": [],
+    "childList": [],
+    "styleMutatedElements": 1
+  }
+}

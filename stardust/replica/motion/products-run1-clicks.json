@@ -1,0 +1,2759 @@
+{
+  "schema": 2,
+  "url": "https://www.westerndigital.com/products",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 0,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 1200,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2400,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2146,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 646,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2400,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 1200,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 800,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 500,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 300,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 200,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 150,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 120,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 90,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 60,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 30,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 0,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "97px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".filterHeader",
+      "frames": [
+        {
+          "t": 15176.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15383.599999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15589.700000286102,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15795.099999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".clp-nav-item:nth-child(2) a.accordion",
+      "frames": [
+        {
+          "t": 16825,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 17027.400000095367,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 17230.700000286102,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 17433.800000190735,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".compare-link-clp",
+      "frames": [
+        {
+          "t": 18448.599999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 18652.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 18856.800000190735,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 19062.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".wd-modal-btn",
+      "frames": [
+        {
+          "t": 20103.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 20307.800000190735,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 20512.400000095367,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 20718.599999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".productListItem",
+      "hovered": false,
+      "reason": "intercepted",
+      "by": "div.flex.items-start > div.w-100px.sm:w-200px > picture > img.flex-no-shrink",
+      "changed": [],
+      "warn": "pointer intercepted by div.flex.items-start > div.w-100px.sm:w-200px > picture > img.flex-no-shrink — the element was never hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "a.flex.flex-col",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "0.2s",
+            "transitionProperty": "all",
+            "transitionDuration": "0.2s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "img.max-h-100px.sm:max-h-150px",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "h2.font-bold.text-sm",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "a.flex.flex-col",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "0.2s",
+            "transitionProperty": "all",
+            "transitionDuration": "0.2s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "img.max-h-100px.sm:max-h-150px",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "h2.font-bold.text-sm",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".compare-link-clp",
+      "hovered": false,
+      "reason": "intercepted",
+      "by": "div > div.modal > div.py-6.wd-modal > div.wd-modal-dialog.m-auto",
+      "changed": [],
+      "warn": "pointer intercepted by div > div.modal > div.py-6.wd-modal > div.wd-modal-dialog.m-auto — the element was never hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".numb",
+      "hovered": false,
+      "reason": "intercepted",
+      "by": "div.wd-modal-content > div.modal-body.w-full > div.flex.items-start > div.px-1.sm:px-5",
+      "changed": [],
+      "warn": "pointer intercepted by div.wd-modal-content > div.modal-body.w-full > div.flex.items-start > div.px-1.sm:px-5 — the element was never hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(242, 243, 243)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.flex.justify-center",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(242, 243, 243)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.flex.justify-center",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".btn.underline",
+      "hovered": false,
+      "reason": "intercepted",
+      "by": "div > div > div.modal > div.py-6.wd-modal",
+      "changed": [],
+      "warn": "pointer intercepted by div > div > div.modal > div.py-6.wd-modal — the element was never hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      }
+    },
+    {
+      "sel": ".filterHeader",
+      "hovered": false,
+      "reason": "intercepted",
+      "by": "div > div > div.modal > div.py-6.wd-modal",
+      "changed": [],
+      "warn": "pointer intercepted by div > div > div.modal > div.py-6.wd-modal — the element was never hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "h3.text-sm.font-bold",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 0
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "h3.text-sm.font-bold",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 0
+      }
+    },
+    {
+      "sel": ".select.newanchor",
+      "hovered": false,
+      "reason": "no-box",
+      "changed": [],
+      "warn": "element has no bounding box (hidden twin? first match off-screen) — not hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".green-promo a",
+      "hovered": false,
+      "reason": "intercepted",
+      "by": "div.wd-modal-content > div.modal-body.w-full > div.flex.items-start > div.px-1.sm:px-5",
+      "changed": [],
+      "warn": "pointer intercepted by div.wd-modal-content > div.modal-body.w-full > div.flex.items-start > div.px-1.sm:px-5 — the element was never hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 116, 12)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 116, 12)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "underline",
+          "transition": "0.2s",
+          "transitionProperty": "all",
+          "transitionDuration": "0.2s",
+          "transitionDelay": "0s"
+        },
+        "subs": [],
+        "hoverRules": 0
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "i": 0,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--prev",
+      "txt": "",
+      "controls": "splide01-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 40,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 31
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1981.714ms exceeded."
+    },
+    {
+      "i": 1,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--next",
+      "txt": "",
+      "controls": "splide01-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 40,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 31
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.2079999999987ms exceeded."
+    },
+    {
+      "i": 2,
+      "sel": "div.py-6.wd-modal > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 31
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.2929999999978ms exceeded."
+    },
+    {
+      "i": 3,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--prev",
+      "txt": "",
+      "controls": "splide02-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 0,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 31
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1990.6290000000008ms exceeded."
+    },
+    {
+      "i": 4,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--next",
+      "txt": "",
+      "controls": "splide02-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 0,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 31
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1993.9440000000031ms exceeded."
+    },
+    {
+      "i": 5,
+      "sel": "div.nav-container.aem-GridColumn > div.container > div.h-50px.flex > button.hamburger-menu.hamburger-menu-bar",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 31
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1992.8819999999978ms exceeded."
+    },
+    {
+      "i": 6,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Products\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t",
+      "controls": "productNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 31
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 7,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Products",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 8,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Solutions\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t",
+      "controls": "solutionNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 9,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Solutions",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 10,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Support\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t",
+      "controls": "supportNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 11,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Support",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 12,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Company\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t",
+      "controls": "companyNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 56,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 13,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Company",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 14,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > div.fixed.py-5 > button.cursor-pointer.sc-track",
+      "txt": "✕",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.8919999999998ms exceeded."
+    },
+    {
+      "i": 15,
+      "sel": "div.textcolumn > div.sm:items-center > div.login-btn-trigger.absolute > button.text-xs.lg:text-sm",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 32
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 16,
+      "sel": "div.textcolumn > div.hidden.login-flyout > div.border.border-grey-light > button.loginFlyoutClose.px-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 35
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1994.5139999999956ms exceeded."
+    },
+    {
+      "i": 17,
+      "sel": "div.wd-modal.py-6 > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 35
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1995.978999999992ms exceeded."
+    },
+    {
+      "i": 18,
+      "sel": "div.py-6.wd-modal > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 35
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.2020000000048ms exceeded."
+    },
+    {
+      "i": 19,
+      "sel": "div.wd-modal-dialog.m-auto > div.wd-modal-content > div.modal-body.w-full > button.signInBTN.btn",
+      "txt": "Sign In",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 35
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1992.921000000002ms exceeded."
+    },
+    {
+      "i": 20,
+      "sel": "div.product-cart > div.flex.item-center > div.carticon.mr-6 > button.mini-cart-trigger.relative",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 35
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 21,
+      "sel": "div.wd-modal.cartwrapper > div.w-full.sm:w-500px > div.cartTitleHeight.flex > button.wd-modal-close.cursor-pointer",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 39
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1991.5439999999944ms exceeded."
+    },
+    {
+      "i": 22,
+      "sel": "div.cartSignInBar > div.flex.md:px-8 > span.text-white.flex-1 > button.underline.text-white",
+      "txt": "Sign In",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 39
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.226999999999ms exceeded."
+    },
+    {
+      "i": 23,
+      "sel": "div.cartDetailsContainer > div.cartSignInBar > div.flex.md:px-8 > button.flex.items-center",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 39
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1995.4370000000054ms exceeded."
+    },
+    {
+      "i": 24,
+      "sel": "div > div.corpSearch > div.predictiveSearch.search-main > div.hero-input",
+      "txt": "Popular Searches     Clear",
+      "controls": "searchResultInnerWarp",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 39
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 25,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.underline.text-sm",
+      "txt": "Clear",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 43
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1994.9579999999987ms exceeded."
+    },
+    {
+      "i": 26,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.search-collapse.btn",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 43
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.698000000004ms exceeded."
+    },
+    {
+      "i": 27,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.btn-search.btn-search-SummaryView",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 43
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 28,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.brandName",
+      "txt": "Western Digital (39)   WD (24)   WD_BLAC",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 29,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.vvc-capacity",
+      "txt": "0 GB - 960 GB (5)   01 TB - 04 TB (30)  ",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 30,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.vvc-form_factor",
+      "txt": "3.5 in (1)    + More - Less",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 31,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.useCaseName",
+      "txt": "Data Center (18)   Backups (12)   Gaming",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 32,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.color_List",
+      "txt": "Black (32)   Blue (7)   Gray, Silver (4)",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 33,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.connector_List",
+      "txt": "SATA (30)   Micro-B (16)   USB-C (13)   ",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 34,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.service",
+      "txt": "Data Recovery (18)    + More - Less",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 35,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.priceRange",
+      "txt": "$0-$49.99 (18)   $50-$199.99 (16)   $200",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 36,
+      "sel": "div.productListcontainer > div.flex.sm:flex-row > div.flex-wrap.flex > div.sortByFilter.relative",
+      "txt": "Sort by :       Sort   Most Popular Late",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 47
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    }
+  ],
+  "entrances": [
+    {
+      "family": "header.header.relative",
+      "elements": 1,
+      "mutations": 60,
+      "firstY": 400,
+      "durationMs": 104673,
+      "from": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "to": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "sample": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full"
+    }
+  ],
+  "stateMachines": [
+    {
+      "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5",
+      "attr": "childList",
+      "kind": "childList",
+      "controls": null,
+      "transitions": [
+        {
+          "added": [
+            "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5 > div.mb-4"
+          ],
+          "removed": [],
+          "y": 525,
+          "t": 19411,
+          "trigger": null
+        },
+        {
+          "added": [
+            "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5 > div.mb-4"
+          ],
+          "removed": [],
+          "y": 525,
+          "t": 19411,
+          "trigger": null
+        }
+      ],
+      "count": 2,
+      "triggered": 0
+    },
+    {
+      "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.w-100px.sm:w-200px.px-1",
+      "attr": "childList",
+      "kind": "childList",
+      "controls": null,
+      "transitions": [
+        {
+          "added": [
+            "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.w-100px.sm:w-200px.px-1 > picture"
+          ],
+          "removed": [],
+          "y": 525,
+          "t": 19411,
+          "trigger": null
+        }
+      ],
+      "count": 1,
+      "triggered": 0
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 400,
+        "dir": "down",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 30,
+        "dir": "up",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "up",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "max-height",
+        "el": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.5s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "ul.accordion-body.forMoreLess.list-reset > li.items.disableOverFlowClick.py-2 > a.block.leading-normal > label.disableOverFlowClick.checkbox.flex > span.checkmark",
+        "y": 304,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "max-height",
+        "el": "div.clp-nav-wrap > div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.5s"
+      },
+      {
+        "prop": "max-height",
+        "el": "div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > div.section > section.bg-color.relative.section",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.5s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "section.bg-color.relative.section > div.relative > div.button > div > a.btn.py-2.select",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "section.bg-color.relative.section > div.relative > div.button > div > a.btn.py-2.select",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium > li.py-2 > a.select.newanchor.hover:text-blue",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "visibility",
+        "el": "section.bg-color.relative.section > div.relative > div.button > div > a.btn.py-2.select",
+        "y": 191,
+        "dir": "rest",
+        "dur": "0.2s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 270,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 28,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 525,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 60,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 60,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 60,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 60,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 43,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 43,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 59,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 59,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 429,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 429,
+        "dir": "rest",
+        "dur": "0.3s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 400,
+        "dir": "down",
+        "t": 9850,
+        "trigger": null
+      },
+      {
+        "added": [
+          "lazyloading"
+        ],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2400,
+        "dir": "down",
+        "t": 10779,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2400,
+        "dir": "down",
+        "t": 10779,
+        "trigger": null
+      },
+      {
+        "added": [
+          "lazyloaded"
+        ],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2400,
+        "dir": "down",
+        "t": 10827,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 2400,
+        "dir": "down",
+        "t": 10827,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 30,
+        "dir": "up",
+        "t": 13984,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 304,
+        "dir": "rest",
+        "t": 14361,
+        "trigger": null
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+        "y": 304,
+        "dir": "rest",
+        "t": 15168,
+        "trigger": {
+          "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+          "txt": "Brand",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset",
+        "y": 304,
+        "dir": "rest",
+        "t": 15168,
+        "trigger": {
+          "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+          "txt": "Brand",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+        "y": 304,
+        "dir": "rest",
+        "t": 15168,
+        "trigger": {
+          "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+          "txt": "Brand",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > div.filterList.brandName > ul.accordion-body.forMoreLess.list-reset",
+        "y": 304,
+        "dir": "rest",
+        "t": 15168,
+        "trigger": {
+          "el": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t.border-grey-light > button.accordion.filterHeader.my-4",
+          "txt": "Brand",
+          "dtMs": 3
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "active"
+        ],
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+        "y": 191,
+        "dir": "rest",
+        "t": 16812,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 6
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+        "y": 191,
+        "dir": "rest",
+        "t": 16812,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 6
+        }
+      },
+      {
+        "added": [
+          "hidden"
+        ],
+        "removed": [],
+        "el": "div.clp-nav-wrap > div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > ul.list-reset.accordion-body.leading-medium",
+        "y": 191,
+        "dir": "rest",
+        "t": 16812,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 6
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > div.section > section.bg-color.relative.section",
+        "y": 191,
+        "dir": "rest",
+        "t": 16812,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 6
+        }
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "removed": [],
+        "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+        "y": 191,
+        "dir": "rest",
+        "t": 16812,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 6
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div > div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > div.section > section.bg-color.relative.section",
+        "y": 191,
+        "dir": "rest",
+        "t": 16812,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 6
+        }
+      },
+      {
+        "added": [
+          "aamIframeLoaded"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > iframe.aamIframeLoaded",
+        "y": 191,
+        "dir": "rest",
+        "t": 17041,
+        "trigger": {
+          "el": "div.clp-nav-item-warp.sm:pb-0.pb-4 > div.clp-nav-item.border-t.border-grey-light > h3.text-sm.font-bold.mb-0 > span.my-4.block.text-sm > a.accordion.pr-7.block",
+          "txt": "Shop by Deals",
+          "dtMs": 235
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "section.mainContainWrap > div > div > div.modal > div.py-6.wd-modal",
+        "y": 525,
+        "dir": "rest",
+        "t": 19411,
+        "trigger": null
+      },
+      {
+        "added": [
+          "wd-modal-active"
+        ],
+        "removed": [],
+        "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+        "y": 525,
+        "dir": "rest",
+        "t": 20101,
+        "trigger": {
+          "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+          "txt": "Learn More",
+          "dtMs": 27
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "div > div > div.productListcontainer > div > div.py-6.wd-modal",
+        "y": 525,
+        "dir": "rest",
+        "t": 20101,
+        "trigger": {
+          "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+          "txt": "Learn More",
+          "dtMs": 27
+        }
+      },
+      {
+        "added": [
+          "overflow-hidden"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 525,
+        "dir": "rest",
+        "t": 20101,
+        "trigger": {
+          "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+          "txt": "Learn More",
+          "dtMs": 27
+        }
+      },
+      {
+        "added": [
+          "lazyloading"
+        ],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.text-center > img.mb-8.lazyloading",
+        "y": 525,
+        "dir": "rest",
+        "t": 20104,
+        "trigger": {
+          "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+          "txt": "Learn More",
+          "dtMs": 30
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.text-center > img.mb-8.lazyloading",
+        "y": 525,
+        "dir": "rest",
+        "t": 20104,
+        "trigger": {
+          "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+          "txt": "Learn More",
+          "dtMs": 30
+        }
+      },
+      {
+        "added": [
+          "ls-is-cached",
+          "lazyloaded"
+        ],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.text-center > img.mb-8.ls-is-cached.lazyloaded",
+        "y": 525,
+        "dir": "rest",
+        "t": 20112,
+        "trigger": {
+          "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+          "txt": "Learn More",
+          "dtMs": 38
+        }
+      },
+      {
+        "added": [
+          "lazyloaded"
+        ],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.text-center > img.mb-8.ls-is-cached.lazyloaded",
+        "y": 525,
+        "dir": "rest",
+        "t": 20112,
+        "trigger": {
+          "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+          "txt": "Learn More",
+          "dtMs": 38
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.text-center > img.mb-8.ls-is-cached.lazyloaded",
+        "y": 525,
+        "dir": "rest",
+        "t": 20112,
+        "trigger": {
+          "el": "div.cols-6.xs:cols-4.lg:cols-3 > div.productListItem.px-2.bg-white > div.green-promo.mt-4 > div > a.cursor-pointer.wd-modal-btn.inline-block",
+          "txt": "Learn More",
+          "dtMs": 38
+        }
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 23660,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 270,
+        "dir": "rest",
+        "t": 24544,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 28,
+        "dir": "rest",
+        "t": 25426,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 525,
+        "dir": "rest",
+        "t": 25859,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 39027,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 60,
+        "dir": "rest",
+        "t": 62709,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 63358,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 60,
+        "dir": "rest",
+        "t": 64392,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 73209,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 60,
+        "dir": "rest",
+        "t": 73392,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 74041,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 60,
+        "dir": "rest",
+        "t": 75074,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 81891,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 43,
+        "dir": "rest",
+        "t": 82075,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 82725,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 43,
+        "dir": "rest",
+        "t": 83758,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 88574,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 59,
+        "dir": "rest",
+        "t": 88759,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 89408,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 59,
+        "dir": "rest",
+        "t": 90440,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 112458,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 429,
+        "dir": "rest",
+        "t": 112840,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 113491,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 429,
+        "dir": "rest",
+        "t": 114523,
+        "trigger": null
+      }
+    ],
+    "attrMutations": [],
+    "childList": [
+      {
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.w-100px.sm:w-200px.px-1",
+        "added": [
+          "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.w-100px.sm:w-200px.px-1 > picture"
+        ],
+        "removed": [],
+        "y": 525,
+        "t": 19411,
+        "dir": "rest",
+        "trigger": null
+      },
+      {
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5",
+        "added": [
+          "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5 > div.mb-4"
+        ],
+        "removed": [],
+        "y": 525,
+        "t": 19411,
+        "dir": "rest",
+        "trigger": null
+      },
+      {
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5",
+        "added": [
+          "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5 > div.mb-4"
+        ],
+        "removed": [],
+        "y": 525,
+        "t": 19411,
+        "dir": "rest",
+        "trigger": null
+      }
+    ],
+    "styleMutatedElements": 1
+  }
+}

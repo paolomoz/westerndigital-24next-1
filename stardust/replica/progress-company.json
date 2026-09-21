@@ -1,0 +1,426 @@
+{
+  "pageType": "company",
+  "archetype": "company",
+  "chromeVariant": "default",
+  "breakpoints": {
+    "360": {
+      "iterations": 2,
+      "result": {
+        "regime": "prototype",
+        "pixelPct": 0.23,
+        "pixelPctUnmasked": 0.23,
+        "heightDelta": 0,
+        "pass": true,
+        "masks": [],
+        "ref": {
+          "url": "https://www.westerndigital.com/company",
+          "width": 360,
+          "capturedAt": "2026-09-21T10:12:36.928Z",
+          "sidecar": "stardust/replica/gates/company-360/live.png.json",
+          "instrument": "stitch-shot",
+          "technique": "headless",
+          "consent": {
+            "mode": "accept",
+            "via": "[aria-label*=\"Accept\" i]"
+          }
+        },
+        "at": "2026-09-21T10:18:38.831Z",
+        "verdictLine": "PASS 0.23 % Δh 0px  iteration 2/3",
+        "build": "prototype (uncommitted)",
+        "note": "iter1 = static pass (first gate run, no pre-polish); iter2 = confirm round after the interaction pass (nothing implemented: every observed motion is chrome-owned or dead) — NO-OP, differing pixels identical to iter1; live reference cached from iter1",
+        "structuralRed": 0,
+        "visualFlags": "5 justified (STRETCHED values icons mirror live metrics)"
+      },
+      "justified": [
+        {
+          "probe": "content",
+          "flag": "🟡 MISSING BODY ×11",
+          "why": "live inline <style> nodes inside section.mainContainWrap (AEM section-bg rules with per-render random .section-<id> class names + the divider rule) are inventoried as body text; not content, not reproducible byte-for-byte across renders (ids change per live render); the same CSS is authored in company.css",
+          "artifacts": [
+            "gates/company-360/content-diff-iter1.txt"
+          ]
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×5 (values icons)",
+          "why": "mirrors live: source metrics report the same stretched:true (img.max-h-100px.py-3 — border-box max-height incl. 12px padding, same rendered box on both sides)",
+          "artifacts": [
+            "gates/company-360/visual-diff-iter1.txt"
+          ]
+        },
+        {
+          "probe": "chrome-parity",
+          "flag": "header OCCLUDED \"Skip to main content\"",
+          "why": "canon skip link sits under the promo strip at rest on the build; live shows the same quirk (covered by section.relative.section) — canon-owned, logged canon-followup CF-C1",
+          "artifacts": [
+            "gates/company-360/chrome-parity-iter1.txt"
+          ]
+        },
+        {
+          "probe": "chrome-parity",
+          "flag": "footer MISSING \"Cookie Preferences\"",
+          "why": "TrustArc runtime-injected link (#teconsent) present on live, absent in canon footer — canon-owned; already logged by the solutions worker as CF-S1; crop-footer stays ≤ 2 %",
+          "artifacts": [
+            "gates/company-360/chrome-parity-iter1.txt",
+            "gates/company-360/crop-footer-iter1.json"
+          ]
+        }
+      ],
+      "residuals": [],
+      "captureState": [
+        {
+          "what": "#overview .section-bg black-tile.jpg.wdthumb.840 404 on live -> solid #000 band behind the hero copy; mirrored",
+          "where": "co-hero__bg (<768)"
+        }
+      ],
+      "motion": {
+        "assert": {
+          "verdict": "fail",
+          "at": "2026-09-21T10:17:29.976Z",
+          "target": "http://127.0.0.1:8814/company-proposed.html",
+          "regime": "prototype",
+          "observe": "stardust/replica/motion/company-360.json",
+          "schema": 2,
+          "width": 360,
+          "checks": {
+            "chrome": {
+              "status": "pass",
+              "detail": "top / scrolled-down / scrolled-up / back-to-top match"
+            },
+            "entrances": {
+              "status": "fail",
+              "detail": "live 1 element(s) with inline opacity/transform entrances, target 0 (± 10 %)"
+            },
+            "widgets": {
+              "status": "n/a",
+              "detail": "no widget pokes in the observe run"
+            },
+            "stateMachines": {
+              "status": "n/a",
+              "detail": "no click-paired machines in the observe run"
+            },
+            "pageErrors": {
+              "status": "pass",
+              "detail": "0 pageerror(s)"
+            }
+          },
+          "record": "stardust/replica/motion/company-assert-360.json",
+          "advisory": "entrances: the live inline-style entrances are chrome elements (search panel / header / nav slidingDiv — index-owned canon); the page content has none (observe: 0 entrance families under section.mainContainWrap); chrome + pageErrors pass; widgets/stateMachines n/a — same finding as products/index; recorded 🟡 advisory, not self-approved"
+        }
+      },
+      "record": "stardust/replica/gates/company-360/gate-iter2.json",
+      "rounds": [
+        "gates/company-360/gate-iter1.json",
+        "gates/company-360/gate-iter2.json"
+      ]
+    },
+    "1440": {
+      "iterations": 2,
+      "result": {
+        "regime": "prototype",
+        "pixelPct": 0.06,
+        "pixelPctUnmasked": 0.06,
+        "heightDelta": 0,
+        "pass": true,
+        "masks": [],
+        "ref": {
+          "url": "https://www.westerndigital.com/company",
+          "width": 1440,
+          "capturedAt": "2026-09-21T10:10:12.870Z",
+          "sidecar": "stardust/replica/gates/company-1440/live.png.json",
+          "instrument": "stitch-shot",
+          "technique": "headless",
+          "consent": {
+            "mode": "accept",
+            "via": "[aria-label*=\"Accept\" i]"
+          }
+        },
+        "at": "2026-09-21T10:18:23.692Z",
+        "verdictLine": "PASS 0.06 % Δh 0px  iteration 2/3",
+        "build": "prototype (uncommitted)",
+        "note": "iter1 = static pass (first gate run, no pre-polish); iter2 = confirm round after the interaction pass (nothing implemented: every observed motion is chrome-owned or dead) — NO-OP, differing pixels identical to iter1; live reference cached from iter1",
+        "structuralRed": 0,
+        "visualFlags": "5 justified (STRETCHED values icons mirror live metrics)"
+      },
+      "justified": [
+        {
+          "probe": "content",
+          "flag": "🟡 MISSING BODY ×11",
+          "why": "live inline <style> nodes inside section.mainContainWrap (AEM section-bg rules with per-render random .section-<id> class names + the divider rule) are inventoried as body text; not content, not reproducible byte-for-byte across renders (ids change per live render); the same CSS is authored in company.css",
+          "artifacts": [
+            "gates/company-1440/content-diff-iter1.txt"
+          ]
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×5 (values icons)",
+          "why": "mirrors live: source metrics report the same stretched:true (img.max-h-100px.py-3 — border-box max-height incl. 12px padding, same rendered box on both sides)",
+          "artifacts": [
+            "gates/company-1440/visual-diff-iter1.txt"
+          ]
+        },
+        {
+          "probe": "chrome-parity",
+          "flag": "header OCCLUDED \"Skip to main content\"",
+          "why": "canon skip link sits under the promo strip at rest on the build; live shows the same quirk (covered by section.relative.section) — canon-owned, logged canon-followup CF-C1",
+          "artifacts": [
+            "gates/company-1440/chrome-parity-iter1.txt"
+          ]
+        },
+        {
+          "probe": "chrome-parity",
+          "flag": "footer MISSING \"Cookie Preferences\"",
+          "why": "TrustArc runtime-injected link (#teconsent) present on live, absent in canon footer — canon-owned; already logged by the solutions worker as CF-S1; crop-footer stays ≤ 2 %",
+          "artifacts": [
+            "gates/company-1440/chrome-parity-iter1.txt",
+            "gates/company-1440/crop-footer-iter1.json"
+          ]
+        }
+      ],
+      "residuals": [],
+      "captureState": [
+        {
+          "what": "none at 1440 — all bg layers lazyloaded in the lift; no placeholders",
+          "where": "-"
+        }
+      ],
+      "motion": {
+        "assert": {
+          "verdict": "fail",
+          "at": "2026-09-21T10:17:25.489Z",
+          "target": "http://127.0.0.1:8814/company-proposed.html",
+          "regime": "prototype",
+          "observe": "stardust/replica/motion/company.json",
+          "schema": 2,
+          "width": 1440,
+          "checks": {
+            "chrome": {
+              "status": "pass",
+              "detail": "top / scrolled-down / scrolled-up / back-to-top match"
+            },
+            "entrances": {
+              "status": "fail",
+              "detail": "live 6 element(s) with inline opacity/transform entrances, target 0 (± 10 %)"
+            },
+            "widgets": {
+              "status": "n/a",
+              "detail": "no widget pokes in the observe run"
+            },
+            "stateMachines": {
+              "status": "n/a",
+              "detail": "no click-paired machines in the observe run"
+            },
+            "pageErrors": {
+              "status": "pass",
+              "detail": "0 pageerror(s)"
+            }
+          },
+          "record": "stardust/replica/motion/company-assert-1440.json",
+          "advisory": "entrances: the live inline-style entrances are chrome elements (search panel / header / nav slidingDiv — index-owned canon); the page content has none (observe: 0 entrance families under section.mainContainWrap); chrome + pageErrors pass; widgets/stateMachines n/a — same finding as products/index; recorded 🟡 advisory, not self-approved"
+        }
+      },
+      "record": "stardust/replica/gates/company-1440/gate-iter2.json",
+      "rounds": [
+        "gates/company-1440/gate-iter1.json",
+        "gates/company-1440/gate-iter2.json"
+      ]
+    }
+  },
+  "chrome": {
+    "variants": [
+      {
+        "name": "default",
+        "archetype": "index",
+        "importedBy": "company",
+        "states": {
+          "rest": "gated (re-run on this page: 1440 header 0.00% footer 0.15% · 360 header 0.07% footer 0.63%, all <= 2%)",
+          "scrolled": "imported:gated (index row)",
+          "menu:Products": "imported:gated (index row)",
+          "menu:Solutions": "imported:gated (index row)",
+          "menu:Support": "imported:gated (index row)",
+          "menu:Company": "imported:gated (index row)",
+          "menu:Sign in": "imported:gated (index row)",
+          "cart": "imported:dead (index row)",
+          "search": "imported:residual (index row)",
+          "language": "imported:dead (index row)",
+          "drawer": "imported:gated (index row)",
+          "drawer-drilled": "imported:gated (index row)",
+          "footer-accordion": "imported:dead (index row)"
+        },
+        "gates": {
+          "360": "gates/company-360/gate-iter2.json",
+          "1440": "gates/company-1440/gate-iter2.json"
+        },
+        "restCrops": {
+          "360": {
+            "header": "gates/company-360/crop-header-iter1.json (0.07%)",
+            "footer": "gates/company-360/crop-footer-iter1.json (0.63%)"
+          },
+          "1440": {
+            "header": "gates/company-1440/crop-header-iter1.json (0.00%)",
+            "footer": "gates/company-1440/crop-footer-iter1.json (0.15%)"
+          }
+        },
+        "chromeParity": {
+          "360": "gates/company-360/chrome-parity-iter1.txt (header quiet; footer 9 canon deltas = CF-S1)",
+          "1440": "gates/company-1440/chrome-parity-iter1.txt (header: skip-link OCCLUDED = CF-C1; footer: Cookie Preferences MISSING = CF-S1)"
+        },
+        "indexRow": "stardust/replica/progress-index.json#chrome (cells gated/dead by the index worker; chrome-states.mjs not re-run per brief step 3)"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "kind": "dark-hero-split-text-image",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "#overview: black band, copy 5/12 + bg-right cascade imagery 7/12 (>=768); <768 stacked mobile image block (order) over black"
+    },
+    {
+      "kind": "prose-centered",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "h2-hero + subtitle2 paragraphs, max-w 800, text-center, py 48/64"
+    },
+    {
+      "kind": "icon-columns-photo-band",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "Our Values: photo bg, white text, 5 icon columns (2/12 each >=992, 6/12 <768), ::before 4x125 white dividers per source rule"
+    },
+    {
+      "kind": "split-text-photo-rounded",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "Leadership (copy 4/12 + rounded-16 photo 8/12) and Corporate Responsibility (photo 8/12 + copy 4/12, centred); order swap <768"
+    },
+    {
+      "kind": "overview-card-grid-3up",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "#F2F3F3 rounded-16 cards: image + px-6 py-6 body (heading4, p, outline btn); 3-up >=992, stacked with mb-4 below"
+    },
+    {
+      "kind": "outline-button-black",
+      "firstSeen": "company",
+      "lifted": {
+        "360": "gates/company-360/gate-iter2.json",
+        "1440": "gates/company-1440/gate-iter2.json"
+      },
+      "note": "a.btn border 1 black, radius 6, 12/40 16/16 500 (>=992) / 8/16 14/14 (<992), mt 24/16, mb 0/36"
+    }
+  ],
+  "motion": {
+    "observed": [
+      "stardust/replica/motion/company.json (1440: 0 animations, 29 transitions, 5 entrance families — all chrome, 0 state machines, 5 hover probes, 28 auto triggers — all chrome)",
+      "stardust/replica/motion/company-360.json (360: 0 animations, 1 entrance family = header (chrome), 1 childList state machine = mobile nav list (drawer, chrome), 2 hover probes dead, 28 auto triggers all chrome)"
+    ],
+    "implemented": [],
+    "dead": [
+      {
+        "family": "a.btn (outline buttons, 8x)",
+        "evidence": "hoverSamples[0] hovered:true diff {} — no hover style fires"
+      },
+      {
+        "family": "overview cards (.expand-h-full section)",
+        "evidence": "hoverSamples[1] hovered:true diff {}"
+      },
+      {
+        "family": "values columns (.divider-5-3-2 > div)",
+        "evidence": "hoverSamples[2] hovered:true diff {}"
+      },
+      {
+        "family": "rounded photo blocks (.row.max-w-1200px .rounded-16px)",
+        "evidence": "hoverSamples[3] hovered:true diff {}"
+      },
+      {
+        "family": "hero copy (#overview .textcolumn)",
+        "evidence": "hoverSamples[4] hovered:true diff {}"
+      },
+      {
+        "family": "entrance reveals on page content",
+        "evidence": "entrances[] = 5 families, every one under header/nav/search chrome (index-owned); none under section.mainContainWrap"
+      },
+      {
+        "family": "compare-tray modals (#compare-tray-modal, #compare-tray-alert)",
+        "evidence": "triggers auto: wd-modal rows fired null, no attribute/childList change; no trigger element on this page"
+      }
+    ],
+    "chrome": "header sticky 97px, class/height unchanged at every y (headerTimeline) — same identity the index worker gated; chrome JS imported from index.js",
+    "note": "page has no widgets (no carousel/tabs/accordion); the only interactive DOM is the imported chrome"
+  },
+  "fonts": {
+    "decision": "import canon (index worker): self-hosted Roboto 400/500/700 (open licence, harvested woff2, same public source, local() first). company lift: every text element under section.mainContainWrap renders Roboto (h1/h2/h3/p/a); FK Grotesk Neue / SimplonMono / Glyphicons / icomoon are declared in the source CSS but no captured element on this page renders them -> not shipped, no substitute needed",
+    "artifacts": [
+      "stardust/replica/capture/lift/company-1440.json#fontFaces",
+      "stardust/prototypes/canon.css (@font-face)"
+    ]
+  },
+  "decisions": [
+    {
+      "id": "D1",
+      "what": "black-tile.jpg.wdthumb.840 (hero bg <768) is a live 404 (intercept 404 x2, request.get 404, canvas decode error) -> live renders #overview solid #000 at 360; replica ships no image there (capture-state)",
+      "artifacts": [
+        "stardust/.work/replica/probes/harvest-company-tile.json",
+        "stardust/.work/replica/probes/harvest-company-tile.log"
+      ]
+    },
+    {
+      "id": "D2",
+      "what": "360 renditions harvested by intercepting the page's own responses (1 live hit @360): 11 wdthumb.500 imgs + 4 wdthumb.840 bgs; <picture> mirrors the live source selection (>=992 -> 1280, else 500); bgs 840 <768 / 3000 >=768 (the 1280 tier for 768-991 is not harvested and is not a gate width)",
+      "artifacts": [
+        "stardust/.work/replica/probes/harvest-company.json"
+      ]
+    },
+    {
+      "id": "D3",
+      "what": "hidden compare-tray modals (#ProductCompareTray, 2x .wd-modal.hidden) mirrored hidden for DOM/content parity; no trigger exists on this page (widgets.modals trigger null)",
+      "artifacts": [
+        "stardust/current/pages/company.json#widgets"
+      ]
+    },
+    {
+      "id": "D4",
+      "what": "page content root line-height: source body is unitless 1.5 (subtitle2 18px -> 27px); set on .mainContainWrap page-locally (canon body carries 24px) — canon-followup candidate only if a sibling needs it",
+      "artifacts": [
+        "stardust/replica/capture/lift/company-1440.json (p.subtitle2 lineHeight 27px)"
+      ]
+    }
+  ],
+  "canonFollowup": [
+    {
+      "id": "CF-C1",
+      "what": "header skip link OCCLUDED by section.promo.header-promo-bar at rest (chrome-parity, both widths); live has the same quirk under a different element — cosmetic parity, no fix required on the page",
+      "artifacts": [
+        "gates/company-1440/chrome-parity-iter1.txt"
+      ]
+    },
+    {
+      "id": "CF-S1",
+      "what": "footer \"Cookie Preferences\" (TrustArc #teconsent) link missing in canon footer — same finding as solutions worker CF-S1",
+      "artifacts": [
+        "gates/company-1440/chrome-parity-iter1.txt"
+      ]
+    }
+  ],
+  "liveHits": {
+    "total": 10,
+    "detail": "harvest 360 renditions 1 · harvest black-tile 1 · gate 1440 iter1 (content-diff, visual-diff, chrome-parity, stitch) 4 · gate 360 iter1 4 · motion-observe 1440 + 360 2 · iter2 rounds 0 (cached reference)"
+  },
+  "status": "both breakpoints PASS (prototype regime); chrome rest crops PASS both widths; motion asserted (🟡 advisory entrances = chrome-owned); no residual rows needed"
+}

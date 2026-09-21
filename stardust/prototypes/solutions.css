@@ -1,0 +1,233 @@
+/* solutions.css — page layer for the `solutions` archetype (program page), imported after canon.css.
+   Every value is lifted from stardust/replica/capture/lift/solutions-1440.json / solutions-360.json (computed styles) and the
+   saved source CSS (stardust/replica/capture/css). Source breakpoints: xs 576 · sm 768 · md 992 · lg 1140. Mobile authored from
+   the 360 lift (its own pass), not a shrink of desktop. Chrome/tokens live in canon.css (never patched here). */
+
+/* ---------- page-level tokens ---------- */
+.sol {
+  --sol-border: rgb(225, 225, 225);      /* .border-gray-light */
+  --sol-grey-bg: rgb(249, 249, 249);     /* #f9f9f9 FAQ panel / table odd rows */
+  --sol-tag-bg: rgb(239, 246, 255);      /* .bg-tag-blue #EFF6FF */
+  --sol-tag-fg: rgb(14, 41, 102);        /* #0E2966 */
+  --sol-link: rgb(34, 102, 255);         /* .text-blue / #26F */
+}
+.sol .text-bold { font-weight: 700; }
+.sol .text-normal { font-weight: 400; }
+.sol .text-center { text-align: center; }
+
+/* ---------- shared type (lift: heading1 32/35.2 @360 → 36/39.6 @md; heading4 24/26.4 → 28/30.8; heading5 20/22 → 24/26.4) ---------- */
+.sol-h2 { font-size: 32px; line-height: 35.2px; font-weight: 700; margin-bottom: 16px; text-align: center; }
+.sol-h3 { font-size: 24px; line-height: 26.4px; font-weight: 700; margin-bottom: 8px; }
+.sol-h3s { font-size: 20px; line-height: 22px; font-weight: 700; margin-bottom: 8px; }
+@media (min-width: 992px) {
+  .sol-h2 { font-size: 36px; line-height: 39.6px; }
+  .sol-h3 { font-size: 28px; line-height: 30.8px; }
+  .sol-h3s { font-size: 24px; line-height: 26.4px; }
+}
+
+/* underline blue link (lift: a.btn.inline-block.underline.text-blue — inline-block, lh 16, no padding, radius 6, transition .2s) */
+.sol .sol-link { display: inline-block; padding: 0; border: 0; font-size: 16px; line-height: 16px; font-weight: 400; text-decoration: underline; color: var(--sol-link); border-radius: 6px; background: transparent; }
+.sol .sol-link--px { padding: 0 8px; }
+.sol .button > div { line-height: 24px; }
+
+/* ---------- section shell (source section.py-12.md:py-16 → 48px, 64px @md; heading block pb-8 → 32px, md:pb-12 → 48px) ---------- */
+.sol-section { position: relative; padding: 48px 0; }
+.sol-section__head { padding-bottom: 32px; text-align: center; }
+@media (min-width: 992px) {
+  .sol-section { padding: 64px 0; }
+  .sol-section__head { padding-bottom: 48px; }
+}
+
+/* ---------- 1. hero (lift 360: section black, bg div relative 225px, row py-6, h1 32/35.2 white, p 18/27;
+   lift 1440: section flex items-center min-h 600 (lg), bg absolute pinned, row py-8 flex, col 50%, h1 48/52.8 black, p 20/30) ---------- */
+.sol-hero { position: relative; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); }
+.sol-hero__bg { position: relative; min-height: 225px; background-image: var(--sol-hero-bg-m); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.sol-hero__row { padding: 24px 0; }
+.sol-hero__title { font-size: 32px; line-height: 35.2px; font-weight: 700; margin-bottom: 8px; }
+.sol-hero__lede { font-size: 18px; line-height: 27px; }
+@media (min-width: 768px) {
+  .sol-hero__bg { background-image: var(--sol-hero-bg-d); }
+}
+@media (min-width: 992px) {
+  .sol-hero { display: flex; align-items: center; min-height: 500px; color: rgb(0, 0, 0); }
+  .sol-hero > .contain { width: 100%; }
+  .sol-hero__bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; min-height: 0; }
+  .sol-hero__row { display: flex; flex-wrap: wrap; padding: 32px 0; }
+  .sol-hero__col { width: 50%; }
+  .sol-hero__title { font-size: 48px; line-height: 52.8px; }
+  .sol-hero__lede { font-size: 20px; line-height: 30px; }
+}
+@media (min-width: 1140px) { .sol-hero { min-height: 600px; } }
+
+/* ---------- 2. breadcrumb (section.py-4 16px; .my-6 24px; text-sm 16/16; grey-3 link; bold current) + anchor chips ---------- */
+.sol-nav { position: relative; padding: 16px 0; }
+.sol-crumbs__row { display: flex; flex-wrap: wrap; align-items: center; margin: 24px 0; }
+.sol-crumbs__item { display: flex; flex-wrap: wrap; align-items: center; }
+.sol-crumbs__link { display: inline-block; font-size: 16px; line-height: 16px; color: rgb(106, 106, 106); transition: 0.2s; }
+.sol-crumbs__link span { display: inline; }
+.sol-crumbs__current { font-size: 16px; line-height: 24px; font-weight: 700; color: rgb(0, 0, 0); }
+/* chips row: .row.-mx-2.-mb-4.items-center.flex-wrap; col .cols-6 (50%) → md:cols-3 (25%), px-2, mb-4 */
+.sol-chips { display: flex; flex-wrap: wrap; align-items: center; margin: 0 -8px -16px; }
+.sol-chips__col { width: 50%; padding: 0 8px; margin-bottom: 16px; }
+/* chip a: inline-flex w-full justify-center items-center py-6 px-4 bg-grey-1 rounded-16px, 16/16 400 (source .btn.rounded-16px{border-radius:1rem}) */
+.sol .sol-chip { display: inline-flex; width: 100%; justify-content: center; align-items: center; padding: 24px 16px; font-size: 16px; line-height: 16px; font-weight: 400; color: rgb(0, 0, 0); background-color: var(--c-grey-1); border: 0; border-radius: 16px; }
+.sol .sol-chip svg { line-height: 16px; vertical-align: baseline; }
+.sol-chip__label { margin-left: 8px; line-height: 16px; }
+@media (min-width: 992px) { .sol-chips__col { width: 25%; } }
+
+/* ---------- 3. intro + use-case cards (row max-w-1140 -mb-6; col sm:cols-6 px-3 mb-6; card p-6 → sm:p-8, border 1 #e1e1e1, radius 16) ---------- */
+.sol-intro { padding-bottom: 32px; max-width: 992px; margin: 0 auto; text-align: center; }
+.sol-usecases { display: flex; flex-wrap: wrap; max-width: 1140px; margin: 0 auto -24px; }
+.sol-usecases__col { width: 100%; padding: 0 12px; margin-bottom: 24px; }
+.sol-usecase { display: flex; flex-wrap: wrap; width: 100%; height: 100%; padding: 24px; border: 1px solid var(--sol-border); border-radius: 16px; }
+.sol-usecase__inner { display: flex; align-items: center; }
+.sol-usecase__icon { line-height: 0; }                 /* source: .svg-card .svg { line-height: 0 } */
+.sol-usecase__svg { margin-right: 24px; }
+.sol-usecase__svg svg { display: inline; vertical-align: baseline; }
+.sol-usecase__body { position: relative; }
+.sol-usecase__text { position: relative; }
+@media (min-width: 768px) {
+  .sol-usecases__col { width: 50%; }
+  .sol-usecase { padding: 32px; }
+}
+@media (min-width: 992px) { .sol-intro { padding-bottom: 48px; } }
+
+/* ---------- 4. explore cards (row -mx-3 -mb-6; col cols-12 → xs:cols-6 → md:cols-4, px-3 mb-6 pb-6; img 300 cover r16 mb-6; text px-2; p pb-4 → md:pb-6) ---------- */
+.sol-explore { display: flex; flex-wrap: wrap; margin: 0 -12px -24px; }
+.sol-explore__col { width: 100%; padding: 0 12px 24px; margin-bottom: 24px; }
+.sol-explore__col .image { line-height: 24px; }
+.sol-explore__col picture { display: inline; }
+.sol-explore__img { display: inline; width: 100%; height: 300px; object-fit: cover; border-radius: 16px; margin-bottom: 24px; vertical-align: middle; max-width: 100%; }
+.sol-explore__title { padding: 0 8px; }
+.sol-explore__copy { padding: 0 8px 16px; }
+@media (min-width: 576px) { .sol-explore__col { width: 50%; } }
+@media (min-width: 992px) { .sol-explore__col { width: 33.33333%; } .sol-explore__copy { padding-bottom: 24px; } }
+
+/* ---------- 5/6. icon tiles (row -mx-3 -mb-6; col sm:cols-4 px-3 mb-6; card p-6 → sm:p-8 border r16 h-full; inner flex-col h-full; icon mb-6; p mb-6; cta margin-top auto) ---------- */
+.sol-tiles { display: flex; flex-wrap: wrap; margin: 0 -12px -24px; }
+.sol-tiles__col { width: 100%; padding: 0 12px; margin-bottom: 24px; }
+.sol-tile { display: flex; flex-wrap: wrap; height: 100%; padding: 24px; border: 1px solid var(--sol-border); border-radius: 16px; }
+.sol-tile__inner { display: flex; flex-direction: column; height: 100%; width: 100%; }
+.sol-tile__icon { margin-bottom: 24px; line-height: 24px; }
+.sol-tile__icon svg { display: inline; vertical-align: baseline; }
+.sol-tile__copy { margin-bottom: 24px; }
+.sol-tile__cta { margin-top: auto; }                    /* source: .button:has(.mt-auto) { margin-top: auto } */
+@media (min-width: 768px) {
+  .sol-tiles__col { width: 33.33333%; }
+  .sol-tile { padding: 32px; }
+}
+
+/* ---------- 7. table (#solutions-table max-w 1200; bootstrap .table 100%; th p12 (first pl 32) bold 16/24 bottom, 2px bottom rule;
+   td p16 (first pl32) 14/21 center, min-width 200 @md; odd rows #F9F9F9; tag pill 14/21 p 8 12 r16) ---------- */
+.sol-table { max-width: 1200px; margin: 0 auto; }
+.sol-table__scroll { max-width: 100%; overflow-x: auto; }
+.sol-table__table { display: table; width: 100%; max-width: 100%; border-collapse: collapse; }
+.sol-table__table thead { background-color: rgb(255, 255, 255); vertical-align: middle; }
+.sol-table__table tbody { vertical-align: middle; }
+.sol-table__table tbody tr:nth-child(odd) { background: var(--sol-grey-bg); }
+.sol-table__table tbody tr:nth-child(even) { background: rgb(255, 255, 255); }
+.sol-table__table th { padding: 12px; font-size: 16px; line-height: 24px; font-weight: 700; text-align: center; vertical-align: bottom; border-top: 0; border-bottom: 2px solid rgb(222, 226, 230); }
+.sol-table__table td { padding: 8px; min-width: 148px; font-size: 14px; line-height: 21px; text-align: center; vertical-align: middle; border-top: 0; }   /* lift 360: p 8, min-w 148 → md: p 16, min-w 200 */
+.sol-table__table th:first-child, .sol-table__table td:first-child { text-align: left; padding-left: 32px; }
+.sol-table__table td b { font-size: 14px; line-height: 21px; font-weight: 700; }
+.sol-tag { display: inline; padding: 8px 12px; font-size: 14px; line-height: 21px; text-align: center; color: var(--sol-tag-fg); background: var(--sol-tag-bg); border-radius: 16px; }
+@media (min-width: 992px) { .sol-table__table td { padding: 16px; min-width: 200px; } .sol-table__table td:first-child { padding-left: 32px; } }
+
+/* ---------- 8. FAQ (panel #f9f9f9 r16 overflow hidden, py-4 → md:p-10; cols md 5/7, left pr-12 mb-4; title mt-6 pb-8 → md:pb-12;
+   item border-top 1px #e1e1e1 (first none); button py-4 → sm:py-6, heading5, flex → sm:inline-flex, w-full, text-left; icon absolute right 0 top = padding) ---------- */
+.sol-faq { position: relative; padding: 16px 0; background-color: var(--sol-grey-bg); border-radius: 16px; overflow: hidden; }
+.sol-faq__row { position: relative; }
+.sol-faq__head { margin-bottom: 16px; }
+.sol-faq__title { margin-top: 24px; padding-bottom: 32px; }
+.sol-faq__title .sol-h2 { text-align: left; }
+.sol-faq__item { border-top: 1px solid var(--sol-border); }
+.sol-faq__item--first { border-top: 0; }
+.sol .sol-faq__q { display: flex; position: relative; width: 100%; padding: 16px 0; font-size: 20px; line-height: 22px; font-weight: 500; text-align: left; color: rgb(0, 0, 0); }
+.sol-faq__label { display: inline-block; margin-right: 48px; }
+.sol .sol-faq__q svg { position: absolute; right: 0; top: 16px; }
+.sol-faq__a { overflow: hidden; max-height: 6000px; transition: max-height 0.4s, opacity 0.4s; }
+.sol-faq__a-inner { margin-bottom: 24px; }
+.sol-faq__a p a { text-decoration: underline; color: var(--sol-link); line-height: 16px; transition: 0.2s; }   /* source: #faq a */
+@media (min-width: 768px) {
+  .sol .sol-faq__q { display: inline-flex; padding: 24px 0; font-size: 24px; line-height: 26.4px; }
+  .sol .sol-faq__q svg { top: 24px; }
+}
+@media (min-width: 992px) {
+  .sol-faq { padding: 40px; }
+  .sol-faq__row { display: flex; flex-wrap: wrap; }
+  .sol-faq__head { width: 41.66667%; padding-right: 48px; }
+  .sol-faq__list { width: 58.33333%; }
+  .sol-faq__title { padding-bottom: 48px; }
+}
+
+/* ---------- 9. innovating band (flex items-center justify-center text-center r16 overflow hidden; md: min-h 400, white text, bg absolute + dark-40 scrim;
+   <md: bg div is a 0-width flex item (relative, min-h 225), black text; button 14/14 p 8 16 mt-4 bg black → md: 16/16 p 12 32 mt-6 transparent, white border) ---------- */
+.sol-innov { display: flex; position: relative; align-items: center; justify-content: center; text-align: center; border-radius: 16px; overflow: hidden; color: rgb(0, 0, 0); }
+.sol-innov__bg { position: relative; min-height: 225px; background-image: var(--sol-innov-bg-m); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.sol-innov__bg.dark-40::after { content: ''; position: absolute; background: rgba(0, 0, 0, 0.4); width: 100%; height: 100%; left: 0; top: 0; }
+.sol-innov__content { position: relative; }
+.sol-innov__title { font-size: 32px; line-height: 35.2px; font-weight: 700; margin-bottom: 8px; }
+.sol-innov__copy { max-width: 700px; margin: 0 auto; }
+.sol .sol-innov__btn { display: inline-flex; margin-top: 16px; padding: 8px 16px; font-size: 14px; line-height: 14px; font-weight: 500; text-align: center; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); border: 1px solid rgb(255, 255, 255); border-radius: 6px; }
+@media (min-width: 768px) { .sol-innov__bg { background-image: var(--sol-innov-bg-d); } }
+@media (min-width: 992px) {
+  .sol-innov { min-height: 400px; color: rgb(255, 255, 255); }
+  .sol-innov__bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; min-height: 225px; }
+  .sol-innov__title { font-size: 36px; line-height: 39.6px; }
+  .sol .sol-innov__btn { margin-top: 24px; padding: 12px 32px; font-size: 16px; line-height: 16px; background-color: transparent; }
+}
+
+/* ---------- 10. CTA band (row py-12 → md:py-16, -mx-2, border-top 1px #e1e1e1, flex-wrap; cols 100% → md:50%; heading6 18/19.8 → 20/22; text mb-6 → md:0;
+   buttons 14/14 p 8 24 → md: 16/16 p 12 48; first mr-5 20px; the two .button wrappers flex-shrink inside the column (labels wrap as on live)) ---------- */
+.sol-cta { position: relative; }
+.sol-cta__row { display: flex; flex-wrap: wrap; margin: 0 -8px; padding: 48px 0; border-top: 1px solid var(--sol-border); }
+.sol-cta__col { display: flex; width: 100%; align-items: center; justify-content: center; }
+.sol-cta__text { margin-bottom: 24px; }
+.sol-cta__title { font-size: 18px; line-height: 19.8px; font-weight: 500; }
+.sol .sol-cta__btn { display: inline-flex; padding: 8px 24px; font-size: 14px; line-height: 14px; font-weight: 500; border-radius: 6px; border: 1px solid rgb(0, 0, 0); }
+.sol .sol-cta__btn--first { margin-right: 20px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); }
+.sol .sol-cta__btn--white { color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); }
+@media (min-width: 992px) {
+  .sol-cta__row { padding: 64px 0; }
+  .sol-cta__col { width: 50%; }
+  .sol-cta__col--text { justify-content: flex-start; }
+  .sol-cta__col--btns { justify-content: flex-end; }
+  .sol-cta__text { margin-bottom: 0; }
+  .sol-cta__title { font-size: 20px; line-height: 22px; }
+  .sol .sol-cta__btn { padding: 12px 48px; font-size: 16px; line-height: 16px; }
+}
+
+/* ---------- hidden DOM mirrored from the capture (contact-form modal; canon .wd-modal { display:none }) ---------- */
+.sol-modal__dialog { margin: auto; padding: 0 24px; width: 100%; }
+.sol-modal__body { width: 100%; background: rgb(255, 255, 255); padding: 48px; }
+.sol-form__title { margin-bottom: 24px; text-align: center; }
+.sol-form__note { margin-bottom: 8px; }
+.sol-form__row { display: flex; flex-wrap: wrap; margin: 0 -16px; }
+.sol-form__col { width: 50%; padding: 0 16px; }
+.sol-form__input, .sol-form__select, .sol-form__textarea { width: 100%; border: 1px solid rgb(0, 0, 0); padding: 8px 16px; }
+.sol-form__error { display: block; color: rgb(220, 53, 69); font-size: 12px; margin-bottom: 0; }
+.sol-form__consent { margin-bottom: 24px; }
+.sol-form__check { margin: 20px 0 16px; }
+.sol-form__check-text { display: block; margin-left: 8px; font-size: 16px; line-height: 19.2px; color: rgb(0, 0, 0); }
+.sol-form__submit-row { display: flex; flex-wrap: wrap; text-align: left; }
+.sol-form__recaptcha { margin-top: 32px; text-align: center; font-size: 14px; line-height: 21px; color: var(--c-grey-5); }
+.sol-form__recaptcha a { color: var(--sol-link); }
+.sol-form__success { text-align: center; padding: 32px 0; margin-top: -20px; background: var(--c-grey-1); }
+@media (min-width: 576px) { .sol-modal__dialog { width: 500px; } }
+@media (min-width: 992px) { .sol-modal__dialog { width: 800px; } }
+
+/* ===== interaction states — OBSERVED (stardust/replica/motion/solutions.json @1440, solutions-360.json @360). Rest state unchanged. ===== */
+/* breadcrumb hover (hover probe: color rgb(106,106,106) → rgb(0,0,0), textDecorationLine none → underline, transition .2s) */
+.sol-crumbs__link:hover { color: rgb(0, 0, 0); text-decoration: underline; }
+/* FAQ collapse (source: .accordion-text>section .accordion-content{opacity:1;max-height:6000px;transition:max-height .4s ease,opacity .4s ease;display:block;overflow:hidden}
+   .accordion-content.hidden{opacity:0;max-height:0} — live body.disabledOutine keeps it display:block so the collapse animates) */
+.sol .sol-faq__a { display: block; opacity: 1; transition: max-height 0.4s ease, opacity 0.4s ease; }
+.sol .sol-faq__a.hidden { display: block !important; opacity: 0; max-height: 0; }
+/* contact modal open state (source: .wd-modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:40;background-color:rgba(0,0,0,.7);overflow-y:auto;overflow-x:hidden}
+   .wd-modal .wd-modal-dialog{display:flex;align-items:center;min-height:calc(100% - (1.75rem * 2))} .wd-modal-content{position:relative;display:flex;width:100%;top:1rem} .wd-modal .modal-body{border-radius:1rem}) */
+.sol .sol-modal:not(.hidden) { display: block; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 40; padding: 24px 0; background-color: rgba(0, 0, 0, 0.7); overflow-y: auto; overflow-x: hidden; }
+.sol .sol-modal:not(.hidden) .sol-modal__dialog { display: flex; align-items: center; min-height: calc(100% - 3.5rem); }
+.sol .sol-modal:not(.hidden) .wd-modal__content { position: relative; display: flex; width: 100%; top: 1rem; }
+.sol .sol-modal__close { position: absolute; right: 0; padding: 16px; z-index: 1; }
+.sol .sol-modal__body { border-radius: 1rem; }
+body.overflow-hidden { overflow: hidden; }

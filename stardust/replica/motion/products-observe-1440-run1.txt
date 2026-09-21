@@ -1,0 +1,9 @@
+consent dismissed via text:accept
+motion-observe WARN: --hover .productListItem: pointer intercepted by div.flex.items-start > div.w-100px.sm:w-200px > picture > img.flex-no-shrink — the element was never hovered
+motion-observe WARN: --hover .compare-link-clp: pointer intercepted by div > div.modal > div.py-6.wd-modal > div.wd-modal-dialog.m-auto — the element was never hovered
+motion-observe WARN: --hover .numb: pointer intercepted by div.wd-modal-content > div.modal-body.w-full > div.flex.items-start > div.px-1.sm:px-5 — the element was never hovered
+motion-observe WARN: --hover .btn.underline: pointer intercepted by div > div > div.modal > div.py-6.wd-modal — the element was never hovered
+motion-observe WARN: --hover .filterHeader: pointer intercepted by div > div > div.modal > div.py-6.wd-modal — the element was never hovered
+motion-observe WARN: --hover .select.newanchor: element has no bounding box (hidden twin? first match off-screen) — not hovered
+motion-observe WARN: --hover .green-promo a: pointer intercepted by div.wd-modal-content > div.modal-body.w-full > div.flex.items-start > div.px-1.sm:px-5 — the element was never hovered
+motion-observe stardust/replica/motion/products.json: 0 animations, 80 transitions, 51 class mutations, 1 style-mutated elements → 1 entrance families, 2 state machines (0 attr + 3 childList records), 4 widget pokes, 7 hover probes (7 not hovered — see hovered:false reasons), 37 auto triggers

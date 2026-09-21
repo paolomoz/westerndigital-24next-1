@@ -1,0 +1,100 @@
+{
+  "verdict": "fail",
+  "at": "2026-09-21T09:55:45.642Z",
+  "target": "http://127.0.0.1:8814/solutions-proposed.html",
+  "regime": "prototype",
+  "observe": "stardust/replica/motion/solutions.json",
+  "schema": 2,
+  "width": 1440,
+  "checks": {
+    "chrome": {
+      "status": "pass",
+      "detail": "top / scrolled-down / scrolled-up / back-to-top match",
+      "target": [
+        {
+          "y": 0,
+          "cls": "site-header header relative w-full",
+          "position": "sticky",
+          "height": "97px",
+          "transform": "none",
+          "dir": "down"
+        },
+        {
+          "y": 6000,
+          "cls": "site-header header relative w-full",
+          "position": "sticky",
+          "height": "97px",
+          "transform": "none",
+          "dir": "down"
+        },
+        {
+          "y": 800,
+          "cls": "site-header header relative w-full",
+          "position": "sticky",
+          "height": "97px",
+          "transform": "none",
+          "dir": "up"
+        },
+        {
+          "y": 0,
+          "cls": "site-header header relative w-full",
+          "position": "sticky",
+          "height": "97px",
+          "transform": "none",
+          "dir": "up"
+        }
+      ]
+    },
+    "entrances": {
+      "status": "fail",
+      "detail": "live 17 element(s) with inline opacity/transform entrances, target 0 (± 10 %)",
+      "live": 17,
+      "target": 0
+    },
+    "widgets": {
+      "status": "n/a",
+      "detail": "#accordion_text_copy_1244081658_label: n/a (dead live (implement nothing)); a.wd-modal-btn: n/a (dead live (implement nothing)); #contact-form .wd-modal-close: n/a (dead live (implement nothing))",
+      "rows": [
+        {
+          "sel": "#accordion_text_copy_1244081658_label",
+          "status": "n/a",
+          "detail": "dead live (implement nothing)"
+        },
+        {
+          "sel": "a.wd-modal-btn",
+          "status": "n/a",
+          "detail": "dead live (implement nothing)"
+        },
+        {
+          "sel": "#contact-form .wd-modal-close",
+          "status": "n/a",
+          "detail": "dead live (implement nothing)"
+        }
+      ]
+    },
+    "stateMachines": {
+      "status": "pass",
+      "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded); What is the difference between an HDD an: ariaExpanded changed (live: aria-expanded)",
+      "rows": [
+        {
+          "el": "div.accordion-text > section.section.component-accordian-text.faq-schema > div.accordion-text.border-t.border-border-gray-light > div.accordion-box > button.w-full.heading5.relative",
+          "attr": "aria-expanded",
+          "status": "pass",
+          "detail": "How much storage do I need?: ariaExpanded changed (live: aria-expanded)"
+        },
+        {
+          "el": "div.accordion-text > section.section.component-accordian-text.border-t-0 > div.accordion-text.border-t.border-border-gray-light > div.accordion-box > button.w-full.heading5.relative",
+          "attr": "aria-expanded",
+          "status": "pass",
+          "detail": "What is the difference between an HDD an: ariaExpanded changed (live: aria-expanded)"
+        }
+      ]
+    },
+    "pageErrors": {
+      "status": "pass",
+      "detail": "0 pageerror(s)",
+      "count": 0
+    }
+  },
+  "skips": {}
+}

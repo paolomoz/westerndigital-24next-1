@@ -1,0 +1,1789 @@
+{
+  "schema": 2,
+  "url": "https://www.westerndigital.com/products",
+  "width": 360,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 0,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 1200,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2400,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 3600,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 4800,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 6000,
+      "dir": "down",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 5501,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 4001,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 2400,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 1200,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 800,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 500,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 300,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 200,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 150,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 120,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 90,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 60,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 30,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    },
+    {
+      "y": 0,
+      "dir": "up",
+      "cls": "header relative w-full",
+      "position": "sticky",
+      "height": "91px",
+      "transform": "none",
+      "transition": "0.3s ease-in-out",
+      "mainPadTop": null,
+      "bodyPadTop": "0px",
+      "headerCount": 2
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".mob-shopBy-btn",
+      "frames": [
+        {
+          "t": 16442.299999713898,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 16644.299999713898,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 16847.099999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 17050.299999713898,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".mob-filters-btn",
+      "frames": [
+        {
+          "t": 18064.39999961853,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 18267.39999961853,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 18472.299999713898,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 18676.599999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".compare-link-clp",
+      "frames": [
+        {
+          "t": 19691.599999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 19893.89999961853,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 20097.099999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 20301,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".productListItem",
+      "hovered": false,
+      "reason": "intercepted",
+      "by": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t",
+      "changed": [],
+      "warn": "pointer intercepted by div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t — the element was never hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "a.flex.flex-col",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "0.2s",
+            "transitionProperty": "all",
+            "transitionDuration": "0.2s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "img.max-h-100px.sm:max-h-150px",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "h2.font-bold.text-sm",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "a.flex.flex-col",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "0.2s",
+            "transitionProperty": "all",
+            "transitionDuration": "0.2s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "img.max-h-100px.sm:max-h-150px",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "h2.font-bold.text-sm",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          },
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      }
+    },
+    {
+      "sel": ".compare-link-clp",
+      "hovered": false,
+      "reason": "intercepted",
+      "by": "div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t",
+      "changed": [],
+      "warn": "pointer intercepted by div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t — the element was never hovered",
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "textDecorationLine": "none",
+          "transition": "all",
+          "transitionProperty": "all",
+          "transitionDuration": "0s",
+          "transitionDelay": "0s"
+        },
+        "subs": [
+          {
+            "el": "span.text-xs.ml-2",
+            "transform": "none",
+            "color": "rgb(106, 106, 106)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "textDecorationLine": "none",
+            "transition": "all",
+            "transitionProperty": "all",
+            "transitionDuration": "0s",
+            "transitionDelay": "0s"
+          }
+        ],
+        "hoverRules": 1
+      }
+    }
+  ],
+  "triggers": [
+    {
+      "i": 0,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--prev",
+      "txt": "",
+      "controls": "splide01-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 40,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 10
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1995.3739999999998ms exceeded."
+    },
+    {
+      "i": 1,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--next",
+      "txt": "",
+      "controls": "splide01-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 40,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 10
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1994.5139999999992ms exceeded."
+    },
+    {
+      "i": 2,
+      "sel": "div.py-6.wd-modal > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 10
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.4840000000004ms exceeded."
+    },
+    {
+      "i": 3,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--prev",
+      "txt": "",
+      "controls": "splide02-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 0,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 10
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.867000000002ms exceeded."
+    },
+    {
+      "i": 4,
+      "sel": "section.splide.promo-carousel-2-5 > div.splide__slider > div.splide__arrows.splide__arrows--ltr > button.splide__arrow.splide__arrow--next",
+      "txt": "",
+      "controls": "splide02-track",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": "block",
+        "controlsHeight": 0,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 10
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1995.081000000002ms exceeded."
+    },
+    {
+      "i": 5,
+      "sel": "div.nav-container.aem-GridColumn > div.container > div.h-50px.flex > button.hamburger-menu.hamburger-menu-bar",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 10
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 6,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Products\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t",
+      "controls": "productNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 48,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 7,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Products",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1995.7489999999962ms exceeded."
+    },
+    {
+      "i": 8,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Solutions\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t",
+      "controls": "solutionNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 48,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 9,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Solutions",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.5120000000024ms exceeded."
+    },
+    {
+      "i": 10,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Support\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t",
+      "controls": "supportNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 48,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 11,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Support",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1997.6069999999963ms exceeded."
+    },
+    {
+      "i": 12,
+      "sel": "div.slide.mobile-nav-div > nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4",
+      "txt": "Company\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t",
+      "controls": "companyNavSections",
+      "before": {
+        "ariaExpanded": "false",
+        "open": null,
+        "controlsDisplay": "list-item",
+        "controlsHeight": 48,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 13,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > li.mainMenuItem.md:mx-4 > button.dropDownItem.text-xs",
+      "txt": "Company",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1993.869000000006ms exceeded."
+    },
+    {
+      "i": 14,
+      "sel": "nav.navContainer.mobile-nav-bar > ul.list-reset.desktop-navigation-list > div.fixed.py-5 > button.cursor-pointer.sc-track",
+      "txt": "✕",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 15,
+      "sel": "div.textcolumn > div.sm:items-center > div.login-btn-trigger.absolute > button.text-xs.lg:text-sm",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1991.8410000000003ms exceeded."
+    },
+    {
+      "i": 16,
+      "sel": "div.textcolumn > div.hidden.login-flyout > div.border.border-grey-light > button.loginFlyoutClose.px-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1994.0679999999993ms exceeded."
+    },
+    {
+      "i": 17,
+      "sel": "div.wd-modal.py-6 > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1995.8910000000033ms exceeded."
+    },
+    {
+      "i": 18,
+      "sel": "div.py-6.wd-modal > div.wd-modal-dialog.m-auto > div.wd-modal-content > button.wd-modal-close.p-4",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1992.2249999999985ms exceeded."
+    },
+    {
+      "i": 19,
+      "sel": "div.wd-modal-dialog.m-auto > div.wd-modal-content > div.modal-body.w-full > button.signInBTN.btn",
+      "txt": "Sign In",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1995.2149999999892ms exceeded."
+    },
+    {
+      "i": 20,
+      "sel": "div.product-cart > div.flex.item-center > div.carticon.mr-6 > button.mini-cart-trigger.relative",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 11
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 21,
+      "sel": "div.wd-modal.cartwrapper > div.w-full.sm:w-500px > div.cartTitleHeight.flex > button.wd-modal-close.cursor-pointer",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 14
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.267000000007ms exceeded."
+    },
+    {
+      "i": 22,
+      "sel": "div.cartSignInBar > div.flex.md:px-8 > span.text-white.flex-1 > button.underline.text-white",
+      "txt": "Sign In",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 14
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1995.2810000000027ms exceeded."
+    },
+    {
+      "i": 23,
+      "sel": "div.cartDetailsContainer > div.cartSignInBar > div.flex.md:px-8 > button.flex.items-center",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 14
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1994.4560000000056ms exceeded."
+    },
+    {
+      "i": 24,
+      "sel": "div > div.corpSearch > div.predictiveSearch.search-main > div.hero-input",
+      "txt": "Popular Searches     Clear",
+      "controls": "searchResultInnerWarp",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 14
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 25,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.underline.text-sm",
+      "txt": "Clear",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 18
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1998.046000000002ms exceeded."
+    },
+    {
+      "i": 26,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.search-collapse.btn",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 18
+      },
+      "clickFailed": "locator.scrollIntoViewIfNeeded: Timeout 1996.520000000004ms exceeded."
+    },
+    {
+      "i": 27,
+      "sel": "div.predictiveSearch.search-main > div.hero-input > form.global-predictive-search.ui-front > button.btn-search.btn-search-SummaryView",
+      "txt": "",
+      "controls": null,
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 18
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 28,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.brandName",
+      "txt": "Western Digital (39)   WD (24)   WD_BLAC",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 29,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.vvc-capacity",
+      "txt": "0 GB - 960 GB (5)   01 TB - 04 TB (30)  ",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 30,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.vvc-form_factor",
+      "txt": "3.5 in (1)    + More - Less",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 31,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.useCaseName",
+      "txt": "Data Center (18)   Backups (12)   Gaming",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 32,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.color_List",
+      "txt": "Black (32)   Blue (7)   Gray, Silver (4)",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 33,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.connector_List",
+      "txt": "SATA (30)   Micro-B (16)   USB-C (13)   ",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 34,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.service",
+      "txt": "Data Recovery (18)    + More - Less",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 35,
+      "sel": "div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t > div.filterList.priceRange",
+      "txt": "$0-$49.99 (18)   $50-$199.99 (16)   $200",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "i": 36,
+      "sel": "div.productListcontainer > div.flex.sm:flex-row > div.flex-wrap.flex > div.sortByFilter.relative",
+      "txt": "Sort by :       Sort   Most Popular Late",
+      "controls": "productFilter",
+      "before": {
+        "ariaExpanded": null,
+        "open": null,
+        "controlsDisplay": null,
+        "controlsHeight": null,
+        "attrMutations": 0,
+        "childList": 3,
+        "classMutations": 22
+      },
+      "clickFailed": "locator.click: Timeout 2500ms exceeded."
+    }
+  ],
+  "entrances": [
+    {
+      "family": "header.header.relative",
+      "elements": 1,
+      "mutations": 24,
+      "firstY": 400,
+      "durationMs": 98248,
+      "from": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "to": {
+        "opacity": null,
+        "transform": null,
+        "visibility": null
+      },
+      "sample": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full"
+    }
+  ],
+  "stateMachines": [
+    {
+      "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5",
+      "attr": "childList",
+      "kind": "childList",
+      "controls": null,
+      "transitions": [
+        {
+          "added": [
+            "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5 > div.mb-4"
+          ],
+          "removed": [],
+          "y": 333,
+          "t": 20046,
+          "trigger": null
+        },
+        {
+          "added": [
+            "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5 > div.mb-4"
+          ],
+          "removed": [],
+          "y": 333,
+          "t": 20046,
+          "trigger": null
+        }
+      ],
+      "count": 2,
+      "triggered": 0
+    },
+    {
+      "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.w-100px.sm:w-200px.px-1",
+      "attr": "childList",
+      "kind": "childList",
+      "controls": null,
+      "transitions": [
+        {
+          "added": [
+            "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.w-100px.sm:w-200px.px-1 > picture"
+          ],
+          "removed": [],
+          "y": 333,
+          "t": 20046,
+          "trigger": null
+        }
+      ],
+      "count": 1,
+      "triggered": 0
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 400,
+        "dir": "down",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 30,
+        "dir": "up",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "up",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "z-index",
+        "el": "div.category-banner > div.container > div.categoryBannerApp > div.flex.sm:my-0.sm:mx-auto > div.left-filter.cols-11.sm:cols-3",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.category-banner > div.container > div.categoryBannerApp > div.flex.sm:my-0.sm:mx-auto > div.left-filter.cols-11.sm:cols-3",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "div.category-banner > div.container > div.categoryBannerApp > div.flex.sm:my-0.sm:mx-auto > div.left-filter.cols-11.sm:cols-3",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.category-banner > div.container > div.categoryBannerApp > div.flex.sm:my-0.sm:mx-auto > div.left-filter.cols-11.sm:cols-3",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 333,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 40,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 55,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 55,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 43,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 43,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 55,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 55,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 395,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 0,
+        "dir": "rest",
+        "dur": "0.3s"
+      },
+      {
+        "prop": "top",
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products > header.header.relative.w-full",
+        "y": 395,
+        "dir": "rest",
+        "dur": "0.3s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 400,
+        "dir": "down",
+        "t": 9674,
+        "trigger": null
+      },
+      {
+        "added": [
+          "lazyloading"
+        ],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 6400,
+        "dir": "down",
+        "t": 12508,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyload"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 6400,
+        "dir": "down",
+        "t": 12508,
+        "trigger": null
+      },
+      {
+        "added": [
+          "lazyloaded"
+        ],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 6400,
+        "dir": "down",
+        "t": 12558,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "lazyloading"
+        ],
+        "el": "div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image.aem-GridColumn.aem-GridColumn--default--12 > a > picture > img.cq-dd-image.max-w-100px.hide-for-support",
+        "y": 6400,
+        "dir": "down",
+        "t": 12558,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 30,
+        "dir": "up",
+        "t": 15266,
+        "trigger": null
+      },
+      {
+        "added": [
+          "mob-shopBy-open"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 16437,
+        "trigger": {
+          "el": "div > div.productListcontainer > div.flex.sm:flex-row.flex-col > div.flex-wrap.flex.items-end > button.mob-shopBy-btn.sm:hidden.flex-1",
+          "txt": "Shop",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "mob-filters-open"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 18057,
+        "trigger": {
+          "el": "div > div.productListcontainer > div.flex.sm:flex-row.flex-col > div.flex-wrap.flex.items-end > button.mob-filters-btn.sm:hidden.flex-1",
+          "txt": "Filter (0)",
+          "dtMs": 1
+        }
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 333,
+        "dir": "rest",
+        "t": 18881,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "hidden"
+        ],
+        "el": "section.mainContainWrap > div > div > div.modal > div.py-6.wd-modal",
+        "y": 333,
+        "dir": "rest",
+        "t": 20046,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 32591,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 55,
+        "dir": "rest",
+        "t": 66890,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 67539,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 55,
+        "dir": "rest",
+        "t": 68573,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 75372,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 43,
+        "dir": "rest",
+        "t": 75556,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 76206,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 43,
+        "dir": "rest",
+        "t": 77256,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 82039,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 55,
+        "dir": "rest",
+        "t": 82223,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 82872,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 55,
+        "dir": "rest",
+        "t": 83905,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 106055,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 395,
+        "dir": "rest",
+        "t": 106239,
+        "trigger": null
+      },
+      {
+        "added": [],
+        "removed": [
+          "minHeader"
+        ],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 0,
+        "dir": "rest",
+        "t": 106888,
+        "trigger": null
+      },
+      {
+        "added": [
+          "minHeader"
+        ],
+        "removed": [],
+        "el": "html.webp.no-jpegxr.webp-alpha > body.page.en-us.products",
+        "y": 395,
+        "dir": "rest",
+        "t": 107922,
+        "trigger": null
+      }
+    ],
+    "attrMutations": [],
+    "childList": [
+      {
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.w-100px.sm:w-200px.px-1",
+        "added": [
+          "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.w-100px.sm:w-200px.px-1 > picture"
+        ],
+        "removed": [],
+        "y": 333,
+        "t": 20046,
+        "dir": "rest",
+        "trigger": null
+      },
+      {
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5",
+        "added": [
+          "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5 > div.mb-4"
+        ],
+        "removed": [],
+        "y": 333,
+        "t": 20046,
+        "dir": "rest",
+        "trigger": null
+      },
+      {
+        "el": "div.wd-modal-dialog.m-auto.px-6 > div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5",
+        "added": [
+          "div.wd-modal-content > div.modal-body.w-full.bg-white > div.flex.items-start.-mx-5 > div.px-1.sm:px-5 > div.mb-4"
+        ],
+        "removed": [],
+        "y": 333,
+        "t": 20046,
+        "dir": "rest",
+        "trigger": null
+      }
+    ],
+    "styleMutatedElements": 1
+  }
+}

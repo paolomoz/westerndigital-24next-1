@@ -1,0 +1,8 @@
+{
+  "autoBlocks": [
+    {
+      "fn": "buildWidgetAutoBlocks",
+      "trigger": "a[href*=\"/widgets/\"], a"
+    }
+  ]
+}

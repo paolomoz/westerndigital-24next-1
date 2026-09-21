@@ -1,0 +1,4 @@
+consent dismissed via text:accept
+motion-observe WARN: --hover .productListItem: pointer intercepted by div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t — the element was never hovered
+motion-observe WARN: --hover .compare-link-clp: pointer intercepted by div.left-filter-container > div.clp-filters-wrap > div.clp-filters-item-wrap > div.clp-filters-item.border-t — the element was never hovered
+motion-observe stardust/replica/motion/products-360.json: 0 animations, 28 transitions, 26 class mutations, 1 style-mutated elements → 1 entrance families, 2 state machines (0 attr + 3 childList records), 3 widget pokes, 2 hover probes (2 not hovered — see hovered:false reasons), 37 auto triggers

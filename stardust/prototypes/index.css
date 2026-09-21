@@ -1,0 +1,206 @@
+/* index.css — landing archetype (westerndigital.com home). Values lifted from index-1440.json;
+   the 360 rules come from index-360.json in the mobile authoring pass. */
+
+.mainContainWrap { display: block; }
+.mainContainWrap > .band { position: relative; }
+
+/* ---------- section rhythm (lift) ---------- */
+.band--py16 { padding: 96px 0; }
+.band--grey { background: var(--c-grey-1); }
+.band__head { padding-bottom: 48px; text-align: center; }
+.band__head .h2-hero { margin-bottom: 16px; }
+.band__head--narrow { max-width: 992px; margin: 0 auto; }
+
+/* ---------- hero carousel (splide loop, 8 li: 4 slides + 4 clones, list translateX(-2880px)) ---------- */
+.hero { position: relative; overflow: hidden; }
+.hero__track { position: relative; z-index: 1; overflow: hidden; }
+.hero__list { position: relative; z-index: 1; display: flex; transform: translateX(-200%); } /* loop offset = 2 clone slides (lift: -2880px @1440, -720px @360) */
+.hero__slide { position: relative; z-index: 1; display: list-item; flex: 0 0 100%; width: 100%; }
+.hero__section { position: relative; display: flex; align-items: center; min-height: 750px; padding-bottom: 48px; color: var(--c-white); background: var(--c-black); }
+.hero__bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; min-height: 225px; background-size: cover; background-position: 0% 50%; background-repeat: no-repeat; }
+.hero__bg::after { content: ""; position: absolute; inset: 0; display: block; background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0)); }
+.hero__bg--none::after { display: none; }
+.hero__section > .contain { width: 100%; }
+.hero__row { display: flex; padding: 32px 0; }
+.hero__col { width: calc(100% * 8 / 12); }
+.hero__copy { max-width: 700px; padding-right: 24px; }
+.hero__title { margin-bottom: 8px; }
+.hero__lede { max-width: 700px; }
+.hero__cta { margin: 32px 8px 0 0; }
+.hero__arrows { display: none; }
+.hero__controls { position: absolute; bottom: 15px; left: 0; display: flex; justify-content: center; }
+.rail__controls { display: flex; justify-content: center; }
+
+/* progress bar (lift: absolute top 486, h 264, flex end, p 0 28 48, gradient) */
+.hero__progress { position: absolute; top: 486px; left: 0; right: 0; z-index: 3; display: flex; align-items: end; height: 264px; padding: 0 28px 48px;
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 0px, rgba(102, 102, 102, 0) 95.45%); color: var(--c-white); }
+.hero__bars { position: relative; display: grid; grid-template-columns: repeat(4, 241px); gap: 48px; width: 100%; max-width: 1140px; padding: 0 16px; margin: 0 auto; }
+.hero__item { position: relative; cursor: pointer; }
+.hero__item + .hero__item::before { content: ""; position: absolute; left: -24px; top: 0; display: block; width: 1px; height: 14px; background: var(--c-white); }
+.hero__item-track { display: block; width: 100%; height: 1px; overflow: hidden; background: var(--c-white); border-radius: 999px; }
+.hero__item-fill { display: block; width: 0%; height: 2px; border: 1px solid transparent; background-image: linear-gradient(90deg, rgb(0, 114, 239) 0px, rgb(0, 229, 209) 100%); transition: width 0.2s linear; }
+.hero__item-label { margin-top: 16px; }
+.hero__item-title { display: block; overflow: hidden; font-size: 20px; line-height: 27px; font-weight: 500; }
+.hero__item-desc { display: block; overflow: hidden; margin-top: 8px; font-size: 14px; line-height: 20px; }
+
+/* ---------- category tabs (store-tabview) ---------- */
+.band--tabs { padding: 64px 0; text-align: center; }
+.band--tabs .band__head { padding-bottom: 48px; }
+.band--tabs h1 { margin-bottom: 16px; }
+.tabs__list { position: relative; display: flex; justify-content: center; }
+.tabs__tab { display: inline-block; position: relative; margin: 0 32px; padding: 12px 0; font-size: 18px; line-height: 20.7px; font-weight: 400; text-align: center; white-space: nowrap; color: var(--c-grey-5); border-radius: var(--radius-btn); }
+.tabs__tab::before { content: ""; position: absolute; display: block; height: 2px; }
+.tabs__tab.is-active { color: var(--c-blue); border-bottom: 3px solid var(--c-blue); border-radius: 0; pointer-events: none; }
+.tabs__panel { padding-bottom: 32px; }
+.tabs__panel-inner { padding: 48px 0; text-align: left; }
+.tabs__grid { display: flex; flex-wrap: wrap; justify-content: center; margin: 0 -8px -16px; }
+.tabs__card { width: calc(100% * 2 / 12); padding: 0 8px; margin-bottom: 16px; text-align: center; }
+.tabs__card a { display: block; min-height: 16px; transition: var(--transition); }
+.tabs__card img { display: inline; max-height: 200px; margin-bottom: 16px; transition: transform 0.3s; }
+.tabs__card p { transition: text-decoration 0.3s; }
+.tabs__card p, .tabs__card b { font-size: 20px; line-height: 22px; font-weight: 700; }
+.tabs__card b { display: inline; line-height: 22px; }
+.tabs__more { text-align: center; }
+.tabs__more .btn { margin-top: 32px; }
+
+/* ---------- card carousels (splide scroll: section ml 150, max-w calc(100% - 150px), slides mr 16) ---------- */
+.rail { position: relative; overflow: hidden auto; }
+.rail__splide { position: relative; margin-left: 150px; max-width: calc(100% - 150px); }
+.rail__arrows { visibility: hidden; transition: 0.1s ease-out; }
+.rail__arrow { position: absolute; top: 50%; right: 16px; z-index: 1; display: flex; justify-content: center; align-items: center; width: 42px; height: 42px;
+  background: var(--c-white); border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.29) 0px 3px 6px 0px; opacity: 0.5; visibility: hidden; transform: translateY(-21px); transition: 0.3s ease-out; }
+.rail__arrow svg { width: 12px; height: 12px; visibility: hidden; }
+.rail__track { position: relative; transition: 0.5s; }
+.rail__list { display: flex; transform: translateX(0px); }
+.rail__slide { position: relative; display: list-item; flex: 0 0 auto; margin-right: 16px; }
+
+/* legacy content cards */
+.ccard { position: relative; display: flex; align-items: flex-end; width: 400px; max-width: 400px; min-height: 600px; padding: 32px; overflow: hidden; border-radius: var(--radius-card); color: var(--c-white); }
+.ccard--navy { background: var(--c-navy); }
+.ccard__bg { position: absolute; inset: 0; background-size: cover; background-repeat: no-repeat; }
+.ccard__bg::after { content: ""; position: absolute; inset: 0; display: block; background-image: linear-gradient(to top, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 60%); }
+.ccard__body { position: relative; width: 100%; }
+.ccard__eyebrow { padding-bottom: 8px; }
+.ccard__eyebrow p { font-size: 16px; line-height: 24px; text-transform: uppercase; }
+.ccard__title { margin-bottom: 16px; }
+.ccard__cta { margin-top: 32px; }
+
+/* popular products */
+.gcard { position: relative; display: flex; align-items: flex-end; width: 383px; max-width: 400px; min-height: 600px; padding: 32px; overflow: hidden; border-radius: var(--radius-card); background: var(--c-mint); color: var(--c-black); }
+.gcard__bg { position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; }
+.gcard__body { position: relative; width: 100%; }
+.gcard__title { margin-bottom: 16px; }
+.gcard__cta { margin-top: 16px; font-size: 16px; line-height: 16px; }
+.pcard { display: flex; justify-content: center; align-items: center; width: 400px; max-width: 400px; min-height: 600px; padding: 0 32px; overflow: hidden; border-radius: var(--radius-card); background: var(--c-grey-1); }
+.pcard--empty { width: 64px; }
+.pcard__link { display: block; position: relative; }
+.pcard__row { display: flex; flex-wrap: wrap; }
+.pcard__col { width: 100%; }
+.pcard__badges { position: absolute; top: 15px; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; }
+.pcard__media { display: flex; flex-direction: column; align-items: center; margin-bottom: 16px; }
+.pcard__media img { width: 336px; height: 336px; }
+.pcard__name { margin-bottom: 16px; font-size: 28px; line-height: 30.8px; font-weight: 500; }
+.pcard__capacity { margin-bottom: 16px; font-size: 16px; line-height: 19.2px; }
+.pcard__price { margin-bottom: 0; font-size: 16px; line-height: 24px; }
+.pcard .muted { color: var(--c-grey-4); }
+.pcard .bold { font-weight: 700; }
+
+/* case studies */
+.rcard { display: flex; max-width: 400px; min-height: 275px; padding: 32px; overflow: hidden; border-radius: var(--radius-card); background: var(--c-white); }
+.rcard__body { position: relative; }
+.rcard__icon { display: inline; height: 48px; margin-bottom: 16px; }
+.rcard__eyebrow { margin-bottom: 8px; font-size: 16px; line-height: 24px; text-transform: uppercase; }
+.rcard__title { margin-bottom: 16px; }
+.rcard__cta { display: block; height: 24px; line-height: 24px; }
+
+/* ---------- business ---------- */
+.biz__lede { font-size: 18px; line-height: 27px; }
+.biz__row { display: flex; margin: 0 -8px; }
+.biz__col { width: 50%; padding: 0 8px; margin-bottom: 16px; }
+.biz__card { position: relative; height: 100%; }
+.biz__card img { display: block; width: 100%; height: 350px; object-fit: cover; overflow: hidden; border-radius: var(--radius-media); }
+.biz__text { padding: 24px; }
+.biz__text h3 { margin-bottom: 16px; }
+.biz__more { text-align: center; }
+.biz__more .btn { margin: 32px 16px 0 0; }
+
+/* ---------- about ---------- */
+.about__row { display: flex; justify-content: space-between; width: 100%; }
+.about__item { width: 222px; padding: 0 8px; margin-bottom: 24px; text-align: center; }
+.about__item a { display: block; min-height: 16px; transition: var(--transition); }
+.about__item img { display: inline; width: 100%; max-width: 250px; margin-bottom: 16px; border-radius: var(--radius-card); }
+.about__item p { font-size: 20px; line-height: 22px; font-weight: 500; }
+
+/* ---------- hidden compare tray / quick view modals (DOM parity, never shown at rest) ---------- */
+#ProductCompareTray { height: 0; }
+
+/* ===== 360 pass — page modules (lift index-360.json; mobile ramp: h1-hero 34/37.4 · h2-hero 32/35.2 · heading1 32/35.2 · heading4 24/26.4 · heading5 20/22 · heading6 18/19.8 · btn 14/14 p 8 16) ===== */
+@media (max-width: 767px) {
+  .h1-hero { font-size: 34px; line-height: 37.4px; }
+  .h2-hero { font-size: 32px; line-height: 35.2px; }
+  .heading1 { font-size: 32px; line-height: 35.2px; }
+  .heading4 { font-size: 24px; line-height: 26.4px; }
+  .heading5 { font-size: 20px; line-height: 22px; }
+  .heading6 { font-size: 18px; line-height: 19.8px; }
+  .btn { font-size: 14px; line-height: 14px; padding: 8px 16px; }
+  .btn--link, .btn--link-regular { font-size: 16px; line-height: 16px; padding: 0; }
+  .band--py16 { padding: 64px 0; }
+  .band__head { padding-bottom: 32px; }
+
+  /* hero: in-flow 225px image band + copy; slide heights equalised by the flex list */
+  .hero__section { display: block; min-height: 0; height: 100%; padding-bottom: 32px; }
+  .hero__bg { position: relative; height: 225px; min-height: 225px; }
+  .hero__row { padding: 24px 0; }
+  .hero__col { width: 100%; }
+  .hero__copy { max-width: 700px; padding-right: 0; }
+  .hero__cta { margin: 16px 8px 0 0; }
+  .hero__progress { top: auto; bottom: 0; height: 50px; padding: 0; }
+  .hero__bars { display: flex; justify-content: center; gap: 16px; max-width: none; padding: 24px 16px; overflow: hidden auto; }
+  .hero__item { width: 64px; flex: 0 0 64px; }
+  .hero__item + .hero__item::before { display: none; }
+  .hero__item-track { height: 2px; }
+  .hero__item-label { display: none; }
+
+  /* tabs */
+  .band--tabs { padding: 48px 0; }
+  .band--tabs .band__head { padding-bottom: 32px; }
+  .tabs__list { flex-wrap: wrap; }
+  .tabs__tab { margin: 0 16px; font-size: 16px; line-height: 18.4px; }
+  .tabs__panel { padding-bottom: 16px; }
+  .tabs__panel-inner { padding: 24px 0; }
+  .tabs__card { width: 50%; }
+  .tabs__card img { max-height: 200px; }
+  .tabs__card p, .tabs__card b { font-size: 18px; line-height: 19.8px; }
+  .tabs__more .btn { margin-top: 16px; }
+
+  /* rails: 80%-wide slides, 24px card padding */
+  .rail__splide { margin-left: 16px; max-width: none; }
+  .rail__slide { flex: 0 0 80%; width: 80%; }
+  .ccard, .gcard, .pcard, .rcard { width: 100%; max-width: 400px; }
+  .ccard, .gcard { min-height: 500px; padding: 24px; }
+  .ccard__cta { margin-top: 16px; }
+  .pcard { min-height: 500px; padding: 0 24px; }
+  .pcard--empty { width: 100%; }
+  .pcard__media img { width: 100%; height: auto; }
+  .pcard__name { font-size: 24px; line-height: 26.4px; }
+  .rcard { padding: 24px; }
+
+  /* business */
+  .biz__row { display: block; margin: 0; }
+  .biz__col { width: 100%; padding: 0; }
+  .biz__card img { height: auto; }
+  .biz__text { padding: 16px 24px; }
+  .biz__more .btn { margin: 16px 16px 0 0; }
+
+  /* about */
+  .about__row { flex-wrap: wrap; justify-content: center; }
+  .about__item { width: auto; }
+  .about__item img { max-width: 125px; }
+  .about__item p { font-size: 18px; line-height: 19.8px; }
+}
+
+/* ===== interaction states — OBSERVED ===== */
+/* tabs (state machine: aria-expanded toggles on role=tab; panels swap) */
+.tabs__panel[hidden] { display: none; }
+/* hero autoplay: list steps one slide per interval (observed translateX stepping); Splide default speed */
+.hero__list.is-moving { transition: transform 0.4s ease; }
