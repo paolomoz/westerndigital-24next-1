@@ -1,0 +1,7 @@
+.border-t-0 .accordion-text.border-t {
+    border: none;
+}
+#faq a {
+    text-decoration: underline;
+    color: #26F;
+}

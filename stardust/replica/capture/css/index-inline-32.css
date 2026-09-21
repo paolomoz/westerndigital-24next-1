@@ -1,0 +1,11 @@
+.section-hover {
+    overflow: visible;
+}
+.section-hover:hover p {
+    text-decoration: none;
+}
+.store-tabview > div:first-child {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

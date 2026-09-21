@@ -1,0 +1,412 @@
+/* --- Focus Indicator (WCAG Compliant) --- */
+/* Universal focus ring for all interactive elements */
+.rly-preference-center .rly-button:focus-visible,
+.rly-preference-center .rly-button-no-hover:focus-visible,
+.rly-preference-center a:focus-visible,
+.rly-preference-center .rly-title-field:focus-visible,
+.rly-preference-center .rly-description-field:focus-visible,
+.rly-preference-center .rly-gpc-message-field:focus-visible,
+.rly-preference-center .rly-purpose-title:focus-visible,
+.rly-preference-center .rly-purpose-description:focus-visible,
+.rly-preference-center div[contenteditable='true']:focus,
+.rly-preference-center .rly_logo:focus-visible,
+.rly-preference-center .rly-toggle-switch:focus-visible,
+.rly-preference-center .rly-technologies-toggle:focus-visible,
+.rly-preference-center .rly-technology-item:focus-visible,
+.rly-preference-center .rly-technology-label:focus-visible,
+.rly-preference-center .rly-technology-value:focus-visible,
+.rly-preference-center .rly-identifier-value:focus-visible {
+    outline: 3px solid var(--focus-indicator-color) !important;
+    outline-offset: 1px;
+}
+
+/* --- Preference center main container --- */
+.rly-preference-center {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 2rem);
+    z-index: 10000;
+    padding: 50px;
+    --slider-color-fg: black;
+    --slider-color-bg: white;
+    --purposes-scrollbar-color: unset;
+}
+
+/* --- Header wrapper --- */
+.rly-preference-center__header-wrapper {
+    flex-direction: column;
+    display: flex;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+}
+
+/* --- Header title --- */
+.rly-preference-center-header-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* --- Footer and actions --- */
+.rly-preference-center__footer {
+    display: flex;
+    width: 100%;
+    flex-shrink: 1;
+    background: inherit;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.rly-preference-center > div > svg {
+    filter: drop-shadow(0px 0px 4px var(--slider-color-fg));
+}
+
+.rly-preference-center__actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* --- Editable field focus styles --- */
+.rly-editable-field-container div[contenteditable='true']:focus,
+.rly-editable-field-container-button div[contenteditable='true']:focus {
+    outline: none !important;
+}
+
+/* --- Purposes container and scrolling --- */
+.rly-purposes-container {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--purposes-scrollbar-color);
+    scrollbar-gutter: stable;
+    padding-bottom: 8rem;
+    max-height: calc(100vh - 12rem);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Purpose border divider --- */
+.rly-purpose-border {
+    width: 100%;
+    height: 2px;
+    margin: 0.75rem 0px 0.75rem 0px;
+}
+
+/* --- Purpose card layout --- */
+.rly-purpose-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.rly-purpose-mobile-card{
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.rly-purpose-title-and-description-container {
+    flex-basis: 70%;
+    padding-top: 0.25rem;
+}
+
+.rly-purpose-mobile-title-and-description-container {
+    width: 100%;
+    padding-top: 0.25rem;
+}
+
+.rly-purpose-mobile-toggle-container {
+    flex-basis: 100%;
+    justify-content: right;
+    align-items: center;
+    padding-right: .25rem;
+    display: flex;
+}
+
+.rly-purpose-toggle-container {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.25rem;
+}
+
+/* --- Purpose text styling --- */
+.rly-purpose-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.rly-purpose-description {
+    font-size: 0.75rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+.rly-purpose-switch-notice-only {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* --- Technologies section (expandable under each processing activity) --- */
+.rly-technologies-section {
+    margin-top: 0.5rem;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.rly-technologies-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: inherit;
+    opacity: 0.9;
+}
+
+.rly-technologies-toggle:hover {
+    opacity: 1;
+}
+
+.rly-technologies-toggle-chevron {
+    font-size: 0.625rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.rly-technologies-toggle-chevron.expanded {
+    transform: rotate(180deg);
+}
+
+.rly-technologies-list {
+    margin-top: 0.75rem;
+    margin-left: 2rem;
+}
+
+.rly-technology-item {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+/* Device ID / User ID rows at the foot of the panel. Indented to match .rly-purpose-card so the
+   labels line up with the processing activity names rather than sitting proud of them. The
+   vertical rhythm comes from the divider's own margin, so the wrapper adds no padding of its own. */
+.rly-consent-identifiers {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+/* The rows sit inside the role='list' element rather than the wrapper, so the row-to-row
+   spacing has to live here -- the wrapper's gap only reaches its own direct children. */
+.rly-consent-identifiers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Same rule as the one between processing activities (.rly-purpose-border): 2px, full-strength
+   colour and 0.75rem spacing, not the lighter hairline used between technologies in a list. */
+.rly-consent-identifiers .rly-technology-divider {
+    height: 2px;
+    opacity: 1;
+    margin: 0.75rem 0;
+}
+
+/* The label reads as a name, like .rly-purpose-title above it; the value stays regular weight.
+   The label wraps instead of running under the value when a translation is long. `overflow` stays
+   visible so the builder's edit pencil, positioned at right: -20px, is not clipped by the label's
+   grid track. The container's own 20px bottom margin, which would push the label off the value it
+   shares this row with, is zeroed by `rly-editable-description-container` on the element itself --
+   the same class the title and purpose-name fields use for the same reason. */
+.rly-consent-identifiers .rly-technology-row {
+    grid-template-columns: 7rem 1fr;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    align-items: baseline;
+    overflow: visible;
+}
+
+.rly-consent-identifiers .rly-technology-label {
+    font-weight: 700;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.rly-technology-row {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+
+/* No opacity here: it composites the configured text color toward the background and drops the
+   contrast ratio below WCAG AA. The label inherits the configured text color as-is. */
+.rly-technology-label {
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.rly-technology-value {
+    font-weight: 400;
+    word-break: break-word;
+}
+
+.rly-technology-divider {
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.15;
+    margin: 0.25rem 0;
+}
+
+/* --- Toggle switch component --- */
+.rly-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+}
+
+.rly-toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* --- Slider styling --- */
+.rly-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--slider-color-bg);
+    border-radius: 17px;
+    border: 1px solid var(--slider-color-fg);
+}
+
+.rly-slider:before {
+    position: absolute;
+    content: '';
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 50%;
+    background-color: var(--slider-color-fg);
+    transform: translateY(50%);
+    border-radius: 50%;
+}
+
+/* --- Slider transitions --- */
+/* Apply transitions only AFTER the component has loaded */
+.rly-transitions-enabled .rly-slider,
+.rly-transitions-enabled .rly-slider:before {
+    transition: all 0.4s ease;
+}
+
+/* --- Slider states --- */
+input:checked + .rly-slider {
+    background-color: var(--slider-color-fg);
+}
+
+input:focus + .rly-slider {
+    box-shadow: 0 0 1px var(--slider-color-fg);
+}
+
+input:checked + .rly-slider:before {
+    transform: translate(13px, 50%);
+    background-color: var(--slider-color-bg);
+}
+
+/* --- Disabled toggle styling --- */
+input:disabled + .rly-slider {
+    background-color: rgba(211, 211, 211, 0.5);
+    border-color: #a9a9a9;
+    cursor: not-allowed;
+}
+
+input:disabled + .rly-slider:before {
+    background-color: #a9a9a9;
+}
+
+/* Force mobile stacking in the preview tool */
+.rly-preference-center-mobile-preview .rly-preference-center__actions {
+    gap: 0.1rem !important;
+    width: 100% !important;
+}
+
+
+.rly-preference-center-mobile-preview .rly-preference-center__footer .rly-editable-field-container-button,
+.rly-preference-center-mobile-preview .rly-preference-center__footer .rly-editable-field-container-button-no-hover {
+    width: 100% !important;
+    display: block !important;
+}
+  
+.rly-preference-center-mobile-preview .rly-preference-center__footer .rly-button,
+.rly-preference-center-mobile-preview .rly-preference-center__footer .rly-button-no-hover {
+    width: 100% !important;
+    justify-content: center !important;
+}
+
+/* ------------------ Media Queries ------------------ */
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+    .rly-preference-center__actions {
+        transform: scale(0.9);
+        transform-origin: bottom right;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .rly-preference-center__footer svg {
+        width: 5rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    .rly-purposes-container {
+        padding-bottom: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 767px) and (orientation: portrait),
+    screen and (min-width: 1024px) and (orientation: landscape),
+    screen and (min-width: 996px) {
+    .rly-preference-center {
+        max-width: 38rem;
+        width: 100%;
+        height: auto;
+        max-height: max(56vh, 38rem);
+    }
+    .rly-preference-center-mobile-preview {
+        height: 100% !important;
+        max-height: none !important;
+    }
+}

@@ -1,0 +1,117 @@
+#!/usr/bin/env node
+/**
+ * skills/deploy/scripts/served-check.mjs — the one way to read a served asset.
+ *
+ * Served CSS/JS/HTML on aem.page / aem.live is gzip-encoded. A bare
+ * `curl -s <url> | grep <marker>` scans compressed bytes and silently matches
+ * nothing — the field record is repeated false alarms ("the fix is not
+ * live"), needless Code Bus re-syncs and binary dumped into context. `fetch`
+ * decompresses; this helper prints the facts and the verdict on one line, and
+ * with `--wait` it IS the propagation waiter (replaces `sleep N; <gate>`).
+ *
+ *   node skills/deploy/scripts/served-check.mjs <url> [--grep <pattern> | --absent <pattern> | --same-as <file>] [--wait <s>] [--no-cache|--cache] [--token-env <NAME>]
+ *
+ *   --grep <pattern>   regex the decoded body must match (the verdict)
+ *   --absent <pattern> regex the decoded body must NOT match — the negative verdict
+ *                      (exit 0 only when the status is 2xx AND grep=0; a 404 or a
+ *                      network failure is never a pass)
+ *   --same-as <file>   the decoded served bytes must equal the local file — the
+ *                      "does the origin serve what I shipped" check for block CSS/JS
+ *                      before a gate; prints `sha=match|differ (served N B / local M B)`
+ *   --wait <s>         poll every 3 s up to <s> seconds until the verdict is a pass
+ *   --no-cache         send `Cache-Control: no-cache` (default on; `--cache` to allow)
+ *   --token-env NAME   env name of the SITE token for an access-restricted delivery host
+ *                      (`SITE_TOKEN_<SITE>`; resolved shell → ./.env → ~/.claude/.env → ~/.env, sent as
+ *                      `Authorization: token …` to THIS url's host only, never printed) — without it a
+ *                      locked site answers 401 `x-error: access-not-allowed` and the verdict is exit 1
+ *
+ * Output (one line per probe): status content-encoding raw→decoded bytes last-modified age via grep=<n>|sha=…
+ * Exit codes — the run-capped convention (no verdict is not a FAIL):
+ *   0   pass (pattern matched / absent / bytes equal / no pattern and 2xx)
+ *   1   served but WRONG — a verdict from the origin: 2xx without the pattern (or with
+ *       the --absent one, or bytes differ), any 4xx, or an `x-error` header
+ *   124 NO verdict — `--wait` expired, or (without --wait) a 5xx / network failure:
+ *       re-run, or check the Code Sync POST / installation (da-deploy-protocol.md step 0)
+ *   2   usage
+ * `last-modified` + `age` say whether a re-sync was needed. No dependencies (Node 18+ fetch).
+ * Polls the EDS origin only (aem.page / aem.live) — never the source site.
+ */
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { fetchDecoded, resolveToken } from './lib.mjs';
+
+const DEADLINE_EXIT = 124;
+const POLL_MS = Number(process.env.SERVED_CHECK_POLL_MS) || 3000; // fixture tests shorten the poll
+const args = process.argv.slice(2);
+if (!args.length || args.includes('--help') || args.includes('-h')) {
+  console.log('usage: node skills/deploy/scripts/served-check.mjs <url> [--grep <pattern> | --absent <pattern> | --same-as <file>] [--wait <seconds>] [--no-cache|--cache] [--token-env <NAME>]\n  exit 0 pass · 1 served but wrong (pattern / bytes / 4xx / x-error) · 124 no verdict (wait expired, 5xx, network) · 2 usage');
+  process.exit(args.length ? 0 : 2);
+}
+const opt = (n) => { const i = args.indexOf(n); if (i < 0) return null; const v = args[i + 1]; if (v === undefined || v.startsWith('--')) { console.error(`served-check: ${n} needs a value`); process.exit(2); } return v; }; // `--grep --wait 120` once made the regex literally "--wait"
+const url = args.find((a) => /^https?:\/\//.test(a));
+if (!url) { console.error('served-check: a URL is required'); process.exit(2); }
+const pattern = opt('--grep');
+const absent = opt('--absent');
+const sameAs = opt('--same-as');
+if ([pattern, absent, sameAs].filter(Boolean).length > 1) { console.error('served-check: use ONE of --grep, --absent, --same-as'); process.exit(2); }
+const waitS = Number(opt('--wait') || 0);
+const noCache = !args.includes('--cache');
+const tokenEnv = opt('--token-env');
+let siteAuth = null;
+if (tokenEnv) {
+  const tok = resolveToken(tokenEnv);
+  if (!tok) { console.error(`served-check: ${tokenEnv} not found (shell, ./.env, ~/.claude/.env, ~/.env) — the delivery host will be read anonymously`); }
+  else siteAuth = /^(token|bearer) /i.test(tok.value) ? tok.value : `token ${tok.value}`;
+}
+const re = pattern || absent ? new RegExp(pattern || absent) : null;
+const negative = Boolean(absent);
+let local = null;
+if (sameAs) {
+  try { local = readFileSync(sameAs); } catch (err) { console.error(`served-check: cannot read --same-as file ${sameAs}: ${err.message}`); process.exit(2); }
+}
+const sha = (buf) => createHash('sha256').update(buf).digest('hex').slice(0, 12);
+
+/** One probe → { verdict: 'pass' | 'wrong' | 'noverdict', line }. */
+async function probe() {
+  const headers = { ...(noCache ? { 'cache-control': 'no-cache', pragma: 'no-cache' } : {}), ...(siteAuth ? { authorization: siteAuth } : {}) };
+  const res = await fetchDecoded(url, { headers }); // lib.mjs: decoded body + cache facts, shared with code-sync-verify
+  if (res.status === 0) return { verdict: 'noverdict', line: `000 ${url} — ${res.error}` };
+  const { buf, rawLen, enc, lastModified: lm, age, via: served, xerr } = res;
+  const body = buf.toString('utf8');
+  const ok2xx = res.status >= 200 && res.status < 300;
+  let verdictField = '';
+  let matched = true;
+  if (re) {
+    const hits = (body.match(new RegExp(re.source, `${re.flags.replace('g', '')}g`)) || []).length;
+    verdictField = ` grep=${hits}`;
+    matched = negative ? hits === 0 : hits > 0;
+  } else if (local) {
+    const same = buf.equals(local);
+    verdictField = ` sha=${same ? 'match' : `differ (served ${buf.length} B / local ${local.length} B)`} ${sha(buf)}/${sha(local)}`;
+    matched = same;
+  }
+  const line = `${res.status} ${enc} ${rawLen}→${buf.length}B last-modified=${lm.replace(/ /g, '_')} age=${age} via=${served}${xerr ? ` x-error=${xerr}` : ''}${verdictField} ${url}`;
+  if (xerr) return { verdict: 'wrong', line };
+  if (ok2xx) return { verdict: matched ? 'pass' : 'wrong', line };
+  if (res.status >= 500) return { verdict: 'noverdict', line };
+  return { verdict: 'wrong', line }; // 3xx after redirects / 4xx — the origin answered, and not with the asset
+}
+
+const what = re ? (negative ? 'pattern still served' : 'pattern not served') : local ? 'served bytes differ from the local file' : 'asset not served 2xx';
+const deadline = Date.now() + waitS * 1000;
+for (;;) {
+  const r = await probe();
+  console.log(r.line);
+  if (r.verdict === 'pass') process.exit(0);
+  if (waitS && Date.now() < deadline) { await new Promise((r2) => setTimeout(r2, POLL_MS)); continue; }
+  if (waitS) {
+    console.error(`served-check: ${what} after ${waitS}s — no verdict (exit ${DEADLINE_EXIT}): re-run, or check the Code Sync POST / installation (da-deploy-protocol.md step 0)`);
+    process.exit(DEADLINE_EXIT);
+  }
+  if (r.verdict === 'noverdict') {
+    console.error(`served-check: no verdict (5xx / network) — exit ${DEADLINE_EXIT}; re-run or add --wait <s>`);
+    process.exit(DEADLINE_EXIT);
+  }
+  console.error(`served-check: ${what} (exit 1 — the origin answered; what it serves is wrong)`);
+  process.exit(1);
+}

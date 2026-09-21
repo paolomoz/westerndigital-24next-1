@@ -1,0 +1,3 @@
+.button:has(.mt-auto) {
+    margin-top: auto;
+}

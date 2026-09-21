@@ -1,0 +1,66 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [
+      "stardust/current/**",
+      "stardust/prototypes/**",
+      "stardust/canon/**"
+    ],
+    "ignoreValues": [
+      {
+        "rule": "design-system-color",
+        "value": "#ffffff",
+        "createdAt": "2026-09-21T07:53:45.284Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#000000",
+        "createdAt": "2026-09-21T07:53:45.295Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#929a9d",
+        "createdAt": "2026-09-21T07:53:45.304Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#2266ff",
+        "createdAt": "2026-09-21T07:53:45.313Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#737779",
+        "createdAt": "2026-09-21T07:53:45.323Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#6a6a6a",
+        "createdAt": "2026-09-21T07:53:45.333Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "48px",
+        "createdAt": "2026-09-21T07:53:45.342Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "28px",
+        "createdAt": "2026-09-21T07:53:45.351Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-09-21T07:53:45.360Z",
+        "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      }
+    ]
+  }
+}

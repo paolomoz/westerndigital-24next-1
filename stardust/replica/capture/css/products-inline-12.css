@@ -1,0 +1,29 @@
+
+		.webp .section-1441517319693.lazyloaded {
+			background-image: url(/content/dam/store/en-us/assets/products/category-banners/all-products-mobile.jpg.wdthumb.840.840.webp);
+		}
+
+		.no-webp .section-1441517319693.lazyloaded {
+			background-image: url(/content/dam/store/en-us/assets/products/category-banners/all-products-mobile.jpg.thumb.840.840.png);
+		}
+
+		@media (min-width: 768px) {
+			.webp .section-1441517319693.lazyloaded {
+				background-image: url(/content/dam/store/en-us/assets/products/category-banners/all-products.jpg.wdthumb.1280.1280.webp);
+			}
+
+			.no-webp .section-1441517319693.lazyloaded {
+				background-image: url(/content/dam/store/en-us/assets/products/category-banners/all-products.jpg.thumb.1280.1280.png);
+			}
+		}
+
+		@media (min-width: 992px) {
+			.webp .section-1441517319693.lazyloaded {
+				background-image: url(/content/dam/store/en-us/assets/products/category-banners/all-products.jpg.wdthumb.3000.3000.webp);
+			}
+
+			.no-webp .section-1441517319693.lazyloaded {
+				background-image: url(/content/dam/store/en-us/assets/products/category-banners/all-products.jpg.thumb.3000.3000.png);
+			}
+		}
+	

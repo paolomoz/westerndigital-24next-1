@@ -1,0 +1,242 @@
+/* --- Focus Indicator (WCAG Compliant) --- */
+/* Hide focus ring for banner autofocus */
+.rly-banner:focus-visible{
+    outline: none;
+}
+/* Universal focus ring for all interactive elements */
+.rly-banner .rly-button:focus-visible,
+.rly-banner .rly-button-no-hover:focus-visible,
+.rly-banner a:focus-visible,
+.rly-banner [role="button"]:focus-visible,
+.rly-banner .rly-title-field:focus-visible,
+.rly-banner .rly-description-field:focus-visible,
+.rly-banner div[contenteditable='true']:focus {
+    outline: 3px solid var(--focus-indicator-color) !important;
+    outline-offset: 1px;
+}
+
+.rly-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- Close button --- */
+.rly-button,
+.rly-button-no-hover {
+    transition: opacity 0.2s ease, box-shadow 0.15s ease; /* Subtle transitions */
+    min-height: 35px;
+    height: auto !important
+}
+
+/* In the interface builder (preview) */
+.rly-button:hover {
+    opacity: 0.9;
+    background: rgba(128, 128, 128, 0.15) !important;
+    color: white !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+}
+
+.rly-button:active,
+.rly-button-no-hover:active {
+    opacity: 0.8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on click */
+}
+
+/* In the agent */
+.rly-button-no-hover:hover {
+    opacity: 0.9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+}
+
+/* --- Banner external div --- */
+.rly-banner {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    --slider-color-fg: black;
+    --slider-color-bg: white;
+    align-items: center;
+    gap: 20px; /* Adds space between the content and actions */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+}
+
+.rly-banner-content {
+    flex: 1 1 500px; /* Allows content to grow and shrink, with a base width */
+}
+
+.rly-banner-actions {
+    flex: 1 1 200px; /* Allows button container to grow and shrink */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* --- Banner buttons bar  (PreferenceCenter, AcceptAll, RejectAll) --- */
+.rly-button-bar {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+/* --- Editable field container styles --- */
+.rly-editable-field-container,
+.rly-editable-field-container-button,
+.rly-editable-field-container-no-hover,
+.rly-editable-field-container-button-no-hover {
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    width: fit-content;
+    position: relative;
+    transition: background 0.2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+/* Remove margin-bottom for description container */
+.rly-editable-field-container.rly-editable-description-container,
+.rly-editable-field-container-no-hover.rly-editable-description-container {
+    margin-bottom: 0;
+}
+
+/* --- Edit Container/Button Hover --- */
+.rly-editable-field-container:hover .rly-edit-button,
+.rly-editable-field-container-button:hover .rly-edit-button {
+    opacity: 1 !important;
+}
+
+.rly-editable-field-container:hover {
+    background: rgba(128, 128, 128, 0.15) !important;
+}
+
+.rly-editable-field-container:hover .rly-button,
+.rly-editable-field-container-button:hover .rly-button,
+.rly-editable-field-container:active .rly-button,
+.rly-editable-field-container-button:active .rly-button {
+    opacity: 0.9;
+    background: rgba(128, 128, 128, 0.15) !important;
+    color: white !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/*  Edit Container/Button Focus Styles (preview) */
+.rly-editable-field-container:focus-within {
+    background: rgba(128, 128, 128, 0.15) !important;
+    border: 2px solid var(--focus-indicator-color) !important;
+    padding: 10px;
+}
+
+.rly-editable-field-container-button:focus-within {
+    background: #80808026 !important;
+    border: 2px solid var(--focus-indicator-color) !important;
+}
+
+.rly-editable-field-container:focus-within .rly-button,
+.rly-editable-field-container-button:focus-within .rly-button {
+    background: rgba(128, 128, 128, 0.3) !important;
+    color: white !important;
+}
+
+.rly-editable-field-container:focus-within .rly-edit-button,
+.rly-editable-field-container-button:focus-within .rly-edit-button {
+    opacity: 0 !important;
+}
+
+.rly-editable-field-container,
+.rly-editable-field-container-button div[contenteditable='true']:focus {
+    outline: none !important;
+}
+
+/* --- Design mode states --- */
+/*  In the interface builder (preview) */
+.rly-editable-field-container.design-editable {
+    background: rgba(107, 114, 128, 0.2);
+    cursor: text;
+}
+/*  In the banner */
+.rly-editable-field-container.design-non-editable {
+    background: transparent;
+    cursor: pointer;
+}
+
+/* --- Edit button (pencil icon) --- */
+.rly-edit-button {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    background: transparent !important;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rly-edit-button svg {
+    color: var(--slider-color-fg) !important;
+    fill: var(--slider-color-fg) !important;
+}
+
+/* --- Title field --- */
+.rly-title-field {
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+
+/* --- Description field --- */
+.rly-description-field {
+    font-size: 12px;
+    font-weight: 400;
+    outline: none;
+}
+
+
+/* Force mobile stacking in the preview tool */
+.rly-banner--mobile-preview .rly-button-bar {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.1rem;
+}
+
+.rly-banner--mobile-preview .rly-banner-actions .rly-editable-field-container-button,
+.rly-banner--mobile-preview .rly-banner-actions .rly-editable-field-container-button-no-hover {
+    width: 100% !important;
+    display: block !important;
+}
+  
+.rly-banner--mobile-preview .rly-banner-actions .rly-button,
+.rly-banner--mobile-preview .rly-banner-actions .rly-button-no-hover {
+    width: 100% !important;
+    justify-content: center !important;
+}
+
+/* --- Responsive Styles for Mobile --- */
+@media (max-width: 768px) {
+    .rly-banner {
+        gap: 3rem;
+    }
+
+    .rly-banner-actions{
+        width: 100%;
+    }
+
+    .rly-button-bar {
+        justify-content: flex-end;
+        flex-wrap: wrap; 
+    }
+}

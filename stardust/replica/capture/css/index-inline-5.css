@@ -1,0 +1,7 @@
+/* --- Focus Indicator (WCAG Compliant) --- */
+/* Universal focus ring for all interactive elements */
+.rly-editable-field-container-no-hover div[contenteditable='false']:focus-visible,
+.rly-editable-field-container-no-hover button:focus-visible {
+    outline: 3px solid var(--focus-indicator-color) !important;
+    outline-offset: 1px;
+}

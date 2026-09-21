@@ -1,0 +1,28 @@
+.wd-hero-progressBar .splide__slide > section {
+    height: 100%;
+}
+.wd-hero-progressBar .splide__slide > section > div {
+    height: 100%;
+}
+.wd-hero-progressBar .reference {
+   height: 100%;
+}
+.wd-hero-progressBar .reference>div {
+   height: 100%;
+}
+.wd-hero-progressBar .reference>div>div {
+   height: 100%;
+}
+.wd-hero-progressBar .reference>div>div>div {
+   height: 100%;
+}
+.wd-hero-progressBar .reference>div>div>div>div {
+   height: 100%;
+}
+
+.splide-progressbar {
+    pointer-events: none;
+}
+.wd-bars {
+    pointer-events: auto;
+}

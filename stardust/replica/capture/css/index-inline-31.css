@@ -1,0 +1,11 @@
+
+    .promo-carousel .splide__list{
+        height: auto;
+    }
+    .promo-carousel .splide__arrow {
+        background: none;
+    }
+    .promo-carousel .splide__arrow svg {				
+        height: 10px;
+        width: 10px;
+    }

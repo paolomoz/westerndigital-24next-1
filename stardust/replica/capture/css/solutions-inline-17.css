@@ -1,0 +1,23 @@
+#solutions-table thead {
+    background-color: white;
+}
+#solutions-table tbody tr:nth-child(odd) {
+    background: #F9F9F9;
+}
+#solutions-table tbody tr:nth-child(even) {
+    background: #fff;
+}
+#solutions-table th,
+#solutions-table td {
+    text-align: center;
+    border-top: 0;
+}
+#solutions-table td:first-child,
+#solutions-table th:first-child {
+    text-align: left;
+    padding-left: 2rem;;
+}
+.bg-tag-blue {
+   background: #EFF6FF;
+    color: #0E2966;
+}

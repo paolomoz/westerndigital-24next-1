@@ -1,0 +1,18 @@
+{
+  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-09-21T08:14:06Z", "againstInput": "https://www.westerndigital.com — exact replica, 4 pages", "readArtifacts": ["stardust/state.json", "stardust/current/pages/*.json", "stardust/replica/capture/lift/*.json"] },
+  "breakpointsConfigured": [1440, 360],
+  "captureState": { "consent": "accept", "technique": "headless", "capturedAt": "2026-09-21T07:52:00Z", "markers": "no experiment cookies observed; promo strip 'WD Named to 2026 S&P Dow Jones…' is authored-volatile" },
+  "chrome": { "variants": [
+    { "key": "757d9fb4", "name": "default", "pages": 4, "archetype": "index",
+      "fingerprint": { "header": ["header","relative","w-full"], "footer": ["wd-footer"], "navRows": 1, "stylesheets": ["www.westerndigital.com/libs/wcm/foundation/components/page/responsive.lc-{hash}-lc.min.css"] },
+      "merged": [ { "key": "4dea8548", "name": "variant-4dea", "pages": ["solutions","company"], "why": "differs only by third-party tags.srv.stackadapt.com/sa.css; header/footer class sets and nav rows identical (decisions.md chrome-variant)" } ],
+      "states": {}, "gates": {} }
+  ] },
+  "archetypes": [
+    { "pageType": "landing", "archetype": "index",     "chromeVariant": "default", "breakpoints": {} },
+    { "pageType": "listing", "archetype": "products",  "chromeVariant": "default", "breakpoints": {} },
+    { "pageType": "program", "archetype": "solutions", "chromeVariant": "default", "breakpoints": {} },
+    { "pageType": "static",  "archetype": "company",   "chromeVariant": "default", "breakpoints": {} }
+  ],
+  "modules": []
+}

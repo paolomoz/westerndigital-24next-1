@@ -1,0 +1,63 @@
+.divider-5-3-2>div::before {
+    content: "";
+    position: absolute;
+    height: 125px;
+    width: 4px;
+    background: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.divider-5-3-2>div:nth-child(1)::before {
+    left: 20%;
+}
+.divider-5-3-2>div:nth-child(2)::before {
+    left: 40%;
+}
+.divider-5-3-2>div:nth-child(3)::before {
+    left: 60%;
+}
+.divider-5-3-2>div:nth-child(4)::before {
+    left: 80%;
+}
+.divider-5-3-2>div:nth-child(5)::before {
+    display: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .divider-5-3-2>div:nth-child(1)::before {
+        left: 33.25%;
+        top: 25%;
+    }
+    .divider-5-3-2>div:nth-child(2)::before {
+        left: 66.5%;
+        top: 25%;
+    }
+    .divider-5-3-2>div:nth-child(3)::before {
+        display: none;
+    }
+    .divider-5-3-2>div:nth-child(4)::before {
+        left: 50%;
+        top: 75%;
+    }
+    .divider-5-3-2>div:nth-child(5)::before {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .divider-5-3-2>div:nth-child(1)::before {
+        left: 50%;
+        top: 17%;
+    }
+    .divider-5-3-2>div:nth-child(2)::before {
+        display: none;
+    }
+    .divider-5-3-2>div:nth-child(3)::before {
+        left: 50%;
+        top: 50%;
+    }
+    .divider-5-3-2>div:nth-child(4)::before {
+        display: none;
+    }
+    .divider-5-3-2>div:nth-child(5)::before {
+        display: none;
+    }
+}

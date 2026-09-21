@@ -1,0 +1,549 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics plan",
+  "writtenAt": "2026-09-21T08:10:37.512Z",
+  "input": "stardust/current/_dynamics.json",
+  "target": null,
+  "migrated": null
+ },
+ "rows": [
+  {
+   "id": "a-unknown-third-party-host-consent-app-relyance-ai",
+   "class": "A",
+   "feature": "unknown third-party host consent.app.relyance.ai",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "consent.app.relyance.ai"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-api-cdn-usw2-pure-cloud",
+   "class": "A",
+   "feature": "unknown third-party host api-cdn.usw2.pure.cloud",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "api-cdn.usw2.pure.cloud"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-api-usw2-pure-cloud",
+   "class": "A",
+   "feature": "unknown third-party host api.usw2.pure.cloud",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "api.usw2.pure.cloud"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-first-party-api-get-store-cart-getcart",
+   "class": "A",
+   "feature": "first-party API GET /store/cart/getCart",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "GET /store/cart/getCart?fields → 200"
+   ],
+   "pattern": "decided-out",
+   "disposition": "decided-out",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "register",
+   "decision": "none (session-bound off-origin)"
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "a-cms-app-settings-object-utag-data",
+   "class": "A",
+   "feature": "CMS / app settings object utag_data",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "analyticsTrackingID",
+    "sitePlatform",
+    "thumbnailURL"
+   ],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "a-first-party-api-get-graphql-execute-json-wd-clpcampaignend",
+   "class": "A",
+   "feature": "first-party API GET /graphql/execute.json/wd/clpcampaignendpoint;group1=all;group2=undefined;group3=undefined;group4=undefined;group5=undefined;group6=undefined;group7=undefined;group8=undefined;group9=undefined;group10=undefined;group11=undefined;brand1=all;channel=B2C;locale=/content/dam/store/cf/en-us",
+   "pages": 0,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 4
+   },
+   "evidence": [
+    "products"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-dam-store-en-us-assets-s",
+   "class": "D",
+   "feature": "first-party data file GET /content/dam/store/en-us/assets/sys/region-details/regiondetail.xlsx.exceltojson.json",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 4,
+    "of": 4
+   },
+   "evidence": [
+    "GET /content/dam/store/en-us/assets/sys/region-details/regiondetail.xlsx.exceltojson.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)"
+  },
+  {
+   "id": "d-first-party-data-file-get-bin-wd-cache-commerce-productref",
+   "class": "D",
+   "feature": "first-party data file GET /bin/wd/cache/commerce/productreference.en-us.json",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 4,
+    "of": 4
+   },
+   "evidence": [
+    "GET /bin/wd/cache/commerce/productreference.en-us.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-dam-g-tech-en-us-portal-",
+   "class": "D",
+   "feature": "first-party data file GET /content/dam/g-tech/en-us/portal-assets/data-excel/country.xlsx.exceltojson.json",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 4
+   },
+   "evidence": [
+    "GET /content/dam/g-tech/en-us/portal-assets/data-excel/country.xlsx.exceltojson.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)"
+  },
+  {
+   "id": "d-first-party-data-file-get-chatbot-locales-en-us-translatio",
+   "class": "D",
+   "feature": "first-party data file GET /chatbot/locales/en-us/translation.json",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 4,
+    "of": 4
+   },
+   "evidence": [
+    "GET /chatbot/locales/en-us/translation.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)"
+  },
+  {
+   "id": "d-first-party-data-file-get-bin-wd-cache-commerce-customprom",
+   "class": "D",
+   "feature": "first-party data file GET /bin/wd/cache/commerce/custompromotions.en-us.json",
+   "pages": 0,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 4
+   },
+   "evidence": [
+    "index",
+    "products"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)"
+  },
+  {
+   "id": "i18n-locale-variants-x-default-en",
+   "class": "I18N",
+   "feature": "locale variants x-default,en",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "https://www.westerndigital.com/en-us",
+    "https://www.facebook.com/WD"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees"
+  },
+  {
+   "id": "m-modal-trigger-wd-modal-btn-chrome-only-target-outside-dom-",
+   "class": "M",
+   "feature": "modal trigger wd-modal-btn (chrome only) → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 4
+   },
+   "evidence": [
+    "https://www.westerndigital.com/solutions#contact-form"
+   ],
+   "pattern": "chrome-interaction",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none (motion-observe evidence)"
+  },
+  {
+   "id": "m-tabs-expanders-role-tablist-aria-expanded-controls",
+   "class": "M",
+   "feature": "tabs / expanders (role=tablist, aria-expanded controls)",
+   "pages": 0,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 4
+   },
+   "evidence": [
+    "index"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "s-site-search-form-js-submitted",
+   "class": "S",
+   "feature": "site search form → (JS-submitted)",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 4,
+    "of": 4
+   },
+   "evidence": [
+    "text:q",
+    "select:fs_1_productCategoryContactUs,text:,text:firstName,text:lastName,text:phone,text:email,text:cusJobTitle,text:ext_regBusinessName,select:ext_prefIndustry,text:,select:ext_regNumOfEmp,text:"
+   ],
+   "pattern": "search-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "search",
+   "decision": "results page scope (second corpora stay out)"
+  },
+  {
+   "id": "s-first-party-api-get-wdwebservices-v2-us-products-search",
+   "class": "S",
+   "feature": "first-party API GET /wdwebservices/v2/us/products/search",
+   "pages": 0,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 4
+   },
+   "evidence": [
+    "products"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "datasource ownership / same-origin routing on production"
+  },
+  {
+   "id": "t-tag-manager-adobe-launch",
+   "class": "T",
+   "feature": "tag manager: Adobe Launch",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 4,
+    "of": 4
+   },
+   "evidence": [
+    "assets.adobedtm.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-rum-akamai-mpulse",
+   "class": "T",
+   "feature": "RUM: Akamai mPulse",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 4,
+    "of": 4
+   },
+   "evidence": [
+    "s.go-mpulse.net",
+    "c.go-mpulse.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 10,
+    "of": 4
+   },
+   "evidence": [
+    "connect.facebook.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-chat-live-chat-widget",
+   "class": "T",
+   "feature": "chat: live chat widget",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "apps.usw2.pure.cloud"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-rum-new-relic",
+   "class": "T",
+   "feature": "RUM: New Relic",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 4,
+    "of": 4
+   },
+   "evidence": [
+    "js-agent.newrelic.com",
+    "bam.nr-data.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "pages": 0,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 4
+   },
+   "evidence": [
+    "company",
+    "solutions"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "pages": 0,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 4
+   },
+   "evidence": [
+    "company",
+    "solutions"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-social-proof-reviews-widget",
+   "class": "T",
+   "feature": "social proof: reviews widget",
+   "pages": 0,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 4
+   },
+   "evidence": [
+    "index"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "v-video-youtube",
+   "class": "V",
+   "feature": "video: YouTube",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 4,
+    "of": 4
+   },
+   "evidence": [
+    "www.youtube.com"
+   ],
+   "pattern": "media-as-url",
+   "disposition": "embed-passthrough",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "media",
+   "decision": "none (player ids are public)"
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "https://www.westerndigital.com/products/accessories",
+    "https://www.westerndigital.com/business/account-benefits",
+    "https://www.westerndigital.com/store/business/registration?lp=register",
+    "https://www.westerndigital.com/business/account-benefits/tiered-pricing"
+   ],
+   "pattern": "decided-out",
+   "disposition": "decided-out",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "register",
+   "decision": "auth / commerce on the new host?"
+  },
+  {
+   "id": "x-commerce-signals-cart-true-prices-0",
+   "class": "X",
+   "feature": "commerce signals (cart: true, prices: 0)",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [],
+   "pattern": "decided-out",
+   "disposition": "decided-out",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "register",
+   "decision": "auth / commerce on the new host?"
+  }
+ ]
+}

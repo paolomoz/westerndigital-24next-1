@@ -1,0 +1,11 @@
+.wd-card-carousel .section.cq-Editable-dom,
+.wd-card-carousel .product-card.cq-Editable-dom {
+    display: inline-block;
+}
+.darken-bottom .section-bg::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black 20%, transparent 60%);
+    position: absolute;
+}

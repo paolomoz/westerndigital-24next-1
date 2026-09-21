@@ -1,0 +1,1183 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-21T07:52:18.127Z",
+    "script": "crawl.mjs",
+    "readArtifacts": []
+  },
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 4,
+    "concurrency": 2,
+    "storageState": true,
+    "liveBudget": {
+      "navPerMin": 10,
+      "minGapMs": 3000,
+      "source": "default",
+      "waitedMs": 4826
+    },
+    "source": "--pages",
+    "subtree": null,
+    "kept": [
+      "https://www.westerndigital.com/",
+      "https://www.westerndigital.com/products",
+      "https://www.westerndigital.com/solutions",
+      "https://www.westerndigital.com/company"
+    ],
+    "urls": [
+      {
+        "url": "https://www.westerndigital.com/",
+        "source": "--pages"
+      },
+      {
+        "url": "https://www.westerndigital.com/products",
+        "source": "--pages"
+      },
+      {
+        "url": "https://www.westerndigital.com/solutions",
+        "source": "--pages"
+      },
+      {
+        "url": "https://www.westerndigital.com/company",
+        "source": "--pages"
+      }
+    ],
+    "cut": []
+  },
+  "consent": {
+    "method": "dismissed:[aria-label*=\"Accept\" i]"
+  },
+  "favicon": {
+    "url": "https://www.westerndigital.com/content/dam/store/en-us/portal-assets/logos/wd-icon.ico",
+    "file": "assets/favicon.ico",
+    "set": {
+      "file": "assets/favicon-set.json",
+      "icons": 1,
+      "largestRaster": "assets/favicon.ico",
+      "vector": null
+    }
+  },
+  "crawl": {
+    "startedAt": "2026-09-21T07:51:10.351Z",
+    "finishedAt": "2026-09-21T07:52:18.127Z",
+    "successes": 4,
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 4,
+    "pagesWithSameSiteData": 4,
+    "pagesWithSearchForm": 4,
+    "pagesHydrated": 4,
+    "truncatedPages": 0,
+    "pagesWithTabs": 1,
+    "pagesWithPlayers": 0,
+    "pagesWithLooseControls": 0,
+    "pagesWithChat": 0,
+    "pagesWithFederated": 0,
+    "pagesWithQuiz": 0,
+    "searchShellPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/content/dam/store/en-us/assets/sys/region-details/regiondetail.xlsx.exceltojson.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/content/dam/store/en-us/assets/sys/region-details/regiondetail.xlsx.exceltojson.json",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/store/favorites/getUser",
+        "query": [
+          "fields"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/store/favorites/getUser",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/bin/wd/cache/commerce/productreference.en-us.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/bin/wd/cache/commerce/productreference.en-us.json",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.app.relyance.ai",
+        "path": "/api/location",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://consent.app.relyance.ai/api/location",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "c.go-mpulse.net",
+        "path": "/api/config.json",
+        "query": [
+          "acao",
+          "ak.ai",
+          "d",
+          "key",
+          "plugins",
+          "si",
+          "sl",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://c.go-mpulse.net/api/config.json",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/chatbot/locales/en-us/translation.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/chatbot/locales/en-us/translation.json",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/store/cart/getCart",
+        "query": [
+          "fields"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/store/cart/getCart",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "api-cdn.usw2.pure.cloud",
+        "path": "/webdeployments/v1/deployments/{uuid}/domains.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://api-cdn.usw2.pure.cloud/webdeployments/v1/deployments/234ef048-ac0d-4aa4-977c-3c114c0fb0e9/domains.json",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.app.relyance.ai",
+        "path": "/api/config/v1/app-{uuid}/behaviors",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://consent.app.relyance.ai/api/config/v1/app-4941bdf7-aac7-545f-8e65-dd508c90585f/behaviors",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "api-cdn.usw2.pure.cloud",
+        "path": "/webdeployments/v1/deployments/{uuid}/config.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://api-cdn.usw2.pure.cloud/webdeployments/v1/deployments/234ef048-ac0d-4aa4-977c-3c114c0fb0e9/config.json",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.app.relyance.ai",
+        "path": "/api/config/v1/app-{uuid}/banner",
+        "query": [
+          "regionName"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://consent.app.relyance.ai/api/config/v1/app-4941bdf7-aac7-545f-8e65-dd508c90585f/banner",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.app.relyance.ai",
+        "path": "/api/config/v1/app-{uuid}/locale",
+        "query": [
+          "localeName",
+          "regionName"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://consent.app.relyance.ai/api/config/v1/app-4941bdf7-aac7-545f-8e65-dd508c90585f/locale",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.app.relyance.ai",
+        "path": "/api/config/v1/app-{uuid}/request-url-by-purpose",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://consent.app.relyance.ai/api/config/v1/app-4941bdf7-aac7-545f-8e65-dd508c90585f/request-url-by-purpose",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.app.relyance.ai",
+        "path": "/api/config/v1/app-{uuid}/tracking-technologies-localised",
+        "query": [
+          "localeName",
+          "regionName"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://consent.app.relyance.ai/api/config/v1/app-4941bdf7-aac7-545f-8e65-dd508c90585f/tracking-technologies-localised",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "consent.app.relyance.ai",
+        "path": "/api/config/v1/app-{uuid}/processing-activities",
+        "query": [
+          "localeName"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://consent.app.relyance.ai/api/config/v1/app-4941bdf7-aac7-545f-8e65-dd508c90585f/processing-activities",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "bam.nr-data.net",
+        "path": "/{n}/NRJS-09ace4b72d173c8eb24",
+        "query": [
+          "a",
+          "af",
+          "be",
+          "ck",
+          "dc",
+          "fe",
+          "perf",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://bam.nr-data.net/1/NRJS-09ace4b72d173c8eb24",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "bam.nr-data.net",
+        "path": "/events/{n}/NRJS-09ace4b72d173c8eb24",
+        "query": [
+          "a",
+          "ck",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://bam.nr-data.net/events/1/NRJS-09ace4b72d173c8eb24",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "bam.nr-data.net",
+        "path": "/jserrors/{n}/NRJS-09ace4b72d173c8eb24",
+        "query": [
+          "a",
+          "ck",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://bam.nr-data.net/jserrors/1/NRJS-09ace4b72d173c8eb24",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "apps.usw2.pure.cloud",
+        "path": "/messenger/i18n/en-us.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://apps.usw2.pure.cloud/messenger/i18n/en-us.json",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "api-cdn.usw2.pure.cloud",
+        "path": "/webdeployments/v1/deployments/{uuid}/en-us.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://api-cdn.usw2.pure.cloud/webdeployments/v1/deployments/234ef048-ac0d-4aa4-977c-3c114c0fb0e9/en-us.json",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "api.usw2.pure.cloud",
+        "path": "/api/v2/journey/deployments/{uuid}/customers/{uuid}/ping",
+        "query": [
+          "dl",
+          "dt",
+          "sessionId",
+          "t"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://api.usw2.pure.cloud/api/v2/journey/deployments/234ef048-ac0d-4aa4-977c-3c114c0fb0e9/customers/7b09216c-4c47-4b1f-80f6-59fd1b03f5ba/ping",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/bin/wd/cache/commerce/custompromotions.en-us.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/bin/wd/cache/commerce/custompromotions.en-us.json",
+        "pages": 2,
+        "examples": [
+          "products",
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/store/cart/guest/products/priceAndInventory",
+        "query": [
+          "fields",
+          "productsQuery"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/store/cart/guest/products/priceAndInventory",
+        "pages": 2,
+        "examples": [
+          "products",
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "consent.app.relyance.ai",
+        "path": "/api/user-consent/v1/consent",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://consent.app.relyance.ai/api/user-consent/v1/consent",
+        "pages": 2,
+        "examples": [
+          "products",
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "dpm.demdex.net",
+        "path": "/id",
+        "query": [
+          "d_fieldgroup",
+          "d_nsid",
+          "d_orgid",
+          "d_rtbd",
+          "d_ver",
+          "d_visid_ver",
+          "ts"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://dpm.demdex.net/id",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "westerndigital.tt.omtrdc.net",
+        "path": "/rest/v1/delivery",
+        "query": [
+          "client",
+          "sessionId",
+          "version"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://westerndigital.tt.omtrdc.net/rest/v1/delivery",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "pixel-config.reddit.com",
+        "path": "/pixels/t2_148cxi7e/config",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://pixel-config.reddit.com/pixels/t2_148cxi7e/config",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "alb.reddit.com",
+        "path": "/rp",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://alb.reddit.com/rp",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/ccm/collect",
+        "query": [
+          "apvc",
+          "auid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "ep.ecomm_pagetype",
+          "fmt",
+          "frm",
+          "gcd",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft",
+          "tid",
+          "tids"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://www.google.com/ccm/collect",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/rmkt/collect/{n}/",
+        "query": [
+          "async",
+          "auid",
+          "bg",
+          "cv",
+          "data",
+          "dma",
+          "en",
+          "ept",
+          "fmt",
+          "frm",
+          "fst",
+          "gcd",
+          "gcp",
+          "gtm",
+          "guid",
+          "hn",
+          "npa",
+          "pscdl",
+          "random",
+          "rcb",
+          "tag_exp",
+          "tiba",
+          "u_h",
+          "u_w",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "url"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://www.google.com/rmkt/collect/701617496/",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/ccm/s/collect",
+        "query": [
+          "auid",
+          "fmt",
+          "gtm"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/ccm/s/collect",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "tags.srv.stackadapt.com",
+        "path": "/sa.jpeg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "sameSite": false,
+        "example": "https://tags.srv.stackadapt.com/sa.jpeg",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "paapi8935.d41.co",
+        "path": "/api",
+        "query": [
+          "form",
+          "req"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://paapi8935.d41.co/api",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "tags.srv.stackadapt.com",
+        "path": "/saq_pxl",
+        "query": [
+          "host",
+          "is_js",
+          "l_src",
+          "l_src_d",
+          "landing_url",
+          "sa-user-id",
+          "sa-user-id-v2",
+          "sa-user-id-v3",
+          "sa_conv_data_css_value",
+          "sa_conv_data_image_value",
+          "shop",
+          "t",
+          "tip",
+          "u_src",
+          "u_src_d",
+          "uid"
+        ],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://tags.srv.stackadapt.com/saq_pxl",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "insight.adsrvr.org",
+        "path": "/track/realtimeconversion",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://insight.adsrvr.org/track/realtimeconversion",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/graphql/execute.json/wd/clpcampaignendpoint;group1=all;group2=undefined;group3=undefined;group4=undefined;group5=undefined;group6=undefined;group7=undefined;group8=undefined;group9=undefined;group10=undefined;group11=undefined;brand1=all;channel=B2C;locale=/content/dam/store/cf/en-us",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/graphql/execute.json/wd/clpcampaignendpoint;group1=all;group2=undefined;group3=undefined;group4=undefined;group5=undefined;group6=undefined;group7=undefined;group8=undefined;group9=undefined;group10=undefined;group11=undefined;brand1=all;channel=B2C;locale=/content/dam/store/cf/en-us",
+        "pages": 1,
+        "examples": [
+          "products"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "api.westerndigital.com",
+        "path": "/wdwebservices/v2/us/products/search",
+        "query": [
+          "currentPage",
+          "customQuery",
+          "fields",
+          "pageSize",
+          "query",
+          "sort"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://api.westerndigital.com/wdwebservices/v2/us/products/search",
+        "pages": 1,
+        "examples": [
+          "products"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/ccm/form-data/{n}",
+        "query": [
+          "auid",
+          "dma",
+          "ec_mode",
+          "em",
+          "emd",
+          "fmt",
+          "frm",
+          "gcd",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "tag_exp",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://www.google.com/ccm/form-data/701617496",
+        "pages": 1,
+        "examples": [
+          "solutions"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.westerndigital.com",
+        "path": "/content/dam/g-tech/en-us/portal-assets/data-excel/country.xlsx.exceltojson.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.westerndigital.com/content/dam/g-tech/en-us/portal-assets/data-excel/country.xlsx.exceltojson.json",
+        "pages": 1,
+        "examples": [
+          "solutions"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "apps.usw2.pure.cloud",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "host": "assets.adobedtm.com",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "host": "s.go-mpulse.net",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "host": "connect.facebook.net",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "host": "www.youtube.com",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "host": "consent.app.relyance.ai",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "host": "js-agent.newrelic.com",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      },
+      {
+        "host": "bat.bing.com",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "js.adsrvr.org",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "www.redditstatic.com",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "static.ads-twitter.com",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "googleads.g.doubleclick.net",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "tags.srv.stackadapt.com",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "westerndigital.sc.omtrdc.net",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "paapi8935.d41.co",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "cdn-0.d41.co",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "sc-static.net",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "analytics.xscreenattribution.com",
+        "pages": 2,
+        "examples": [
+          "solutions",
+          "company"
+        ]
+      },
+      {
+        "host": "apps.bazaarvoice.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "frameworkHints": [
+      {
+        "hint": "aem-sites",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      }
+    ],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 4,
+        "examples": [
+          "products",
+          "index",
+          "solutions"
+        ]
+      }
+    ],
+    "formTargets": [
+      {
+        "action": "https://www.westerndigital.com/products",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "q"
+        ],
+        "pages": 1,
+        "examples": [
+          "products"
+        ]
+      },
+      {
+        "action": "https://www.westerndigital.com/",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "q"
+        ],
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "action": "https://www.westerndigital.com/solutions",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "q"
+        ],
+        "pages": 1,
+        "examples": [
+          "solutions"
+        ]
+      },
+      {
+        "action": "https://www.westerndigital.com/company",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "q"
+        ],
+        "pages": 1,
+        "examples": [
+          "company"
+        ]
+      }
+    ]
+  },
+  "runs": [
+    {
+      "at": "2026-09-21T07:51:10.351Z",
+      "args": {
+        "url": "https://www.westerndigital.com",
+        "pages": [
+          "/",
+          "/products",
+          "/solutions",
+          "/company"
+        ],
+        "cap": 5,
+        "wait": "medium",
+        "concurrency": 2,
+        "dynamics": true,
+        "refresh": [],
+        "force": false,
+        "headed": null,
+        "solveWait": null,
+        "depth": 1,
+        "cookie": [],
+        "mobile": "all",
+        "dpr": 1,
+        "assets": "full",
+        "storageState": "clone",
+        "saveState": false,
+        "prep": false
+      },
+      "technique": "headless",
+      "discovered": 4,
+      "skipped": 0,
+      "captured": 4,
+      "failed": [],
+      "assets": {
+        "mode": "full",
+        "saved": 80,
+        "failed": 0,
+        "bytes": 5103247,
+        "extraFetches": 174,
+        "fonts": 4,
+        "iconFonts": 0,
+        "transformSuspect": 2
+      }
+    }
+  ],
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "ok",
+      "notes": "contact sheet stardust/.work/extract/sheets/sheet-01.png tile 1: promo strip + WD nav, dark 'Built for Scale' hero with 4 sub-links, 'WD Hard Drive Storage Solutions…' h2 with category tabs, 4-column footer; consent dismissed; footer Ethisphere badge rendered as alt text (brokenImages 1 → capture-state)"
+    },
+    {
+      "slug": "products",
+      "verdict": "ok",
+      "notes": "tile 2: 'All Products' dark hero, breadcrumb, filter sidebar + product grid (89 items, PLP), footer with Ethisphere badge rendered; hydrated commerce grid captured as settled"
+    },
+    {
+      "slug": "solutions",
+      "verdict": "ok",
+      "notes": "tile 3: light hero with product-family image, breadcrumb, 4 anchor chips, 'How to Choose…' section with cards; footer Ethisphere badge alt text (brokenImages 1 → capture-state)"
+    },
+    {
+      "slug": "company",
+      "verdict": "ok",
+      "notes": "tile 4: dark 'Powering Data, Driving Potential' hero, 'Our Vision and Mission' prose, 'Our Values' blue band with icons; footer Ethisphere badge rendered"
+    }
+  ]
+}

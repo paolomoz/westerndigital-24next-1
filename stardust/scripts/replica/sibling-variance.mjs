@@ -1,0 +1,334 @@
+#!/usr/bin/env node
+/**
+ * skills/replica/scripts/sibling-variance.mjs
+ *
+ * Live-variance probe for sibling fan-out: BEFORE cloning a gated archetype
+ * onto its "same-template" siblings, measure the template-defining computed
+ * values on each sibling's LIVE page and diff them against the archetype's.
+ * Vendor templates are not constant: eight siblings of one gated archetype
+ * varied in ways the crawl JSON never showed — a compact hero (441 vs 528px,
+ * wider card, smaller logo), an INVERTED hero scrim (0.6→0.1 vs 0.1→0.5), list
+ * bullets split into two visual families (arrow-image `::before` vs plain
+ * disc), terms sections in three shapes. Each delta found here is first-class
+ * work to budget — a block VARIANT class emitted by the sibling generator —
+ * not an edge case discovered at the pixel gate. The probe is read-only
+ * evidence; it changes nothing in the clone.
+ * Content is not variance: image and background url() FILENAMES are ignored
+ * (a sibling's own photo is the source's choice — replicate it); only the
+ * layer stack, geometry and computed styles are compared.
+ *
+ * Usage:
+ *   node skills/replica/scripts/sibling-variance.mjs <archetypeURL> <siblingURL> [<siblingURL>…] [options]
+ *     --probe <name>=<sel>   template-defining element to compare (repeatable). For
+ *                            each: match count, first match's rect + the computed
+ *                            group (background layers, colour, padding, font
+ *                            size/weight/line-height, radius), its first heading,
+ *                            its first image, list-style + `::before` mechanism,
+ *                            and — when the selector matches several elements —
+ *                            the number of distinct style clusters among them.
+ *                            Default when none given: hero = first section of
+ *                            --main; card = the most repeated element class in
+ *                            the page; li = "main li".
+ *     --main <sel>           content root (default main) — also probes the
+ *                            section list ([label, height] per top-level section)
+ *     --width <px>           viewport width                    (default 1440)
+ *     --tolerance <px>       ignore numeric deltas ≤ this      (default 2)
+ *     --consent <sel>        extra consent-accept selector
+ *     --dismiss <sel,…>      extra overlay-dismiss selectors
+ *     --block <substr,...> abort every request whose URL contains one of the
+ *                         substrings (undismissable iframe/shadow widgets); the
+ *                         main-frame navigation and the page's own origin are
+ *                         never blocked. Run the SAME value on both sides —
+ *                         stitch-shot's sidecar records `blocked` and
+ *                         pixel-compare refuses an asymmetric pair (this probe writes no sidecar)
+ *     --consent-mode <m>  accept | deny (default accept; deny clicks reject-all, never accept — live-session)
+ *     --headed[=window]       bot-management ladder start: tier 2 (real Chrome headless); =window tier 3 (off-screen window). Default: the tier extract recorded
+ *     --storage-state <file> | --fresh-state | --solve-wait <ms>  admitted-session reuse / clean start / interactive solve (live-session.mjs § Admitted-session reuse; --solve-wait implies a visible tier-3 window)
+ *     --locale <tag>         pin Accept-Language + locale
+ *     --json                 machine-readable output
+ *     --from-clusters <json> URL list from layout-cluster.mjs's
+ *                            stardust/current/layout-clusters.json: archetype =
+ *                            the archetype cluster's exemplar, siblings = every
+ *                            other cluster's exemplar (≥ T; --type <t> scopes
+ *                            one page type; URLs from the sibling state.json).
+ *                            Positional URLs, when given, replace the derived
+ *                            list. Probes and exit codes are unchanged — this
+ *                            only narrows WHICH pages are probed
+ *     --brief                after the report, print one paste-ready markdown
+ *                            block per sibling for its fan-out brief: the
+ *                            archetype's and THIS page's section sequences
+ *                            (the generator walks the sibling's OWN sequence —
+ *                            the archetype supplies block shapes, never the
+ *                            order) and every delta to budget as a variant
+ *
+ * Exit codes: 0 every sibling matches the archetype within tolerance, 2 variance
+ * found (budget it), 1 error, 3 bot challenge (fail loud — never measured).
+ * Every URL is one live navigation: probe a template's siblings in ONE run and
+ * keep the JSON as the fan-out brief's evidence.
+ */
+
+/* eslint-disable import/no-extraneous-dependencies, import/extensions, no-await-in-loop, no-restricted-syntax, brace-style, object-curly-newline, max-len, no-plusplus, no-continue */
+// Dependencies through the resolution chain (skills/stardust/scripts/lib/resolve.mjs — runtime-preflight.md
+// § Resolution chain): plugin layout, then a project copy made as a set (harness-permissions.md § Two classes);
+// a lone copy without the helper falls back to the bare import it resolved before. A miss at every link is one
+// line naming preflight-runtime.mjs, exit 2 (no verdict — the same class as 124).
+const CHAIN = await (async () => { for (const c of ['../../stardust/scripts/lib/resolve.mjs', '../stardust/lib/resolve.mjs']) { try { return await import(new URL(c, import.meta.url)); } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e; } } return null; })();
+const loadDep = (name) => (CHAIN ? CHAIN.resolveDep(name, { from: import.meta.url }) : import(name).then((m) => ('module.exports' in m ? m['module.exports'] : (m.default && Object.keys(m).every((k) => k === 'default' || k === '__esModule' || k in m.default) ? m.default : m))));
+const preflightExit = (e) => { console.error(e.message); process.exit(2); };
+const { chromium } = await loadDep('playwright').catch(preflightExit);
+import { existsSync, realpathSync } from 'fs';
+import { dirname, resolve as resolvePath } from 'path';
+import { urlsFromClusters } from './layout-cluster.mjs';
+import { fileURLToPath, pathToFileURL } from 'url';
+
+const HERE = dirname(fileURLToPath(import.meta.url));
+const LIVE_SESSION = ['../../diff/scripts/live-session.mjs', '../diff/live-session.mjs']
+  .map((p) => resolvePath(HERE, p)).find((p) => existsSync(p));
+if (!LIVE_SESSION) {
+  console.error('sibling-variance error: live-session.mjs not found (looked in ../../diff/scripts/ and ../diff/). Copy the diff skill\'s scripts dir alongside this one (replica SKILL.md § Setup).');
+  process.exit(1);
+}
+const { isLiveHttpUrl, launchTier, parseHeadedFlag, resolveStartTier, newLiveContext, gotoLive, sessionContextOptions, parseSolveWaitFlag, dismissOverlays, reportOverlayResidue, defaultWaitUntil } = await import(pathToFileURL(LIVE_SESSION).href);
+
+const HELP = `sibling-variance — diff template-defining computed values of live siblings against the archetype
+
+Usage: node sibling-variance.mjs <archetypeURL> <siblingURL> [<siblingURL>…] [options]
+  --probe <name>=<sel>  template-defining element (repeatable; defaults: hero, card, li)
+  --main <sel>          content root (default main)
+  --width <px>          viewport width (default 1440)
+  --tolerance <px>      ignore numeric deltas ≤ this (default 2)
+  --consent <sel>       extra consent-accept selector
+  --dismiss <sel,…>     extra overlay-dismiss selectors
+  --block <substr,…> abort requests whose URL contains a substring (3rd-party widgets with no close control; never the page's own origin) — SAME value on both sides
+  --consent-mode <m>    accept | deny (default accept; deny clicks reject-all, never accept)
+  --headed[=window]      bot-management ladder start: tier 2 (real Chrome headless); =window tier 3 (off-screen window). Default: the tier extract recorded
+  --storage-state <file> | --fresh-state | --solve-wait <ms>  admitted-session reuse / clean start / interactive solve (live-session.mjs; --solve-wait implies a visible tier-3 window)
+  --locale <tag>        pin Accept-Language + locale
+  --json                machine-readable output
+  --from-clusters <json>  archetype + sibling URLs = cluster exemplars from layout-clusters.json (--type <t> scopes)
+  --brief               print a paste-ready brief block per sibling (section sequences + deltas)
+  --help                this text
+
+Exit codes: 0 no variance, 2 variance found, 1 error, 3 bot challenge.`;
+
+function parseArgs(argv) {
+  const rest = argv.slice(2);
+  if (rest.includes('--help') || rest.includes('-h')) { console.log(HELP); process.exit(0); }
+  const pos = [];
+  const opts = { probes: [], main: 'main', block: [], width: 1440, tolerance: 2, consent: null, dismiss: [], consentMode: 'accept', headed: false, locale: null, json: false, brief: false, fromClusters: null, type: null };
+  // a value flag never swallows the next flag (`--type --json` → "--type needs a value", exit 1)
+  const need = (flag, i) => { if (rest[i] === undefined || rest[i].startsWith('--')) { console.error(`${flag} needs a value\n\n${HELP}`); process.exit(1); } return rest[i]; };
+  for (let i = 0; i < rest.length; i += 1) {
+    const a = rest[i];
+    if (a === '--probe') {
+      const spec = need(a, ++i);
+      const m = spec.match(/^([\w-]+)=(.+)$/);
+      if (!m) { console.error(`bad --probe "${spec}" — expected name=<selector>\n\n${HELP}`); process.exit(1); }
+      opts.probes.push({ name: m[1], sel: m[2].trim() });
+    }
+    else if (a === '--main') { opts.main = need(a, ++i); }
+    else if (a === '--width') { opts.width = Number(need(a, ++i)); }
+    else if (a === '--tolerance') { opts.tolerance = Number(need(a, ++i)); }
+    else if (a === '--consent') { opts.consent = need(a, ++i); }
+    else if (a === '--dismiss') { opts.dismiss = need(a, ++i).split(',').map((s) => s.trim()).filter(Boolean); }
+    else if (a === '--block') { opts.block = need(a, ++i).split(',').map((s) => s.trim()).filter(Boolean); }
+    else if (a === '--consent-mode') { opts.consentMode = need(a, ++i); if (!['accept', 'deny'].includes(opts.consentMode)) { console.error(`--consent-mode must be accept or deny\n\n${HELP}`); process.exit(1); } }
+    else if (a === '--headed' || a.startsWith('--headed=')) { opts.headed = parseHeadedFlag(a); }
+    else if (a === '--storage-state') { opts.storageState = need(a, ++i); }
+    else if (a === '--fresh-state') { opts.freshState = true; }
+    else if (a === '--solve-wait') { opts.solveWaitMs = parseSolveWaitFlag(need(a, ++i)); opts.headed = 3; }
+    else if (a === '--locale') { opts.locale = need(a, ++i); }
+    else if (a === '--json') { opts.json = true; }
+    else if (a === '--brief') { opts.brief = true; }
+    else if (a === '--from-clusters') { opts.fromClusters = need(a, ++i); }
+    else if (a === '--type') { opts.type = need(a, ++i); }
+    else if (a.startsWith('--')) { console.error(`unknown flag ${a}\n\n${HELP}`); process.exit(1); }
+    else pos.push(a);
+  }
+  if (opts.fromClusters && pos.length < 2) {
+    const derived = urlsFromClusters(opts.fromClusters, opts.type);
+    if (!derived) { console.error(`--from-clusters: no probe pair in ${opts.fromClusters}${opts.type ? ` for type ${opts.type}` : ''} (needs a gated archetype cluster and at least one other cluster ≥ T with URLs in state.json)\n\n${HELP}`); process.exit(1); }
+    console.error(`sibling-variance: --from-clusters ${derived.type}: archetype ${derived.archetypeSlug} (${derived.archetypeCluster}) vs ${derived.siblings.length} cluster exemplar(s): ${derived.siblingSlugs.join(', ')}`);
+    return { archetype: derived.archetype, siblings: derived.siblings, opts };
+  }
+  if (pos.length < 2) { console.error(`need <archetypeURL> and at least one <siblingURL>\n\n${HELP}`); process.exit(1); }
+  return { archetype: pos[0], siblings: pos.slice(1), opts };
+}
+
+// ---------------------------------------------------------------- in-page probe
+
+/* eslint-disable no-undef */
+function probePage({ probes, main }) {
+  const root = document.querySelector(main) || document.body;
+  const rect = (el) => { const r = el.getBoundingClientRect(); return { w: Math.round(r.width), h: Math.round(r.height) }; };
+  const visible = (el) => el.getClientRects().length > 0;
+  const norm = (s) => (s || '').replace(/\s+/g, ' ').trim();
+  const fam = (cs) => (cs.fontFamily || '').split(',')[0].replace(/["']/g, '').trim().toLowerCase();
+  // url() filenames are CONTENT (a sibling's own photo — replicate, don't
+  // "fix"), never template: layers keep gradients verbatim and reduce every
+  // url(...) to a bare `url(…)` marker so only the LAYER STACK is compared.
+  const layers = (cs) => (cs.backgroundImage === 'none' ? [] : cs.backgroundImage.split(/,(?![^(]*\))/).map((l) => l.trim().replace(/url\([^)]*\)/g, 'url(…)')));
+
+  // default probes
+  const sections = [...root.querySelectorAll(':scope > section, :scope > .section')].filter(visible);
+  const firstSection = sections[0] || root.firstElementChild;
+  const classCounts = {};
+  for (const el of root.querySelectorAll('[class]')) {
+    if (!visible(el) || (el.children.length === 0 && !norm(el.textContent))) continue;
+    if (['LI', 'A', 'SPAN', 'P', 'IMG', 'SVG', 'PATH', 'BUTTON'].includes(el.tagName)) continue; // atoms, not units
+    const c = String(el.className).trim().split(/\s+/)[0];
+    if (c) classCounts[c] = (classCounts[c] || 0) + 1;
+  }
+  const cardClass = Object.entries(classCounts).filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1])[0]?.[0] || null;
+  const list = probes.length ? probes : [
+    { name: 'hero', el: firstSection, sel: '(first section)' },
+    ...(cardClass ? [{ name: 'card', sel: `.${cardClass}` }] : []),
+    { name: 'li', sel: `${main} li` },
+  ];
+
+  const signature = (el) => {
+    const cs = getComputedStyle(el);
+    const h = el.querySelector('h1, h2, h3, h4');
+    const img = el.querySelector('img');
+    const before = getComputedStyle(el, '::before');
+    const hcs = h ? getComputedStyle(h) : null;
+    return {
+      rect: rect(el),
+      backgroundLayers: layers(cs),
+      backgroundColor: cs.backgroundColor,
+      color: cs.color,
+      padding: [cs.paddingTop, cs.paddingRight, cs.paddingBottom, cs.paddingLeft].join(' '),
+      font: `${fam(cs)} ${cs.fontSize}/${cs.lineHeight} ${cs.fontWeight}`,
+      borderRadius: cs.borderRadius,
+      heading: h ? `${h.tagName.toLowerCase()} ${fam(hcs)} ${hcs.fontSize}/${hcs.lineHeight} ${hcs.fontWeight} ${hcs.color}` : null,
+      image: img ? rect(img) : null, // geometry only — the src is content
+      listStyle: cs.listStyleType !== 'none' || el.tagName === 'LI' ? cs.listStyleType : null,
+      before: (before.content && before.content !== 'none' && before.content !== 'normal') || before.backgroundImage !== 'none'
+        ? `content:${before.content.replace(/url\([^)]*\)/g, 'url(…)')} bg:${layers(before).join('|') || 'none'} ${Math.round(parseFloat(before.width) || 0)}x${Math.round(parseFloat(before.height) || 0)}`
+        : null,
+    };
+  };
+  const clusterKey = (s) => JSON.stringify({ ...s, rect: undefined, heading: s.heading ? s.heading.replace(/^h\d /, '') : null });
+
+  const out = {
+    sections: sections.map((el, i) => ({ label: String(el.className || '').split(/\s+/).filter((c) => c && c !== 'section').slice(0, 2).join('.') || `${el.tagName.toLowerCase()}[${i}]`, h: rect(el).h })),
+    probes: {},
+  };
+  for (const p of list) {
+    const els = p.el ? [p.el] : [...document.querySelectorAll(p.sel)].filter(visible);
+    if (!els.length) { out.probes[p.name] = { sel: p.sel, count: 0 }; continue; }
+    const sigs = els.slice(0, 40).map(signature);
+    const clusters = new Set(sigs.map(clusterKey)).size;
+    out.probes[p.name] = { sel: p.sel, count: els.length, first: sigs[0], clusters, text: norm(els[0].textContent).slice(0, 60) };
+  }
+  return out;
+}
+/* eslint-enable no-undef */
+
+// ------------------------------------------------------------------- diffing
+
+const px = (v) => { const m = String(v).match(/^-?[\d.]+(?=px$)/); return m ? parseFloat(m[0]) : null; };
+
+function diffValue(k, a, b, tol) {
+  if (JSON.stringify(a) === JSON.stringify(b)) return null;
+  if (a && b && typeof a === 'object' && !Array.isArray(a)) {
+    const d = Object.keys({ ...a, ...b }).map((kk) => diffValue(kk, a[kk], b[kk], tol)).filter(Boolean);
+    return d.length ? `${k}{${d.join(', ')}}` : null;
+  }
+  const pa = px(a); const pb = px(b);
+  if (pa !== null && pb !== null && Math.abs(pa - pb) <= tol) return null;
+  if (typeof a === 'number' && typeof b === 'number' && Math.abs(a - b) <= tol) return null;
+  // padding / font strings: compare token-wise with tolerance
+  if (typeof a === 'string' && typeof b === 'string' && a.split(' ').length === b.split(' ').length && a.split(' ').length > 1) {
+    const ta = a.split(' '); const tb = b.split(' ');
+    const diffTok = ta.some((t, i) => { const x = px(t); const y = px(tb[i]); return x !== null && y !== null ? Math.abs(x - y) > tol : t !== tb[i]; });
+    if (!diffTok) return null;
+  }
+  const show = (v) => (Array.isArray(v) ? `[${v.join(' | ')}]` : String(v));
+  return `${k} ${show(a)} → ${show(b)}`;
+}
+
+function compare(arch, sib, tol) {
+  const findings = [];
+  const sa = arch.sections.map((s) => s.label).join(' > '); const sb = sib.sections.map((s) => s.label).join(' > ');
+  if (arch.sections.length !== sib.sections.length) findings.push({ kind: 'SECTIONS', msg: `${arch.sections.length} vs ${sib.sections.length} top-level sections (archetype: ${sa || '-'}; sibling: ${sb || '-'}) — a different template family or an extra/missing section` });
+  else {
+    const hd = arch.sections.map((s, i) => (Math.abs(s.h - sib.sections[i].h) > tol ? `${s.label} ${s.h}→${sib.sections[i].h}` : null)).filter(Boolean);
+    if (hd.length) findings.push({ kind: 'SECTION HEIGHTS', msg: hd.join(', ') });
+  }
+  for (const [name, A] of Object.entries(arch.probes)) {
+    const B = sib.probes[name];
+    if (!B || !B.count) { if (A.count) findings.push({ kind: 'MISSING', probe: name, msg: `"${A.sel}" matches ${A.count} on the archetype, 0 on the sibling` }); continue; }
+    if (!A.count) { findings.push({ kind: 'EXTRA', probe: name, msg: `"${B.sel}" matches 0 on the archetype, ${B.count} on the sibling` }); continue; }
+    if (A.count !== B.count) findings.push({ kind: 'COUNT', probe: name, msg: `${A.count} → ${B.count} matches` });
+    if (A.clusters !== B.clusters) findings.push({ kind: 'CLUSTERS', probe: name, msg: `${A.clusters} → ${B.clusters} distinct style families among matches (a second visual family = a variant class)` });
+    const d = Object.keys(A.first).map((k) => diffValue(k, A.first[k], B.first[k], tol)).filter(Boolean);
+    if (d.length) findings.push({ kind: 'PROBE', probe: name, msg: d.join('; ') });
+  }
+  return findings;
+}
+
+// ---------------------------------------------------------------------- main
+
+async function probeUrl(browser, url, opts) {
+  const ctx = await newLiveContext(browser, { locale: opts.locale, viewport: { width: opts.width, height: 900 }, block: opts.block, ...sessionContextOptions(url, opts) });
+  const page = await ctx.newPage();
+  await gotoLive(page, url, { waitUntil: defaultWaitUntil(url), settleMs: isLiveHttpUrl(url) ? 2500 : 1200, tier: opts.tier, solveWaitMs: opts.solveWaitMs });
+  const dOv = await dismissOverlays(page, { mode: opts.consentMode, reject: opts.consentMode === 'deny' && opts.consent ? [opts.consent] : [], extra: [...(opts.consent && opts.consentMode !== 'deny' ? [opts.consent] : []), ...opts.dismiss], lateWindowMs: isLiveHttpUrl(url) ? 6000 : 0 });
+  reportOverlayResidue('sibling-variance', dOv);
+  await page.evaluate(async () => {
+    const h = document.documentElement.scrollHeight;
+    for (let y = 0; y < h; y += 700) { window.scrollTo(0, y); await new Promise((r) => { setTimeout(r, 80); }); }
+    window.scrollTo(0, 0);
+    await new Promise((r) => { setTimeout(r, 400); });
+  });
+  await page.waitForTimeout(500);
+  const out = await page.evaluate(probePage, { probes: opts.probes, main: opts.main });
+  await ctx.close();
+  return out;
+}
+
+async function main() {
+  const { archetype, siblings, opts } = parseArgs(process.argv);
+  opts.tier = resolveStartTier(opts.headed); // ladder start = max(--headed tier, tier extract recorded) — live-session.mjs
+  const browser = await launchTier(chromium, opts.tier);
+  let varying = 0;
+  try {
+    const A = await probeUrl(browser, archetype, opts);
+    const results = [];
+    for (const url of siblings) {
+      const S = await probeUrl(browser, url, opts);
+      const findings = compare(A, S, opts.tolerance);
+      if (findings.length) varying += 1;
+      results.push({ url, findings, raw: S });
+    }
+    const probesVarying = [...new Set(results.flatMap((r) => r.findings.map((f) => f.probe || f.kind)))];
+    if (opts.json) {
+      console.log(JSON.stringify({ archetype, width: opts.width, tolerance: opts.tolerance, probes: Object.fromEntries(Object.entries(A.probes).map(([k, v]) => [k, v.sel])), archetypeRaw: A, siblings: results.map(({ url, findings, raw }) => ({ url, findings, raw })), summary: { siblings: siblings.length, varying, probesVarying } }, null, 2));
+    } else {
+      console.log(`sibling-variance @ ${opts.width}px, tolerance ${opts.tolerance}px\n  archetype: ${archetype}\n  probes: ${Object.entries(A.probes).map(([k, v]) => `${k}=${v.sel} (${v.count})`).join(', ')}\n  sections: ${A.sections.map((s) => `${s.label}:${s.h}`).join(' > ') || '-'}`);
+      for (const r of results) {
+        console.log(`\n■ ${r.url}: ${r.findings.length ? `${r.findings.length} delta(s)` : '✓ matches the archetype'}`);
+        for (const f of r.findings) console.log(`  ${f.kind.padEnd(16)}${f.probe ? `${f.probe}: ` : ''}${f.msg}`);
+      }
+      console.log(`\n${varying ? `✗ ${varying} of ${siblings.length} sibling(s) vary from the archetype in: ${probesVarying.join(', ')} — budget variant classes for these before cloning; do not assume template constancy.` : `✓ ${siblings.length} sibling(s) match the archetype within tolerance — clone.`}`);
+      if (opts.brief) {
+        const seq = (raw) => raw.sections.map((x) => x.label).join(' > ') || '-';
+        console.log('\n--- fan-out brief blocks (paste each into its sibling\'s brief BEFORE dispatch) ---');
+        for (const r of results) {
+          console.log(`\n### Sibling variance — ${r.url} (@${opts.width}px, tolerance ${opts.tolerance}px)`);
+          console.log(`- archetype sections: ${seq(A)}`);
+          console.log(`- THIS page's sections: ${seq(r.raw)}  ← the generator walks THIS sequence; the archetype supplies block shapes, never the order`);
+          if (!r.findings.length) console.log('- deltas: none within tolerance — clone the archetype\'s block shapes over this sequence');
+          else { console.log('- deltas to budget as VARIANT classes on this page\'s content (never a forked block):'); for (const f of r.findings) console.log(`  - ${f.kind}${f.probe ? ` ${f.probe}` : ''}: ${f.msg}`); }
+        }
+      }
+    }
+  } finally {
+    await browser.close();
+  }
+  process.exit(varying ? 2 : 0);
+}
+
+const invokedDirectly = (() => { try { return realpathSync(process.argv[1]) === fileURLToPath(import.meta.url); } catch { return false; } })();
+if (invokedDirectly) main().catch((e) => { console.error(`sibling-variance error: ${e.message}`); process.exit(e.code === 124 ? 124 : e.name === 'BotChallengeError' ? 3 : 1); }); // 124 = no browser slot (no verdict)

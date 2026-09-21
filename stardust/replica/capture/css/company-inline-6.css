@@ -1,0 +1,17 @@
+.rly-policy-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.rly-policy-editable[contenteditable='true']:focus {
+    outline: 1px dashed currentColor;
+}
+
+.rly-policy-tt-table th:not(:last-child),
+.rly-policy-tt-table td:not(:last-child) {
+    border-right: 1px solid currentColor;
+}
+
+.rly-policy-tt-table tbody tr:last-child td {
+    border-bottom: none;
+}

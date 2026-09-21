@@ -1,0 +1,380 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-21T07:53:17.741Z",
+    "script": "write-design-json.mjs",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json"
+    ],
+    "synthesizedInputs": [],
+    "mode": "bounded"
+  },
+  "schemaVersion": 2,
+  "colors": {
+    "primary": null,
+    "secondary": null,
+    "background": "#ffffff",
+    "surface": null,
+    "text": "#000000",
+    "textMuted": null,
+    "border": null,
+    "accents": [
+      "#929a9d",
+      "#2266ff",
+      "#737779",
+      "#6a6a6a"
+    ],
+    "palette": [
+      {
+        "role": "background",
+        "value": "#ffffff",
+        "occurrences": 3275,
+        "usedAs": [
+          "background",
+          "text"
+        ]
+      },
+      {
+        "role": "text-primary",
+        "value": "#000000",
+        "occurrences": 2561,
+        "usedAs": [
+          "text",
+          "background"
+        ]
+      },
+      {
+        "role": "accent-1",
+        "value": "#929a9d",
+        "occurrences": 580,
+        "usedAs": [
+          "text"
+        ]
+      },
+      {
+        "role": "accent-2",
+        "value": "#2266ff",
+        "occurrences": 295,
+        "usedAs": [
+          "text"
+        ]
+      },
+      {
+        "role": "accent-3",
+        "value": "#737779",
+        "occurrences": 10,
+        "usedAs": [
+          "text"
+        ]
+      },
+      {
+        "role": "accent-4",
+        "value": "#6a6a6a",
+        "occurrences": 10,
+        "usedAs": [
+          "text"
+        ]
+      }
+    ]
+  },
+  "typography": {
+    "display": {
+      "family": "Roboto",
+      "stack": "Roboto, sans-serif",
+      "weights": [
+        500,
+        700
+      ],
+      "sizes": [
+        "48px",
+        "48px",
+        "28px"
+      ],
+      "lineHeights": [
+        "52.8px",
+        "30.8px"
+      ],
+      "letterSpacing": [
+        "normal"
+      ]
+    },
+    "body": {
+      "family": "Roboto",
+      "stack": "Roboto, sans-serif",
+      "weights": [
+        400,
+        500,
+        700
+      ],
+      "sizes": [],
+      "lineHeights": [],
+      "letterSpacing": []
+    },
+    "mono": null,
+    "scaleRatio": null,
+    "loadStrategy": "block",
+    "files": [
+      {
+        "family": "Roboto",
+        "weight": "400",
+        "style": "normal",
+        "localPath": "assets/fonts/roboto-v18-latin-regular-06db651c.woff2",
+        "url": "https://static.westerndigital.com/etc.clientlibs/wd-static/designs/fonts/roboto/roboto-v18-latin-regular.woff2",
+        "licensingFlag": "open-license"
+      },
+      {
+        "family": "Roboto",
+        "weight": "500",
+        "style": "normal",
+        "localPath": "assets/fonts/roboto-v18-latin-500-ea04e4ff.woff2",
+        "url": "https://static.westerndigital.com/etc.clientlibs/wd-static/designs/fonts/roboto/roboto-v18-latin-500.woff2",
+        "licensingFlag": "open-license"
+      },
+      {
+        "family": "Roboto",
+        "weight": "700",
+        "style": "normal",
+        "localPath": "assets/fonts/roboto-v18-latin-700-61938919.woff2",
+        "url": "https://static.westerndigital.com/etc.clientlibs/wd-static/designs/fonts/roboto/roboto-v18-latin-700.woff2",
+        "licensingFlag": "open-license"
+      },
+      {
+        "family": null,
+        "weight": null,
+        "style": "normal",
+        "localPath": "assets/fonts/roboto-v18-latin-regular-06db651c.woff2",
+        "url": "https://www.westerndigital.com/chatbot/fonts/roboto/roboto-v18-latin-regular.woff2",
+        "licensingFlag": "unknown"
+      }
+    ]
+  },
+  "rounded": {
+    "primary": "6px",
+    "secondary": "16px",
+    "pill": "9999px"
+  },
+  "spacing": {
+    "baseUnit": 8,
+    "scale": [
+      48
+    ],
+    "sectionPadding": null,
+    "containerMaxWidth": "863px",
+    "gridGap": "48px"
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "background": "#ffffff",
+        "color": "#000000",
+        "borderRadius": "6px",
+        "padding": "0px",
+        "fontWeight": 400,
+        "shadow": null,
+        "hoverDelta": null,
+        "occurrences": 11
+      },
+      "secondary": {
+        "background": "#000000",
+        "color": "#ffffff",
+        "borderRadius": "6px",
+        "padding": "12px 32px",
+        "fontWeight": 500,
+        "shadow": null,
+        "hoverDelta": null,
+        "occurrences": 2
+      },
+      "ghost": {
+        "background": "transparent",
+        "color": "#000000",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "fontWeight": 400,
+        "shadow": null,
+        "hoverDelta": null,
+        "occurrences": 117
+      }
+    },
+    "cards": {
+      "background": "#f2f3f3",
+      "borderRadius": "16px",
+      "padding": "0px",
+      "shadow": "rgba(0, 0, 0, 0.29) 0px 3px 6px 0px",
+      "border": null,
+      "sourceSelector": "section.mainContainWrap > div.reference:nth-child(3)"
+    },
+    "inputs": null,
+    "dualCTAPattern": "primary-then-secondary-link"
+  },
+  "extensions": {
+    "mode": "bounded",
+    "componentStyle": {
+      "buttons": {
+        "primary": {
+          "background": "#ffffff",
+          "color": "#000000",
+          "borderRadius": "6px",
+          "padding": "0px",
+          "fontWeight": 400,
+          "shadow": null,
+          "hoverDelta": null,
+          "occurrences": 11
+        },
+        "secondary": {
+          "background": "#000000",
+          "color": "#ffffff",
+          "borderRadius": "6px",
+          "padding": "12px 32px",
+          "fontWeight": 500,
+          "shadow": null,
+          "hoverDelta": null,
+          "occurrences": 2
+        },
+        "ghost": {
+          "background": "transparent",
+          "color": "#000000",
+          "borderRadius": "0px",
+          "padding": "0px",
+          "fontWeight": 400,
+          "shadow": null,
+          "hoverDelta": null,
+          "occurrences": 117
+        }
+      },
+      "dualCTAPattern": "primary-then-secondary-link",
+      "cards": {
+        "background": "#f2f3f3",
+        "borderRadius": "16px",
+        "padding": "0px",
+        "shadow": "rgba(0, 0, 0, 0.29) 0px 3px 6px 0px",
+        "border": null,
+        "sourceSelector": "section.mainContainWrap > div.reference:nth-child(3)"
+      },
+      "inputs": null
+    },
+    "motifs": {
+      "borderRadius": {
+        "primary": "6px",
+        "secondary": "16px",
+        "pill": "9999px",
+        "primarySources": [
+          "solutions",
+          "index",
+          "company"
+        ],
+        "occurrences": {
+          "6px": 81,
+          "16px": 67,
+          "2px": 46,
+          "9999px": 6,
+          "50%": 3,
+          "20px": 2
+        }
+      },
+      "shadows": [
+        {
+          "value": "rgba(0, 0, 0, 0.29) 0px 3px 6px 0px",
+          "uses": "sections",
+          "count": 3
+        }
+      ],
+      "gradients": [
+        {
+          "value": "linear-gradient(0deg, rgb(0, 0, 0)",
+          "uses": "hero-background",
+          "count": 1
+        },
+        {
+          "value": "linear-gradient(90deg, rgb(0, 114, 239)",
+          "uses": "hero-background",
+          "count": 1
+        }
+      ],
+      "patterns": [
+        {
+          "name": "card-grid",
+          "evidence": "1 page(s) with ≥ 3 cards (8 total)",
+          "pages": [
+            "index"
+          ]
+        },
+        {
+          "name": "hero-with-image",
+          "evidence": "hero section carries a background image",
+          "pages": [
+            "company",
+            "index",
+            "products",
+            "solutions"
+          ]
+        },
+        {
+          "name": "stat-row",
+          "evidence": "1 page(s) list components.statRow",
+          "pages": [
+            "products"
+          ]
+        },
+        {
+          "name": "breadcrumb",
+          "evidence": "2 page(s) list components.breadcrumbs",
+          "pages": [
+            "products",
+            "solutions"
+          ]
+        },
+        {
+          "name": "carousel",
+          "evidence": "4 page(s) list components.carousels",
+          "pages": [
+            "company",
+            "index",
+            "products",
+            "solutions"
+          ]
+        }
+      ]
+    },
+    "systemComponents": [],
+    "scaleAudit": {
+      "kind": "ad-hoc",
+      "ratios": [
+        1.714
+      ],
+      "matchedScale": null
+    },
+    "iconFont": null,
+    "logo": {
+      "source": "img",
+      "step": "1b",
+      "sourceSelector": "img[src=\"https://www.westerndigital.com/content/dam/store/en-us/assets/brand/wd/wd-header-main-logo.svg\"]",
+      "url": "https://www.westerndigital.com/content/dam/store/en-us/assets/brand/wd/wd-header-main-logo.svg",
+      "localPath": "assets/media/wd-header-main-logo-4c2559e2.svg",
+      "format": "svg",
+      "intrinsicWidth": 83,
+      "intrinsicHeight": 48,
+      "renderedWidth": 83,
+      "renderedHeight": 48,
+      "alt": null,
+      "synthesized": false,
+      "synthesizedBasis": null
+    },
+    "origins": [
+      {
+        "origin": "https://www.westerndigital.com",
+        "role": "primary",
+        "pagesCaptured": 4,
+        "contributedSignals": []
+      }
+    ],
+    "site": {
+      "name": "Western Digital",
+      "tagline": "Western Digital, leaders in digital storage solutions compatible with Mac and PC. FREE shipping, friendly support, and 30-day return policy on storage products.",
+      "originUrl": "https://www.westerndigital.com"
+    },
+    "brandSurfaceNotes": [
+      "componentStyle.inputs: input styles are not in the schema 2 record — null",
+      "bounded: 4 page(s); palette/type/motifs only — voice, voiceTable, crossPromo and register omitted"
+    ]
+  }
+}

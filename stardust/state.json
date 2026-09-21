@@ -1,0 +1,144 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-21T07:53:17.804Z",
+    "script": "state-update.mjs",
+    "stardustVersion": "0.24.0-next.4"
+  },
+  "site": {
+    "originUrl": "https://www.westerndigital.com",
+    "deployUrl": "https://main--westerndigital-24next-1--paolomoz.aem.page",
+    "extractedAt": "2026-09-21T07:53:17.804Z",
+    "pageCap": 5,
+    "totalDiscovered": 4,
+    "crawled": 4,
+    "eds": {
+      "org": "paolomoz",
+      "site": "westerndigital-24next-1",
+      "repoUrl": "https://github.com/paolomoz/westerndigital-24next-1",
+      "previewHost": "https://main--westerndigital-24next-1--paolomoz.aem.page",
+      "liveHost": "https://main--westerndigital-24next-1--paolomoz.aem.live",
+      "daFolder": "https://da.live/#/paolomoz/westerndigital-24next-1",
+      "private": false,
+      "bootstrappedAt": "2026-09-21T07:50:12Z",
+      "bootstrappedBy": "existing"
+    },
+    "extractPhases": {
+      "captured": true,
+      "visionChecked": true,
+      "brandSurface": true,
+      "docs": false,
+      "review": true,
+      "scripts": true
+    }
+  },
+  "direction": null,
+  "handsOff": true,
+  "approvedChain": [
+    "replica",
+    "migrate",
+    "deploy"
+  ],
+  "flow": "replica",
+  "flowChosenAt": "2026-09-21T07:50:12Z",
+  "flowSource": "user-phrase",
+  "impeccable": {
+    "skillDir": "/Users/paolo/.claude/plugins/cache/impeccable/impeccable/4.3.1/skills/impeccable",
+    "launcher": "scripts/impeccable",
+    "version": "4.3.1",
+    "registryCommands": 23,
+    "probedAt": "2026-09-21T07:50:12.168Z",
+    "drift": []
+  },
+  "credentials": {
+    "at": "2026-09-21T07:50:12.802Z",
+    "da": "ok",
+    "daExpiresAt": "2026-09-22T06:52:00.360Z",
+    "daSource": "shell",
+    "daTarget": "ok",
+    "siteTokenEnv": null,
+    "gh": "ok"
+  },
+  "pages": [
+    {
+      "slug": "company",
+      "url": "https://www.westerndigital.com/company",
+      "title": "Who We Are: Leadership, Values, and Innovation | WD",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-21T07:53:17.804Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/company.json",
+      "prototypePath": null,
+      "migratedPath": null,
+      "chromeVariant": "variant-4dea",
+      "layoutCluster": "tail"
+    },
+    {
+      "slug": "index",
+      "url": "https://www.westerndigital.com/",
+      "title": "High-Capacity HDDs for PCs, NAS, Gaming, Data Centers, and AI Data Cycles | WD",
+      "type": "landing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-21T07:53:17.804Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": null,
+      "migratedPath": null,
+      "chromeVariant": "default",
+      "layoutCluster": "tail"
+    },
+    {
+      "slug": "products",
+      "url": "https://www.westerndigital.com/products",
+      "title": "Shop Hard Drives for PCs, NAS, Gaming, Data Centers, and More | WD",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-21T07:53:17.804Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/products.json",
+      "prototypePath": null,
+      "migratedPath": null,
+      "chromeVariant": "default",
+      "layoutCluster": "tail"
+    },
+    {
+      "slug": "solutions",
+      "url": "https://www.westerndigital.com/solutions",
+      "title": "Discover How Hard Drives Can Transform Your Data Storage | WD",
+      "type": "program",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-21T07:53:17.804Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/solutions.json",
+      "prototypePath": null,
+      "migratedPath": null,
+      "chromeVariant": "variant-4dea",
+      "layoutCluster": "tail"
+    }
+  ]
+}

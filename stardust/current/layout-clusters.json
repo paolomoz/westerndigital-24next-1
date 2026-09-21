@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-09-21T07:54:01.352Z",
+  "root": "stardust",
+  "minCluster": null,
+  "k": 0,
+  "breakpoints": [
+    1440,
+    360
+  ],
+  "types": [
+    {
+      "type": "static",
+      "pages": 1,
+      "minCluster": 5,
+      "k": 0,
+      "archetype": null,
+      "archetypeCluster": null,
+      "clusters": [],
+      "tail": [
+        {
+          "id": "c1",
+          "signature": [
+            "mainContainWrap|g:2xt+4xht|i|c2",
+            "div",
+            "div"
+          ],
+          "variants": [],
+          "count": 1,
+          "pages": [
+            "company"
+          ],
+          "exemplar": "company",
+          "exemplarSource": "median",
+          "gated": {
+            "360": "ungated",
+            "1440": "ungated"
+          },
+          "diffVsArchetype": []
+        }
+      ],
+      "unclustered": [],
+      "ungated": [],
+      "minClusterSource": "default"
+    },
+    {
+      "type": "landing",
+      "pages": 1,
+      "minCluster": 5,
+      "k": 0,
+      "archetype": null,
+      "archetypeCluster": null,
+      "clusters": [],
+      "tail": [
+        {
+          "id": "c1",
+          "signature": [
+            "mainContainWrap|g:2xt+nxct|i|c2",
+            "div"
+          ],
+          "variants": [],
+          "count": 1,
+          "pages": [
+            "index"
+          ],
+          "exemplar": "index",
+          "exemplarSource": "median",
+          "gated": {
+            "360": "ungated",
+            "1440": "ungated"
+          },
+          "diffVsArchetype": []
+        }
+      ],
+      "unclustered": [],
+      "ungated": [],
+      "minClusterSource": "default"
+    },
+    {
+      "type": "listing",
+      "pages": 1,
+      "minCluster": 5,
+      "k": 0,
+      "archetype": null,
+      "archetypeCluster": null,
+      "clusters": [],
+      "tail": [
+        {
+          "id": "c1",
+          "signature": [
+            "mainContainWrap|g:2xhcit+2xhct+2xt|i|c2",
+            "div"
+          ],
+          "variants": [],
+          "count": 1,
+          "pages": [
+            "products"
+          ],
+          "exemplar": "products",
+          "exemplarSource": "median",
+          "gated": {
+            "360": "ungated",
+            "1440": "ungated"
+          },
+          "diffVsArchetype": []
+        }
+      ],
+      "unclustered": [],
+      "ungated": [],
+      "minClusterSource": "default"
+    },
+    {
+      "type": "program",
+      "pages": 1,
+      "minCluster": 5,
+      "k": 0,
+      "archetype": null,
+      "archetypeCluster": null,
+      "clusters": [],
+      "tail": [
+        {
+          "id": "c1",
+          "signature": [
+            "mainContainWrap|g:2xt+3xht+5xt+6xt+nxht|i|c2",
+            "div",
+            "div"
+          ],
+          "variants": [],
+          "count": 1,
+          "pages": [
+            "solutions"
+          ],
+          "exemplar": "solutions",
+          "exemplarSource": "median",
+          "gated": {
+            "360": "ungated",
+            "1440": "ungated"
+          },
+          "diffVsArchetype": []
+        }
+      ],
+      "unclustered": [],
+      "ungated": [],
+      "minClusterSource": "default"
+    }
+  ]
+}

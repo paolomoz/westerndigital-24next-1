@@ -1,0 +1,346 @@
+#!/usr/bin/env node
+/**
+ * block-roundtrip.mjs — in-loop per-block ENCODE→DECODE round-trip assertion (#94).
+ *
+ * Step 10's content-diff proves fidelity AFTER deploy — too late to be the place
+ * where defects are FOUND. This gate runs at block-authoring time, per block,
+ * with no DA and no dev server (the render-harness technique): it decorates the
+ * authored content locally with the block's own JS+CSS, extracts the role
+ * inventory from the decorated section AND from the matching prototype section
+ * (the SAME classifier as content-diff — skills/deploy/scripts/content-inventory.mjs),
+ * and diffs them. A structural 🔴 (MISSING CTA/HEADING/EYEBROW, ROLE SWAP) exits
+ * non-zero, so the authoring loop fixes the decode before anything ships. Font
+ * forks are NOT checked here (the harness renders local fonts — face fidelity is
+ * Step 4 + Step 10's business); structure and roles are.
+ *
+ * A block is DONE when this passes — Step 10 then only proves the round-trip
+ * survived DA transport.
+ *
+ * Usage:
+ *   node skills/deploy/scripts/block-roundtrip.mjs <prototypeURL> <content/page.html> [options]
+ *     --blocks a,b,c     block names to check (default: every block div found in the page)
+ *     --map name=sel     prototype section selector for a block (repeatable;
+ *                        default tries section.<name>, [data-section="<name>"], .<name>)
+ *     --styles <path>    foundation CSS (default eds/styles/styles.css, then styles/styles.css)
+ *     --blocks-dir <dir> blocks root (default eds/blocks, then blocks)
+ *     --width <px>       viewport width (default 1280)
+ *     --profile <p>      eds | generic (default eds)
+ *     --ew | --no-ew     Experience Workspace editability gate (default ON): before
+ *                        decorate() the authored content is instrumented like the
+ *                        da.live canvas (`data-prose-index` on every outermost
+ *                        h1-h6/p/ul/ol/pre/blockquote, bare-text cells re-wrapped
+ *                        as <p>); afterwards each text must survive on EXACTLY one
+ *                        element. Dead (rebuilt from textContent/innerHTML,
+ *                        synthesized, retagged) or duplicated (clone slides) texts
+ *                        are 🔴 alongside MISSING CTA/HEADING; `@ew-exempt <reason>`
+ *                        in the block's leading JSDoc declares config/derived/index
+ *                        texts (⚪ advisory). Shared instrument: ew-editability-probe.mjs.
+ *     --json             dump per-block inventories (+ the editability survey)
+ *     --no-pipeline      skip the pipeline emulation (pipeline-mimic.mjs runs on the
+ *                        authored <main> before the harness page is built, so
+ *                        section tagging, EW instrumentation and runtimeMimic all see
+ *                        the DELIVERED shape; the rule counts print once per run)
+ *     --style-split      comma | first-only — section-metadata `style` split; absent → the measured
+ *                        `<root>/stardust/runtime-contract.json#pipeline.multiValueStyle`, else comma
+ *                        (D7 default); `style-split <value> (<source>)` prints once per run
+ *
+ * EW contract in two sentences (deploy reference/block-js-scaffold.md § Experience Workspace editability
+ * contract, EW1–EW10): the workspace stamps an index on every authored text element,
+ * runs the page's own decorate() over it, and can only attach an editor to an element
+ * that still carries its index — so block JS must MOVE authored h1-h6/p/ul/ol/picture
+ * nodes into generated wrappers (append/prepend), never rebuild them from text or
+ * clone-and-discard. Wrappers carry the layout classes; presentational clones strip
+ * instrumentation; exempt text is declared with `@ew-exempt`, never silently dropped.
+ *
+ * A dead text whose words are ABSENT from the decorated unit is reported as
+ * DROPPED CONTENT (the decoder never consumed that element type — an authored
+ * <ul> rendered as nothing) rather than DEAD TEXT (rebuilt, EW1); both are 🔴.
+ *
+ * Exit codes: 0 = round-trip closed (no structural 🔴, no dead/duplicated text, no
+ * decorate errors), 2 = structural 🔴 found (incl. DEAD TEXT / DROPPED CONTENT / DUPLICATED INDEX under
+ * --ew) OR a block's decorate() failed to install/run (a block that cannot be
+ * decorated must never pass — its raw rows would match the prototype and
+ * green-light a decode that was never exercised), 1 = tool error.
+ *
+ * Block JS is installed as a REAL module on a synthetic harness origin served
+ * from the repo root (ew-editability-probe.mjs openHarness; --root overrides the
+ * blocks dir's parent): aem.js, project helpers and sibling-block imports resolve.
+ * An unresolvable specifier is a 404 under that root → the import rejects → the
+ * block is NOT installed → exit 2 (fix the specifier, or verify that block via the
+ * dev-server harness + Step 10). Requests to any other origin are aborted and listed.
+ *     --root <dir>       harness root (default: parent of the blocks dir)
+ *     --strict           exit 2 (this script's verdict code — 1 is its tool error) when a
+ *                        used @ew-exempt is block-granular without `all` or names no
+ *                        category (item-level syntax in the probe header; the probe and
+ *                        render-harness report the same finding with THEIR verdict code, 1)
+ *   Flags may precede the positionals; `--help`/`-h` anywhere exits 0 before Playwright
+ *   is loaded; an unknown flag is a usage error (exit 1).
+ */
+
+/* eslint-disable import/no-extraneous-dependencies, import/extensions, no-await-in-loop, no-restricted-syntax, brace-style, object-curly-newline, max-len, no-plusplus, no-continue */
+import fs from 'fs';
+import path from 'path';
+import { resolveProfile } from './diff-profiles.mjs';
+import { inventory, diffInventories, summarise } from './content-inventory.mjs';
+import { EDITABLE, runtimeMimic, instrument, survey, openHarness, installBlockJs, installErrors, runDecorate, readBlockExemptions, aggregate, strictFindings, formatRequests } from './ew-editability-probe.mjs';
+import { pipelineMimic, formatCounts, resolveStyleSplit, styleSplitLine } from './pipeline-mimic.mjs';
+// Dependencies through the resolution chain (skills/stardust/scripts/lib/resolve.mjs — runtime-preflight.md
+// § Resolution chain): plugin layout, then a project copy made as a set (harness-permissions.md § Two classes);
+// a lone copy without the helper falls back to the bare import it resolved before. A miss at every link is one
+// line naming preflight-runtime.mjs.
+const CHAIN = await (async () => { for (const c of ['../../stardust/scripts/lib/resolve.mjs', '../stardust/lib/resolve.mjs']) { try { return await import(new URL(c, import.meta.url)); } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e; } } return null; })();
+const loadDep = (name) => (CHAIN ? CHAIN.resolveDep(name, { from: import.meta.url }) : import(name).then((m) => ('module.exports' in m ? m['module.exports'] : (m.default && Object.keys(m).every((k) => k === 'default' || k === '__esModule' || k in m.default) ? m.default : m))));
+
+const VALUE_FLAGS = new Set(['--blocks', '--map', '--styles', '--blocks-dir', '--width', '--profile', '--style-split', '--root']);
+function parseArgs(argv) {
+  const rest = argv.slice(2);
+  const opts = { blocks: null, map: {}, styles: null, blocksDir: null, root: null, strict: false, width: 1280, profile: 'eds', json: false, ew: true, pipeline: true, styleSplit: null };
+  if (rest.includes('--help') || rest.includes('-h')) return { opts: { ...opts, help: true } };
+  // positionals are the non-flag tokens wherever they sit (`--strict a b` == `a b --strict`)
+  const positional = rest.filter((a, i) => !a.startsWith('--') && !(i > 0 && VALUE_FLAGS.has(rest[i - 1])));
+  const [proto, content] = positional;
+  for (let i = 0; i < rest.length; i += 1) {
+    const a = rest[i];
+    if (!a.startsWith('--')) continue;
+    if (a === '--blocks') { opts.blocks = rest[i += 1].split(',').map((s) => s.trim()).filter(Boolean); }
+    else if (a === '--map') { const [k, ...v] = rest[i += 1].split('='); opts.map[k] = v.join('='); }
+    else if (a === '--styles') { opts.styles = rest[i += 1]; }
+    else if (a === '--blocks-dir') { opts.blocksDir = rest[i += 1]; }
+    else if (a === '--width') { opts.width = Number(rest[i += 1]); }
+    else if (a === '--profile') { opts.profile = rest[i += 1]; }
+    else if (a === '--json') { opts.json = true; }
+    else if (a === '--ew') { opts.ew = true; }
+    else if (a === '--no-ew') { opts.ew = false; }
+    else if (a === '--no-pipeline') { opts.pipeline = false; }
+    else if (a === '--style-split') { opts.styleSplit = rest[i += 1]; }
+    else if (a === '--root') { opts.root = rest[i += 1]; }
+    else if (a === '--strict') { opts.strict = true; }
+    else { process.stderr.write(`block-roundtrip: unknown flag ${a}\n`); process.exit(1); }
+  }
+  return { proto, content, opts };
+}
+
+const firstExisting = (cands, kind) => {
+  const hit = cands.find((p) => fs.existsSync(p));
+  if (!hit) throw new Error(`no ${kind} found (tried ${cands.join(', ')}) — pass it explicitly`);
+  return hit;
+};
+
+// In the PROTOTYPE page: tag each section matching a block with data-rt="<name>-<i>".
+/* eslint-disable no-undef */
+function tagProtoSections(specs) {
+  const out = {};
+  specs.forEach(({ name, selector }) => {
+    const cands = selector ? [selector] : [`section.${name}`, `[data-section="${name}"]`, `.${name}`];
+    let els = [];
+    for (const sel of cands) {
+      try { els = [...document.querySelectorAll(sel)]; } catch { els = []; }
+      if (els.length) break;
+    }
+    els.forEach((el, i) => el.setAttribute('data-rt', `${name}-${i}`));
+    out[name] = els.length;
+  });
+  return out;
+}
+
+// In the HARNESS page: tag each top-level section OWNING a block div with
+// data-rt="<name>-<i>" (the section, not the block — default-content siblings a
+// block reabsorbs, or a section head authored before the block, belong to the
+// same round-trip unit). Also returns every block name found (for --blocks default).
+function tagHarnessSections(names) {
+  const found = {};
+  // metadata + section-metadata are pipeline config, never rendered content.
+  const isBlock = (d) => {
+    const c = (d.className || '').trim().split(' ')[0];
+    return !!c && c !== 'metadata' && c !== 'section-metadata';
+  };
+  [...document.querySelectorAll('main > div')].forEach((sec) => {
+    // Blocks are DIRECT children of the section (the EDS authored shape); keep a
+    // single-descendant fallback for a nested one-off. ALL blocks in a section
+    // are tagged — a section may hold more than one.
+    let blocks = [...sec.querySelectorAll(':scope > div[class]')].filter(isBlock);
+    if (!blocks.length) blocks = [...sec.querySelectorAll(':scope div[class]')].filter(isBlock).slice(0, 1);
+    blocks.forEach((block) => {
+      const name = block.className.split(' ')[0];
+      if (names && !names.includes(name)) return;
+      // One block in the section → tag the SECTION (default-content siblings the
+      // block reabsorbs belong to the round-trip unit); several blocks → tag each
+      // block element itself (section-level text can't be attributed to one).
+      (found[name] ||= []).push(blocks.length === 1 ? sec : block);
+    });
+  });
+  const counts = {};
+  Object.entries(found).forEach(([name, els]) => {
+    els.forEach((el, i) => el.setAttribute('data-rt', `${name}-${i}`));
+    counts[name] = els.length;
+  });
+  return counts;
+}
+/* eslint-enable no-undef */
+
+async function settle(page) {
+  await page.waitForTimeout(1200);
+  await page.evaluate(async () => {
+    for (let y = 0; y < document.body.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => { setTimeout(r, 40); }); }
+    window.scrollTo(0, 0);
+  });
+  await page.waitForTimeout(400);
+}
+
+async function main() {
+  const { proto, content, opts } = parseArgs(process.argv);
+  const usage = 'usage: node skills/deploy/scripts/block-roundtrip.mjs <prototypeURL> <content/page.html> [--blocks a,b] [--map name=sel] [--styles css] [--blocks-dir dir] [--width px] [--profile p] [--ew|--no-ew] [--json] [--no-pipeline] [--style-split comma|first-only] [--root dir] [--strict]\n';
+  if (opts.help) { process.stdout.write(usage); process.exit(0); }
+  if (!proto || !content || (opts.styleSplit && !['comma', 'first-only'].includes(opts.styleSplit))) {
+    process.stderr.write(usage);
+    process.exit(1);
+  }
+  const { chromium } = await loadDep('playwright'); // after --help / usage: the flags work without a browser install
+  const prof = resolveProfile(opts.profile);
+  const rtProf = { ...prof, fontDelta: Infinity }; // structure only — no FONT FORK in the harness
+
+  const stylesPath = opts.styles || firstExisting(['eds/styles/styles.css', 'styles/styles.css'], 'styles.css');
+  const blocksDir = opts.blocksDir || firstExisting(['eds/blocks', 'blocks'], 'blocks dir');
+  const split = resolveStyleSplit(opts.styleSplit, opts.root || path.dirname(path.resolve(blocksDir))); // flag > runtime-contract.json#pipeline > comma
+  opts.styleSplit = split.value;
+
+  const raw = fs.readFileSync(content, 'utf8');
+  const mainMatch = raw.match(/<main>([\s\S]*?)<\/main>/);
+  if (!mainMatch) throw new Error(`${content} has no <main> element`);
+  let mainHtml = mainMatch[1];
+  // Delivered shape first (section-metadata applied, <p><picture>, hoisted CTAs,
+  // whitespace, tables, icons): everything below — tagging, EW instrumentation,
+  // runtimeMimic, decode — faces what the preview host will actually serve.
+  if (opts.pipeline) {
+    const r = pipelineMimic(mainHtml, { styleSplit: opts.styleSplit });
+    mainHtml = r.html;
+    process.stdout.write(`${formatCounts(r.counts)} — ${styleSplitLine(split)}\n`);
+  }
+  // metadata + section-metadata are pipeline config, never rendered content —
+  // removed in the DOM after setContent (never by regexing the HTML: a lazy regex
+  // over-swallows past a shallow/empty metadata block and silently deletes real
+  // sections).
+  const dropMetadata = () => document.querySelectorAll('main div.metadata, main div.section-metadata').forEach((el) => el.remove());
+
+  const browser = await chromium.launch();
+  let failed = false;
+  try {
+    // ── harness: authored content + foundation/block CSS, decorate locally ──
+    // The page lives on the harness origin served from `root`, so block JS
+    // installs as a real module (imports resolve; a 404 fails the gate).
+    const styles = fs.readFileSync(stylesPath, 'utf8');
+    const root = opts.root || path.dirname(path.resolve(blocksDir));
+    // body.appear satisfies the vanilla foundation's body{display:none} gate the
+    // way loadEager() does — without it every computed-style read sees a hidden page.
+    const hh = await openHarness(browser, { html: `<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0}main .section{padding:0}${styles}</style></head><body class="appear"><main>${mainHtml}</main></body></html>`, root, width: opts.width, height: 1000 });
+    const harness = hh.page;
+    await harness.evaluate(dropMetadata);
+    // Tag on the raw authored shape (discovers block names when --blocks omitted).
+    const discovered = await harness.evaluate(tagHarnessSections, opts.blocks);
+    const names = opts.blocks || Object.keys(discovered);
+    if (!names.length) throw new Error('no block divs found in the content page');
+    const harnessCounts = Object.fromEntries(names.map((n) => [n, discovered[n] || 0]));
+    const blockCss = names.map((n) => { try { return fs.readFileSync(`${blocksDir}/${n}/${n}.css`, 'utf8'); } catch { return ''; } }).join('\n');
+    if (blockCss) await harness.addStyleTag({ content: blockCss });
+    // AFTER tagging (which reads the raw authored shape), mimic the vanilla
+    // runtime's decorateButtons/decorateSections/decorateBlock DOM — .section
+    // wrappers, .default-content-wrapper, .<name>-wrapper/.block/.<name>-container,
+    // AND wrapTextNodes cell normalization (#104: a media-led / unlisted-first-child
+    // cell's whole content folds into ONE <p> on live; without mimicking it here
+    // a collector that reads cell.children false-passes the gate and drops every
+    // sibling after the image in production) — so block/foundation CSS and
+    // decode both face the live shape. data-rt tags survive: the tagged
+    // elements are moved, not recreated. Shared with the EW probe / render-harness.
+    await harness.evaluate(runtimeMimic);
+    // --ew: stamp the workspace's instrumentation on the authored (pre-decorate)
+    // shape; each text remembers its data-rt unit so survivors are counted per block.
+    const ewTexts = opts.ew ? (await harness.evaluate(instrument, EDITABLE)).texts : [];
+    const decorateErrs = [];
+    // A block whose inlined JS failed to evaluate (module-scope import/export, a
+    // syntax error) leaves window.__b[name] undefined — that MUST fail the gate:
+    // the undecorated raw rows would match the prototype and exit 0 while the
+    // decode was never exercised.
+    const notInstalled = await installBlockJs(harness, names, blocksDir, { root: hh.root });
+    decorateErrs.push(...installErrors(notInstalled, hh.requests, hh.root));
+    decorateErrs.push(...await runDecorate(harness, names));
+    await harness.waitForTimeout(800);
+    const ewRows = opts.ew ? await harness.evaluate(survey, ewTexts) : [];
+    // Per-unit rendered text, to split a dead text into two causes: REBUILT (the
+    // words survive, the authored node was replaced — EW1) vs DROPPED (the words
+    // are gone — the decoder never consumed that element type; recorded: a
+    // feature-row decorate() that copied heading/paragraph/CTAs but not <ul>,
+    // authored benefit lists rendered as nothing on two sections, lint green).
+    const unitText = opts.ew ? await harness.evaluate(() => Object.fromEntries([...document.querySelectorAll('[data-rt]')].map((el) => [el.getAttribute('data-rt'), (el.textContent || '').replace(/\s+/g, ' ').trim()]))) : {};
+    const exemptions = opts.ew ? readBlockExemptions(blocksDir, names) : {};
+    const ewTotals = { authored: 0, editable: 0, dead: 0, duplicated: 0, exempt: 0 };
+
+    // ── prototype ──
+    const protoPage = await browser.newPage({ viewport: { width: opts.width, height: 1000 }, reducedMotion: 'reduce' });
+    await protoPage.goto(proto, { waitUntil: 'networkidle', timeout: 60000 });
+    await settle(protoPage);
+    const protoCounts = await protoPage.evaluate(tagProtoSections, names.map((name) => ({ name, selector: opts.map[name] || null })));
+
+    // ── per-block round-trip ──
+    process.stdout.write(`\nBlock round-trip @ ${opts.width}px (profile "${prof.name}", ${blocksDir}, ${stylesPath}, root ${hh.root})\n`);
+    if (decorateErrs.length) process.stdout.write(`🔴 decorate errors (these alone fail the gate — an erroring/uninstalled block renders raw rows that can false-match the prototype):\n${decorateErrs.map((e) => `  ${e}`).join('\n')}\n`);
+    const reqLines = formatRequests(hh.requests);
+    if (reqLines.length) process.stdout.write(`${reqLines.join('\n')}\n`);
+    let totalRed = 0;
+    const dump = {};
+    for (const name of names) {
+      const nProto = protoCounts[name] || 0;
+      const nHarness = (harnessCounts[name] || 0);
+      if (!nProto) {
+        process.stdout.write(`\n■ ${name}: ⚠ no prototype section matched (tried section.${name} / [data-section] / .${name}) — pass --map ${name}=<selector>\n`);
+        continue;
+      }
+      if (nProto !== nHarness) process.stdout.write(`\n■ ${name}: ⚠ instance count differs — ${nProto} prototype section(s) vs ${nHarness} authored block(s)\n`);
+      const pairs = Math.min(nProto, nHarness);
+      for (let i = 0; i < pairs; i += 1) {
+        const srcInv = await protoPage.evaluate(inventory, [`[data-rt="${name}-${i}"]`, prof.eyebrow]);
+        const tgtInv = await harness.evaluate(inventory, [`[data-rt="${name}-${i}"]`, prof.eyebrow]);
+        const { flags } = diffInventories(srcInv.items, tgtInv.items, rtProf);
+        if (srcInv.imgCount !== tgtInv.imgCount) flags.push({ sev: '🟡', kind: 'IMG COUNT', msg: `${prof.source} renders ${srcInv.imgCount} img, ${prof.target} ${tgtInv.imgCount} — a dropped/duplicated <picture>, or an intentional CSS-background/image-slot difference.` });
+        // ── Experience Workspace editability (per data-rt unit) ──
+        let ew = null;
+        if (opts.ew) {
+          const unit = `${name}-${i}`;
+          ew = aggregate(ewRows.filter((r) => r.unit === unit), { exemptions, keyOf: () => unit }).blocks[0]
+            || { authored: 0, editable: 0, dead: 0, duplicated: 0, exempt: 0, deadItems: [], dupItems: [], exemptItems: [], exemptReasons: [] };
+          Object.keys(ewTotals).forEach((k) => { ewTotals[k] += ew[k]; });
+          const quote = (d) => `<${d.tag}> "${d.text.slice(0, 48)}${d.text.length > 48 ? '…' : ''}"`;
+          const normed = (s) => (s || '').replace(/\s+/g, ' ').trim();
+          const isDropped = (d) => { const t = normed(d.text); return t.length >= 8 && !(unitText[unit] || '').includes(t); };
+          const dropped = ew.deadItems.filter(isDropped);
+          const rebuilt = ew.deadItems.filter((d) => !isDropped(d));
+          dropped.slice(0, 8).forEach((d) => flags.push({ sev: '🔴', kind: 'DROPPED CONTENT', msg: `${quote(d)} — authored element not rendered at all: the decoder never consumed this element type (handle the full default-content set h1–h6/p/ul/ol/picture/table, or end decorate() with a leftovers pass that appends unconsumed authored nodes)` }));
+          if (dropped.length > 8) flags.push({ sev: '🔴', kind: 'DROPPED CONTENT', msg: `… and ${dropped.length - 8} more authored element(s) not rendered in this block — same cause, same fix` });
+          rebuilt.slice(0, 8).forEach((d) => flags.push({ sev: '🔴', kind: 'DEAD TEXT', msg: `${quote(d)} — rebuilt from textContent/innerHTML, synthesized, or retagged; MOVE the authored element (EW1)` }));
+          if (rebuilt.length > 8) flags.push({ sev: '🔴', kind: 'DEAD TEXT', msg: `… and ${rebuilt.length - 8} more dead text(s) in this block (${ew.dead} of ${ew.authored} authored) — same cause, same fix (EW1)` });
+          ew.dupItems.forEach((d) => flags.push({ sev: '🔴', kind: 'DUPLICATED INDEX', msg: `${quote(d)} on ${d.hits} elements — strip instrumentation from presentational clones (EW4)` }));
+          if (ew.exemptItems.length) flags.push({ sev: '⚪', kind: 'EXEMPT', msg: `${ew.exemptItems.length} declared non-editable text(s) (${ew.exemptReasons.join('; ')}): ${ew.exemptItems.slice(0, 4).map((d) => `${quote(d)} [${d.category || 'no category'}]`).join(', ')}${ew.exemptItems.length > 4 ? ', …' : ''} (EW5)` });
+          if (opts.strict) strictFindings({ blocks: [{ ...ew, block: name }] }).forEach((f) => flags.push({ sev: '🔴', kind: 'EXEMPT (strict)', msg: `${f} (EW5)` }));
+        }
+        const red = flags.filter((f) => f.sev === '🔴').length;
+        totalRed += red;
+        const label = pairs > 1 ? `${name}[${i}]` : name;
+        process.stdout.write(`\n■ ${label}: ${flags.length ? `${flags.length} finding(s), ${red} structural 🔴` : '✓ round-trip closed'}${ew ? ` — EW editable ${ew.editable}/${ew.authored}, dead ${ew.dead}, duplicated ${ew.duplicated}, exempt ${ew.exempt}` : ''}\n`);
+        process.stdout.write(`    ${prof.source}: ${summarise(srcInv)}\n    ${prof.target}: ${summarise(tgtInv)}\n`);
+        flags.forEach((f) => process.stdout.write(`  ${f.sev} ${f.kind}: ${f.msg}\n`));
+        if (opts.json) dump[label] = { [prof.source]: srcInv, [prof.target]: tgtInv, ...(ew ? { editability: ew } : {}) };
+      }
+    }
+    if (opts.json) process.stdout.write(`\nInventories JSON:\n${JSON.stringify(dump, null, 1)}\n`);
+    if (opts.ew) process.stdout.write(`\nEW gate: editable ${ewTotals.editable}/${ewTotals.authored}, dead ${ewTotals.dead}, duplicated ${ewTotals.duplicated}, exempt ${ewTotals.exempt}${ewTotals.dead || ewTotals.duplicated ? ' — dead/duplicated texts are 🔴 above' : ''}\n`);
+    const bad = [];
+    if (totalRed) bad.push(`${totalRed} structural 🔴`);
+    if (decorateErrs.length) bad.push(`${decorateErrs.length} decorate error(s)`);
+    process.stdout.write(`\n${bad.length ? `✗ ${bad.join(' + ')} — the round-trip is not closed; fix before deploy.` : '✓ all blocks: round-trip closed (0 structural 🔴).'}\n`);
+    failed = bad.length > 0;
+  } finally {
+    await browser.close();
+  }
+  process.exit(failed ? 2 : 0);
+}
+
+main().catch((e) => { process.stderr.write(`block-roundtrip error: ${e.message}\n`); process.exit(1); });
