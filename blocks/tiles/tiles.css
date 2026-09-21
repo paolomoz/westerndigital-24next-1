@@ -390,3 +390,11 @@ main .section.tiles-container:has(.tiles.buy) .default-content-wrapper h2 {
     max-width: 1140px;
   }
 }
+
+/* reconcile(products) pub2 — box-ladder probe (stardust/.work/deploy/box-tiles.txt): the trailing
+   foot paragraph's .default-content-wrapper inherits the shared head padding-bottom (48 px ≥992 /
+   32 px) → buy band +48 (1440) / +32 (360) vs the prototype .buy-direct__foot (padding 0). Only the
+   wrapper that carries the h2 is the head. */
+main .section.tiles-container:has(.tiles.buy) .default-content-wrapper:not(:has(h2)) {
+  padding-bottom: 0;
+}

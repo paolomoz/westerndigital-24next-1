@@ -205,10 +205,15 @@
   background: #fff;
 }
 
+/* reconcile(products) pub2 — published-origin landmark table: build offset grows −24 px per listing
+   row (1440: 4 rows → h2 "Buy direct" Δy −96; 360: 8 rows → −192). Cause: the compare control is
+   decided-out (dynamics row #28) but its box (prototype .product-card__compare: margin-top 8 + 16 px)
+   set the card height on live. padding-bottom reserves that box so the promo and row rhythm hold. */
 .product-listing .product-card-link {
   display: flex;
   flex-direction: column;
   height: auto;
+  padding-bottom: 24px;
   line-height: 16px;
   color: #000;
   text-decoration: none;

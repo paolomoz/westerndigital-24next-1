@@ -25,9 +25,34 @@ function el(tag, className) {
   return node;
 }
 
+/**
+ * reconcile(products) pub2 — the pipeline delivers a link-only <ul> of the footer fragment as
+ * `<p>- <a>…</a> - <a>…</a></p>` (/footer.plain.html: the social and the legal lists; the column
+ * lists arrive as <ul>). Rebuild the authored list so the social / legal slots decorate as designed
+ * (box-ladder: .footer-support 111 vs .footer-social-wrap 100; legal copy 65 vs links 45 @1440).
+ */
+function unflattenList(node) {
+  if (node.tagName !== 'P') return node;
+  const items = [...node.children];
+  if (items.length < 2 || !items.every((c) => c.tagName === 'A')) return node;
+  const stray = [...node.childNodes]
+    .some((n) => n.nodeType === Node.TEXT_NODE && /[^\s-]/.test(n.textContent));
+  if (stray) return node;
+  const ul = document.createElement('ul');
+  items.forEach((a) => {
+    const li = document.createElement('li');
+    li.append(a);
+    ul.append(li);
+  });
+  node.replaceWith(ul);
+  return ul;
+}
+
 function contentOf(section) {
   // the authored elements of a fragment section (inside its default-content-wrapper)
-  return section ? [...section.querySelectorAll(':scope > div > *, :scope > p, :scope > ul')] : [];
+  return section
+    ? [...section.querySelectorAll(':scope > div > *, :scope > p, :scope > ul')].map(unflattenList)
+    : [];
 }
 
 /**
