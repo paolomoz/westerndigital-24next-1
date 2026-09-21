@@ -240,8 +240,13 @@ main .section.cards-container:has(.cards.about) .default-content-wrapper {
 }
 
 /* ---------- resource (case studies: white 400 × ≥275, icon + eyebrow + title + text link) ---------- */
+
+/* reconcile(index) pub2 — the runtime emits .card-media as a SIBLING of .card-body (the prototype nested the
+   icon inside .rcard__body), so the flex card laid icon and copy out as a ROW; stack them so the 48 + 16 px
+   icon rides above the copy (gate-pub1 landmarks: resource h3 dy -64 at 1440, -28 = +35 - 63 at 360). */
 .cards.resource .card {
   display: flex;
+  flex-direction: column;
   max-width: 400px;
   min-height: 275px;
   padding: 32px;
@@ -427,6 +432,14 @@ main .section.cards-container:has(.cards.about) .default-content-wrapper {
   .cards.about .label p {
     font-size: 18px;
     line-height: 19.8px;
+  }
+
+  /* reconcile(index) pub2 — the live content / promo / resource band heads span the full 360 (lift index-360:
+     h2.h2-hero x0 w360); only the about head keeps the 992 container gutter. The 16 px wrapper gutter wrapped
+     "A Legacy in Technology and Innovation" to a third line (gate-pub1 landmarks: hA 70 hB 106, seam +35). */
+  main .section.cards-container:not(:has(.cards.about)) .default-content-wrapper {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
