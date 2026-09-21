@@ -49,6 +49,18 @@
   }
 }
 
+/* reconcile(wide) — the ≥1464 rung of the lifted .contain ladder (source index-inline-2.css @156886:
+   `@media(min-width:1464px){.contain{max-width:1464px}}`; ladder 576 / 768 / 992 / 1140 / 1464, width 100 %,
+   padding 0 16, margin auto). Every wrapper that reads --container-max scales with it — header, footer, sections,
+   hero / carousel / cards / columns / tabs wraps; fixed utilities (max-w-700 / 800 / 992 / 1140px) stay literal.
+   Below 1464 the token is unchanged, so the 1440 and 360 renders are byte-identical (cls-wide.json @1920:
+   live h1 x 244 / w 1432 = (1920 − 1464) / 2 + 16 / 1464 − 32). */
+@media (width >= 1464px) {
+  :root {
+    --container-max: 1464px;
+  }
+}
+
 /* metric-matched fallback faces (Step 4) — named SECOND in every stack, available at first paint.
    size-adjust from a rendered-width probe of the harvested Roboto vs local Arial per weight
    (stardust/.work/deploy/probes/width.mjs: 400 98.931 %, 500 99.860 %, 700 94.612 %);

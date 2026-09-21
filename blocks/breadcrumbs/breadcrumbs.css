@@ -2,7 +2,7 @@
    (stardust/replica/capture/lift/products-{1440,360}.json). The authored <ul> is the trail; the items
    are styled by descendant selectors so the editor's re-rendered list matches too (EW2). */
 
-/* products' stepped container (.mainContainWrap .contain: 100% + 16 gutters, 576 / 768 / 992 / 1140) */
+/* products' stepped container (.mainContainWrap .contain: 100% + 16 gutters, 576 / 768 / 992 / 1140 / 1464) */
 .breadcrumbs .breadcrumbs-wrap {
   position: relative;
   width: 100%;
@@ -71,5 +71,12 @@
 @media (width >= 1140px) {
   .breadcrumbs .breadcrumbs-wrap {
     max-width: 1140px;
+  }
+}
+
+/* reconcile(wide) — the ladder's 1464 rung (source @media(min-width:1464px){.contain{max-width:1464px}}) */
+@media (width >= 1464px) {
+  .breadcrumbs .breadcrumbs-wrap {
+    max-width: 1464px;
   }
 }

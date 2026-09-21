@@ -555,6 +555,17 @@ header .navbar-search input.search-expanded ~ .btn-search {
   background: transparent;
 }
 
+/* reconcile(wide) — source @media(min-width:1464px) (index-inline-2.css @135701): .search-expanded 1230px, ~ .btn-search right 97% */
+@media (width >= 1464px) {
+  header .navbar-search input.search-expanded {
+    width: 1230px;
+  }
+
+  header .navbar-search input.search-expanded ~ .btn-search {
+    right: 97%;
+  }
+}
+
 header .search-clear {
   position: absolute;
   top: -3px;

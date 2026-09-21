@@ -291,7 +291,7 @@ main .section.tiles-container:has(.tiles.buy) .default-content-wrapper h2 {
   color: #000;
 }
 
-/* products' stepped container (.mainContainWrap .contain: 576 / 768 / 992 / 1140) */
+/* products' stepped container (.mainContainWrap .contain: 576 / 768 / 992 / 1140 / 1464) */
 @media (width >= 576px) {
   .tiles.buy .tiles-wrap {
     max-width: 576px;
@@ -388,6 +388,13 @@ main .section.tiles-container:has(.tiles.buy) .default-content-wrapper h2 {
 @media (width >= 1140px) {
   .tiles.buy .tiles-wrap {
     max-width: 1140px;
+  }
+}
+
+/* reconcile(wide) — the ladder's 1464 rung (source @media(min-width:1464px){.contain{max-width:1464px}}) */
+@media (width >= 1464px) {
+  .tiles.buy .tiles-wrap {
+    max-width: 1464px;
   }
 }
 
