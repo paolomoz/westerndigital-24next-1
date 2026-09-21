@@ -1,0 +1,28 @@
+/
+  strict 100%  (served 497 / rendered 421, missing 76; landmarks counted 58%)
+  code   100%  ok  (fragments credited +0 words = fragments cost 0 pts, app blocks −0, allowlisted −0)
+  servedGap main 0 / 484 words, chrome 248
+      164 /   336  header                                   Skip main content Named 2026 S&P Dow Jones Best Index North America.
+       84 /   110  footer                                   Country/Region: United States Shopping My Account Sign Up Email Discounts Promotions Portfolio
+/products
+  strict 100%  (served 572 / rendered 339, missing 233; landmarks counted 59%)
+  code   100%  ok  (fragments credited +0 words = fragments cost 0 pts, app blocks −0, allowlisted −0)
+  servedGap main 33 / 616 words, chrome 284
+      206 /   336  header                                   Skip main content Named 2026 S&P Dow Jones Best Index North America.
+       78 /   110  footer                                   Country/Region: United States Shopping Account Sign Up Email Discounts & Promotions Policy
+       19 /   210  filters                                  Filter + Less Clear
+       14 /   340  product-listing                          Filter Sort by: Most Popular Latest Title A-Z Z-A Low-High High-Low ✕
+/solutions
+  strict 100%  (served 1477 / rendered 1389, missing 88; landmarks counted 81%)
+  code   100%  ok  (fragments credited +0 words = fragments cost 0 pts, app blocks −0, allowlisted −0)
+  servedGap main 0 / 1468 words, chrome 237
+      156 /   336  header                                   Skip main Named 2026 S&P Dow Jones Class Index North America. Shop
+       81 /   110  footer                                   Country/Region: United States Shopping Account Sign Email Discounts Promotions Product Portfolio Warranty
+/company
+  strict 100%  (served 318 / rendered 294, missing 24; landmarks counted 44%)
+  code   100%  ok  (fragments credited +0 words = fragments cost 0 pts, app blocks −0, allowlisted −0)
+  servedGap main 0 / 309 words, chrome 327
+      235 /   336  header                                   Skip main content Named 2026 S&P Dow Jones Class Index America. Shop
+       92 /   110  footer                                   Country/Region: States Shopping My Account Sign Up Email Discounts & Promotions Product
+
+4 pages: strict min 100%, code min 100% (gate 98%)

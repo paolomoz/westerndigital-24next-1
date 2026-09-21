@@ -733,7 +733,40 @@
             "1440": "stardust/.work/replica/neutrality/index-1440/compare.json (0.00 %, Δh 0)"
           }
         }
-      ]
+      ],
+      "published": {
+        "1440": {
+          "result": {
+            "regime": "published-origin",
+            "pixelPct": 1.87,
+            "pixelPctUnmasked": 1.87,
+            "heightDelta": -31,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/",
+              "width": 1440,
+              "capturedAt": "2026-09-21T08:53:28.613Z",
+              "sidecar": "stardust/replica/gates/index-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T12:52:29.160Z",
+            "noiseFloor": {
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          },
+          "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/",
+          "artifacts": [
+            "stardust/replica/gates/index-1440/gate-pub1.json"
+          ]
+        }
+      }
     },
     {
       "pageType": "listing",
@@ -1317,7 +1350,71 @@
           },
           "probe768": "stardust/.work/replica/probes/overflow-url.mjs → scrollWidth 768/768"
         }
-      ]
+      ],
+      "published": {
+        "360": {
+          "result": {
+            "regime": "published-origin",
+            "pixelPct": 13.17,
+            "pixelPctUnmasked": 13.17,
+            "heightDelta": 174,
+            "pass": false,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/products",
+              "width": 360,
+              "capturedAt": "2026-09-21T08:59:57.800Z",
+              "sidecar": "stardust/replica/gates/products-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T12:45:32.673Z",
+            "noiseFloor": {
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          },
+          "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/products",
+          "artifacts": [
+            "stardust/replica/gates/products-360/gate-pub1.json"
+          ]
+        },
+        "1440": {
+          "result": {
+            "regime": "published-origin",
+            "pixelPct": 6.04,
+            "pixelPctUnmasked": 6.04,
+            "heightDelta": 17,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/products",
+              "width": 1440,
+              "capturedAt": "2026-09-21T08:56:24.839Z",
+              "sidecar": "stardust/replica/gates/products-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T12:44:17.974Z",
+            "noiseFloor": {
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          },
+          "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/products",
+          "artifacts": [
+            "stardust/replica/gates/products-1440/gate-pub1.json"
+          ]
+        }
+      }
     },
     {
       "pageType": "program",
@@ -1873,6 +1970,70 @@
             "artifact": "gates/solutions-1440/crop-footer-iter1.json"
           }
         }
+      },
+      "published": {
+        "360": {
+          "result": {
+            "regime": "published-origin",
+            "pixelPct": 2.41,
+            "pixelPctUnmasked": 2.41,
+            "heightDelta": 13,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/solutions",
+              "width": 360,
+              "capturedAt": "2026-09-21T09:44:00.330Z",
+              "sidecar": "stardust/replica/gates/solutions-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T12:48:25.572Z",
+            "noiseFloor": {
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          },
+          "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/solutions",
+          "artifacts": [
+            "stardust/replica/gates/solutions-360/gate-pub1.json"
+          ]
+        },
+        "1440": {
+          "result": {
+            "regime": "published-origin",
+            "pixelPct": 0.19,
+            "pixelPctUnmasked": 0.19,
+            "heightDelta": -32,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/solutions",
+              "width": 1440,
+              "capturedAt": "2026-09-21T09:40:17.084Z",
+              "sidecar": "stardust/replica/gates/solutions-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T12:46:52.472Z",
+            "noiseFloor": {
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          },
+          "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/solutions",
+          "artifacts": [
+            "stardust/replica/gates/solutions-1440/gate-pub1.json"
+          ]
+        }
       }
     },
     {
@@ -2191,7 +2352,71 @@
           ]
         }
       ],
-      "status": "both breakpoints PASS (prototype regime); chrome rest crops PASS both widths; motion asserted (🟡 advisory entrances = chrome-owned); no residual rows needed"
+      "status": "both breakpoints PASS (prototype regime); chrome rest crops PASS both widths; motion asserted (🟡 advisory entrances = chrome-owned); no residual rows needed",
+      "published": {
+        "360": {
+          "result": {
+            "regime": "published-origin",
+            "pixelPct": 10.58,
+            "pixelPctUnmasked": 10.58,
+            "heightDelta": 18,
+            "pass": false,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/company",
+              "width": 360,
+              "capturedAt": "2026-09-21T10:12:36.928Z",
+              "sidecar": "stardust/replica/gates/company-360/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T12:50:50.230Z",
+            "noiseFloor": {
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          },
+          "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/company",
+          "artifacts": [
+            "stardust/replica/gates/company-360/gate-pub1.json"
+          ]
+        },
+        "1440": {
+          "result": {
+            "regime": "published-origin",
+            "pixelPct": 7.51,
+            "pixelPctUnmasked": 7.51,
+            "heightDelta": -27,
+            "pass": true,
+            "masks": [],
+            "ref": {
+              "url": "https://www.westerndigital.com/company",
+              "width": 1440,
+              "capturedAt": "2026-09-21T10:10:12.870Z",
+              "sidecar": "stardust/replica/gates/company-1440/live.png.json",
+              "instrument": "stitch-shot",
+              "technique": "headless",
+              "consent": {
+                "mode": "accept",
+                "via": "[aria-label*=\"Accept\" i]"
+              }
+            },
+            "at": "2026-09-21T12:49:33.773Z",
+            "noiseFloor": {
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          },
+          "url": "https://main--westerndigital-24next-1--paolomoz.aem.page/company",
+          "artifacts": [
+            "stardust/replica/gates/company-1440/gate-pub1.json"
+          ]
+        }
+      }
     }
   ],
   "modules": [
