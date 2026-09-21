@@ -60,6 +60,12 @@
         "value": "roboto",
         "createdAt": "2026-09-21T07:53:45.360Z",
         "reason": "replica: lifted from https://www.westerndigital.com on 2026-09-21"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "roboto-fallback",
+        "createdAt": "2026-09-21T14:37:16.765Z",
+        "reason": "deploy Step 4: metric-matched fallback face (fonts-and-cls.md § 3) for the self-hosted Roboto"
       }
     ]
   }

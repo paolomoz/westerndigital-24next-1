@@ -42,3 +42,4 @@ Chrome: one real variant. `chrome-variants.mjs` split `default` {index, products
 on the stylesheet list alone (tags.srv.stackadapt.com/sa.css — a third-party ad tag, not chrome); header/footer class sets
 and nav rows are identical. Resolved: `variant-4dea` merges into `default`; one chrome archetype row (`chrome-variant` decision row, hands-off default).
 Content root for every probe (`--main`): `section.mainContainWrap` (the site has no `<main>`).
+- Impeccable ignore set (2026-09-21, run close): value ignores added — design-system-font `Roboto-Fallback` (deploy Step 4 metric-matched fallback), layout-transition `max-height 0.5s ease-out` and `max-height 0.4s ease, opacity 0.4s ease` (lifted source accordion transitions, motion-observe evidence) · resolved by: hands-off
