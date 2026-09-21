@@ -134,7 +134,10 @@
 .carousel .bars {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 241px);
+
+  /* reconcile(wide) — source .splide-progressbar .wd-bars { grid-template-columns: repeat(var(--wd-count, 3), 1fr); gap: 48px }:
+     fluid tracks, not the 1440-resolved 241 px ((1108 − 3 × 48) / 4 = 241 — identical at the gate; 322 at 1920 like live) */
+  grid-template-columns: repeat(4, 1fr);
   gap: 48px;
   width: 100%;
   max-width: var(--container-max);
