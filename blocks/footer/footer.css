@@ -1,20 +1,287 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* stylelint-disable no-descending-specificity -- lifted cascade order (canon.css) preserved */
+
+/* footer — canon.css § footer (lift: #111 pt 32 → columns row p 48 0 → legal bar #000), ported verbatim
+   under the footer host; the 360 pass from canon.css § 360 chrome (footer stacks). */
+footer .footer {
+  color: var(--c-white);
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer .contain {
+  position: relative;
+  max-width: var(--container-max);
+  padding: 0 var(--gutter);
+  margin: 0 auto;
 }
 
-footer .footer p {
-  margin: 0;
+footer .footer-main {
+  position: relative;
+  padding-top: 32px;
+  background: var(--c-footer);
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer-top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--c-grey-3);
+}
+
+footer .footer-top-brand {
+  width: calc(100% * 8 / 12);
+  padding-bottom: 16px;
+}
+
+footer .footer-logo {
+  display: flex;
+  align-items: center;
+  padding-right: 32px;
+}
+
+footer .footer-logo p,
+footer .footer-logo a {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-logo .icon,
+footer .footer-logo .icon img {
+  display: block;
+  width: 77px;
+  height: 20px;
+}
+
+footer .footer-top-region {
+  width: calc(100% * 4 / 12);
+  height: 0;
+  align-self: center;
+}
+
+footer .footer-top-region .row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 24px;
+  margin-top: -24px;
+}
+
+footer .footer-top-region p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+footer .footer-top-region a {
+  display: inline;
+  margin: 4px 0 0 4px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  border-radius: var(--radius-btn);
+  transition: var(--transition);
+}
+
+footer .footer-cols {
+  display: flex;
+  padding: 48px 0;
+}
+
+footer .footer-col {
+  width: 25%;
+  padding-right: 16px;
+}
+
+footer .footer-col-first .footer-col-inner {
+  padding-left: 20px;
+}
+
+footer .footer-col-inner,
+footer .footer-col-list,
+footer .footer-support,
+footer .footer-social-wrap,
+footer .footer-award {
+  display: flow-root;
+}
+
+footer .footer-col-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer .footer-col-list li {
+  display: list-item;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+footer .footer-col-list a {
+  display: inline;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--c-grey-link);
+  transition: var(--transition);
+}
+
+footer .footer-col-list a:hover {
+  color: var(--c-white);
+}
+
+footer .footer-support-text {
+  margin: 48px 0 32px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer .footer-social {
+  display: flex;
+  justify-content: flex-start;
+  margin: 32px 0 40px;
+  height: 28px;
+}
+
+footer .footer-social ul {
+  display: flex;
+}
+
+footer .footer-social li {
+  width: 52px;
+}
+
+footer .footer-social li:last-child {
+  width: 24px;
+}
+
+footer .footer-social a {
+  display: inline-block;
+  transition: var(--transition);
+}
+
+footer .footer-social .icon,
+footer .footer-social .icon img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+footer .footer-social .icon-x,
+footer .footer-social .icon-x img {
+  width: 29px;
+  height: 29px;
+}
+
+footer .footer-social .icon-x {
+  margin-top: -4px;
+}
+
+footer .footer-award p {
+  line-height: 0;
+}
+
+footer .footer-award img {
+  display: block;
+  max-width: 100px;
+  height: auto;
+}
+
+footer .footer-legal {
+  background: var(--c-black);
+  color: var(--c-white);
+}
+
+footer .footer-legal-links {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+footer .footer-legal-links li {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 24px;
+  padding-right: 16px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+footer .footer-legal-links li:last-child {
+  padding-right: 0;
+}
+
+footer .footer-legal-links a {
+  display: inline;
+  font-size: 14px;
+  line-height: 14px;
+  transition: var(--transition);
+}
+
+footer .footer-legal-copy {
+  padding: 20px 0 24px;
+}
+
+footer .footer-legal-copy p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* 360 pass — footer stacks (lift index-360.json) */
+@media (width <= 767px) {
+  footer .contain {
+    max-width: none;
+  }
+
+  footer .footer-main {
+    padding: 32px 0;
+  }
+
+  footer .footer-top {
+    display: block;
+    padding-bottom: 28px;
+  }
+
+  footer .footer-top-brand {
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--c-grey-3);
+  }
+
+  footer .footer-logo {
+    padding: 0 0 12px;
+  }
+
+  footer .footer-top-region {
+    width: 100%;
+    height: auto;
+  }
+
+  footer .footer-top-region .row {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  footer .footer-cols {
+    display: block;
+    padding: 32px 0 0;
+  }
+
+  footer .footer-col {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  footer .footer-col:last-child {
+    margin-bottom: 0;
+  }
+
+  footer .footer-col-first .footer-col-inner {
+    padding-left: 0;
+  }
+
+  footer .footer-col-inner {
+    padding-right: 16px;
+  }
+
+  footer .footer-legal-links {
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--c-grey-3);
   }
 }

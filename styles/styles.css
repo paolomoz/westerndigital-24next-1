@@ -1,91 +1,180 @@
 /*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ * styles/styles.css — westerndigital.com replica foundation (stardust:deploy Steps 3–5).
  *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
+ * Every value is LIFTED: tokens verbatim from stardust/prototypes/canon.css :root (computed styles of
+ * www.westerndigital.com at 1440/360), reset + button system from canon.css, section styles from the
+ * page CSS named in stardust/eds-conversion-log.md § Step 3. No re-styling. The boilerplate's STRUCTURAL
+ * layer (body gate, chrome reservation, section scaffold) is preserved and retuned to the lifted values.
+ * Fonts: Roboto (Apache 2.0, self-hosted, fonts/LICENSING.md) — no proprietary face ships.
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* tokens — canon.css :root, verbatim (rgb notation modernised for stylelint) */
+  --ff-body: roboto, roboto-fallback, sans-serif;
+  --body-font-family: var(--ff-body);
+  --c-black: rgb(0 0 0);
+  --c-white: rgb(255 255 255);
+  --c-blue: rgb(34 102 255); /* tab active, link blue */
+  --c-blue-nav: rgb(0 116 243); /* nav sliding bar */
+  --c-promo: rgb(43 43 43); /* header promo strip #2B2B2B */
+  --c-grey-light: rgb(230 230 230); /* header bottom border */
+  --c-grey-1: rgb(242 243 243); /* #F2F3F3 section / card bg */
+  --c-grey-3: rgb(106 106 106); /* footer rule */
+  --c-grey-4: rgb(107 107 107); /* muted product meta */
+  --c-grey-5: rgb(115 119 121); /* inactive tab */
+  --c-grey-link: rgb(146 154 157); /* footer links */
+  --c-footer: rgb(17 17 17); /* #111111 */
+  --c-navy: rgb(0 31 63); /* #001F3F card bg */
+  --c-mint: rgb(245 249 249); /* #F5F9F9 G-DRIVE card */
+  --c-skip-bg: rgb(241 241 241);
+  --c-skip-fg: rgb(33 117 155);
+  --container-max: 1140px;
+  --gutter: 16px;
+  --radius-btn: 6px;
+  --radius-card: 16px;
+  --radius-media: 20px;
+  --header-h: 97px; /* 40 promo + 56 nav + 1 border (lift index-1440) */
+  --promo-h: 40px;
+  --nav-h: 56px;
+  --transition: 0.2s;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
-
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
-
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
-
-  /* nav height */
-  --nav-height: 64px;
+  /* header reservation (#81): the chrome's real rendered height per breakpoint */
+  --nav-height: var(--header-h);
 }
 
-/* fallback fonts */
+@media (width <= 767px) {
+  :root {
+    --nav-h: 50px;
+    --header-h: 91px; /* 40 promo + 50 nav + 1 border (lift index-360) */
+  }
+}
+
+/* metric-matched fallback faces (Step 4) — named SECOND in every stack, available at first paint.
+   size-adjust from a rendered-width probe of the harvested Roboto vs local Arial per weight
+   (stardust/.work/deploy/probes/width.mjs: 400 98.931 %, 500 99.860 %, 700 94.612 %);
+   ascent/descent from Roboto hhea (1900 / 500 on 2048 upm) divided by size-adjust. */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
+  font-family: roboto-fallback;
+  font-weight: 400;
   src: local('Arial');
+  size-adjust: 98.931%;
+  ascent-override: 93.77%;
+  descent-override: 24.68%;
+  line-gap-override: 0%;
 }
 
 @font-face {
   font-family: roboto-fallback;
-  size-adjust: 99.529%;
+  font-weight: 500;
   src: local('Arial');
+  size-adjust: 99.86%;
+  ascent-override: 92.9%;
+  descent-override: 24.44%;
+  line-gap-override: 0%;
 }
 
-@media (width >= 900px) {
-  :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+@font-face {
+  font-family: roboto-fallback;
+  font-weight: 700;
+  src: local('Arial Bold'), local('Arial-BoldMT');
+  size-adjust: 94.612%;
+  ascent-override: 98.05%;
+  descent-override: 25.8%;
+  line-gap-override: 0%;
+}
 
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
-  }
+/* reset — canon.css § reset (+ #106 border-box, #36 img) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--c-black);
+  background: var(--c-white);
 }
 
 body.appear {
   display: block;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+pre,
+blockquote,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+svg,
+picture {
+  vertical-align: middle;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+a:any-link {
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+/* chrome reservation — boilerplate structural layer; the bare <header> carries the chrome ground */
 header {
   height: var(--nav-height);
+  background: var(--c-white);
 }
 
 header .header,
@@ -98,192 +187,7 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
-}
-
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
-
-p,
-dl,
-ol,
-ul,
-pre,
-blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-}
-
-code,
-pre {
-  font-size: var(--body-font-size-s);
-}
-
-pre {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: var(--light-color);
-  overflow-x: auto;
-  white-space: pre;
-}
-
-main > div {
-  margin: 40px 16px;
-}
-
-input,
-textarea,
-select,
-button {
-  font: inherit;
-}
-
-/* links */
-a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-a:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
-}
-
-/* buttons */
-p.button-wrapper {
-  margin: 12px 0;
-}
-
-a.button:any-link,
-button.button {
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  margin: 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font: inherit;
-  font-weight: 500;
-  line-height: 1.25;
-  text-decoration: none;
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-a.button[aria-disabled="true"],
-button.button:disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-a.button.primary,
-button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
-}
-
-a.button.primary:hover,
-a.button.primary:focus-visible,
-button.button.primary:hover,
-button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-a.button.primary[aria-disabled="true"],
-a.button.primary[aria-disabled="true"]:hover,
-a.button.primary[aria-disabled="true"]:focus-visible,
-button.button.primary:disabled,
-button.button.primary:disabled:hover,
-button.button.primary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-a.button.secondary,
-button.button.secondary {
-  border-color: var(--text-color);
-  background-color: transparent;
-  color: var(--text-color);
-}
-
-a.button.secondary:hover,
-a.button.secondary:focus-visible,
-button.button.secondary:hover,
-button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-a.button.secondary[aria-disabled="true"],
-a.button.secondary[aria-disabled="true"]:hover,
-a.button.secondary[aria-disabled="true"]:focus-visible,
-button.button.secondary:disabled,
-button.button.secondary:disabled:hover,
-button.button.secondary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-/* high-impact call-to-action */
-a.button.accent,
-button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
-}
-
-a.button.accent:hover,
-a.button.accent:focus-visible,
-button.button.accent:hover,
-button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
-}
-
-a.button.accent[aria-disabled="true"],
-a.button.accent[aria-disabled="true"]:hover,
-a.button.accent[aria-disabled="true"]:focus-visible,
-button.button.accent:disabled,
-button.button.accent:disabled:hover,
-button.button.accent:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-main img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
+/* icons (runtime :name: decoration) */
 .icon {
   display: inline-block;
   height: 24px;
@@ -295,31 +199,235 @@ main img {
   width: 100%;
 }
 
-/* sections */
+/* section scaffold — lifted container model (div.container.contain: 1140 / padding 0 16 / margin auto;
+   max-width none at ≤767). Blocks own their band padding and grounds (conversion log § Step 2). */
 main > .section {
-  margin: 40px 0;
+  margin: 0;
+  padding: 0;
 }
 
 main > .section > div {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
 }
 
-main > .section:first-of-type {
-  margin-top: 0;
+/* the ONE full-bleed escape: block wrappers span the viewport, blocks re-contain their content */
+main > .section > div:not(.default-content-wrapper) {
+  max-width: none;
+  padding: 0;
 }
 
-@media (width >= 900px) {
+/* runtime never removes an empty section (runtime-contract.json); documented fallback */
+main .section:empty {
+  display: none;
+}
+
+@media (width <= 767px) {
   main > .section > div {
-    padding: 0 32px;
+    max-width: none;
   }
 }
 
-/* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
+/* section styles — the closed vocabulary for DEFAULT-CONTENT sections (conversion log § Step 2)
+   intro: centered prose band (company/vision — lift company.css .co-vision, .co-vision__text, .co-h2, .co-sub) */
+main .section.intro {
+  padding: 48px 0;
+  text-align: center;
 }
+
+main .section.intro .default-content-wrapper {
+  max-width: calc(800px + 2 * var(--gutter));
+}
+
+main .section.intro .default-content-wrapper h2 {
+  margin-bottom: 4px;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+main .section.intro .default-content-wrapper p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+@media (width >= 768px) {
+  main .section.intro .default-content-wrapper h2 {
+    font-size: 42px;
+  }
+}
+
+@media (width >= 992px) {
+  main .section.intro {
+    padding: 64px 0;
+  }
+
+  main .section.intro .default-content-wrapper h2 {
+    font-size: 48px;
+  }
+}
+
+/* split-aside: aside block + main block side by side (products/listing — lift products.css .plp pb 80,
+   .plp-app flex, .plp-side 25 % → 18.2367 % mr 32, .plp-main flex 1 ml 32; stepped container 768/992/1140) */
+main .section.split-aside {
+  padding-bottom: 80px;
+}
+
+@media (width >= 768px) {
+  main .section.split-aside {
+    display: flex;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 var(--gutter) 80px;
+  }
+
+  main .section.split-aside > div:first-child {
+    flex: 0 0 auto;
+    width: 25%;
+    margin-right: 32px;
+  }
+
+  main .section.split-aside > div:last-child {
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-left: 32px;
+  }
+}
+
+@media (width >= 992px) {
+  main .section.split-aside {
+    max-width: 992px;
+  }
+}
+
+@media (width >= 1140px) {
+  main .section.split-aside {
+    max-width: var(--container-max);
+  }
+
+  main .section.split-aside > div:first-child {
+    width: 18.2367%;
+  }
+}
+
+/* buttons (Step 5) — boilerplate selectors, lifted paint (canon.css .btn: 16/16 500, padding 12 32,
+   border 1, radius 6, transition .2s; primary = .btn--black, secondary = .btn--outline-black, accent = .btn--white) */
+p.button-wrapper {
+  margin: 0;
+}
+
+a.button:any-link,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0;
+  padding: 12px 32px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-btn);
+  font: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+a.button[aria-disabled="true"],
+button.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+a.button.primary,
+button.button.primary {
+  color: var(--c-white);
+  background: var(--c-black);
+  border-color: var(--c-black);
+}
+
+a.button.secondary,
+button.button.secondary {
+  color: var(--c-black);
+  background: transparent;
+  border-color: var(--c-black);
+}
+
+a.button.accent,
+button.button.accent {
+  color: var(--c-black);
+  background: var(--c-white);
+  border-color: var(--c-white);
+}
+
+/* on-dark hosts (#41): secondary = .btn--outline-white — scoped to the BLOCK classes that paint dark */
+main .hero a.button.secondary,
+main .carousel a.button.secondary,
+main .cards.content a.button.secondary {
+  color: var(--c-white);
+  border-color: var(--c-white);
+}
+
+@media (width <= 767px) {
+  a.button:any-link,
+  button.button {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+/* Experience Workspace edit mode (EW3/EW6/EW10) — .prosemirror-editor exists only inside the da.live inline
+   editor; these cost nothing on published pages. Kept together, ordered by intent (repaint from marks). */
+/* stylelint-disable no-descending-specificity */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-btn);
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  color: var(--c-white);
+  background: var(--c-black);
+  border-color: var(--c-black);
+}
+
+.prosemirror-editor p > em > a:any-link,
+.prosemirror-editor p > a:any-link:has(> em:only-child) {
+  color: var(--c-black);
+  background: transparent;
+  border-color: var(--c-black);
+}
+
+/* on-dark repaint — LAST in the file, nothing may follow */
+main :is(.hero, .carousel, .cards.content) .prosemirror-editor p > em > a:any-link,
+main :is(.hero, .carousel, .cards.content) .prosemirror-editor p > a:any-link:has(> em:only-child) {
+  color: var(--c-white);
+  border-color: var(--c-white);
+}
+/* stylelint-enable no-descending-specificity */
