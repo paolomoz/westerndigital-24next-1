@@ -429,6 +429,14 @@ main .section.cards-container:has(.cards.about) .default-content-wrapper {
     max-width: 125px;
   }
 
+  /* reconcile(index) pub3 — the live tile is a 125 px block (lift index-360: a.block w 125, img 125 × 125). With
+     the tile at width auto the lazy image's width: 100% resolved against the label alone until it loaded, then
+     grew to 125 × 125 — five tiles = +254 px after first paint (gate-pub2 360: stitch docH 7929 vs DOM 8183). A
+     definite tile width lets the 500 × 500 attributes reserve the box before load. */
+  .cards.about .card {
+    width: 125px;
+  }
+
   .cards.about .label p {
     font-size: 18px;
     line-height: 19.8px;
