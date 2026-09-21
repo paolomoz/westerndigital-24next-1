@@ -72,6 +72,10 @@ Reuse decisions: the three static heroes + the innovation band share "full-bleed
 | `header` | — | template-slotted | chrome | all | — | foundation worker (Step 6) |
 | `footer` | — | template-slotted | chrome | all | — | foundation worker (Step 6) |
 
+
+Claims (agent `index`, 2026-09-21T11:26Z): `carousel` (hero), `tabs` (category), `cards` (content, promo, resource, about), `columns` (feature, split, cta — all three variants) — files under `blocks/{carousel,tabs,cards,columns}/`; rows in `stardust/eds-conversion-log-index.md`.
+Claimed by agent `products` (2026-09-21T11:44:30Z): `hero` (banner, photo, split, band), `breadcrumbs`, `filters`, `product-listing` — files under blocks/<name>/; rows in stardust/eds-conversion-log-products.md.
+
 Single-use blocks: 10 (carousel, tabs, anchor-nav, table, accordion, filters, product-listing, company-cards, tiles, breadcrumbs is 2-page) — within the D9-VOCAB budget (> 10 flags). Max variants on one block: 4.
 
 ### Section style vocabulary (closed set — `styles/styles.css`)

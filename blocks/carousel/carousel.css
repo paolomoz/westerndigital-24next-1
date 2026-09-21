@@ -1,0 +1,297 @@
+/* carousel — home hero rotator. Every value lifted from stardust/prototypes/index.css § hero carousel
+   (computed styles of www.westerndigital.com at 1440 / 360), scoped under .carousel. Wrappers carry the
+   layout; authored p / picture are styled through descendant selectors (EW2). */
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .track {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* loop offset = the two leading clone slides (lift: translateX(-2880px) @1440, -720px @360) */
+.carousel .list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translateX(-200%);
+}
+
+.carousel .list.is-moving {
+  transition: transform 0.4s ease;
+}
+
+.carousel .slide {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.carousel .panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 750px;
+  padding-bottom: 48px;
+  color: var(--c-white);
+  background: var(--c-black);
+}
+
+/* the authored picture is the background LAYER; the scrim is a ::after over it (no picture → no scrim) */
+.carousel .bg {
+  position: absolute;
+  inset: 0;
+  min-height: 225px;
+  overflow: hidden;
+}
+
+.carousel .bg picture,
+.carousel .bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .bg img {
+  object-fit: cover;
+  object-position: 0% 50%;
+}
+
+.carousel .bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  background-image: linear-gradient(90deg, rgb(0 0 0 / 60%) 30%, rgb(0 0 0 / 0%));
+}
+
+.carousel .contain {
+  position: relative;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.carousel .row {
+  display: flex;
+  padding: 32px 0;
+}
+
+.carousel .col {
+  width: calc(100% * 8 / 12);
+}
+
+.carousel .title {
+  max-width: 700px;
+  padding-right: 24px;
+}
+
+.carousel .title p {
+  margin-bottom: 8px;
+  font-size: 66px;
+  line-height: 72.6px;
+  font-weight: 700;
+}
+
+.carousel .lede {
+  max-width: 700px;
+}
+
+.carousel .lede p {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.carousel .actions a:any-link {
+  margin: 32px 8px 0 0;
+}
+
+/* progress bar (lift: absolute top 486, h 264, flex end, p 0 28 48, gradient to black) */
+.carousel .progress {
+  position: absolute;
+  top: 486px;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  align-items: end;
+  height: 264px;
+  padding: 0 28px 48px;
+  color: var(--c-white);
+  background-image: linear-gradient(0deg, rgb(0 0 0) 0, rgb(102 102 102 / 0%) 95.45%);
+}
+
+.carousel .bars {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 241px);
+  gap: 48px;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.carousel .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.carousel .item + .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -24px;
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: var(--c-white);
+}
+
+.carousel .item-track {
+  display: block;
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  background: var(--c-white);
+  border-radius: 999px;
+}
+
+.carousel .item-fill {
+  display: block;
+  width: 0%;
+  height: 2px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(90deg, rgb(0 114 239) 0, rgb(0 229 209) 100%);
+  transition: width 0.2s linear;
+}
+
+.carousel .item-label {
+  margin-top: 16px;
+}
+
+.carousel .item-title p {
+  display: block;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.carousel .item-title strong {
+  font-weight: 500;
+}
+
+.carousel .item-desc {
+  margin-top: 8px;
+}
+
+.carousel .item-desc p {
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* observed hover on a progress item (canon.css § interaction states) */
+.carousel .item:hover {
+  color: rgb(211 211 211);
+  opacity: 0.75;
+}
+
+.carousel .item:hover .item-track {
+  background: rgb(221 221 221);
+}
+
+/* ===== 360 pass (lift index-360.json): in-flow 225px image band + copy; heights equalised by the flex list ===== */
+@media (width <= 767px) {
+  .carousel .panel {
+    display: block;
+    min-height: 0;
+    height: 100%;
+    padding-bottom: 32px;
+  }
+
+  .carousel .bg {
+    position: relative;
+    height: 225px;
+    min-height: 225px;
+  }
+
+  .carousel .row {
+    padding: 24px 0;
+  }
+
+  .carousel .col {
+    width: 100%;
+  }
+
+  .carousel .title {
+    padding-right: 0;
+  }
+
+  .carousel .title p {
+    font-size: 34px;
+    line-height: 37.4px;
+  }
+
+  .carousel .lede p {
+    font-size: 18px;
+    line-height: 19.8px;
+  }
+
+  .carousel .actions a:any-link {
+    margin: 16px 8px 0 0;
+    padding: 8px 16px;
+  }
+
+  .carousel .progress {
+    top: auto;
+    bottom: 0;
+    height: 50px;
+    padding: 0;
+  }
+
+  .carousel .bars {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    max-width: none;
+    padding: 24px 16px;
+    overflow: hidden auto;
+  }
+
+  .carousel .item {
+    flex: 0 0 64px;
+    width: 64px;
+  }
+
+  .carousel .item + .item::before {
+    display: none;
+  }
+
+  .carousel .item-track {
+    height: 2px;
+  }
+
+  .carousel .item-label {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel .list.is-moving,
+  .carousel .item-fill {
+    transition: none;
+  }
+}

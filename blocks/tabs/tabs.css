@@ -1,0 +1,179 @@
+/* tabs — home category tablist. Every value lifted from stardust/prototypes/index.css § category tabs
+   (+ canon.css type ramp), scoped under .tabs. The section head (<h1>) is default content styled in
+   place; the band padding rides the section at .section specificity (conversion log § Step 2). */
+
+/* stylelint-disable no-descending-specificity -- lifted cascade kept; the flagged pairs (.grid li a vs .more a) never match the same element */
+
+main .section.tabs-container {
+  padding: 64px 0;
+  text-align: center;
+}
+
+.tabs-container .default-content-wrapper {
+  padding-bottom: 48px;
+}
+
+.tabs-container .default-content-wrapper h1 {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 52.8px;
+  font-weight: 700;
+}
+
+.tabs .wrap {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.tabs .tab-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs .tab {
+  position: relative;
+  display: inline-block;
+  margin: 0 32px;
+  padding: 12px 0;
+  font-size: 18px;
+  line-height: 20.7px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--c-grey-5);
+  border-radius: var(--radius-btn);
+  cursor: pointer;
+}
+
+.tabs .tab::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+}
+
+.tabs .tab[aria-selected="true"] {
+  color: var(--c-blue);
+  border-bottom: 3px solid var(--c-blue);
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.tabs .panel {
+  padding-bottom: 32px;
+}
+
+.tabs .panel[hidden] {
+  display: none;
+}
+
+.tabs .panel-inner {
+  padding: 48px 0;
+  text-align: left;
+}
+
+/* the authored <ul> is the tile grid — styled by element (EW2: no class on the authored list) */
+.tabs .grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -8px -16px;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs .grid li {
+  width: calc(100% * 2 / 12);
+  margin-bottom: 16px;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.tabs .grid li a:any-link {
+  display: block;
+  min-height: 16px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.tabs .grid picture {
+  display: block;
+}
+
+.tabs .grid img {
+  display: inline;
+  max-height: 200px;
+  margin-bottom: 16px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.tabs .more {
+  text-align: center;
+}
+
+.tabs .more a:any-link {
+  margin-top: 32px;
+}
+
+/* ===== 360 pass (lift index-360.json) ===== */
+@media (width <= 767px) {
+  main .section.tabs-container {
+    padding: 48px 0;
+  }
+
+  .tabs-container .default-content-wrapper {
+    padding-bottom: 32px;
+  }
+
+  .tabs-container .default-content-wrapper h1 {
+    font-size: 32px;
+    line-height: 35.2px;
+  }
+
+  .tabs .tab-list {
+    flex-wrap: wrap;
+  }
+
+  .tabs .tab {
+    margin: 0 16px;
+    font-size: 16px;
+    line-height: 18.4px;
+  }
+
+  .tabs .panel {
+    padding-bottom: 16px;
+  }
+
+  .tabs .panel-inner {
+    padding: 24px 0;
+  }
+
+  .tabs .grid li {
+    width: 50%;
+  }
+
+  .tabs .grid li a:any-link {
+    font-size: 18px;
+    line-height: 19.8px;
+  }
+
+  .tabs .more a:any-link {
+    margin-top: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tabs .grid img,
+  .tabs .grid li a:any-link {
+    transition: none;
+  }
+}
+
+/* stylelint-enable no-descending-specificity */

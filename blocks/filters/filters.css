@@ -1,0 +1,342 @@
+/* stylelint-disable no-descending-specificity -- lifted cascade order (products.css) preserved */
+
+/* filters — the PLP sidebar. Every value is lifted verbatim from products.css (.plp-side, .plp-mobhead,
+   .clp-nav*, .clp-facet*, .plp-clearbar, the source's inline accordion glyphs and the observed drawer states);
+   BEM `__` becomes `-` (stylelint kebab-case). The authored title <p> and option <ul> are styled through
+   their wrappers with descendant selectors (EW2). The aside's column width, margin and the section's
+   bottom padding come from the foundation's `split-aside` section style. */
+
+.filters .hidden {
+  display: none !important;
+}
+
+.filters .sm-hidden {
+  display: flex;
+}
+
+/* aside: a fixed off-screen drawer below 768, the sticky sidebar from 768 */
+.filters .plp-side {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 100px;
+  z-index: 20;
+  width: 100%;
+  height: 800px;
+  background: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.filters .plp-side-sticky {
+  display: block;
+}
+
+/* mobile drawer head ("Shop" / "Filter" + close) */
+.filters .plp-mobhead {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.filters .plp-mobhead > span {
+  margin-left: 8px;
+}
+
+.filters .plp-mobhead-close {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.filters .plp-mobhead-close svg {
+  display: block;
+  width: 24px;
+  height: 25px;
+}
+
+/* shop-by navigation groups */
+.filters .clp-nav-item {
+  display: flow-root;
+  position: relative;
+  left: 5px;
+  right: -5px;
+  padding-right: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.filters .clp-nav-title {
+  display: block;
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.filters .clp-nav-title a.accordion {
+  display: block;
+  position: relative;
+  padding-right: 28px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filters .clp-nav-title p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.filters .clp-nav-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 8px 4px;
+  line-height: 22px;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.filters .clp-nav-list li {
+  padding: 8px 0;
+}
+
+.filters .clp-nav-list li a:any-link {
+  line-height: 16px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.filters .clp-nav-list li a:any-link:hover {
+  color: #26f;
+}
+
+/* the source's inline <style scoped> accordion glyphs (plus / minus) — verbatim */
+.filters .accordion::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.428' height='13' viewBox='0 0 12.428 13'%3E%3Cg transform='translate(5.903)'%3E%3Cline y2='13' fill='none' stroke='currentColor' stroke-width='1'%3E%3C/line%3E%3C/g%3E%3Cg transform='translate(0 6.379) rotate(-90)'%3E%3Cline y2='12.428' fill='none' stroke='currentColor' stroke-width='1'%3E%3C/line%3E%3C/g%3E%3C/svg%3E");
+}
+
+.filters .accordion.active::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.428' height='13' viewBox='0 0 12.428 13'%3E%3Cg transform='translate(5.903)' opacity='0'%3E%3Cline y2='13' fill='none' stroke='currentColor' stroke-width='1'%3E%3C/line%3E%3C/g%3E%3Cg transform='translate(0 6.379) rotate(-90)'%3E%3Cline y2='12.428' fill='none' stroke='currentColor' stroke-width='1'%3E%3C/line%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* facets */
+.filters .clp-filters-title {
+  position: relative;
+  left: 5px;
+  right: -5px;
+  display: none;
+  margin: 24px 0 12px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.filters .clp-facet {
+  display: flow-root;
+  position: relative;
+  left: 5px;
+  right: -5px;
+  padding-right: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.filters .clp-facet:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.filters .clp-facet-head {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 16px 0;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #000;
+  cursor: pointer;
+}
+
+.filters .clp-facet-title p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+}
+
+/* EW7: chevron-only toggle at the right edge; the title stays outside the button */
+.filters .clp-facet-head button.accordion {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  margin-top: -14px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.filters .clp-facet-head button.accordion::after {
+  top: 8px;
+}
+
+.filters .accordion-body {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.filters .accordion-body.hidden {
+  display: block !important;
+  max-height: 0;
+  visibility: hidden;
+}
+
+.filters .accordion-body li a {
+  transition: visibility 0.2s;
+}
+
+.filters .clp-facet-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 4px;
+  overflow: hidden;
+}
+
+.filters .clp-facet-list li {
+  padding: 8px 0;
+}
+
+/* option = checkbox (17×17, #9b9999, r2) + label (18 + 12 px in) */
+.filters .clp-facet-list li a:any-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.filters .clp-facet-list li a:any-link::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #9b9999;
+  border-radius: 2px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.filters .clp-facet-more,
+.filters .clp-facet-less {
+  padding-left: 4px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.filters .clp-facet-more:hover,
+.filters .clp-facet-less:hover {
+  text-decoration: underline;
+}
+
+/* mobile clear bar */
+.filters .plp-clearbar {
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  padding: 16px 24px;
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+}
+
+.filters .plp-clearbar button {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #000;
+  background: none;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* observed drawer states (products.js: body.mob-shop-by-open / body.mob-filters-open) */
+@media (width <= 767px) {
+  body.mob-shop-by-open .filters .plp-side,
+  body.mob-filters-open .filters .plp-side {
+    transform: translateY(0);
+  }
+
+  body.mob-shop-by-open .filters .plp-side .clp-filters,
+  body.mob-filters-open .filters .plp-side .clp-nav {
+    display: none;
+  }
+
+  .filters .plp-side-sticky {
+    max-height: 100%;
+    overflow: hidden auto;
+  }
+}
+
+@media (width >= 768px) {
+  .filters .sm-hidden {
+    display: none !important;
+  }
+
+  .filters .plp-side {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .filters .plp-side-sticky {
+    position: sticky;
+    top: 56px;
+    overflow: hidden auto;
+    height: calc(100vh - 85px);
+  }
+
+  .filters .clp-filters-title {
+    display: block;
+  }
+}

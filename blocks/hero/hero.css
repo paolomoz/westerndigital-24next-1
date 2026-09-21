@@ -1,37 +1,454 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
-}
+/* stylelint-disable no-descending-specificity -- lifted cascade order (variant overrides follow the core) */
+
+/* hero — shared core + four skins. Every value is lifted verbatim from the gated prototypes:
+   banner = products.css .plp-hero* (stardust/replica/capture/lift/products-{1440,360}.json),
+   photo  = solutions.css .sol-hero*, band = solutions.css .sol-section + .sol-innov*,
+   split  = company.css .co-hero* + .co-h1 / .co-h5. Wrappers carry the layout classes; the authored
+   h1 / p / picture are styled through them with descendant selectors (EW2). */
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
+.hero .hero-bg {
   position: absolute;
-  z-index: -1;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.hero img {
-  object-fit: cover;
+.hero .hero-bg picture,
+.hero .hero-bg img {
+  position: absolute;
+  inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+/* the lifted container model (.contain: 1140 / 0 16 / auto) */
+.hero .hero-wrap {
+  position: relative;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.hero .headline :is(h1, h2, h3, h4, h5, h6, p),
+.hero .lede p {
+  color: inherit;
+}
+
+.hero .actions p {
+  margin: 0;
+}
+
+/* ───────────── banner (products category banner: .plp-hero__variant / __row / __col / __text / __btn) ───────────── */
+.hero.banner {
+  min-height: 175px;
+  color: #fff;
+}
+
+.hero.banner .hero-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 175px;
+}
+
+.hero.banner .hero-col {
+  position: relative;
+  width: 100%;
+  padding: 24px 0;
+}
+
+.hero.banner .headline :is(h1, h2, p) {
+  margin: 0 0 8px;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.hero.banner .lede p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* source .btn.underline: an underlined TEXT link, not a button (the padding / border / background
+   resets keep it a text link even where a runtime buttonises a sole link) */
+.hero.banner .actions a:any-link {
+  display: inline-flex;
+  margin: 16px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: underline;
+  white-space: normal;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* products' stepped container (.mainContainWrap .contain: 576 / 768 / 992 / 1140) */
+@media (width >= 576px) {
+  .hero.banner .hero-wrap {
+    max-width: 576px;
+  }
+}
+
+@media (width >= 768px) {
+  .hero.banner .hero-wrap {
+    max-width: 768px;
+  }
+
+  .hero.banner .hero-row {
+    min-height: 200px;
+  }
+
+  .hero.banner .hero-col {
+    width: 66.6667%;
+    padding: 48px;
+  }
+
+  .hero.banner .headline :is(h1, h2, p) {
+    font-size: 34px;
+  }
+}
+
+@media (width >= 992px) {
+  .hero.banner .hero-wrap {
+    max-width: 992px;
+  }
+
+  .hero.banner .hero-col {
+    padding: 64px 64px 64px 0;
+  }
+
+  .hero.banner .headline :is(h1, h2, p) {
+    font-size: 36px;
+  }
+}
+
+@media (width >= 1140px) {
+  .hero.banner .hero-wrap {
+    max-width: 1140px;
+  }
+
+  .hero.banner .hero-row {
+    min-height: 250px;
+  }
+
+  .hero.banner .hero-col {
+    width: 50%;
+  }
+}
+
+/* ───────────── photo (solutions hero: .sol-hero — stacked 225px image band <992, photo behind text ≥992) ───────────── */
+.hero.photo {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero.photo .hero-bg {
+  position: relative;
+  min-height: 225px;
+}
+
+.hero.photo .hero-row {
+  padding: 24px 0;
+}
+
+.hero.photo .headline :is(h1, h2, p) {
+  margin: 0 0 8px;
+  font-size: 32px;
+  line-height: 35.2px;
+  font-weight: 700;
+}
+
+.hero.photo .lede p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+@media (width >= 992px) {
+  .hero.photo {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    color: #000;
+  }
+
+  .hero.photo .hero-bg {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+  }
+
+  .hero.photo .hero-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 0;
+  }
+
+  .hero.photo .hero-col {
+    width: 50%;
+  }
+
+  .hero.photo .headline :is(h1, h2, p) {
+    font-size: 48px;
+    line-height: 52.8px;
+  }
+
+  .hero.photo .lede p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (width >= 1140px) {
+  .hero.photo {
+    min-height: 600px;
+  }
+}
+
+/* ───────────── split (company hero: .co-hero — black band, text col | media col; <768 the media stacks first) ───────────── */
+.hero.split {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero.split .hero-bg {
+  display: none; /* source: --co-bg-heroM undefined below 768 → no desktop image */
+}
+
+.hero.split .hero-bg img {
+  object-position: 100% 50%; /* .bg-right */
+}
+
+.hero.split .hero-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero.split .hero-col {
+  display: flex;
+  order: 2;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero.split .hero-media {
+  order: 1;
+  width: 100%;
+  min-height: 225px;
+}
+
+.hero.split .hero-media-inner {
+  position: relative;
+  min-height: 225px;
+  margin: 0 -16px;
+  overflow: hidden;
+}
+
+.hero.split .hero-media-inner picture,
+.hero.split .hero-media-inner img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero.split .hero-text {
+  position: relative;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.hero.split .headline :is(h1, h2, p) {
+  margin: 0 0 16px;
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.hero.split .lede p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+@media (width >= 576px) {
+  .hero.split .hero-media,
+  .hero.split .hero-media-inner {
+    min-height: 300px;
+  }
+}
+
+@media (width >= 768px) {
+  .hero.split .hero-bg {
+    display: block;
+  }
+
+  .hero.split .hero-col {
+    order: 1;
+    width: 33.3333%;
+  }
+
+  .hero.split .hero-media {
+    order: 2;
+    width: 66.6667%;
+    min-height: 400px;
+  }
+
+  .hero.split .hero-media-inner {
+    display: none;
+  }
+
+  .hero.split .hero-text {
+    text-align: left;
+  }
+
+  .hero.split .headline :is(h1, h2, p) {
+    font-size: 56px;
+  }
+}
+
+@media (width >= 992px) {
+  .hero.split .hero-col {
+    width: 41.6667%;
+  }
+
+  .hero.split .hero-media {
+    width: 58.3333%;
+    min-height: 500px;
+  }
+
+  .hero.split .hero-text {
+    padding: 64px 24px;
+  }
+
+  .hero.split .headline :is(h1, h2, p) {
+    font-size: 66px;
+  }
+
+  .hero.split .lede p {
+    font-size: 24px;
+  }
+}
+
+/* ───────────── band (solutions innovation: section.sol-section > .contain > .sol-innov) ───────────── */
+.hero.band {
+  padding: 48px 0;
+  color: #000;
+}
+
+.hero.band .hero-row {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* <992: the image is a 0-width flex item (lifted quirk — black text on white, no photo) */
+.hero.band .hero-bg {
+  position: relative;
+  flex: 0 0 0;
+  width: 0;
+  min-height: 225px;
+  inset: auto;
+}
+
+/* .dark-40 scrim over the photo */
+.hero.band .hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 40%);
+}
+
+.hero.band .hero-col {
+  position: relative;
+}
+
+.hero.band .headline :is(h1, h2, p) {
+  margin: 0 0 8px;
+  font-size: 32px;
+  line-height: 35.2px;
+  font-weight: 700;
+}
+
+.hero.band .lede {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero.band .lede p {
+  margin: 0;
+}
+
+.hero.band .actions p {
+  line-height: 24px; /* .sol .button > div */
+}
+
+/* .sol-innov__btn — white-bordered button: black ground <992, transparent on the photo ≥992 */
+.hero.band .actions a:any-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 16px;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+
+@media (width >= 992px) {
+  .hero.band {
+    padding: 64px 0;
+  }
+
+  .hero.band .hero-row {
+    min-height: 400px;
+    color: #fff;
+  }
+
+  .hero.band .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: auto;
+  }
+
+  .hero.band .headline :is(h1, h2, p) {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .hero.band .actions a:any-link {
+    margin-top: 24px;
+    padding: 12px 32px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: transparent;
   }
 }

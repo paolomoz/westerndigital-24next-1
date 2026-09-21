@@ -1,27 +1,439 @@
-.cards > ul {
-  list-style: none;
+/* cards — home rails (content / promo / resource) + about link tiles. Every value lifted from
+   stardust/prototypes/index.css (§ section rhythm, card carousels, legacy content cards, popular products,
+   case studies, about) and canon.css (type ramp, text links), scoped under .cards. Wrappers carry the
+   layout; authored h3 / p / picture are styled through descendant selectors (EW2). Mobile overrides
+   are written at the variant's own specificity (#109). */
+
+/* stylelint-disable no-descending-specificity -- variant-grouped cascade (content → promo → resource → about) kept in the lifted order; the flagged pairs live in different variants and never match the same element */
+
+/* ---------- band: padding + ground ride the section at .section specificity (conversion log § Step 2) ---------- */
+main .section.cards-container {
+  padding: 96px 0;
+}
+
+main .section.cards-container:has(.cards.content),
+main .section.cards-container:has(.cards.resource) {
+  background: var(--c-grey-1);
+}
+
+.cards-container .default-content-wrapper {
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+main .section.cards-container:has(.cards.about) .default-content-wrapper {
+  max-width: calc(992px + 2 * var(--gutter));
+}
+
+.cards-container .default-content-wrapper h2 {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 52.8px;
+  font-weight: 700;
+}
+
+/* ---------- rail (splide scroll: section ml 150, max-w calc(100% - 150px), slides mr 16; arrows dead) ---------- */
+.cards .rail {
+  position: relative;
+  overflow: hidden auto;
+}
+
+.cards .rail-inner {
+  position: relative;
+  max-width: calc(100% - 150px);
+  margin-left: 150px;
+}
+
+.cards .track {
+  position: relative;
+}
+
+.cards .list {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  list-style: none;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.cards .rail .unit {
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: 16px;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+/* ---------- shared card anatomy ---------- */
+.cards .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-card);
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards .card-bg {
+  position: absolute;
+  inset: 0;
 }
 
-.cards > ul > li img {
+.cards .card-bg picture,
+.cards .card-bg img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
+}
+
+.cards .card-bg img {
   object-fit: cover;
 }
+
+.cards .card-body {
+  position: relative;
+  width: 100%;
+}
+
+.cards .title h3 {
+  margin-bottom: 16px;
+}
+
+/* ---------- content (legacy content cards: 400 × ≥600, copy at the bottom, white on photo / navy) ---------- */
+.cards.content .card {
+  display: flex;
+  align-items: flex-end;
+  width: 400px;
+  max-width: 400px;
+  min-height: 600px;
+  padding: 32px;
+  color: var(--c-white);
+}
+
+.cards.content .card.navy {
+  background: var(--c-navy);
+}
+
+.cards.content .card-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  background-image: linear-gradient(to top, rgb(0 0 0) 20%, rgb(0 0 0 / 0%) 60%);
+}
+
+.cards.content .eyebrow {
+  padding-bottom: 8px;
+}
+
+.cards.content .eyebrow p {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.cards.content .title h3 {
+  font-size: 28px;
+  line-height: 30.8px;
+  font-weight: 500;
+}
+
+.cards.content .actions a:any-link {
+  margin-top: 32px;
+}
+
+/* ---------- promo (popular products: G-DRIVE editorial card 383 × 600 on mint; product cards 400 × 600 on grey) ---------- */
+.cards.promo .card.editorial {
+  display: flex;
+  align-items: flex-end;
+  width: 383px;
+  max-width: 400px;
+  min-height: 600px;
+  padding: 32px;
+  color: var(--c-black);
+  background: var(--c-mint);
+}
+
+.cards.promo .card.editorial .card-bg img {
+  object-position: center;
+}
+
+.cards.promo .title p {
+  margin-bottom: 16px;
+  font-size: 28px;
+  line-height: 30.8px;
+  font-weight: 500;
+}
+
+.cards.promo .title strong {
+  font-weight: 500;
+}
+
+/* .btn--link-regular: block, underlined, regular weight, 16/16, mt 16 */
+.cards.promo .card.editorial .actions {
+  margin-top: 16px;
+}
+
+.cards.promo .card.editorial .actions a:any-link {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--c-black);
+  text-decoration: underline;
+}
+
+.cards.promo .card.linked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  max-width: 400px;
+  min-height: 600px;
+  padding: 0 32px;
+  color: var(--c-black);
+  background: var(--c-grey-1);
+}
+
+.cards.promo .card.linked .card-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cards.promo .card.linked .card-media img {
+  width: 336px;
+  height: 336px;
+}
+
+.cards.promo .name p {
+  margin-bottom: 16px;
+  font-size: 28px;
+  line-height: 30.8px;
+  font-weight: 500;
+}
+
+/* capacity line (16/19.2, mb 16) then price line (16/24): muted label, bold value */
+.cards.promo .meta {
+  margin-bottom: 16px;
+}
+
+.cards.promo .meta + .meta {
+  margin-bottom: 0;
+}
+
+.cards.promo .meta p {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--c-grey-4);
+}
+
+.cards.promo .meta + .meta p {
+  line-height: 24px;
+}
+
+.cards.promo .meta strong {
+  font-weight: 700;
+  color: var(--c-black);
+}
+
+.cards.promo .unit.spacer {
+  width: 64px;
+  min-height: 600px;
+  border-radius: var(--radius-card);
+  background: var(--c-grey-1);
+}
+
+/* ---------- resource (case studies: white 400 × ≥275, icon + eyebrow + title + text link) ---------- */
+.cards.resource .card {
+  display: flex;
+  max-width: 400px;
+  min-height: 275px;
+  padding: 32px;
+  background: var(--c-white);
+}
+
+.cards.resource .card-media picture {
+  display: block;
+}
+
+.cards.resource .card-media img {
+  display: inline;
+  height: 48px;
+  margin-bottom: 16px;
+  vertical-align: middle;
+}
+
+.cards.resource .eyebrow {
+  margin-bottom: 8px;
+}
+
+.cards.resource .eyebrow p {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.cards.resource .title h3 {
+  font-size: 24px;
+  line-height: 26.4px;
+  font-weight: 500;
+}
+
+/* .btn--link: inline, underlined, bold, black, in a 24px line */
+.cards.resource .actions {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+}
+
+.cards.resource .actions a:any-link {
+  display: inline;
+  font-weight: 700;
+  color: var(--c-black);
+  text-decoration: underline;
+}
+
+/* ---------- about (five link tiles, space-between, centred labels) ---------- */
+.cards.about .wrap {
+  position: relative;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.cards.about .list {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cards.about .unit {
+  width: 222px;
+  margin-bottom: 24px;
+  padding: 0 8px;
+  text-align: center;
+}
+
+.cards.about .card {
+  display: block;
+  min-height: 16px;
+  overflow: visible;
+  border-radius: 0;
+  transition: var(--transition);
+}
+
+.cards.about .card-media picture {
+  display: block;
+}
+
+.cards.about .card-media img {
+  display: inline;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 16px;
+  vertical-align: middle;
+  border-radius: var(--radius-card);
+}
+
+.cards.about .label p {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+/* ===== 360 pass (lift index-360.json): 80 %-wide slides, 24px card padding, mobile type ramp ===== */
+@media (width <= 767px) {
+  main .section.cards-container {
+    padding: 64px 0;
+  }
+
+  .cards-container .default-content-wrapper {
+    padding-bottom: 32px;
+  }
+
+  .cards-container .default-content-wrapper h2 {
+    font-size: 32px;
+    line-height: 35.2px;
+  }
+
+  .cards .rail-inner {
+    max-width: none;
+    margin-left: 16px;
+  }
+
+  .cards .rail .unit {
+    flex: 0 0 80%;
+    width: 80%;
+  }
+
+  .cards.content .card,
+  .cards.promo .card.editorial,
+  .cards.promo .card.linked,
+  .cards.resource .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .cards.content .card,
+  .cards.promo .card.editorial {
+    min-height: 500px;
+    padding: 24px;
+  }
+
+  .cards.content .title h3,
+  .cards.promo .title p,
+  .cards.promo .name p {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+
+  .cards.content .actions a:any-link {
+    margin-top: 16px;
+    padding: 8px 16px;
+  }
+
+  .cards.promo .card.linked {
+    min-height: 500px;
+    padding: 0 24px;
+  }
+
+  .cards.promo .unit.spacer {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .cards.promo .card.linked .card-media img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cards.resource .card {
+    padding: 24px;
+  }
+
+  .cards.resource .title h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .cards.about .list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards.about .unit {
+    width: auto;
+  }
+
+  .cards.about .card-media img {
+    max-width: 125px;
+  }
+
+  .cards.about .label p {
+    font-size: 18px;
+    line-height: 19.8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cards.about .card {
+    transition: none;
+  }
+}
+
+/* stylelint-enable no-descending-specificity */
