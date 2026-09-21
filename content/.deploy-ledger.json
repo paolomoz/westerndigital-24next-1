@@ -1,0 +1,62 @@
+{
+  "/company": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-21T12:40:04.052Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok",
+    "bodyHash": "fdf6234269cc7d758c9465075389127acfba3edb",
+    "branch": "main"
+  },
+  "/index": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-21T12:40:04.052Z",
+    "put": 200,
+    "preview": 200,
+    "verify": "ok",
+    "bodyHash": "6c729d2dc316b304ce88fbeeb252dcadb5b8f8a0",
+    "branch": "main"
+  },
+  "/products": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-21T12:40:04.052Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok",
+    "bodyHash": "24bb1975ff08c82dd18a898494f29d5e5aa00658",
+    "branch": "main"
+  },
+  "/solutions": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-21T12:40:04.052Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok",
+    "bodyHash": "91254b35601e74c863fa166e05747cafb3e86942",
+    "branch": "main"
+  },
+  "/footer": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-21T12:42:05.881Z",
+    "put": 200,
+    "preview": 200,
+    "verify": "ok",
+    "bodyHash": "24e656ad90bf7041edd8b257a4e0c4aa28020141",
+    "branch": "main"
+  },
+  "/nav": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-21T12:42:05.881Z",
+    "put": 200,
+    "preview": 200,
+    "verify": "ok",
+    "bodyHash": "8ac54e24be614698354ecad4d5c35a092c772c22",
+    "branch": "main"
+  }
+}

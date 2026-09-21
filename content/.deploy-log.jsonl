@@ -1,0 +1,8 @@
+{"t":"2026-09-21T12:40:03.767Z","step":"instrument","instrument":"code-sync-verify","skipped":"head.html is pipeline-transformed (CSP meta lifted, nonce rewritten); 41/42 paths sha=match at 12:36Z — stardust/code-sync.json"}
+{"t":"2026-09-21T12:40:08.239Z","path":"/solutions","step":"verify","ok":true,"ms":4187}
+{"t":"2026-09-21T12:40:08.567Z","path":"/company","step":"verify","ok":true,"ms":4515}
+{"t":"2026-09-21T12:40:08.893Z","path":"/products","step":"verify","ok":true,"ms":4841}
+{"t":"2026-09-21T12:40:10.588Z","path":"/index","step":"verify","ok":true,"ms":6536}
+{"t":"2026-09-21T12:42:05.483Z","step":"instrument","instrument":"code-sync-verify","skipped":"head.html is pipeline-transformed; 41/42 paths sha=match at 12:36Z — stardust/code-sync.json"}
+{"t":"2026-09-21T12:42:10.434Z","path":"/footer","step":"verify","ok":true,"ms":4553}
+{"t":"2026-09-21T12:42:10.523Z","path":"/nav","step":"verify","ok":true,"ms":4642}
