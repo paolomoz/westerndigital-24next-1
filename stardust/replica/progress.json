@@ -2744,5 +2744,40 @@
       },
       "note": "a.btn border 1 black, radius 6, 12/40 16/16 500 (>=992) / 8/16 14/14 (<992), mt 24/16, mb 0/36"
     }
-  ]
+  ],
+  "wideViewport": {
+    "at": "2026-09-21T14:35:07Z",
+    "check": "Step-10 wide-viewport fluid check (1920)",
+    "authoredRule": "stardust/replica/capture/css/index-inline-2.css @media(min-width:1464px){.contain{max-width:1464px}} (ladder 576/768/992/1140/1464)",
+    "encoded": "styles/styles.css --container-max 1464 @≥1464 + rungs in hero/breadcrumbs/tiles/header css; carousel bars 1fr",
+    "neutrality": "HEAD 625c87f: 8/8 build-side stitched compares byte-identical (0 px, Δh 0) vs the pub2/pub3 delivered captures at 1440 and 360",
+    "parity1920": {
+      "/": "h1 244/1432 = live, hero 785 = live",
+      "/products": "h1 244/652 = live, hero band 260 = live",
+      "/solutions": "container 1464, footer top Δ 0",
+      "/company": "container 1464, footer top Δ 0"
+    },
+    "residuals": [
+      {
+        "page": "index",
+        "band": "about band −44 px @1920",
+        "cause": "frozen 222 px about tiles (source model non-neutral at 1440; cap reached)",
+        "flaggedFor": "user",
+        "acceptedBy": "hands-off-policy:capture-state"
+      },
+      {
+        "page": "solutions",
+        "what": "live footer 726 vs 763 px",
+        "cause": "live-drift (live variance between pages)",
+        "flaggedFor": "user"
+      }
+    ],
+    "commits": [
+      "38372cc",
+      "df57ac7",
+      "cbd72dc",
+      "625c87f"
+    ],
+    "ledger": "stardust/.work/deploy/reconcile-wide.md"
+  }
 }

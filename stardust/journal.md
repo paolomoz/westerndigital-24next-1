@@ -87,3 +87,35 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** $stardust deploy index
 
 ---
+## 2026-09-21T14:35:55Z — deploy: EDS conversion, DA preview, published-origin gate, reconcile rounds — run complete
+
+**Blocked on owner:** `gh repo edit paolomoz/westerndigital-24next-1 --visibility private && node skills/deploy/scripts/lockdown.mjs --org paolomoz --repo westerndigital-24next-1` (row `lockdown` is owner-only: the owner supplied a public repo)
+
+**Prompt:** *(continuation)* Convert the four gated prototypes to EDS blocks + content, deliver to DA preview, gate on the published origin.
+
+**Decisions:**
+- Deploy fan-out: one foundation worker (Steps 0–6: runtime contract, 15-block inventory, schemas, styles/fonts, nav/footer docs, header/footer blocks), then four block workers (2 waves), then four published-origin reconcile workers (one round each), then one wide-viewport worker. Coordinator drove pushes, Code Sync verification, the delivery chain, the guards and the ledger.
+- nav/footer documents wrapped in the DA body-fragment shell after delivery-lint blocked them (chrome docs follow the Step 9 format).
+- Reconcile fixes were all block/foundation CSS or generator patches, each cited to a landmark/box-ladder instrument line; pixel-neutrality proven build-side for every post-gate change.
+- The 1920 spot check found the frozen 1440 container width; the source's `.contain{max-width:1464px}@≥1464` rung is now encoded — proven byte-identical at the gate widths.
+- Products hero schema pruned to 1 authored row (5 hidden variants are recorded drops); qa-gate unit pairing fails on solutions/company are a recorded instrument gap (counts proven by probes).
+
+**Artifacts touched:**
+- styles/styles.css, styles/fonts.css, fonts/, icons/, blocks/{15 blocks}, content/{index,products,solutions,company,nav,footer}.html — created (EDS project)
+- stardust/{eds-conversion-log*.md, eds-schema/, patches/, runtime-contract.json, code-sync.json} — created
+- stardust/dynamics/parity.json, stardust/qa/dynamics-report.*, stardust/rollout/report/{ai-readability.json, handoff.md} — created
+- stardust/replica/progress.json (published rounds, postGateFixes, wideViewport), stardust/status.jsonl, stardust/decisions.md, stardust/dynamic-features.md, stardust/learnings.md — updated
+- content/.deploy-ledger.json — 6 documents `previewed`
+
+**Findings worth flagging:**
+- The pipeline flattens `<ul>` in the footer doc into `<p>` lines (fixed in footer.js), drops the space after `<br>` in headings, and wraps images in `<p><picture>` — all three moved pub1 numbers before reconcile.
+- The decided-out compare control on live product cards set the card height (−24 px per row → Δh 174 px at 360): a dropped element still needs its reserved box when the source reserves it.
+- `code-sync-verify` always reports `head.html` STALE (pipeline-transformed) — 7 plugin gaps ledgered in `stardust/learnings.md`.
+
+**Open questions:**
+- Owner rows: lockdown; tags property ids; Genesys chat; commerce datasource/cart/auth; campaign feed; locale scope; search results page (all shipping interim — `stardust/dynamic-features.md` § Decision batch).
+- Live publish is a separate explicit run (D1/D16); nothing is on `aem.live`.
+
+**Next:** $stardust qa https://main--westerndigital-24next-1--paolomoz.aem.page
+
+---
